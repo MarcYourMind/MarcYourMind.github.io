@@ -1,29 +1,54 @@
 ---
-title: "Machine Learning Pipelines: From Research to Production"
+title: "Machine Learning Pipelines: The Multi-Agent Trading Evolution"
 date: "2024-03-01"
-tags: ["AI", "MLOps", "Python"]
+tags: ["AI", "MLOps", "Python", "Multi-Agent"]
 readTime: "14 min read"
-excerpt: "Best practices for building robust ML pipelines using Kubeflow and DVC."
+excerpt: "Beyond simple models: Building a 20-agent autonomous trading system with LangChain, local LLMs, and event-driven pipelines."
 ---
 
-# Machine Learning Pipelines: From Research to Production
+# Machine Learning Pipelines: The Multi-Agent Trading Evolution
 
-Bridging the gap between a notebook and a production API is one of the biggest challenges in AI engineering.
+Bridging the gap between a research notebook and a production-grade trading system is the ultimate challenge in AI engineering. My journey, backed by specialized training from **Coursera** and **HuggingFace**, led to the creation of **AiTrader**—a multi-agent system designed to scale quantitative expertise across thousands of assets.
 
-## Data Versioning with DVC
+## From Monolithic Models to Multi-Agent Systems
 
-Never lose track of which data produced which model.
+Traditional ML pipelines often struggle with the non-stationary nature of financial markets. AiTrader solves this by employing a hierarchical multi-agent architecture (MAS). Instead of one master model, we use a pool of specialized agents.
 
-```bash
-dvc add data/training_set.csv
-git add data/training_set.csv.dvc .gitignore
-git commit -m "Add raw training data"
+### The Agent Hierarchy
+
+AiTrader's "brain" is divided into functional layers, coordinated by a **Governor Agent**:
+
+1. **Feature Engineering Agents**: Calculate indicators, market regimes, and volume profiles.
+2. **Strategy Agent Pool**: Independent agents running Trend, Mean Reversion, and SFP strategies.
+3. **Consensus & Risk Agents**: Aggregate signals and enforce strict capital preservation rules.
+
+## Local LLM Integration: Phi-3 & LangChain
+
+We leverage local LLMs like **Phi-3 Mini** via Ollama to perform qualitative reasoning, such as asset sanity checks and structural market analysis, without the latency of external APIs.
+
+```python
+# LangChain Orchestration Snippet
+from langchain_community.llms import Ollama
+from langchain.prompts import PromptTemplate
+
+llm = Ollama(model="phi3:mini")
+prompt = PromptTemplate.from_template("Analyze the following market structure: {structure}")
+
+chain = prompt | llm
+response = chain.invoke({"structure": market_json})
 ```
 
-## Feature Stores
+## Production Reliability: The Event Bus
 
-Standardize feature engineering across training and inference.
+To handle thousands of assets in real-time, the pipeline is built on an asynchronous event bus. This allows agents to be stateless and horizontally scalable.
 
-## Monitoring Drift
+> [!IMPORTANT]
+> A production ML pipeline for trading must prioritize "Explainable AI." Every decision in AiTrader is logged in an immutable audit trail, allowing for forensic post-trade review.
 
-Implement monitoring for both feature drift and concept drift to ensure your model remains accurate over time.
+### Pipeline Success Metrics:
+- **Massive Scale**: Analysis of 1000+ crypto assets across 7 timeframes.
+- **Fault Isolation**: Faulty signals are absorbed by the risk and consensus layers.
+- **Traceability**: Full visibility into the internal "monologue" of every agent.
+
+This architecture represents a shift from static predictions to dynamic, multi-layered reasoning in production AI.
+

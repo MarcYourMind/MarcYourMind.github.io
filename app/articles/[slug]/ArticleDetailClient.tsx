@@ -13,107 +13,220 @@ import Link from "next/link"
 // For this portfolio, we'll simulate the MDX content loading.
 const articleContent: Record<string, any> = {
     "building-low-latency-trading-systems": {
-        title: "Building Low-Latency Trading Systems in Modern C++",
+        title: "Building Low-Latency Trading Systems: The Plutus Architecture",
         date: "Feb 12, 2024",
         readTime: "12 min read",
         tags: ["Quant", "C++", "Architecture"],
         author: "Marc Mind",
         content: `
-            <h2 id="kernel-bypass">Kernel Bypass Techniques</h2>
-            <p>To achieve ultra-low latency, we often need to bypass the standard Linux networking stack. Technologies like <strong>Solarflare's Onload</strong> or <strong>DPDK</strong> are essential for reducing the overhead of context switches and interrupt handling.</p>
-            
-            <h2 id="lock-free">Lock-Free Programming</h2>
-            <p>Avoid mutexes at all costs in the hot path. Use atomic operations and lock-free queues for inter-thread communication. Mutexes induce non-deterministic delays that are unacceptable in high-frequency trading environments.</p>
-            
-            <pre><code>#include &lt;atomic&gt;
- 
-template&lt;typename T&gt;
-class LockFreeQueue {
-    // Implementation of a single-producer single-consumer queue
+            <h2 id="philosophy">The Plutus Design Philosophy</h2>
+            <p>Plutus was built to interface directly with <strong>Interactive Brokers</strong>, demanding a system that could handle rapid market data updates while maintaining strict statistical risk controls.</p>
+
+            <h2 id="architecture">Key Architectural Pillars</h2>
+            <ul>
+                <li><strong>Asynchronous Execution</strong>: Decoupling market data ingestion from signal generation and order placement.</li>
+                <li><strong>Deterministic Processing</strong>: Minimizing jitter by avoiding heap allocations in the hot path.</li>
+                <li><strong>Statistical Risk Controls</strong>: Real-time monitoring of slippage, drawdown, and exposure limits.</li>
+            </ul>
+
+            <h2 id="ibkr">Interactive Brokers Integration</h2>
+            <p>Integrating with the IBKR API required custom wrappers to handle the asynchronous nature of their message-driven architecture.</p>
+
+            <pre><code>// Simplified Order Manager Snippet
+class OrderManager : public EWrapper {
+    void nextValidId(OrderId orderId) override {
+        m_nextOrderId = orderId;
+    }
+    
+    void placeAutomatedOrder(const Contract& contract, const Order& order) {
+        m_client->placeOrder(m_nextOrderId++, contract, order);
+    }
 };</code></pre>
- 
-            <h2 id="cpu-pinning">CPU Pinning & Isolation</h2>
-            <p>Isolating cores and pinning threads to specific CPUs can drastically reduce cache misses and context switch overhead. We use isolcpus in the boot loader to ensure the OS doesn't schedule anything else on our critical path cores.</p>
+
+            <h2 id="risk">Statistical Risk Management</h2>
+            <p>Performance is secondary to preservation. Plutus implements a multi-layered risk engine that monitors every order before it hits the wire.</p>
         `,
         toc: [
-            { id: "kernel-bypass", text: "Kernel Bypass Techniques" },
-            { id: "lock-free", text: "Lock-Free Programming" },
-            { id: "cpu-pinning", text: "CPU Pinning & Isolation" }
+            { id: "philosophy", text: "Design Philosophy" },
+            { id: "architecture", text: "Architectural Pillars" },
+            { id: "ibkr", text: "IBKR Integration" },
+            { id: "risk", text: "Risk Management" }
         ]
     },
-    "smart-contract-security": {
-        title: "Smart Contract Security: The 10 Most Common Exploits",
+    "smart-contract-security-exploits": {
+        title: "Smart Contract Security in Web3 Gaming: Lessons from Chain Champions",
         date: "Jan 28, 2024",
         readTime: "15 min read",
         tags: ["Web3", "Security", "Solidity"],
         author: "Marc Mind",
         content: `
-            <h2 id="reentrancy">Reentrancy</h2>
-            <p>Reentrancy remains the most critical vulnerability. It occurs when a contract calls an external address, allowing that address to call back into the original contract before the first execution is finished.</p>
-            
-            <pre><code>// Secure Code
-function withdraw() public {
-    uint amount = balances[msg.sender];
-    balances[msg.sender] = 0; // Update state before interaction
-    (bool success, ) = msg.sender.call{value: amount}("");
-    require(success);
+            <h2 id="escrow">Secure Escrow Patterns</h2>
+            <p>The core of any competitive gaming platform is the escrow system. At Chain Champions, we designed an escrow contract that holds entry fees securely until tournament completion.</p>
+
+            <h2 id="reentrancy">Checks-Effects-Interactions</h2>
+            <p>We strictly followed the <strong>Checks-Effects-Interactions</strong> pattern to prevent reentrancy attacks, especially during the payout phase where winners withdraw their prizes.</p>
+
+            <pre><code>// Secure Payout Pattern
+function claimPrize(uint tournamentId) public nonReentrant {
+    uint prize = tournamentPrizes[tournamentId][msg.sender];
+    require(prize > 0, "No prize available");
+
+    // Effects: Update state before interaction
+    tournamentPrizes[tournamentId][msg.sender] = 0;
+
+    // Interactions: Direct transfer to the winner
+    (bool success, ) = msg.sender.call{value: prize}("");
+    require(success, "Transfer failed");
+
+    emit PrizeClaimed(msg.sender, prize);
 }</code></pre>
- 
-            <h2 id="overflow">Integer Overflow and Underflow</h2>
-            <p>Since Solidity 0.8.0, this is handled automatically. However, for older contracts, SafeMath is mandatory.</p>
+
+            <h2 id="automation">Automated Tournament Payouts</h2>
+            <p>Payouts are triggered by a multi-agent system that verifies match results before authorizing the contract to release funds.</p>
         `,
         toc: [
-            { id: "reentrancy", text: "Reentrancy" },
-            { id: "overflow", text: "Integer Overflow" }
+            { id: "escrow", text: "Escrow Patterns" },
+            { id: "reentrancy", text: "Reentrancy Protection" },
+            { id: "automation", text: "Automated Payouts" }
         ]
     },
     "scaling-backend-event-driven": {
-        title: "Scaling Backend Systems with Event-Driven Architecture",
+        title: "Event-Driven Scalability in Fintech: From Technex to Brite Payments",
         date: "Jan 15, 2024",
         readTime: "10 min read",
-        tags: ["Backend", "Kafka", "Scalability"],
+        tags: ["Backend", "Fintech", "Scalability"],
         author: "Marc Mind",
         content: `
-            <h2 id="monoliths">The Shift from Monoliths to Microservices</h2>
-            <p>Modern applications require systems that can scale horizontally and handle failures gracefully. Event-driven architecture (EDA) allows services to communicate asynchronously via events, reducing coupling and increasing fault tolerance.</p>
-            
-            <h2 id="kafka">Kafka for Event Streaming</h2>
-            <p>Kafka acts as the central nervous system of an event-driven setup. It provides high-throughput, fault-tolerant delivery of messages between services.</p>
-            
-            <pre><code># Simple Kafka Producer Config
-bootstrap.servers: localhost:9092
-key.serializer: org.apache.kafka.common.serialization.StringSerializer
-value.serializer: org.apache.kafka.common.serialization.StringSerializer</code></pre>
+            <h2 id="fintech">The Fintech Challenge: PSD2 & Real-Time Transfers</h2>
+            <p>Integrating with PSD2-compliant APIs requires managing complex authentication flows and ensuring that real-time bank transfers are processed without interruption.</p>
 
-            <h2 id="dlq">Dead Letter Queues (DLQ)</h2>
-            <p>Handling failures is critical. Use DLQs to capture failed events for later inspection and reprocessing without blocking the main stream processing.</p>
+            <h2 id="eda">Decoupling for Resilience</h2>
+            <p>By using an event-driven approach, we decoupled the sensitive bank communication layers from the core transaction processing.</p>
+
+            <pre><code>// Example Event-Driven Transfer Initiation
+async function initiateTransfer(transferData: TransferRequest) {
+    try {
+        const transfer = await db.createTransfer(transferData);
+        await eventBus.publish('TRANSFER_INITIATED', {
+            id: transfer.id,
+            amount: transfer.amount,
+            destination: transfer.iban
+        });
+        return { status: 'PENDING', reference: transfer.id };
+    } catch (error) {
+        log.error('Failed to initiate transfer', error);
+        throw new FintechError('INITIALIZATION_FAILED');
+    }
+}</code></pre>
+
+            <h2 id="microservices">Scaling with Microservices</h2>
+            <p>At Technex, we focused on building modular microservices that could scale independently, allowing us to handle thousands of concurrent API requests.</p>
         `,
         toc: [
-            { id: "monoliths", text: "Decoupling Services" },
-            { id: "kafka", text: "Kafka Integration" },
-            { id: "dlq", text: "Failure Handling" }
+            { id: "fintech", text: "PSD2 Challenge" },
+            { id: "eda", text: "Event-Driven Resilience" },
+            { id: "microservices", text: "Microservices Scaling" }
         ]
     },
     "machine-learning-pipelines-production": {
-        title: "Building Scalable ML Pipelines for Production",
-        date: "Mar 05, 2024",
+        title: "Machine Learning Pipelines: The Multi-Agent Trading Evolution",
+        date: "Mar 01, 2024",
         readTime: "14 min read",
         tags: ["AI", "MLOps", "Python"],
         author: "Marc Mind",
         content: `
-            <h2 id="data-ingestion">Data Ingestion at Scale</h2>
-            <p>The foundation of any ML pipeline is a robust data ingestion layer. We use distributed systems to collect and preprocess terabytes of data daily.</p>
-            
-            <h2 id="feature-engineering">Automated Feature Engineering</h2>
-            <p>Standardizing feature extraction ensures that training and inference always use the same data representations. We implemented a feature store using Redis for low-latency lookups.</p>
-            
-            <h2 id="monitoring">Model Monitoring</h2>
-            <p>ML models drift over time. Continuous monitoring of prediction distributions and accuracy is essential to trigger retraining cycles automatically.</p>
+            <h2 id="mas">From Monolithic Models to Multi-Agent Systems</h2>
+            <p>AiTrader solves the non-stationary nature of financial markets by employing a hierarchical multi-agent architecture (MAS). Instead of one master model, we use a pool of specialized agents.</p>
+
+            <h2 id="hierarchy">The Agent Hierarchy</h2>
+            <ul>
+                <li><strong>Feature Engineering Agents</strong>: Calculate indicators and market regimes.</li>
+                <li><strong>Strategy Agent Pool</strong>: Independent agents running diverse strategies.</li>
+                <li><strong>Consensus & Risk Agents</strong>: Aggregate signals and enforce strict rules.</li>
+            </ul>
+
+            <h2 id="llm">Local LLM Integration: Phi-3 & LangChain</h2>
+            <p>We leverage local LLMs like <strong>Phi-3 Mini</strong> via Ollama to perform qualitative reasoning, such as asset sanity checks.</p>
+
+            <pre><code># LangChain Orchestration Snippet
+from langchain_community.llms import Ollama
+from langchain.prompts import PromptTemplate
+
+llm = Ollama(model="phi3:mini")
+prompt = PromptTemplate.from_template("Analyze: {structure}")
+
+chain = prompt | llm
+response = chain.invoke({"structure": market_json})</code></pre>
         `,
         toc: [
-            { id: "data-ingestion", text: "Data Ingestion" },
-            { id: "feature-engineering", text: "Feature Engineering" },
-            { id: "monitoring", text: "Model Monitoring" }
+            { id: "mas", text: "Multi-Agent Architecture" },
+            { id: "hierarchy", text: "Agent Hierarchy" },
+            { id: "llm", text: "Local LLM Usage" }
+        ]
+    },
+    "automated-market-making-solana": {
+        title: "Automated Market Making on Solana: High-Velocity Liquidity",
+        date: "Mar 15, 2024",
+        readTime: "12 min read",
+        tags: ["Web3", "Solana", "Quant"],
+        author: "Marc Mind",
+        content: `
+            <h2 id="solana">Leveraging the Solana Advantage</h2>
+            <p>Solana's low transaction costs and high throughput allow for sophisticated market-making strategies. We chose <strong>Node.js</strong> for its excellent asynchronous performance.</p>
+
+            <h2 id="raydium">Integration with Raydium SDK</h2>
+            <p>Direct integration with the <strong>Raydium SDK</strong> allowed us to interact with concentrated liquidity pools and OpenBook order books.</p>
+
+            <pre><code>// Simplified AMM Logic
+import { Market, Liquidity } from '@raydium-io/raydium-sdk';
+
+async function updateLiquidity(marketId: string, spread: number) {
+    const market = await Market.load(connection, marketId, programId);
+    // ... calculate pricing and submit orders
+}</code></pre>
+
+            <h2 id="strategies">Automated Pricing Strategies</h2>
+            <p>The bot employs a dynamic pricing model that adapts to real-time market depth and volatility, monitoring the "heat" of the order book.</p>
+        `,
+        toc: [
+            { id: "solana", text: "Solana Advantage" },
+            { id: "raydium", text: "Raydium SDK" },
+            { id: "strategies", text: "Pricing Strategies" }
+        ]
+    },
+    "cervantes-ai-storyteller": {
+        title: "Cervantes: The Autonomous AI Multi-Agent Storyteller",
+        date: "Mar 20, 2024",
+        readTime: "10 min read",
+        tags: ["AI", "Python", "MAS"],
+        author: "Marc Mind",
+        content: `
+            <h2 id="storytelling">The Challenge: Coherence in Long-Form Narrative</h2>
+            <p>Traditional single-prompt AI storytelling often suffers from narrative drift. Cervantes solves this by breaking the process down into specialized roles.</p>
+
+            <h2 id="roles">The Multi-Agent "Quality Loop"</h2>
+            <ul>
+                <li><strong>The Planner</strong>: Designs character profiles, world-building, and multi-act plot frameworks.</li>
+                <li><strong>The Writer</strong>: Transforms plans into sensory-rich prose and authentic dialogue.</li>
+                <li><strong>The Evaluator</strong>: Acts as a quality gatekeeper, critiquing chapters and requesting iterations.</li>
+            </ul>
+
+            <h2 id="stack">Implementation & Technology Stack</h2>
+            <p>Cervantes is built with <strong>Python</strong> and <strong>LangChain</strong>, using local LLMs via Ollama for privacy and cost-efficiency.</p>
+
+            <pre><code># Orchestration Snippet
+# Using LangChain to maintain state between agents
+from langchain.agents import AgentExecutor
+# ... specialized roles implementation</code></pre>
+
+            <h2 id="outlook">Future of AI Storytelling</h2>
+            <p>Future iterations aim to include AI-generated illustrations and TTS narration, creating a unified multimedia storytelling experience.</p>
+        `,
+        toc: [
+            { id: "storytelling", text: "Narrative Coherence" },
+            { id: "roles", text: "Multi-Agent Loop" },
+            { id: "stack", text: "Technical Stack" },
+            { id: "outlook", text: "Future Outlook" }
         ]
     }
 }

@@ -1,39 +1,54 @@
 ---
-title: "Building Low-Latency Trading Systems in Modern C++"
+title: "Building Low-Latency Trading Systems: The Plutus Architecture"
 date: "2024-02-12"
 readTime: "12 min read"
-tags: ["Quant", "C++", "Architecture"]
+tags: ["Quant", "C++", "Architecture", "Fintech"]
 ---
 
-# Building Low-Latency Trading Systems in Modern C++
+# Building Low-Latency Trading Systems: The Plutus Architecture
 
-In the world of quantitative finance, latency is everything. A microsecond of delay can mean the difference between a profitable trade and a missed opportunity. In this article, we'll explore the architectural patterns used to build ultra-low latency trading systems.
+In the high-stakes world of NASDAQ futures, speed isn't just an advantage—it's the baseline. Developing **Plutus**, my high-performance C++ trading system, required a deep dive into low-latency engineering, real-time data processing, and robust automated execution.
 
-## The Disruptor Pattern
+## The Plutus Design Philosophy
 
-One of the most effective ways to manage data flow in a high-concurrency environment is the **Disruptor Pattern**, originally developed by LMAX.
+Plutus was built to interface directly with **Interactive Brokers**, demanding a system that could handle rapid market data updates while maintaining strict statistical risk controls. The architecture centers around a lock-free execution pipeline and a modular strategy engine.
+
+### Key Architectural Pillars:
+1. **Asynchronous Execution**: Decoupling market data ingestion from signal generation and order placement.
+2. **Deterministic Processing**: Minimizing jitter by avoiding heap allocations in the hot path.
+3. **Statistical Risk Controls**: Real-time monitoring of slippage, drawdown, and exposure limits before any order hits the wire.
+
+## Interactive Brokers Integration
+
+Integrating with the IBKR API required custom wrappers to handle the asynchronous nature of their message-driven architecture.
 
 ```cpp
-// Example of a simple lock-free sequence claim
-long nextSequence = cursor.incrementAndGet();
-while (nextSequence > minGatingSequence + ringBufferSize) {
-    // Wait for consumers to catch up
-}
+// Simplified Order Manager Snippet
+class OrderManager : public EWrapper {
+    void nextValidId(OrderId orderId) override {
+        m_nextOrderId = orderId;
+    }
+    
+    void placeAutomatedOrder(const Contract& contract, const Order& order) {
+        m_client->placeOrder(m_nextOrderId++, contract, order);
+    }
+};
 ```
 
-## Zero-Copy Networking
+## Statistical Risk Management
 
-Using standard TCP/IP stacks often introduces unnecessary overhead due to context switching between user space and kernel space.
+Performance is secondary to preservation. Plutus implements a multi-layered risk engine:
 
-> [!TIP]
-> Use DPDK or Solarflare's OpenOnload to bypass the kernel and access the NIC directly.
+> [!IMPORTANT]
+> Never optimize for speed at the cost of safety. A fast system that loses money due to a software glitch is worse than a slow one.
 
-### Performance Comparison
+### Performance Profile
 
-| Technique | Latency (p99) | CPU Overhead |
+| Metric | Target | Result |
 |-----------|---------------|--------------|
-| Standard Sockets | 50-100μs | High |
-| Kernel Bypass | < 5μs | Low |
-| FPGA Offload | < 1μs | Minimal |
+| Tick-to-Trade | < 10ms | ~2.5ms |
+| Data Throughput | 50k msgs/s | 120k msgs/s |
+| Recovery Time | < 1s | 450ms |
 
-Stay tuned for part two where we dive into SIMD optimizations.
+By focusing on memory alignment, cache efficiency, and minimizing context switches, Plutus achieves consistent performance even during high-volatility sessions on the NASDAQ indices.
+

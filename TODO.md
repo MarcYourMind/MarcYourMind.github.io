@@ -6,9 +6,20 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 --- COMPLETE ONLY THESE TASKS
-- [x] Cervantes project card has no image. Use cervantes-library.jpg inside public/projects. Add cervantes-reader.jpg to the case study image stack. It's made using langchain and gradio. Information on this project is contained in article-ideas/cervantes.md . Use this information to write the case study.
-- [x] My degree is now stored in public/certificates/degree.pdf. Link it to the cert in resume section.
-- [x] My transcript is now stored in public/certificates/transcript.pdf. Link it to the cert in resume section.
+
+## 📝 Articles (`content/articles/`)
+I have article ideas and concepts written in the folder article-ideas/ . I'd like you to convert them into articles on my website. Some of these articles are directly related or associated to the articles mentioned below.
+- [x] Convert article ideas into articles.
+- [x] **Article: Building Low-Latency Trading Systems**
+    - [x] Rewrite full MDX content based on NASDAQ project experience
+- [x] **Article: Smart Contract Security**
+    - [x] Rewrite full MDX content based on Chain Champions experience
+- [x] **Article: Scaling Backend Systems**
+    - [x] Rewrite full MDX content based on Brite Payments/Technex experience
+- [x] **Article: Machine Learning Pipelines**
+    - [x] Rewrite full MDX content based on Coursera/HuggingFace certifications
+- [x] **Article: Automated Market Making on Solana**
+    - [x] Rewrite full MDX content based on Share Inc. experience
 
 --- IGNORE TASKS BELOW HERE
 
@@ -40,17 +51,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 
-## 📝 Articles (`content/articles/`)
-- [ ] **Article: Building Low-Latency Trading Systems**
-    - [ ] Rewrite full MDX content based on NASDAQ project experience
-- [ ] **Article: Smart Contract Security**
-    - [ ] Rewrite full MDX content based on Chain Champions experience
-- [ ] **Article: Scaling Backend Systems**
-    - [ ] Rewrite full MDX content based on Brite Payments/Technex experience
-- [ ] **Article: Machine Learning Pipelines**
-    - [ ] Rewrite full MDX content based on Coursera/HuggingFace certifications
-- [ ] **Article: Automated Market Making on Solana**
-    - [ ] Rewrite full MDX content based on Share Inc. experience
+
 
 
 
@@ -64,8 +65,10 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 
-
-
+- [ ] Education section of resumes:
+    - [ ] Dates are 2017-2020. Change it to these correct dates.
+    - [ ] 
+- [ ] aitrader doesn't load when opening case study. Fix this
 
 - [ ] Gotovan link does not work.
 - [ ] chainchampions project card has no image.

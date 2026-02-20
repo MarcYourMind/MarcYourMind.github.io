@@ -107,7 +107,7 @@ export const projects: Project[] = [
         liveUrl: "#",
         screenshots: ["/projects/chain-champions.png", "/projects/chain-1.jpg", "/projects/chain-2.jpg"],
         featured: true,
-        articleSlug: "smart-contract-security"
+        articleSlug: "smart-contract-security-exploits"
     },
     {
         slug: "nasdaq-futures-algorithm",
@@ -134,7 +134,8 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/MarcYourMind/NinjaFocus",
         liveUrl: "#",
         screenshots: ["/projects/market-maker.png", "/projects/solana-1.jpg", "/projects/solana-2.jpg"],
-        featured: false
+        featured: false,
+        articleSlug: "automated-market-making-solana"
     },
     {
         slug: "gotovan-logistics",
@@ -200,6 +201,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/MarcYourMind/Cervantes-AI-Story-Writer",
         liveUrl: "#",
         screenshots: ["/projects/cervantes-library.jpg", "/projects/cervantes-reader.jpg"],
+        articleSlug: "cervantes-ai-storyteller",
         featured: false
     },
     {

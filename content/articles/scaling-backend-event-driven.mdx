@@ -1,30 +1,56 @@
 ---
-title: "Scaling Backend Systems with Event-Driven Architecture"
+title: "Event-Driven Scalability in Fintech: From Technex to Brite Payments"
 date: "2024-01-15"
-tags: ["Backend", "Kafka", "Scalability"]
+tags: ["Backend", "Fintech", "Scalability", "Node.js"]
 readTime: "10 min read"
-excerpt: "How to use Kafka and RabbitMQ to build resilient, loosely coupled microservices at scale."
+excerpt: "How we leveraged event-driven architecture to scale real-time PSD2 bank transfers and fintech API integrations."
 ---
 
-# Scaling Backend Systems with Event-Driven Architecture
+# Event-Driven Scalability in Fintech: From Technex to Brite Payments
 
-Modern applications require systems that can scale horizontally and handle failures gracefully.
+In the fintech space, scalability isn't just about handling more users—it's about processing high-value transactions with sub-second latency and absolute reliability. My experience at **Technex** and **Brite Payments** centered on building these high-performance, event-driven backends.
 
-## The Shift from Monoliths to Microservices
+## The Fintech Challenge: PSD2 & Real-Time Transfers
 
-Event-driven architecture (EDA) allows services to communicate asynchronously via events, reducing coupling and increasing fault tolerance.
+Integrating with PSD2-compliant APIs requires managing complex authentication flows and ensuring that real-time bank transfers are processed without interruption. This is where event-driven architecture (EDA) proves its worth.
 
-## Kafka for Event Streaming
+### Decoupling for Resilience
 
-Kafka acts as the central nervous system of an event-driven setup.
+By using an event-driven approach, we decoupled the sensitive bank communication layers from the core transaction processing. This ensured that if a bank's API went down, the rest of the system remained functional and could retry the transaction once the connection was restored.
 
-```yaml
-# Simple Kafka Producer Config
-bootstrap.servers: localhost:9092
-key.serializer: org.apache.kafka.common.serialization.StringSerializer
-value.serializer: org.apache.kafka.common.serialization.StringSerializer
+```typescript
+// Example Event-Driven Transfer Initiation
+async function initiateTransfer(transferData: TransferRequest) {
+    try {
+        // Validation and internal state update
+        const transfer = await db.createTransfer(transferData);
+        
+        // Publish event for processing
+        await eventBus.publish('TRANSFER_INITIATED', {
+            id: transfer.id,
+            amount: transfer.amount,
+            destination: transfer.iban
+        });
+        
+        return { status: 'PENDING', reference: transfer.id };
+    } catch (error) {
+        log.error('Failed to initiate transfer', error);
+        throw new FintechError('INITIALIZATION_FAILED');
+    }
+}
 ```
 
-## Dead Letter Queues (DLQ)
+## Scaling with Microservices
 
-Handling failures is critical. Use DLQs to capture failed events for later inspection and reprocessing.
+At Technex, we focused on building modular microservices that could scale independently. This allowed us to allocate more resources to the high-traffic API nodes while keeping the background reconciliation services lean.
+
+> [!TIP]
+> Use idempotent event handlers to ensure that processing the same event multiple times doesn't lead to duplicate transactions—a critical requirement in fintech.
+
+### Key Performance Metrics:
+- **Throughput**: Scaled to handle thousands of concurrent API requests.
+- **Latency**: Sub-200ms processing for internal ledger updates.
+- **Reliability**: Implemented robust Dead Letter Queues (DLQ) for transaction auditing and recovery.
+
+The transition to a fully event-driven model allowed us to support the rapid growth of Brite Payments' real-time account-to-account payment infrastructure.
+

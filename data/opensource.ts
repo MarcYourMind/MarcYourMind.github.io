@@ -49,14 +49,6 @@ export const openSourceData: OpenSourceRepo[] = [
         url: "https://github.com/MarcYourMind/linktrees"
     },
     {
-        name: "aaconsulting",
-        description: "Freelance coaching website tailored for neurodivergent professionals.",
-        stars: 1,
-        forks: 0,
-        language: "TypeScript",
-        url: "https://github.com/MarcYourMind/aaconsulting"
-    },
-    {
         name: "HiveFrequency",
         description: "GAN+RNN architecture for real-time live music generation.",
         stars: 1,

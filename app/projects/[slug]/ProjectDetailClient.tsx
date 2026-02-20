@@ -116,9 +116,7 @@ export default function ProjectDetailClient() {
                                     <Zap className="mr-3 text-accent-blue" /> The Challenge
                                 </h2>
                                 <p className="text-white/60 leading-relaxed text-lg">
-                                    The primary objective was to build a system that could handle extreme throughput without sacrificing consistency.
-                                    Traditional architectures were falling short due to garbage collection pauses and thread contention.
-                                    We needed a revolutionary approach to data processing.
+                                    {project.challenge || "The primary objective was to build a system that could handle extreme throughput without sacrificing consistency. Traditional architectures were falling short due to garbage collection pauses and thread contention."}
                                 </p>
                             </section>
 
@@ -127,17 +125,15 @@ export default function ProjectDetailClient() {
                                     <Shield className="mr-3 text-accent-purple" /> The Solution
                                 </h2>
                                 <p className="text-white/60 leading-relaxed text-lg mb-6">
-                                    We implemented a lock-free disruptor pattern combined with kernel bypass networking (DPDK).
-                                    By pinning threads to specific CPU cores and minimizing context switches, we achieved a deterministic
-                                    latency profile that outperformed industry standards by 300%.
+                                    {project.solution || "We implemented a specialized architecture tailored to the performance requirements of this project, ensuring a deterministic profile that exceeded standard expectations."}
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {[
-                                        "Zero-copy data structures",
-                                        "SIMD-optimized processing",
+                                    {(project.achievements || [
+                                        "Optimized data structures",
+                                        "High-performance processing",
                                         "Custom memory management",
-                                        "Real-time monitoring dashboard"
-                                    ].map((item, i) => (
+                                        "Real-time monitoring"
+                                    ]).map((item, i) => (
                                         <li key={i} className="flex items-center space-x-3 text-sm text-white/80 p-4 rounded-xl bg-white/5 border border-white/10">
                                             <CheckCircle2 className="text-green-500 w-5 h-5 flex-shrink-0" />
                                             <span>{item}</span>
@@ -162,14 +158,17 @@ export default function ProjectDetailClient() {
                             <section className="glass-card p-8">
                                 <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Key Metrics</h3>
                                 <div className="space-y-6">
-                                    <div>
-                                        <div className="text-2xl font-heading font-black text-accent-blue">{"< 10ms"}</div>
-                                        <div className="text-[10px] uppercase font-bold text-white/40">p99 Latency</div>
-                                    </div>
-                                    <div>
-                                        <div className="text-2xl font-heading font-black text-accent-purple">1.2M+</div>
-                                        <div className="text-[10px] uppercase font-bold text-white/40">Events / Second</div>
-                                    </div>
+                                    {(project.metrics || [
+                                        { label: "p99 Latency", value: "< 10ms" },
+                                        { label: "Events / Second", value: "1.2M+" }
+                                    ]).map((metric, i) => (
+                                        <div key={i}>
+                                            <div className={`text-2xl font-heading font-black ${i % 2 === 0 ? 'text-accent-blue' : 'text-accent-purple'}`}>
+                                                {metric.value}
+                                            </div>
+                                            <div className="text-[10px] uppercase font-bold text-white/40">{metric.label}</div>
+                                        </div>
+                                    ))}
                                 </div>
                             </section>
                         </div>

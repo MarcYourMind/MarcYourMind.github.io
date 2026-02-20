@@ -116,16 +116,16 @@ export const creativeData: CreativeContent = {
             id: "s2",
             title: "TRNDSTTR (Shaboom DnB Remix)",
             artist: "Doria",
-            coverUrl: "/music/covers/ROCK THAT BODY.png",
-            audioUrl: "/music/Doria - TRNDSTTR (Shaboom DnB Remix).mp3",
+            coverUrl: "/music/covers/cover01.jpeg",
+            audioUrl: "/music/Doria - TRNDSTTR (Shaboom DnB Remix) mastered.mp3",
             duration: "3:45"
         },
         {
             id: "s3",
             title: "Big Dawgs (Shaboom DnB Bootleg)",
             artist: "Hanumankind",
-            coverUrl: "/music/covers/WhatsApp Image 2025-08-25 at 06.52.37.jpeg",
-            audioUrl: "/music/Hanumankind - Big Dawgs (Shaboom DnB Bootleg).wav",
+            coverUrl: "/music/covers/cover02.jpeg",
+            audioUrl: "/music/Hanumankind - Big Dawgs (Shaboom DnB Bootleg).mp3",
             duration: "4:12"
         },
         {
@@ -133,14 +133,14 @@ export const creativeData: CreativeContent = {
             title: "God is Broken",
             artist: "SIRIUS & SHABOOM",
             coverUrl: "/music/covers/taaft.com-image-generator-by-taaft-1755752908.png",
-            audioUrl: "/music/God is Broken - SIRIUS & SHABOOM mastered.wav",
+            audioUrl: "/music/God is Broken - SIRIUS & SHABOOM mastered.mp3",
             duration: "5:20"
         },
         {
             id: "s5",
             title: "Puff (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ChatGPT Image Aug 24, 2025, 02_18_52 AM.png",
+            coverUrl: "/music/covers/cover03.jpg",
             audioUrl: "/music/Puff - Shaboom (Original Mix).mp3",
             duration: "4:30"
         },
@@ -156,7 +156,7 @@ export const creativeData: CreativeContent = {
             id: "s7",
             title: "Cray (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/shaboom.png",
+            coverUrl: "/music/covers/cover04.jpg",
             audioUrl: "/music/Shaboom - Cray (Original Mix).mp3",
             duration: "3:15"
         },
@@ -172,48 +172,48 @@ export const creativeData: CreativeContent = {
             id: "s9",
             title: "Machines (Shaboom Remix)",
             artist: "Modestep",
-            coverUrl: "/music/covers/taaft.com-image-generator-by-taaft-1755752908.png",
-            audioUrl: "/music/modestep - machines (Shaboom Remix).mp3",
+            coverUrl: "/music/covers/cover05.jpg",
+            audioUrl: "/music/modestep - machines (Shaboom Remix) mastered.mp3",
             duration: "4:45"
         },
         {
             id: "s10",
             title: "BLEEDING FOR YOU",
             artist: "SHABOOM & SIRIUS",
-            coverUrl: "/music/covers/shaboom.png",
-            audioUrl: "/music/BLEEDING FOR YOU - SHABOOM & SIRIUS.wav",
+            coverUrl: "/music/covers/cover06.jpg",
+            audioUrl: "/music/BLEEDING FOR YOU - SHABOOM & SIRIUS.mp3",
             duration: "5:32"
         },
         {
             id: "s11",
             title: "The Edge (Shaboom DnB Edit)",
             artist: "Ghost Lotus",
-            coverUrl: "/music/covers/ROCK THAT BODY.png",
-            audioUrl: "/music/Ghost Lotus - The Edge (Shaboom DnB Edit).wav",
+            coverUrl: "/music/covers/cover09.jpeg",
+            audioUrl: "/music/Ghost Lotus - The Edge (Shaboom DnB Edit).mp3",
             duration: "1:13"
         },
         {
             id: "s12",
             title: "Panoramic (Shaboom DnB Remix)",
             artist: "Goopsteppa",
-            coverUrl: "/music/covers/taaft.com-image-generator-by-taaft-1755752908.png",
-            audioUrl: "/music/Goopsteppa - Panoramic (Shaboom DnB Remix).wav",
+            coverUrl: "/music/covers/cover10.jpeg",
+            audioUrl: "/music/Goopsteppa - Panoramic (Shaboom DnB Remix).mp3",
             duration: "3:58"
         },
         {
             id: "s13",
             title: "NightbreadV2",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ChatGPT Image Aug 24, 2025, 02_18_52 AM.png",
-            audioUrl: "/music/NightbreadV2.wav",
+            coverUrl: "/music/covers/cover11.jpeg",
+            audioUrl: "/music/NightbreadV2.mp3",
             duration: "6:40"
         },
         {
             id: "s14",
             title: "Okaholic (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/Generated Image November 20, 2025 - 11_36PM.png",
-            audioUrl: "/music/Okaholic (Original Mix).wav",
+            coverUrl: "/music/covers/cover13.jpeg",
+            audioUrl: "/music/Okaholic (Original Mix).mp3",
             duration: "3:31"
         },
         {
@@ -228,7 +228,7 @@ export const creativeData: CreativeContent = {
             id: "s16",
             title: "Creatures (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/shaboom.png",
+            coverUrl: "/music/covers/cover14.jpeg",
             audioUrl: "/music/Shaboom - Creatures (Original Mix).mp3",
             duration: "4:46"
         },
@@ -236,23 +236,23 @@ export const creativeData: CreativeContent = {
             id: "s17",
             title: "Frostbite",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ROCK THAT BODY.png",
-            audioUrl: "/music/Shaboom - Frostbite.wav",
+            coverUrl: "/music/covers/cover15.jpeg",
+            audioUrl: "/music/Shaboom - Frostbite.mp3",
             duration: "3:56"
         },
         {
             id: "s18",
             title: "Let's Go",
             artist: "Shaboom",
-            coverUrl: "/music/covers/WhatsApp Image 2025-08-25 at 06.52.37.jpeg",
-            audioUrl: "/music/Shaboom - Let's Go.wav",
+            coverUrl: "/music/covers/cover16.jpg",
+            audioUrl: "/music/Shaboom - Let's Go.mp3",
             duration: "3:56"
         },
         {
             id: "s19",
             title: "Play with me (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/taaft.com-image-generator-by-taaft-1755752908.png",
+            coverUrl: "/music/covers/WhatsApp Image 2025-08-25 at 06.52.37.jpeg",
             audioUrl: "/music/Shaboom - Play with me (Original Mix).mp3",
             duration: "5:16"
         },
@@ -260,7 +260,7 @@ export const creativeData: CreativeContent = {
             id: "s20",
             title: "dnv (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ChatGPT Image Aug 24, 2025, 02_18_52 AM.png",
+            coverUrl: "/music/covers/cover40",
             audioUrl: "/music/dnv - Shaboom (Original Mix).mp3",
             duration: "3:08"
         },
@@ -268,23 +268,15 @@ export const creativeData: CreativeContent = {
             id: "s21",
             title: "do it like that (preview)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/Generated Image November 20, 2025 - 11_36PM.png",
-            audioUrl: "/music/do it like that (preview).wav",
+            coverUrl: "/music/covers/cover41",
+            audioUrl: "/music/do it like that (preview).mp3",
             duration: "3:08"
-        },
-        {
-            id: "s22",
-            title: "god is broken (live)",
-            artist: "SIRIUS & SHABOOM",
-            coverUrl: "/music/covers/taaft.com-image-generator-by-taaft-1755752908.png",
-            audioUrl: "/music/god is broken - live.wav",
-            duration: "5:20"
         },
         {
             id: "s23",
             title: "gordo",
             artist: "Shaboom",
-            coverUrl: "/music/covers/shaboom.png",
+            coverUrl: "/music/covers/cover42",
             audioUrl: "/music/gordo.mp3",
             duration: "7:02"
         },
@@ -292,7 +284,7 @@ export const creativeData: CreativeContent = {
             id: "s24",
             title: "m4a1 (Original Mix) [preview]",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ROCK THAT BODY.png",
+            coverUrl: "/music/covers/cover43",
             audioUrl: "/music/m4a1 - Shaboom (Original Mix)n [preview].mp3",
             duration: "11:10"
         },
@@ -300,7 +292,7 @@ export const creativeData: CreativeContent = {
             id: "s25",
             title: "sculpture (Original Mix)",
             artist: "Shaboom",
-            coverUrl: "/music/covers/WhatsApp Image 2025-08-25 at 06.52.37.jpeg",
+            coverUrl: "/music/covers/shaboom.png",
             audioUrl: "/music/sculpture - Shaboom (Original Mix).mp3",
             duration: "4:38"
         },
@@ -308,8 +300,8 @@ export const creativeData: CreativeContent = {
             id: "s26",
             title: "shell a verse",
             artist: "Shaboom",
-            coverUrl: "/music/covers/ChatGPT Image Aug 24, 2025, 02_18_52 AM.png",
-            audioUrl: "/music/shell a verse.wav",
+            coverUrl: "/music/covers/cover01.jpeg",
+            audioUrl: "/music/shell a verse.mp3",
             duration: "4:53"
         }
     ]

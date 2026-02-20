@@ -66,3 +66,14 @@ The following information is wrong and needs to be changed to the correct inform
 - [x] **Home Page**
     - [ ] 30+ starred repos is not correct and must be changed to something more interesting. I have 11 starred repos, but I don't think it's something I want to brag about. 
 
+
+## Projects missing
+
+### C++ Snake Minigame
+
+Originally in C++, it is now translated to Three.js to display in my portfolio.
+The websites/ folder will contain a snake.html file with the game. The project should link to this page.
+
+### Cervantes AI Book Writer
+
+A multi-agent story writer that uses LLMs to write stories. It is a work in progress. The goal is to create the interdimensional cable from Rick and Morty with infinite stories generated on the go.

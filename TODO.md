@@ -69,11 +69,13 @@ The following information is wrong and needs to be changed to the correct inform
 
 ## Projects missing
 
-### C++ Snake Minigame
+### 3D Snake Minigame
 
-Originally in C++, it is now translated to Three.js to display in my portfolio.
+Originally in C++, it is now translated to Three.js to display in my portfolio. 3D Snake game.
 The websites/ folder will contain a snake.html file with the game. The project should link to this page.
 
 ### Cervantes AI Book Writer
 
-A multi-agent story writer that uses LLMs to write stories. It is a work in progress. The goal is to create the interdimensional cable from Rick and Morty with infinite stories generated on the go.
+A multi-agent story writer that uses LLMs to write stories. It is a work in progress. The goal is to create the interdimensional cable from Rick and Morty with infinite stories generated on the go. It uses local LLMs to write stories via ollama. It is built with Python and uses Gradio for the interface.The project should link to the github repo: https://github.com/MarcYourMind/Cervantes-AI-Story-Writer
+
+

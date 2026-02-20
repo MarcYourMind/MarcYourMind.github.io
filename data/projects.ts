@@ -185,7 +185,7 @@ export const projects: Project[] = [
         techStack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
         tags: ["Web"],
         githubUrl: "https://github.com/MarcYourMind/linktrees",
-        liveUrl: "/websites/linktrees/dev.html",
+        liveUrl: "/websites/linktrees/index.html",
         screenshots: ["/projects/billy.png"],
         featured: false
     },

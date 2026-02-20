@@ -43,8 +43,8 @@ export const projects: Project[] = [
         thumbnail: "/projects/toptrader.jpg",
         techStack: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Docker"],
         tags: ["Web", "Quant", "Backend"],
-        githubUrl: "https://github.com/MarcYourMind/TopTrader",
-        liveUrl: "https://technex.io",
+        githubUrl: "#",
+        liveUrl: "#",
         screenshots: [
             "/projects/toptrader.jpg",
             "/projects/charts.png",
@@ -226,7 +226,7 @@ export const projects: Project[] = [
         techStack: ["React", "TypeScript", "TailwindCSS", "Shadcn UI"],
         tags: ["Web"],
         githubUrl: "https://github.com/MarcYourMind/aaconsulting",
-        liveUrl: "#",
+        liveUrl: "https://alexaves.web.app/",
         screenshots: ["/projects/aa.jpg"],
         featured: false
     },

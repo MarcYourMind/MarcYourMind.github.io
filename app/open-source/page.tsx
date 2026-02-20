@@ -39,15 +39,17 @@ export default function OpenSourcePage() {
                                 className="glass-card p-8 flex flex-col group"
                             >
                                 <div className="flex items-center justify-between mb-6">
-                                    <div className="p-3 rounded-2xl bg-white/5 text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition-all">
+                                    <a href={repo.url} target="_blank" rel="noopener noreferrer" className="p-3 rounded-2xl bg-white/5 text-accent-purple hover:bg-accent-purple hover:text-white transition-all">
                                         <Github size={24} />
-                                    </div>
-                                    <a href={repo.url} className="text-white/40 hover:text-white transition-colors">
+                                    </a>
+                                    <a href={repo.url} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
                                         <ExternalLink size={20} />
                                     </a>
                                 </div>
 
-                                <h3 className="text-xl font-heading font-bold mb-3 truncate group-hover:text-accent-blue transition-colors">{repo.name}</h3>
+                                <a href={repo.url} target="_blank" rel="noopener noreferrer" className="block group/link">
+                                    <h3 className="text-xl font-heading font-bold mb-3 truncate group-hover/link:text-accent-blue transition-colors">{repo.name}</h3>
+                                </a>
                                 <p className="text-sm text-white/60 mb-8 flex-grow leading-relaxed">
                                     {repo.description}
                                 </p>

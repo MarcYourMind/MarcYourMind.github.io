@@ -7,8 +7,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [ ] Neurodivergent consulting is missing website. Link it to: https://alexaves.web.app/
-- [ ] Add projects with a github link to the open source section too.
 
 --- IGNORE TASKS BELOW HERE
 

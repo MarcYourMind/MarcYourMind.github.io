@@ -89,7 +89,7 @@ function CertificateCard({ cert, index }: { cert: Certificate; index: number }) 
                             className="w-full border-white/10 opacity-50 cursor-not-allowed"
                             disabled
                         >
-                            {cert.id === "bubble-lost" ? "Lost in Battle" : "Preview Coming Soon"}
+                            {cert.id.includes("-lost") ? "Lost in Battle" : "Preview Coming Soon"}
                         </Button>
                     )}
                 </div>

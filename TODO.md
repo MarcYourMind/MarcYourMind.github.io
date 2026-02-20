@@ -56,15 +56,12 @@ This document provides an exhaustive breakdown of every task required to transfo
 - [ ] **Article: Automated Market Making on Solana**
     - [ ] Rewrite full MDX content based on Share Inc. experience
 
-## Certifications
-- [ ] Change the button for the coursera machine learning course to "Lost in Battle" like the other one.
-
 ## Modifications
 
 The following information is wrong and needs to be changed to the correct information:
 
 - [x] **Home Page**
-    - [ ] 30+ starred repos is not correct and must be changed to something more interesting. I have 11 starred repos, but I don't think it's something I want to brag about. 
+    - [ ] 30+ starred repos is not correct and must be changed to something more interesting. I have 11 starred repos, but I don't think it's something I want to brag about. Maybe there is something more interesting to say here? Let me know your thoughts...
 
 
 ## Projects missing
@@ -72,10 +69,24 @@ The following information is wrong and needs to be changed to the correct inform
 ### 3D Snake Minigame
 
 Originally in C++, it is now translated to Three.js to display in my portfolio. 3D Snake game.
-The websites/ folder will contain a snake.html file with the game. The project should link to this page.
+The websites/ folder contains a snake3d.html file with the game. The project should link to this page.
 
 ### Cervantes AI Book Writer
 
 A multi-agent story writer that uses LLMs to write stories. It is a work in progress. The goal is to create the interdimensional cable from Rick and Morty with infinite stories generated on the go. It uses local LLMs to write stories via ollama. It is built with Python and uses Gradio for the interface.The project should link to the github repo: https://github.com/MarcYourMind/Cervantes-AI-Story-Writer
 
+### Linktrees personal link websites
 
+Mobile first linktree style websites using different brandings. They are all stores in websites/linktrees folder, where each html is a different linktree. The project should link to the github repo: https://github.com/MarcYourMind/linktrees
+
+### Neurodivergent Consulting
+
+Freelance Coaching website for a Neurodivergent coach. Build with React Typescript, TailwindCSS and Shadcn UI. The project should link to the github repo: https://github.com/MarcYourMind/aaconsulting
+
+### HiveFrequency
+
+GAN+RNN design for a live music generator. The project should link to the github repo: https://github.com/MarcYourMind/HiveFrequency
+
+### Cruzcampo Tapeando
+Full-Stack web app for one of the largest beer brands in Spain.
+Developed in 48 hours as an emergency project to save their campaign.

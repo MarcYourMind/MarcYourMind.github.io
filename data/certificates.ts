@@ -9,7 +9,7 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
     {
-        id: "ml-coursera",
+        id: "ml-coursera-lost",
         title: "Machine Learning",
         issuer: "Coursera",
         description: "Comprehensive study of supervised and unsupervised learning, including neural networks, deep learning, and practical implementation of ML models.",

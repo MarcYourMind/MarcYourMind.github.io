@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ExternalLink, Github } from "lucide-react"
+import Link from "next/link"
 import { Project } from "@/data/projects"
 import { cn } from "@/lib/utils"
 
@@ -51,16 +52,32 @@ export function ProjectCard({ project, index }: { project: Project, index: numbe
 
                 <div className="mt-auto flex items-center justify-between pt-4 border-t border-white/5">
                     <div className="flex space-x-4">
-                        <a href={project.githubUrl} className="text-white/40 hover:text-white transition-colors">
-                            <Github size={18} />
-                        </a>
-                        <a href={project.liveUrl} className="text-white/40 hover:text-white transition-colors">
-                            <ExternalLink size={18} />
-                        </a>
+                        {project.githubUrl !== "#" && (
+                            <a
+                                href={project.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white/40 hover:text-white transition-colors"
+                            >
+                                <Github size={18} />
+                            </a>
+                        )}
+                        {project.liveUrl !== "#" && (
+                            <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white/40 hover:text-white transition-colors"
+                            >
+                                <ExternalLink size={18} />
+                            </a>
+                        )}
                     </div>
-                    <button className="text-xs font-bold uppercase tracking-widest text-accent-blue hover:text-white transition-colors">
-                        View Case Study
-                    </button>
+                    <Link href={project.articleSlug ? `/articles/${project.articleSlug}` : `/projects/${project.slug}`}>
+                        <button className="text-xs font-bold uppercase tracking-widest text-accent-blue hover:text-white transition-colors">
+                            View Case Study
+                        </button>
+                    </Link>
                 </div>
             </div>
         </motion.div>

@@ -66,6 +66,55 @@ function withdraw() public {
             { id: "reentrancy", text: "Reentrancy" },
             { id: "overflow", text: "Integer Overflow" }
         ]
+    },
+    "scaling-backend-event-driven": {
+        title: "Scaling Backend Systems with Event-Driven Architecture",
+        date: "Jan 15, 2024",
+        readTime: "10 min read",
+        tags: ["Backend", "Kafka", "Scalability"],
+        author: "Marc Mind",
+        content: `
+            <h2 id="monoliths">The Shift from Monoliths to Microservices</h2>
+            <p>Modern applications require systems that can scale horizontally and handle failures gracefully. Event-driven architecture (EDA) allows services to communicate asynchronously via events, reducing coupling and increasing fault tolerance.</p>
+            
+            <h2 id="kafka">Kafka for Event Streaming</h2>
+            <p>Kafka acts as the central nervous system of an event-driven setup. It provides high-throughput, fault-tolerant delivery of messages between services.</p>
+            
+            <pre><code># Simple Kafka Producer Config
+bootstrap.servers: localhost:9092
+key.serializer: org.apache.kafka.common.serialization.StringSerializer
+value.serializer: org.apache.kafka.common.serialization.StringSerializer</code></pre>
+
+            <h2 id="dlq">Dead Letter Queues (DLQ)</h2>
+            <p>Handling failures is critical. Use DLQs to capture failed events for later inspection and reprocessing without blocking the main stream processing.</p>
+        `,
+        toc: [
+            { id: "monoliths", text: "Decoupling Services" },
+            { id: "kafka", text: "Kafka Integration" },
+            { id: "dlq", text: "Failure Handling" }
+        ]
+    },
+    "machine-learning-pipelines-production": {
+        title: "Building Scalable ML Pipelines for Production",
+        date: "Mar 05, 2024",
+        readTime: "14 min read",
+        tags: ["AI", "MLOps", "Python"],
+        author: "Marc Mind",
+        content: `
+            <h2 id="data-ingestion">Data Ingestion at Scale</h2>
+            <p>The foundation of any ML pipeline is a robust data ingestion layer. We use distributed systems to collect and preprocess terabytes of data daily.</p>
+            
+            <h2 id="feature-engineering">Automated Feature Engineering</h2>
+            <p>Standardizing feature extraction ensures that training and inference always use the same data representations. We implemented a feature store using Redis for low-latency lookups.</p>
+            
+            <h2 id="monitoring">Model Monitoring</h2>
+            <p>ML models drift over time. Continuous monitoring of prediction distributions and accuracy is essential to trigger retraining cycles automatically.</p>
+        `,
+        toc: [
+            { id: "data-ingestion", text: "Data Ingestion" },
+            { id: "feature-engineering", text: "Feature Engineering" },
+            { id: "monitoring", text: "Model Monitoring" }
+        ]
     }
 }
 

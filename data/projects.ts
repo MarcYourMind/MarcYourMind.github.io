@@ -12,6 +12,7 @@ export interface Project {
     liveUrl: string;
     screenshots: string[];
     featured: boolean;
+    articleSlug?: string;
 }
 
 export const projects: Project[] = [
@@ -26,7 +27,8 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/MarcYourMind/Plutus",
         liveUrl: "#",
         screenshots: ["/projects/nasdaq-1.jpg", "/projects/nasdaq-2.jpg"],
-        featured: true
+        featured: true,
+        articleSlug: "building-low-latency-trading-systems"
     },
     {
         slug: "chain-champions-nft",
@@ -39,7 +41,8 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/MarcYourMind/MegaVerse",
         liveUrl: "#",
         screenshots: ["/projects/chain-1.jpg", "/projects/chain-2.jpg"],
-        featured: true
+        featured: true,
+        articleSlug: "smart-contract-security"
     },
     {
         slug: "solana-market-maker",
@@ -63,7 +66,7 @@ export const projects: Project[] = [
         techStack: ["React", "Node.js", "Google Maps API", "Optimization Algorithms"],
         tags: ["Web", "Backend"],
         githubUrl: "https://github.com/MarcYourMind/GoToVan",
-        liveUrl: "#",
+        liveUrl: "/websites/gotovan/index.html",
         screenshots: ["/projects/gotovan-1.jpg"],
         featured: false
     },
@@ -76,7 +79,7 @@ export const projects: Project[] = [
         techStack: ["Python", "WebSockets", "CCXT", "PostgreSQL"],
         tags: ["Quant", "Backend"],
         githubUrl: "https://github.com/MarcYourMind/CRIPTO",
-        liveUrl: "#",
+        liveUrl: "/websites/cripto.html",
         screenshots: ["/projects/cripto-1.jpg"],
         featured: true
     },
@@ -104,7 +107,8 @@ export const projects: Project[] = [
         githubUrl: "#",
         liveUrl: "https://britepayments.com",
         screenshots: ["/projects/brite-payments.png"],
-        featured: false
+        featured: false,
+        articleSlug: "scaling-backend-event-driven"
     },
     {
         slug: "technex",
@@ -130,7 +134,8 @@ export const projects: Project[] = [
         githubUrl: "#",
         liveUrl: "#",
         screenshots: ["/projects/aitrader.png"],
-        featured: false
+        featured: false,
+        articleSlug: "machine-learning-pipelines-production"
     },
     {
         slug: "cryptogpt",

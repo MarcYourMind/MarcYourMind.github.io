@@ -91,13 +91,21 @@ export default function ProjectDetailClient() {
                             ))}
                         </div>
 
-                        <div className="absolute top-6 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <Button variant="primary" size="sm">
-                                <ExternalLink className="mr-2 w-4 h-4" /> Demo
-                            </Button>
-                            <Button variant="secondary" size="sm">
-                                <Github className="mr-2 w-4 h-4" /> Code
-                            </Button>
+                        <div className="absolute top-6 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity z-30">
+                            {project.liveUrl !== "#" && (
+                                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                                    <Button variant="primary" size="sm">
+                                        <ExternalLink className="mr-2 w-4 h-4" /> Demo
+                                    </Button>
+                                </a>
+                            )}
+                            {project.githubUrl !== "#" && (
+                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                    <Button variant="secondary" size="sm">
+                                        <Github className="mr-2 w-4 h-4" /> Code
+                                    </Button>
+                                </a>
+                            )}
                         </div>
                     </div>
 

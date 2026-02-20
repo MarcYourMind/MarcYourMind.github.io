@@ -78,15 +78,16 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         languages: [
             { name: "English", level: "Native" },
-            { name: "Spanish", level: "Native" }
+            { name: "Spanish", level: "Native" },
+            { name: "French", level: "Working Proficiency" }
         ],
         certifications: ["Machine Learning – Coursera", "AI Agents – HuggingFace", "AI Agents – LangChain"],
         education: [
             {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
-                period: "2015 – 2018",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
+                period: "2017 – 2020",
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
             }
         ]
     },
@@ -135,15 +136,16 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         languages: [
             { name: "English", level: "Native" },
-            { name: "Spanish", level: "Native" }
+            { name: "Spanish", level: "Native" },
+            { name: "French", level: "Working Proficiency" }
         ],
         certifications: ["Machine Learning – Coursera"],
         education: [
             {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
-                period: "2015 – 2018",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
+                period: "2017 – 2020",
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
             }
         ]
     },
@@ -192,15 +194,16 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         languages: [
             { name: "English", level: "Native" },
-            { name: "Spanish", level: "Native" }
+            { name: "Spanish", level: "Native" },
+            { name: "French", level: "Working Proficiency" }
         ],
         certifications: ["Smart Contract Security – Chain Champions"],
         education: [
             {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
-                period: "2015 – 2018",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
+                period: "2017 – 2020",
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
             }
         ]
     },
@@ -235,15 +238,16 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         languages: [
             { name: "English", level: "Native" },
-            { name: "Spanish", level: "Native" }
+            { name: "Spanish", level: "Native" },
+            { name: "French", level: "Working Proficiency" }
         ],
         certifications: ["AI Agents – HuggingFace", "Machine Learning – Coursera", "Deep Agents – LangChain", "Gradio Certification"],
         education: [
             {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
-                period: "2015 – 2018",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
+                period: "2017 – 2020",
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
             }
         ]
     },
@@ -278,15 +282,16 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         languages: [
             { name: "English", level: "Native" },
-            { name: "Spanish", level: "Native" }
+            { name: "Spanish", level: "Native" },
+            { name: "French", level: "Working Proficiency" }
         ],
         certifications: ["Bubble Certification"],
         education: [
             {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
-                period: "2015 – 2018",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
+                period: "2017 – 2020",
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
             }
         ]
     }

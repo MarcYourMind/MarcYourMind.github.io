@@ -67,7 +67,6 @@ I have article ideas and concepts written in the folder article-ideas/ . I'd lik
 
 - [ ] Education section of resumes:
     - [ ] Dates are 2017-2020. Change it to these correct dates.
-    - [ ] 
 - [ ] aitrader doesn't load when opening case study. Fix this
 
 - [ ] Gotovan link does not work.

@@ -83,10 +83,10 @@ export const resumeData: Record<string, ResumeTrack> = {
         certifications: ["Machine Learning – Coursera", "AI Agents – HuggingFace", "AI Agents – LangChain"],
         education: [
             {
-                degree: "B.Sc. Computer Science & Electronics",
-                institution: "University",
+                degree: "BEng Computer Science & Electronics",
+                institution: "University of Bristol",
                 period: "2015 – 2018",
-                description: "Specialization in software engineering, embedded systems, and electronic circuit design."
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
             }
         ]
     },
@@ -140,10 +140,10 @@ export const resumeData: Record<string, ResumeTrack> = {
         certifications: ["Machine Learning – Coursera"],
         education: [
             {
-                degree: "B.Sc. Computer Science & Electronics",
-                institution: "University",
+                degree: "BEng Computer Science & Electronics",
+                institution: "University of Bristol",
                 period: "2015 – 2018",
-                description: "Focused on computational mathematics, algorithm design, and statistical analysis."
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
             }
         ]
     },
@@ -197,10 +197,10 @@ export const resumeData: Record<string, ResumeTrack> = {
         certifications: ["Smart Contract Security – Chain Champions"],
         education: [
             {
-                degree: "B.Sc. Computer Science & Electronics",
-                institution: "University",
+                degree: "BEng Computer Science & Electronics",
+                institution: "University of Bristol",
                 period: "2015 – 2018",
-                description: "Emphasis on cryptography and distributed network protocols."
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
             }
         ]
     },
@@ -240,10 +240,10 @@ export const resumeData: Record<string, ResumeTrack> = {
         certifications: ["AI Agents – HuggingFace", "Machine Learning – Coursera", "Deep Agents – LangChain", "Gradio Certification"],
         education: [
             {
-                degree: "B.Sc. Computer Science & Electronics",
-                institution: "University",
+                degree: "BEng Computer Science & Electronics",
+                institution: "University of Bristol",
                 period: "2015 – 2018",
-                description: "Relevant coursework in artificial intelligence, neural networks, and digital signal processing."
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
             }
         ]
     },
@@ -283,10 +283,10 @@ export const resumeData: Record<string, ResumeTrack> = {
         certifications: ["Bubble Certification"],
         education: [
             {
-                degree: "B.Sc. Computer Science & Electronics",
-                institution: "University",
+                degree: "BEng Computer Science & Electronics",
+                institution: "University of Bristol",
                 period: "2015 – 2018",
-                description: "Strong foundation in web architecture, user interface design, and systems engineering."
+                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale an AI-trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and professional achievement."
             }
         ]
     }

@@ -52,16 +52,16 @@ export const certificates: Certificate[] = [
     },
     {
         id: "uni-degree",
-        title: "B.Sc. Computer Science & Electronics",
-        issuer: "University",
+        title: "BEng Computer Science & Electronics",
+        issuer: "University of Bristol",
         description: "Official Bachelor's degree certification for completion of Computer Science and Electronics engineering curriculum.",
         image: "/certificates/placeholders/uni-degree.png"
     },
     {
         id: "uni-transcript",
         title: "Academic Transcript",
-        issuer: "University",
-        description: "Detailed academic record and course completions for the Bachelor's degree in Computer Science & Electronics.",
+        issuer: "University of Bristol",
+        description: "Detailed academic record and course completions for the BEng in Computer Science & Electronics, where I averaged First-Class Honours.",
         image: "/certificates/placeholders/uni-transcript.png"
     }
 ];

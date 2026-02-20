@@ -2,7 +2,11 @@
 
 This document provides an exhaustive breakdown of every task required to transform the template into your personal professional website.
 
----
+
+--- COMPLETE ONLY THESE TASKS
+
+
+--- IGNORE TASKS BELOW HERE
 
 ## 🌍 Global & Locales
 - [x] **Internationalization Sync (`locales/*.json`)**
@@ -60,23 +64,17 @@ This document provides an exhaustive breakdown of every task required to transfo
 
 
 - [ ] Gotovan link does not work.
-- [ ] Linktrees links dont work.
-- [ ] Gotovan case study has no image.
 - [ ] chainchampions project card has no image.
-- [ ] Brite payments project card has no image.
-- [ ] linktrees project card has no image.
 - [ ] HiveFrequency project card has no image.
 - [ ] Cervantes project card has no image.
-- [ ] Project missing: Freelance AI & Automation Consultancy. Image is: technex-ai.jpg.
 - [ ] Cruzcampo tapeando project card has no image.
 - [ ] Cruzcampo tapeando is missing website.
 - [ ] Illuvium fusion is missing website.
 - [ ] ChainChampions is missing website.
 - [ ] Neurodivergent consulting is missing website.
-- [ ] Brite payments shouldn't have a link. Only case study.
 
 
 
 
 
-- [ ] Features projects should be the following: cryptoGPT. AiTrader. Technex. TopTrader Platform. ChainChampions.
+

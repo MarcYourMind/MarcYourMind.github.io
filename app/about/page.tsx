@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { specializations } from "@/data/specializations"
-import { Code, Terminal, Zap, Heart, Coffee } from "lucide-react"
+import { Code, Zap, Heart, Layers, Activity, Search, Target } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function AboutPage() {
@@ -37,16 +37,20 @@ export default function AboutPage() {
                             </div>
                             <div className="mt-8 space-y-4">
                                 <div className="flex items-center space-x-3 text-white/60">
-                                    <Terminal size={18} className="text-accent-blue" />
-                                    <span className="text-sm font-medium">6+ Years Experience</span>
+                                    <Layers size={18} className="text-accent-blue" />
+                                    <span className="text-sm font-medium">6+ Years Building Products</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-white/60">
-                                    <Zap size={18} className="text-accent-purple" />
-                                    <span className="text-sm font-medium">30+ Production Systems</span>
+                                    <Activity size={18} className="text-accent-purple" />
+                                    <span className="text-sm font-medium">From Idea → Production</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-white/60">
-                                    <Coffee size={18} className="text-accent-teal" />
-                                    <span className="text-sm font-medium">Infinite Coffee Loop</span>
+                                    <Search size={18} className="text-accent-teal" />
+                                    <span className="text-sm font-medium">Fueled by Curiosity</span>
+                                </div>
+                                <div className="flex items-center space-x-3 text-white/60">
+                                    <Target size={18} className="text-accent-pink" />
+                                    <span className="text-sm font-medium">Product-Focused Engineer</span>
                                 </div>
                             </div>
                         </div>
@@ -84,9 +88,9 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-heading font-bold mb-12 uppercase tracking-widest text-sm text-center">My Philosophy</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
-                                { title: "Performance First", desc: "Speed is a feature. I optimize for latency and throughput in every layer.", icon: Zap, color: "text-accent-blue" },
-                                { title: "Clean Architecture", desc: "Building modular, testable, and maintainable systems that stand the test of time.", icon: Code, color: "text-accent-purple" },
-                                { title: "User Centric", desc: "Engineering solutions that empower users and provide a seamless experience.", icon: Heart, color: "text-accent-pink" },
+                                { title: "Performance First", desc: "Latency isn't just a metric; it's a competitive advantage. I design systems where every microsecond and byte counts.", icon: Zap, color: "text-accent-blue" },
+                                { title: "Clean Architecture", desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.", icon: Code, color: "text-accent-purple" },
+                                { title: "User Centric", desc: "Great engineering solves real problems. I bridge the gap between complex backend logic and intuitive user experiences.", icon: Heart, color: "text-accent-pink" },
                             ].map((item, i) => (
                                 <div key={i} className="glass-card p-8 text-center group">
                                     <item.icon className={cn("w-10 h-10 mx-auto mb-6 transition-transform group-hover:scale-110", item.color)} />

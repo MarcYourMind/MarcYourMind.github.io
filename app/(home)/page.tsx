@@ -120,7 +120,7 @@ export default function Home() {
                         {[
                             { label: "Years Exp.", value: "6+" },
                             { label: "Projects", value: "30+" },
-                            { label: "Starred Repos", value: "30+" },
+                            { label: "Professional Certs", value: "8+ " },
                             { label: "Languages", value: "19" },
                         ].map((stat, i) => (
                             <div key={i} className="text-center">

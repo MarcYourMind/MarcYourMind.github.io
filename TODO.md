@@ -22,17 +22,8 @@ This document provides an exhaustive breakdown of every task required to transfo
     - [ ] Replace "Elena Rodriguez" entry (Name, Role, Quote, Avatar initials)
 
 ## 🧑‍💻 About Page (`app/about/page.tsx`)
-- [ ] **Experience Banner**
-    - [ ] Update the stats that appear below my head photo:
-        - [ ] Update "6+ Years of Experience" to "6+ Years Building Products
-        - [ ] Update "30+ Production Systems" to "From Idea → Production"
-        - [ ] Update "Infinite Coffee Loop" to "Fueled by Curiosity"
-        - [ ] Add another stat: "Product-Minded Engineer"
-        - [ ] Update the icons accordingly
-- [ ] **Philosophy Section**
-    - [ ] Update "Performance First" description
-    - [ ] Update "Clean Architecture" description
-    - [ ] Update "User Centric" description
+- [ ] **My Philosophy Section**
+    Update this section to better reflect my philosophy on building products based on the other sections of the website.
 
 ## 💼 Resume Hub (`data/resume.ts`)
 - [ ] **PDF Deliverables (`public/resumes/`)**
@@ -56,13 +47,18 @@ This document provides an exhaustive breakdown of every task required to transfo
 - [ ] **Article: Automated Market Making on Solana**
     - [ ] Rewrite full MDX content based on Share Inc. experience
 
-## Modifications
 
-The following information is wrong and needs to be changed to the correct information:
 
-- [x] **Home Page**
-    - [ ] 30+ starred repos is not correct and must be changed to something more interesting. I have 11 starred repos, but I don't think it's something I want to brag about. Maybe there is something more interesting to say here? Let me know your thoughts...
+## Projects Section
 
+- **Nasdaq**
+    - [ ] Add the missing image: public/projects/nasdaq.jpg
+- [ ] Buttons:
+    Each project has 3 buttons: github, open link and case study. Not all projects have all three buttons. All projects will have a case study button, but only projects that have a website in the websites/ folder will have an open link button. Only projects that are open source will have a github button.
+    - [ ] Fix this so that the buttons are displayed correctly
+    - [ ] Add a case study page for each project where I can talk about the project in detail. The case study should be a page that is linked to from the project card. Given the current data structure for the projects, I'm not sure what whould be the best way to implement all these pages. You decide what is the best way to implement it. I'm considering each case study to be an article and the case study button to link to the article. This seems like it is the best idea.
+    - [ ] For the projects that have a website in the websites/ folder, the open link button should link to the website. My intention is to host these websites within this website since they are not live anywhere else. They are all static websites, built and ready for distribution. For the projects that are already there, figure out the best way to hook them up to the project cards so that the user can view their demo websites. For example for the snake 3D project they should be able to open the website and play the game.
+    - [ ] Open project websites in a new tab.
 
 ## Projects missing
 
@@ -90,3 +86,9 @@ GAN+RNN design for a live music generator. The project should link to the github
 ### Cruzcampo Tapeando
 Full-Stack web app for one of the largest beer brands in Spain.
 Developed in 48 hours as an emergency project to save their campaign.
+
+### Illuvium Fusion Simulator
+Illuvial Fusion simulator for the Illuvium Web3 NFT game. It simulates the fusion of three illuvials and scans the market for optimal fusion ideas that will generate the most profits for NFT collectors. The image for this project is in public/projects/fusion.JPG
+
+### Computer Vision: Dartboard Object Detection
+Real-time dartboard object detection using OpenCV and C++. The project should link to the github repo: https://github.com/MarcYourMind/dartboard-object-detection. 

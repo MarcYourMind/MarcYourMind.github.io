@@ -1,0 +1,39 @@
+---
+title: "Building Low-Latency Trading Systems in Modern C++"
+date: "2024-02-12"
+readTime: "12 min read"
+tags: ["Quant", "C++", "Architecture"]
+---
+
+# Building Low-Latency Trading Systems in Modern C++
+
+In the world of quantitative finance, latency is everything. A microsecond of delay can mean the difference between a profitable trade and a missed opportunity. In this article, we'll explore the architectural patterns used to build ultra-low latency trading systems.
+
+## The Disruptor Pattern
+
+One of the most effective ways to manage data flow in a high-concurrency environment is the **Disruptor Pattern**, originally developed by LMAX.
+
+```cpp
+// Example of a simple lock-free sequence claim
+long nextSequence = cursor.incrementAndGet();
+while (nextSequence > minGatingSequence + ringBufferSize) {
+    // Wait for consumers to catch up
+}
+```
+
+## Zero-Copy Networking
+
+Using standard TCP/IP stacks often introduces unnecessary overhead due to context switching between user space and kernel space.
+
+> [!TIP]
+> Use DPDK or Solarflare's OpenOnload to bypass the kernel and access the NIC directly.
+
+### Performance Comparison
+
+| Technique | Latency (p99) | CPU Overhead |
+|-----------|---------------|--------------|
+| Standard Sockets | 50-100μs | High |
+| Kernel Bypass | < 5μs | Low |
+| FPGA Offload | < 1μs | Minimal |
+
+Stay tuned for part two where we dive into SIMD optimizations.

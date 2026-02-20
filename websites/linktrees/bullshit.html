@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Bullshitter | Official Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #6e0000 0%, #ff0000 100%);
+        }
+
+        .bs-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bs-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .bs-card::after {
+            content: "💩";
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            opacity: 0.1;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .bs-card:hover::after {
+            opacity: 0.3;
+            transform: rotate(15deg);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .floating-crap {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="max-w-md mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="hero-bg rounded-2xl p-8 mb-8 text-center text-white shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="absolute top-10 left-1/4 text-4xl floating-crap">💩</div>
+                <div class="absolute top-20 right-1/4 text-5xl floating-crap" style="animation-delay: 0.5s;">💩</div>
+                <div class="absolute bottom-10 left-1/3 text-3xl floating-crap" style="animation-delay: 1s;">💩</div>
+            </div>
+
+            <div class="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-white overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80" alt="Professional Bullshitter" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">BS</div>
+            </div>
+            <h1 class="text-3xl font-bold mb-2">Chad Bullington</h1>
+            <p class="text-lg opacity-90 mb-4">Professional Bullshit Artist</p>
+            <p class="text-sm opacity-80">Turning nonsense into profit since 2010</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="space-y-4 mb-8">
+            <h2 class="text-xl font-semibold text-center mb-6 text-gray-700">My Premium Bullshit</h2>
+
+            <a href="#" class="bs-card block p-4 rounded-xl shadow-sm bg-white flex items-center border-l-4 border-red-500">
+                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-4 text-red-500">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">Masterclass in BS</h3>
+                    <p class="text-sm text-gray-600">$997 course teaching you how to sound smart while saying nothing</p>
+                </div>
+            </a>
+
+            <a href="#" class="bs-card block p-4 rounded-xl shadow-sm bg-white flex items-center border-l-4 border-yellow-500">
+                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-4 text-yellow-500">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">My Bestselling Book</h3>
+                    <p class="text-sm text-gray-600">"The Art of Talking Without Saying Anything" (ghostwritten)</p>
+                </div>
+            </a>
+
+            <a href="#" class="bs-card block p-4 rounded-xl shadow-sm bg-white flex items-center border-l-4 border-blue-500">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 text-blue-500">
+                    <i class="fas fa-podcast"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">Bullshit Podcast</h3>
+                    <p class="text-sm text-gray-600">Weekly episodes of me interviewing myself</p>
+                </div>
+            </a>
+
+            <a href="#" class="bs-card block p-4 rounded-xl shadow-sm bg-white flex items-center border-l-4 border-green-500">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 text-green-500">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">NFT Collection</h3>
+                    <p class="text-sm text-gray-600">Digital pictures of my farts (limited edition)</p>
+                </div>
+            </a>
+
+            <a href="#" class="bs-card block p-4 rounded-xl shadow-sm bg-white flex items-center border-l-4 border-purple-500">
+                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 text-purple-500">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">Consulting Services</h3>
+                    <p class="text-sm text-gray-600">$500/hour to tell you what you want to hear</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="bg-white rounded-xl p-6 shadow-sm mb-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 text-6xl opacity-10">💩</div>
+            <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">What People Say</h2>
+
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="italic text-gray-600">"I've never heard someone say so much while communicating so little. Truly inspiring."</p>
+                    <p class="text-right text-sm font-medium mt-2">- Fake Person #1</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="italic text-gray-600">"After his course, I got promoted despite having no actual skills. Worth every penny!"</p>
+                    <p class="text-right text-sm font-medium mt-2">- Fake Person #2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="bg-white rounded-xl p-6 shadow-sm mb-8 relative overflow-hidden">
+            <div class="absolute bottom-0 left-0 text-6xl opacity-10">💩</div>
+            <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">Get More BS</h2>
+            <p class="text-sm text-center text-gray-600 mb-4">Weekly nonsense delivered to your inbox</p>
+
+            <form class="space-y-3">
+                <input type="text" placeholder="Your Name (optional)" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-red-300">
+                <input type="email" placeholder="Email (required)" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-red-300">
+                <button type="submit" class="w-full py-2 px-4 bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white rounded-lg transition duration-200 font-medium">
+                    Sign Me Up! <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-white">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center text-white">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-500 flex items-center justify-center text-white">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-red-600 hover:bg-red-700 flex items-center justify-center text-white">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-sm text-gray-500">
+            <p>© 2023 Bullshit Enterprises LLC. All nonsense reserved.</p>
+            <p class="mt-1">Disclaimer: Nothing on this page should be taken seriously.</p>
+            <p class="mt-2 text-xs opacity-70">(But seriously, this is just satire - don't be this person)</p>
+        </div>
+    </div>
+</body>
+</html>

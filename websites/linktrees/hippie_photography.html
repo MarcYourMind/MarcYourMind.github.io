@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Lens - Hippie Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Comfortaa:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Comfortaa', cursive;
+            background: linear-gradient(-45deg, #f5d142, #f5628a, #42a5f5, #4ff542);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .title {
+            font-family: 'Shadows Into Light', cursive;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .link-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0.7;
+            animation: confetti 5s ease-in-out infinite;
+        }
+
+        @keyframes confetti {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .photo-frame {
+            border: 15px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transform: rotate(-5deg);
+        }
+
+        .photo-frame:hover {
+            animation: wiggle 0.5s ease infinite;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-5deg); }
+            25% { transform: rotate(-10deg); }
+            75% { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 relative">
+    <!-- Floating confetti elements -->
+    <div id="confetti-container"></div>
+
+    <!-- Main content -->
+    <div class="max-w-md w-full z-10">
+        <!-- Profile section -->
+        <div class="flex flex-col items-center mb-8">
+            <div class="photo-frame rounded-full overflow-hidden mb-4 pulse">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80"
+                     alt="Cosmic Lens"
+                     class="w-32 h-32 object-cover rounded-full">
+            </div>
+            <h1 class="title text-4xl font-bold text-white mb-2">Cosmic Lens</h1>
+            <p class="text-white text-opacity-80 text-center">Capturing the groovy vibrations of the universe ✨</p>
+        </div>
+
+        <!-- Links section -->
+        <div class="space-y-4">
+            <!-- Photography Services -->
+            <a href="#" class="link-card block rounded-2xl p-4 text-white hover:text-white">
+                <div class="flex items-center">
+                    <div class="mr-4 text-2xl">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Photography Services</h3>
+                        <p class="text-sm opacity-80">Book a cosmic photoshoot</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- E-Books -->
+            <a href="#" class="link-card block rounded-2xl p-4 text-white hover:text-white">
+                <div class="flex items-center">
+                    <div class="mr-4 text-2xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Peaceful Perspectives E-Book</h3>
+                        <p class="text-sm opacity-80">Digital guide to hippie photography</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Prints Shop -->
+            <a href="#" class="link-card block rounded-2xl p-4 text-white hover:text-white">
+                <div class="flex items-center">
+                    <div class="mr-4 text-2xl">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Prints Shop</h3>
+                        <p class="text-sm opacity-80">High vibes for your walls</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Workshops -->
+            <a href="#" class="link-card block rounded-2xl p-4 text-white hover:text-white">
+                <div class="flex items-center">
+                    <div class="mr-4 text-2xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Photography Workshops</h3>
+                        <p class="text-sm opacity-80">Learn the groovy way</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Blog -->
+            <a href="#" class="link-card block rounded-2xl p-4 text-white hover:text-white">
+                <div class="flex items-center">
+                    <div class="mr-4 text-2xl">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Cosmic Blog</h3>
+                        <p class="text-sm opacity-80">Thoughts on photography & life</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Social links -->
+        <div class="flex justify-center space-x-6 mt-8 text-white text-2xl">
+            <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-pink-500 transition"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Floating peace sign -->
+    <div class="absolute bottom-4 right-4 text-4xl text-white opacity-50 floating">
+        ☮
+    </div>
+
+    <script>
+        // Create confetti elements
+        function createConfetti() {
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+            const container = document.getElementById('confetti-container');
+
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = -10 + 'px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.width = Math.random() * 10 + 5 + 'px';
+                confetti.style.height = Math.random() * 10 + 5 + 'px';
+                confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confetti.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(confetti);
+            }
+        }
+
+        // Add floating effect to all link cards with delay
+        document.addEventListener('DOMContentLoaded', function() {
+            createConfetti();
+
+            const cards = document.querySelectorAll('.link-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Add click effect
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const ripple = document.createElement('span');
+                    ripple.className = 'absolute bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2';
+                    ripple.style.width = '10px';
+                    ripple.style.height = '10px';
+                    ripple.style.left = e.clientX + 'px';
+                    ripple.style.top = e.clientY + 'px';
+                    ripple.style.animation = 'ripple 1s linear';
+                    document.body.appendChild(ripple);
+
+                    setTimeout(() => {
+                        ripple.remove();
+                        // In a real implementation, you would navigate to the link here
+                        // window.location.href = this.href;
+                    }, 1000);
+                });
+            });
+        });
+
+        // Add floating flowers randomly
+        function addFloatingElements() {
+            const elements = ['🌸', '🌼', '🌺', '🌻', '🌹', '💐', '🌷'];
+            const container = document.body;
+
+            for (let i = 0; i < 10; i++) {
+                const element = document.createElement('div');
+                element.className = 'absolute text-2xl opacity-70 floating';
+                element.textContent = elements[Math.floor(Math.random() * elements.length)];
+                element.style.left = Math.random() * 100 + 'vw';
+                element.style.top = Math.random() * 100 + 'vh';
+                element.style.animationDelay = Math.random() * 5 + 's';
+                element.style.animationDuration = 3 + Math.random() * 4 + 's';
+                container.appendChild(element);
+            }
+        }
+
+        addFloatingElements();
+    </script>
+</body>
+</html>

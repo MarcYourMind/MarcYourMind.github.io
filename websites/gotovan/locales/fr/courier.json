@@ -1,0 +1,83 @@
+{
+  "invalidDestinationAddress": "L'adresse de destination n'est pas valide",
+  "errorOccurred": "Désolé, une erreur s'est produite.",
+  "basket": {
+    "deliveryItems": "Articles de livraison",
+    "itemAddedToCart": "Article ajouté au panier",
+    "itemRemovedFromBasket": "Article retiré du panier",
+    "clearBasket": "Vider le panier"
+  },
+  "deliveryFormPage": {
+    "customsCostsHandled": "Les frais de douane sont pris en charge pour vous.",
+    "customsCostsDescription": "De cette façon, nous évitons des coûts supplémentaires inattendus et nous assurons que votre colis arrive en toute sécurité à sa destination.",
+    "courierServices": "Services de messagerie",
+    "courierServicesDescription1": "Bienvenue dans nos services de messagerie, où la précision rencontre l'efficacité. Chez GotoVan, nous avons maîtrisé l'art de la logistique internationale sans faille. Toutes les deux semaines, nous effectuons des collectes au Royaume-Uni, en Espagne, en France, au Portugal et dans les îles Canaries et Baléares, destinées à l'une de ces destinations. Spécialisés sur la route UK-ESP, nos chauffeurs experts garantissent un délai de livraison de 12 à 15 jours.",
+    "courierServicesDescription2": "Qu'est-ce qui nous distingue? Notre engagement envers la qualité et le professionnalisme. Nous fournissons un suivi en direct, des notifications opportunes et des coûts douaniers tout compris. Le voyage de votre colis n'est pas seulement un service; c'est une expérience. Faites confiance à GotoVan pour des livraisons fiables et sans tracas qui transcendent les frontières.",
+    "parcelAndItemDeliveries": "Livraisons de colis et d'articles",
+    "invalidInput": "Entrée invalide",
+    "deliveryItems": "Articles à livrer"
+  },
+  "itemsForm": {
+    "whatAreYouSending": "Qu'envoyez-vous ?",
+    "Box": "Boîte",
+    "Contents": "Contenu",
+    "Width": "Largeur (cm)",
+    "Height": "Hauteur (cm)",
+    "Length": "Longueur (cm)",
+    "Weight": "Poids (kg)",
+    "Quantity": "Quantité",
+    "Suitcase": "Valise",
+    "Instrument": "Instrument",
+    "Bicycle": "Vélo",
+    "BicycleDescription": "Le vélo doit être entièrement démonté et emballé pour minimiser les risques de rayures et réduire l'espace qu'il occupe. Il n'est pas possible d'envoyer des vélos montés ni dans leur boîte d'origine.",
+    "Size": "Taille",
+    "adult": "Adulte",
+    "kid": "Enfant",
+    "Television": "Télévision",
+    "Size_inches": "Taille (pouces)",
+    "Parcel1": "Colis 1",
+    "Parcel2": "Colis 2",
+    "Parcel3": "Colis 3",
+    "Parcel1Description": "Boîtes jusqu'à 110 cm en additionnant les trois côtés, pesant un maximum de 12 kg.",
+    "Parcel2Description": "Boîtes jusqu'à 140 cm en additionnant les trois côtés, pesant un maximum de 24 kg.",
+    "Parcel3Description": "Boîtes jusqu'à 180 cm en additionnant les trois côtés, pesant un maximum de 40 kg."
+
+  },
+  "add": "Ajouter",
+  "invalidAddressesTryAgain": "Les adresses que vous avez fournies ne sont pas valides pour ce service. Veuillez réessayer ultérieurement.",
+  "sendParcelsBetween": "Envoyer des colis entre",
+  "addressForm": {
+    "unitedKingdom": "ROYAUME-UNI",
+    "spain": "ESPAGNE",
+    "canaryIslands": "ÎLES CANARIES",
+    "balearicIslands": "ÎLES BALÉARES",
+    "portugal": "PORTUGAL"
+  },
+  "acceptForm": {
+    "packageCollection": "Collecte de colis",
+    "collectionSchedule": "Nos collectes ont lieu chaque semaine, aussi bien au Royaume-Uni qu'en Espagne. Au Royaume-Uni, nous collectons le MARDI ET LE MERCREDI, tandis qu'en Espagne, nous collectons à partir du VENDREDI précédent. Cependant, nous vous informerons à l'avance de la date et de l'heure de la collecte.",
+    "whatAreWeTransporting": "Que transportons-nous ?",
+    "whatWeTransportAndDimensions": "Dites-nous ce que vous transportez et, si possible, les dimensions du colis. Détaillez le contenu de chaque colis est important pour le dédouanement.",
+    "customsRequirement": "Conformément aux exigences des douanes entre le Royaume-Uni et l'Espagne, il est nécessaire de transporter une liste des biens en transit.",
+    "includeItemList": "Vous devez inclure, avec votre colis, une liste des articles que vous transportez.",
+    "checkBoxMessage": "Cochez cette case si vous êtes d'accord.",
+    "iAgree": "Je suis d'accord",
+    "comments": "Commentaires",
+    "tellUsAnything": "Quelque chose que vous voulez nous dire ?",
+    "selectPickupDate": "Sélectionnez la date de ramassage",
+    "mandatory": "OBLIGATOIRE"
+  },
+  "quotePage": {
+    "addresses": "Adresses",
+    "collectionDate": "Date de collecte",
+    "deliveryItems": "Articles de livraison",
+    "removeItem": "Supprimer l'article",
+    "applied": "Appliqué",
+    "apply": "Appliquer",
+    "subtotal": "Sous-total:",
+    "quote": "Devis",
+    "fillInYourDetails": "Remplissez vos coordonnées",
+    "name": "Nom"
+  },
+  "": ""
+}

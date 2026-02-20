@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Connections | Astrologer & Tarot Reader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:wght@400;500;600&display=swap');
+
+        body {
+            font-family: 'EB Garamond', serif;
+            background-color: #0a0a1a;
+            color: #e2e2f7;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(88, 28, 135, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 30%, rgba(28, 104, 135, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 50% 80%, rgba(135, 28, 98, 0.1) 0%, transparent 20%);
+        }
+
+        .title-font {
+            font-family: 'Cinzel Decorative', cursive;
+        }
+
+        .link-card {
+            background: rgba(20, 20, 40, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3);
+            border-color: rgba(138, 43, 226, 0.5);
+        }
+
+        .moon-phase {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .horoscope-card {
+            background: linear-gradient(135deg, rgba(44, 9, 68, 0.7) 0%, rgba(15, 32, 72, 0.7) 100%);
+            border-left: 3px solid #8a2be2;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Star background -->
+    <div id="stars-container" class="fixed inset-0 overflow-hidden -z-10"></div>
+
+    <div class="container mx-auto px-4 py-12 max-w-2xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="moon-phase w-24 h-24 bg-purple-900 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
+                <i class="fas fa-moon text-4xl text-yellow-200"></i>
+            </div>
+            <h1 class="title-font text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+                Cosmic Connections
+            </h1>
+            <p class="text-lg text-purple-200 mb-6">Astrologer & Tarot Reader</p>
+            <p class="text-purple-300 max-w-md mx-auto">
+                Guiding you through the celestial currents with wisdom from the stars and cards.
+            </p>
+        </header>
+
+        <!-- Main Links -->
+        <div class="space-y-4 mb-12">
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-calendar-star text-purple-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Book a Reading</span>
+                </div>
+                <p class="text-sm text-purple-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Personalized astrology & tarot sessions
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-book-open text-blue-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Learn Astrology</span>
+                </div>
+                <p class="text-sm text-blue-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Courses and educational content
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-star-and-crescent text-yellow-300 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Daily Horoscopes</span>
+                </div>
+                <p class="text-sm text-yellow-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Your celestial forecast updated daily
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-blog text-pink-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Celestial Blog</span>
+                </div>
+                <p class="text-sm text-pink-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Articles on moon phases, retrogrades & more
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-envelope text-teal-300 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Contact Me</span>
+                </div>
+                <p class="text-sm text-teal-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    For questions and collaborations
+                </p>
+            </a>
+        </div>
+
+        <!-- Daily Horoscope -->
+        <div class="horoscope-card rounded-lg p-6 mb-8">
+            <div class="flex items-start">
+                <i class="fas fa-stars text-2xl text-yellow-300 mr-4 mt-1"></i>
+                <div>
+                    <h3 class="text-xl font-medium mb-2">Today's Cosmic Guidance</h3>
+                    <p class="text-purple-100">
+                        The Moon in Cancer heightens your emotional intuition today. A square to Venus suggests reviewing financial partnerships. Mercury's trine to Jupiter brings excellent opportunities for learning and teaching.
+                    </p>
+                    <div class="mt-3 text-xs text-purple-300">
+                        <span class="font-medium">Current Moon Phase:</span> Waxing Crescent (12% illuminated)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="mb-8">
+            <h3 class="text-xl font-medium mb-4 text-center title-font">Celestial Praise</h3>
+            <div class="space-y-4">
+                <div class="bg-purple-900 bg-opacity-30 rounded-lg p-4 border border-purple-800">
+                    <div class="flex items-center mb-2">
+                        <div class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-xs"></i>
+                        </div>
+                        <span class="font-medium">Sarah K.</span>
+                    </div>
+                    <p class="text-sm text-purple-100">
+                        "The natal chart reading was incredibly accurate and insightful. It helped me understand myself on a deeper level and gave me clarity about my life path."
+                    </p>
+                </div>
+
+                <div class="bg-blue-900 bg-opacity-30 rounded-lg p-4 border border-blue-800">
+                    <div class="flex items-center mb-2">
+                        <div class="w-8 h-8 rounded-full bg-purple-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-xs"></i>
+                        </div>
+                        <span class="font-medium">Michael T.</span>
+                    </div>
+                    <p class="text-sm text-blue-100">
+                        "The tarot reading predicted a career opportunity that actually came true two weeks later! I'm amazed by the accuracy and guidance I received."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 text-xl">
+            <a href="#" class="text-purple-300 hover:text-purple-100 transition-colors">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-blue-300 hover:text-blue-100 transition-colors">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-pink-300 hover:text-pink-100 transition-colors">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="text-red-300 hover:text-red-100 transition-colors">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Create stars
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('stars-container');
+            const starCount = 100;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                // Random size between 1-3px
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                // Random position
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+
+                // Random twinkle delay
+                star.style.animationDelay = `${Math.random() * 2}s`;
+
+                container.appendChild(star);
+            }
+
+            // Animate moon phase change (simplified)
+            const moon = document.querySelector('.moon-phase');
+            const phases = [
+                { icon: 'fa-moon', color: 'text-gray-300' },
+                { icon: 'fa-moon', color: 'text-yellow-200' },
+                { icon: 'fa-moon', color: 'text-yellow-300' },
+                { icon: 'fa-moon', color: 'text-yellow-400' }
+            ];
+
+            let phaseIndex = 0;
+            setInterval(() => {
+                phaseIndex = (phaseIndex + 1) % phases.length;
+                const phase = phases[phaseIndex];
+                moon.innerHTML = `<i class="fas ${phase.icon} text-4xl ${phase.color}"></i>`;
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

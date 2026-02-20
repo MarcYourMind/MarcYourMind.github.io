@@ -1,0 +1,82 @@
+{
+  "invalidDestinationAddress": "La dirección de destino no es válida",
+  "errorOccurred": "Lo siento, se ha producido un error.",
+  "basket": {
+    "deliveryItems": "Artículos de entrega",
+    "itemAddedToCart": "Artículo añadido al carrito",
+    "itemRemovedFromBasket": "Artículo eliminado de la cesta",
+    "clearBasket": "Vaciar cesta"
+  },
+  "deliveryFormPage": {
+    "customsCostsHandled": "Los costos de aduana están gestionados para usted.",
+    "customsCostsDescription": "De esta manera, evitamos costos adicionales inesperados y aseguramos que su paquete llegue de manera segura a su destino.",
+    "courierServices": "Servicios de paquetería",
+    "courierServicesDescription1": "Bienvenido a nuestros Servicios de Mensajería, donde la precisión se encuentra con la eficiencia. En GotoVan, hemos dominado el arte de la logística internacional sin problemas. Cada dos semanas, realizamos recolecciones en el Reino Unido, España, Francia, Portugal y las Islas Canarias y Baleares, destinadas a una de estas localizaciones. Especializándonos en la ruta UK-ESP, nuestros conductores expertos garantizan un tiempo de entrega de 12-15 días.",
+    "courierServicesDescription2": "¿Qué nos distingue? Nuestro compromiso con la calidad y el profesionalismo. Ofrecemos seguimiento en vivo, notificaciones oportunas y costos aduaneros todo incluido. El viaje de su paquete no es solo un servicio; es una experiencia. Confíe en GotoVan para entregas confiables y sin complicaciones que trascienden fronteras.",
+    "parcelAndItemDeliveries": "Entregas de paquetes y artículos",
+    "invalidInput": "Entrada no válida",
+    "deliveryItems": "Artículos de entrega"
+  },
+  "itemsForm": {
+    "whatAreYouSending": "¿Qué está enviando?",
+    "Box": "Caja",
+    "Contents": "Contenidos",
+    "Width": "Ancho (cm)",
+    "Height": "Alto (cm)",
+    "Length": "Largo (cm)",
+    "Weight": "Peso (kg)",
+    "Quantity": "Cantidad",
+    "Suitcase": "Maleta",
+    "Instrument": "Instrumento",
+    "Bicycle": "Bicicleta",
+    "BicycleDescription": "La bicicleta deberá estar completamente desmontada y envuelta para minimizar riesgos de arañazos y reducir el espacio que ocupa. No se podrá enviar bicicletas montadas ni en su caja original.",
+    "Size": "Tamaño",
+    "adult": "Adulto",
+    "kid": "Niño",
+    "Television": "Televisión",
+    "Size_inches": "Tamaño (pulgadas)",
+    "Parcel1": "Paquete 1",
+    "Parcel2": "Paquete 2",
+    "Parcel3": "Paquete 3",
+    "Parcel1Description": "Cajas de hasta 110 cm sumando los tres lados, pesando un máximo de 12 kg.",
+    "Parcel2Description": "Cajas de hasta 140 cm sumando los tres lados, pesando un máximo de 24 kg.",
+    "Parcel3Description": "Cajas de hasta 180 cm sumando los tres lados, pesando un máximo de 40 kg."
+  },
+  "add": "Añadir",
+  "invalidAddressesTryAgain": "Las direcciones que ha proporcionado no son válidas para este servicio. Por favor, inténtelo de nuevo más tarde.",
+  "sendParcelsBetween": "Envía paquetes entre",
+  "addressForm": {
+    "unitedKingdom": "REINO UNIDO",
+    "spain": "ESPAÑA",
+    "canaryIslands": "ISLAS CANARIAS",
+    "balearicIslands": "ISLAS BALEARES",
+    "portugal": "PORTUGAL"
+  },
+  "acceptForm": {
+    "packageCollection": "Recogida de paquetes",
+    "collectionSchedule": "Nuestras recogidas son semanales, tanto en el Reino Unido como en España. En el Reino Unido, recogemos los MARTES Y MIÉRCOLES, mientras que en España recogemos a partir del VIERNES anterior. Sin embargo, le informaremos con anticipación sobre la fecha y el horario de recogida.",
+    "whatAreWeTransporting": "¿Qué estamos transportando?",
+    "whatWeTransportAndDimensions": "Cuéntenos qué está transportando y, si es posible, las dimensiones del paquete. Detallar lo que contiene cada paquete es importante para cruzar la aduana.",
+    "customsRequirement": "Según lo requerido por las aduanas entre el Reino Unido y España, es necesario llevar una lista de pertenencias en tránsito.",
+    "includeItemList": "Debe incluir, junto con su paquete, una lista de los artículos que está transportando.",
+    "checkBoxMessage": "Marque esta casilla si está de acuerdo.",
+    "iAgree": "Estoy de acuerdo",
+    "comments": "Comentarios",
+    "tellUsAnything": "¿Algo que desee contarnos?",
+    "selectPickupDate": "Seleccione la fecha de recogida",
+    "mandatory": "OBLIGATORIO"
+  },
+  "quotePage": {
+    "addresses": "Direcciones",
+    "collectionDate": "Fecha de recogida",
+    "deliveryItems": "Artículos de entrega",
+    "removeItem": "Eliminar artículo",
+    "applied": "Aplicado",
+    "apply": "Aplicar",
+    "subtotal": "Subtotal:",
+    "quote": "Presupuesto",
+    "fillInYourDetails": "Complete sus datos",
+    "name": "Nombre"
+  },
+  "": ""
+}

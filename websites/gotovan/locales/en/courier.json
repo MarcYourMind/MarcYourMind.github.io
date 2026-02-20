@@ -1,0 +1,82 @@
+{
+  "invalidDestinationAddress": "Destination address is invalid",
+  "errorOccurred": "Sorry, an error has occurred.",
+  "basket": {
+    "deliveryItems": "Delivery Items",
+    "itemAddedToCart": "Item added to cart",
+    "itemRemovedFromBasket": "Item removed from basket",
+    "clearBasket": "Clear Basket"
+  },
+  "deliveryFormPage": {
+    "customsCostsHandled": "Customs costs are handled for you.",
+    "customsCostsDescription": "This way, we avoid unexpected additional costs and ensure that your package arrives safely at its destination.",
+    "courierServices": "Courier services",
+    "courierServicesDescription1": "Welcome to our Courier Services, where precision meets efficiency. At GotoVan, we've mastered the art of seamless international logistics. Every two weeks, we conduct collections in the UK, Spain, France, Portugal, and the Canary and Balearic Islands, destined for one of these locations. Specializing in the UK-ESP route, our expert drivers ensure a delivery time of 12-15 days.",
+    "courierServicesDescription2": "What sets us apart? Our commitment to quality and professionalism. We provide live tracking, timely notifications, and all-inclusive customs costs. Your package's journey is not just a service; it's an experience. Trust GotoVan for reliable, hassle-free deliveries that transcend borders.",
+    "parcelAndItemDeliveries": "Parcel and item deliveries",
+    "invalidInput": "Invalid input",
+    "deliveryItems": "Delivery Items"
+  },
+  "itemsForm": {
+    "whatAreYouSending": "What are you sending?",
+    "Box": "Box",
+    "Contents": "Contents",
+    "Width": "Width (cm)",
+    "Height": "Height (cm)",
+    "Length": "Length (cm)",
+    "Weight": "Weight (kg)",
+    "Quantity": "Quantity",
+    "Suitcase": "Suitcase",
+    "Instrument": "Instrument",
+    "Bicycle": "Bicycle",
+    "BicycleDescription": "The bicycle must be completely disassembled and wrapped to minimize the risk of scratches and reduce the space it occupies. Bicycles cannot be shipped assembled or in their original box.",
+    "Size": "Size",
+    "adult": "Adult",
+    "kid": "Kid",
+    "Television": "Television",
+    "Size_inches": "Size (inches)",
+    "Parcel1": "Parcel 1",
+    "Parcel2": "Parcel 2",
+    "Parcel3": "Parcel 3",
+    "Parcel1Description": "Boxes up to 110cm adding the three sides. Weighing a maximum of 12kg.",
+    "Parcel2Description": "Boxes up to 140cm adding the three sides. Weighing a maximum of 24kg.",
+    "Parcel3Description": "Boxes up to 180cm adding the three sides. Weighing a maximum of 40kg."
+  },
+  "add": "Add",
+  "invalidAddressesTryAgain": "The addresses you have provided are invalid for this service. Please try again later.",
+  "sendParcelsBetween": "Send parcels between",
+  "addressForm": {
+    "unitedKingdom": "UNITED KINGDOM",
+    "spain": "SPAIN",
+    "canaryIslands": "CANARY ISLANDS",
+    "balearicIslands": "BALEARIC ISLANDS",
+    "portugal": "PORTUGAL"
+  },
+  "acceptForm": {
+    "packageCollection": "Package Collection",
+    "collectionSchedule": "Our collections are weekly, both in UK and Spain. In the UK we will collect TUESDAY and WEDNESDAY, while in Spain we will collect from the previous FRIDAY. However, we will let you know in advance about the date and time slot for collection.",
+    "whatAreWeTransporting": "What are we transporting?",
+    "whatWeTransportAndDimensions": "Tell us what you are transporting and, if possible, the dimensions of the package. Detailing what each package contains is important to go through customs smoothly.",
+    "customsRequirement": "As required by customs between the UK and Spain, it is necessary to carry a list of belongings in transit.",
+    "includeItemList": "You must include, with your package, a list of the items you are transporting.",
+    "checkBoxMessage": "Check this box if you are happy to do so.",
+    "iAgree": "I agree",
+    "comments": "Comments",
+    "tellUsAnything": "Anything you want to tell us?",
+    "selectPickupDate": "Select pickup date",
+    "mandatory": "MANDATORY"
+  },
+  "quotePage": {
+    "addresses": "Addresses",
+    "collectionDate": "Collection date",
+    "deliveryItems": "Delivery Items",
+    "removeItem": "Remove item",
+    "applied": "Applied",
+    "apply": "Apply",
+    "subtotal": "Subtotal:",
+    "quote": "Quote",
+    "fillInYourDetails": "Fill in your details",
+    "name": "Name"
+  },
+  "": ""
+}

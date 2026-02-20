@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusPrint | High-End 3D Printing Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0f;
+            color: #e0e0e0;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(0, 150, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 30%, rgba(150, 0, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 50% 80%, rgba(255, 0, 150, 0.1) 0%, transparent 20%);
+        }
+
+        .tech-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .link-card {
+            background: rgba(20, 20, 30, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 150, 255, 0.3);
+            border-color: rgba(0, 150, 255, 0.5);
+        }
+
+        .printer-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .grid-pattern {
+            background-image:
+                linear-gradient(rgba(0, 150, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 150, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .tech-highlight {
+            position: relative;
+        }
+
+        .tech-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(0, 150, 255, 1), rgba(150, 0, 255, 1));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-highlight:hover::after {
+            transform: scaleX(1);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(20, 30, 50, 0.8) 0%, rgba(10, 15, 30, 0.8) 100%);
+            border-left: 3px solid #0096ff;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 150, 255, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 150, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 150, 255, 0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Grid background -->
+    <div class="fixed inset-0 overflow-hidden -z-10 grid-pattern"></div>
+
+    <div class="container mx-auto px-4 py-12 max-w-2xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="printer-animation w-24 h-24 bg-gray-900 rounded-lg mx-auto mb-6 flex items-center justify-center shadow-lg">
+                <i class="fas fa-print text-4xl text-blue-400"></i>
+                <div class="absolute w-16 h-1 bg-blue-400 rounded-full top-16 left-1/2 transform -translate-x-1/2"></div>
+            </div>
+            <h1 class="tech-font text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">
+                NexusPrint
+            </h1>
+            <p class="text-lg text-blue-300 mb-6">High-End 3D Printing Design</p>
+            <p class="text-blue-200 max-w-md mx-auto">
+                Precision-engineered 3D printed solutions for industrial, architectural, and artistic applications.
+            </p>
+        </header>
+
+        <!-- Main Links -->
+        <div class="space-y-4 mb-12">
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-shopping-cart text-blue-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Order Custom Prints</span>
+                </div>
+                <p class="text-sm text-blue-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Commission high-quality 3D printed objects
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-cubes text-purple-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Design Portfolio</span>
+                </div>
+                <p class="text-sm text-purple-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Browse our collection of premium designs
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-tools text-cyan-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Custom Design Service</span>
+                </div>
+                <p class="text-sm text-cyan-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Get a bespoke 3D model designed just for you
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-book text-pink-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Materials Guide</span>
+                </div>
+                <p class="text-sm text-pink-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Explore our premium printing materials
+                </p>
+            </a>
+
+            <a href="#" class="link-card block rounded-lg p-4 text-center group">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-headset text-teal-400 mr-3 text-xl"></i>
+                    <span class="text-lg font-medium">Consultation</span>
+                </div>
+                <p class="text-sm text-teal-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Discuss your project with our experts
+                </p>
+            </a>
+        </div>
+
+        <!-- Featured Print -->
+        <div class="feature-card rounded-lg p-6 mb-8">
+            <div class="flex items-start">
+                <div class="relative mr-4">
+                    <i class="fas fa-cube text-2xl text-blue-400 mt-1"></i>
+                    <div class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-blue-400 pulse"></div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-2 tech-highlight inline-block">Featured Print</h3>
+                    <p class="text-blue-100">
+                        Our latest architectural model printed in carbon-fiber reinforced nylon with 0.05mm layer resolution. Perfect for high-detail presentations.
+                    </p>
+                    <div class="mt-3 text-xs text-blue-300">
+                        <span class="font-medium">Available Materials:</span> Carbon Fiber, Titanium, Ceramic, High-Temp Resins
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="mb-8">
+            <h3 class="text-xl font-medium mb-4 text-center tech-font">Client Testimonials</h3>
+            <div class="space-y-4">
+                <div class="bg-gray-900 bg-opacity-50 rounded-lg p-4 border border-gray-800">
+                    <div class="flex items-center mb-2">
+                        <div class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center mr-3">
+                            <i class="fas fa-industry text-xs"></i>
+                        </div>
+                        <span class="font-medium">Industrial Solutions Inc.</span>
+                    </div>
+                    <p class="text-sm text-blue-100">
+                        "The custom jigs NexusPrint produced reduced our assembly time by 30%. The dimensional accuracy was perfect for our aerospace application."
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 bg-opacity-50 rounded-lg p-4 border border-gray-800">
+                    <div class="flex items-center mb-2">
+                        <div class="w-8 h-8 rounded-full bg-purple-900 flex items-center justify-center mr-3">
+                            <i class="fas fa-landmark text-xs"></i>
+                        </div>
+                        <span class="font-medium">Architectural Studio</span>
+                    </div>
+                    <p class="text-sm text-purple-100">
+                        "The museum scale model they printed for our client presentation was stunning. The fine details captured our design perfectly."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Badges -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+            <div class="bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-xs flex items-center">
+                <i class="fas fa-microchip text-blue-400 mr-1"></i>
+                <span>SLS Printing</span>
+            </div>
+            <div class="bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-xs flex items-center">
+                <i class="fas fa-atom text-purple-400 mr-1"></i>
+                <span>Multi-Material</span>
+            </div>
+            <div class="bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-xs flex items-center">
+                <i class="fas fa-ruler-combined text-cyan-400 mr-1"></i>
+                <span>±0.025mm Tolerance</span>
+            </div>
+            <div class="bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-xs flex items-center">
+                <i class="fas fa-fire text-red-400 mr-1"></i>
+                <span>High-Temp Resins</span>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 text-xl">
+            <a href="#" class="text-blue-300 hover:text-blue-100 transition-colors">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-gray-100 transition-colors">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="text-blue-400 hover:text-blue-200 transition-colors">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="fab fa-youtube text-red-400 hover:text-red-200 transition-colors">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Create grid pattern animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate printer head
+            const printer = document.querySelector('.printer-animation');
+            const head = printer.querySelector('.fa-print');
+
+            setInterval(() => {
+                head.style.transform = 'translateY(-5px)';
+                setTimeout(() => {
+                    head.style.transform = 'translateY(0)';
+                }, 500);
+            }, 3000);
+
+            // Create floating particles
+            const container = document.querySelector('.grid-pattern');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('absolute', 'rounded-full', 'bg-blue-400', 'opacity-20');
+
+                // Random size between 1-4px
+                const size = Math.random() * 3 + 1;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+
+                // Random animation
+                const duration = Math.random() * 10 + 10;
+                const delay = Math.random() * 5;
+                particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+
+                container.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "invalidDestinationAddress": "Endereço de destino inválido",
+  "errorOccurred": "Desculpe, ocorreu um erro.",
+  "basket": {
+    "deliveryItems": "Itens de entrega",
+    "itemAddedToCart": "Item adicionado ao carrinho",
+    "itemRemovedFromBasket": "Item removido do cesto",
+    "clearBasket": "Limpar cesto"
+  },
+  "deliveryFormPage": {
+    "customsCostsHandled": "Os custos aduaneiros são gerenciados para você.",
+    "customsCostsDescription": "Dessa forma, evitamos custos adicionais inesperados e garantimos que seu pacote chegue com segurança ao seu destino.",
+    "courierServices": "Serviços de courier",
+    "courierServicesDescription1": "Bem-vindo aos nossos Serviços de Courier, onde a precisão encontra a eficiência. Na GotoVan, dominamos a arte da logística internacional sem falhas. A cada duas semanas, realizamos coletas no Reino Unido, Espanha, França, Portugal e nas Ilhas Canárias e Baleares, destinadas a um desses locais. Especializando na rota UK-ESP, nossos motoristas especialistas garantem um tempo de entrega de 12-15 dias.",
+    "courierServicesDescription2": "O que nos diferencia? Nosso compromisso com a qualidade e o profissionalismo. Oferecemos rastreamento ao vivo, notificações oportunas e custos aduaneiros tudo incluído. A jornada do seu pacote não é apenas um serviço; é uma experiência. Confie na GotoVan para entregas confiáveis e sem complicações que transcendem fronteiras.",
+    "parcelAndItemDeliveries": "Entregas de pacotes e itens",
+    "invalidInput": "Entrada inválida",
+    "deliveryItems": "Itens de entrega"
+  },
+  "itemsForm": {
+    "whatAreYouSending": "O que você está enviando?",
+    "Box": "Caixa",
+    "Contents": "Conteúdos",
+    "Width": "Largura (cm)",
+    "Height": "Altura (cm)",
+    "Length": "Comprimento (cm)",
+    "Weight": "Peso (kg)",
+    "Quantity": "Quantidade",
+    "Suitcase": "Mala",
+    "Instrument": "Instrumento",
+    "Bicycle": "Bicicleta",
+    "BicycleDescription": "A bicicleta deve estar completamente desmontada e embrulhada para minimizar riscos de arranhões e reduzir o espaço que ocupa. Não é possível enviar bicicletas montadas ou em sua caixa original.",
+    "Size": "Tamanho",
+    "adult": "Adulto",
+    "kid": "Criança",
+    "Television": "Televisão",
+    "Size_inches": "Tamanho (polegadas)",
+    "Parcel1": "Pacote 1",
+    "Parcel2": "Pacote 2",
+    "Parcel3": "Pacote 3",
+    "Parcel1Description": "Caixas de até 110 cm somando os três lados, pesando no máximo 12 kg.",
+    "Parcel2Description": "Caixas de até 140 cm somando os três lados, pesando no máximo 24 kg.",
+    "Parcel3Description": "Caixas de até 180 cm somando os três lados, pesando no máximo 40 kg."
+
+  },
+  "add": "Adicionar",
+  "invalidAddressesTryAgain": "Os endereços que você forneceu não são válidos para este serviço. Por favor, tente novamente mais tarde.",
+  "sendParcelsBetween": "Enviar pacotes entre",
+  "addressForm": {
+    "unitedKingdom": "REINO UNIDO",
+    "spain": "ESPANHA",
+    "canaryIslands": "ILHAS CANÁRIAS",
+    "balearicIslands": "ILHAS BALEARES",
+    "portugal": "PORTUGAL"
+  },
+  "acceptForm": {
+    "packageCollection": "Coleta de pacotes",
+    "collectionSchedule": "Nossas coletas são semanais, tanto no Reino Unido quanto na Espanha. No Reino Unido, coletamos às TERÇAS E QUARTAS, enquanto na Espanha, coletamos a partir da SEXTA-FEIRA anterior. No entanto, informaremos com antecedência sobre a data e o horário da coleta.",
+    "whatAreWeTransporting": "O que estamos transportando?",
+    "whatWeTransportAndDimensions": "Diga-nos o que está a transportar e, se possível, as dimensões da embalagem. Detalhar o conteúdo de cada embalagem é importante para o desalfandegamento.",
+    "customsRequirement": "Conforme exigido pela alfândega entre o Reino Unido e a Espanha, é necessário transportar uma lista de pertences em trânsito.",
+    "includeItemList": "Você deve incluir, junto com o seu pacote, uma lista dos itens que está transportando.",
+    "checkBoxMessage": "Marque esta caixa se concordar.",
+    "iAgree": "Concordo",
+    "comments": "Comentários",
+    "tellUsAnything": "Algo que deseja nos dizer?",
+    "selectPickupDate": "Selecione a data de coleta",
+    "mandatory": "OBRIGATÓRIO"
+  },
+  "quotePage": {
+    "addresses": "Endereços",
+    "collectionDate": "Data de coleta",
+    "deliveryItems": "Itens de entrega",
+    "removeItem": "Remover item",
+    "applied": "Aplicado",
+    "apply": "Aplicar",
+    "subtotal": "Subtotal:",
+    "quote": "Cotação",
+    "fillInYourDetails": "Preencha seus detalhes",
+    "name": "Nome"
+
+  },
+  "": ""
+}

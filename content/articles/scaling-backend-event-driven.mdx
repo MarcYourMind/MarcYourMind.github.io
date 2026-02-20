@@ -1,0 +1,30 @@
+---
+title: "Scaling Backend Systems with Event-Driven Architecture"
+date: "2024-01-15"
+tags: ["Backend", "Kafka", "Scalability"]
+readTime: "10 min read"
+excerpt: "How to use Kafka and RabbitMQ to build resilient, loosely coupled microservices at scale."
+---
+
+# Scaling Backend Systems with Event-Driven Architecture
+
+Modern applications require systems that can scale horizontally and handle failures gracefully.
+
+## The Shift from Monoliths to Microservices
+
+Event-driven architecture (EDA) allows services to communicate asynchronously via events, reducing coupling and increasing fault tolerance.
+
+## Kafka for Event Streaming
+
+Kafka acts as the central nervous system of an event-driven setup.
+
+```yaml
+# Simple Kafka Producer Config
+bootstrap.servers: localhost:9092
+key.serializer: org.apache.kafka.common.serialization.StringSerializer
+value.serializer: org.apache.kafka.common.serialization.StringSerializer
+```
+
+## Dead Letter Queues (DLQ)
+
+Handling failures is critical. Use DLQs to capture failed events for later inspection and reprocessing.

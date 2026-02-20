@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV_NEXUS | Tech Developer Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            background-color: #000;
+            color: #0f0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #f0f;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #0ff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 77px, 0); }
+            30% { clip: rect(27px, 9999px, 97px, 0); }
+            40% { clip: rect(64px, 9999px, 98px, 0); }
+            50% { clip: rect(61px, 9999px, 85px, 0); }
+            60% { clip: rect(99px, 9999px, 114px, 0); }
+            70% { clip: rect(34px, 9999px, 115px, 0); }
+            80% { clip: rect(98px, 9999px, 129px, 0); }
+            90% { clip: rect(43px, 9999px, 96px, 0); }
+            100% { clip: rect(82px, 9999px, 64px, 0); }
+        }
+
+        @keyframes glitch-anim2 {
+            0% { clip: rect(65px, 9999px, 119px, 0); }
+            10% { clip: rect(66px, 9999px, 151px, 0); }
+            20% { clip: rect(33px, 9999px, 149px, 0); }
+            30% { clip: rect(147px, 9999px, 128px, 0); }
+            40% { clip: rect(130px, 9999px, 155px, 0); }
+            50% { clip: rect(109px, 9999px, 106px, 0); }
+            60% { clip: rect(38px, 9999px, 114px, 0); }
+            70% { clip: rect(133px, 9999px, 145px, 0); }
+            80% { clip: rect(34px, 9999px, 136px, 0); }
+            90% { clip: rect(47px, 9999px, 136px, 0); }
+            100% { clip: rect(107px, 9999px, 62px, 0); }
+        }
+
+        .link-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #0f0;
+        }
+
+        .link-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+        }
+
+        .link-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.4), transparent);
+            transition: all 0.5s ease;
+        }
+
+        .link-item:hover::before {
+            left: 100%;
+        }
+
+        .terminal-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #0f0;
+            animation: blink 1s infinite;
+        }
+
+        .rainbow-text {
+            display: inline;
+            white-space: nowrap;
+            font-size: 2em;
+            color: transparent;
+            text-shadow: -1px 0 #FF0000,
+                         -3px 4px #FF7F00,
+                         0 4px #FFFF00,
+                         3px 4px #00FF00,
+                         3px -4px #0000FF,
+                         -3px -4px #7F007F;
+        }
+
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom,
+                transparent 0%,
+                rgba(0, 255, 0, 0.05) 50%,
+                transparent 100%);
+            background-size: 100% 8px;
+            pointer-events: none;
+            z-index: 1000;
+            animation: scanline 8s linear infinite;
+        }
+
+        @keyframes scanline {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix" class="matrix-rain"></canvas>
+
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+
+    <div class="container mx-auto px-4 py-12 max-w-3xl relative">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="glitch mb-6" data-text="DEV_MATRIX">
+                <h1 class="text-5xl font-bold text-green-400">Nexus</h1>
+            </div>
+
+            <div class="terminal-text mb-4">
+                <p class="text-xl text-green-300 inline">> Welcome to the developer matrix, I am a Nexus<span class="terminal-cursor"></span></p>
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-6">
+                <div class="w-16 h-16 rounded-full border-2 border-green-400 overflow-hidden">
+                    <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="Profile" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300">
+                </div>
+            </div>
+
+            <p class="text-green-300 mb-2">>Software Intelligence.</p>
+            <p class="text-green-300">> Specializing in AI | Automation | Full Stack Development | FinTech Solutions | Blockchain, </p>
+        </header>
+
+        <!-- Links Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-github text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">GitHub</h3>
+                    <p class="text-green-200 text-sm">/dev-matrix</p>
+                </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-linkedin text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">LinkedIn</h3>
+                    <p class="text-green-200 text-sm">/in/dev-matrix</p>
+                </div>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-twitter text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">Twitter</h3>
+                    <p class="text-green-200 text-sm">@dev_matrix</p>
+                </div>
+            </a>
+
+            <!-- Portfolio -->
+            <a href="https://devmatrix.io" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fas fa-globe text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">Portfolio</h3>
+                    <p class="text-green-200 text-sm">devmatrix.io</p>
+                </div>
+            </a>
+
+            <!-- Blog -->
+            <a href="https://dev.to" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-dev text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">Tech Blog</h3>
+                    <p class="text-green-200 text-sm">dev.to/devmatrix</p>
+                </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-youtube text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">YouTube</h3>
+                    <p class="text-green-200 text-sm">Dev Matrix</p>
+                </div>
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discord.com" target="_blank" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fab fa-discord text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">Discord</h3>
+                    <p class="text-green-200 text-sm">Join our server</p>
+                </div>
+            </a>
+
+            <!-- Contact -->
+            <a href="mailto:dev@matrix.io" class="link-item bg-black bg-opacity-70 p-4 rounded-lg flex items-center hover:bg-opacity-90">
+                <div class="w-10 h-10 flex items-center justify-center mr-4 text-2xl">
+                    <i class="fas fa-envelope text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="text-green-300 font-bold">Contact</h3>
+                    <p class="text-green-200 text-sm">dev@matrix.io</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Terminal Section -->
+        <div class="terminal-window bg-black bg-opacity-70 border border-green-400 rounded-lg p-4 mb-8">
+            <div class="flex mb-3">
+                <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div class="terminal-content font-mono text-green-300 text-sm">
+                <p class="mb-1">> Last commit: <span class="text-green-200">Added new blockchain project</span></p>
+                <p class="mb-1">> Current project: <span class="text-green-200">Decentralized social network</span></p>
+                <p class="mb-1">> Status: <span class="text-green-200">Coding...</span></p>
+                <p>> Available for freelance: <span class="text-green-200">Yes</span></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-green-400 text-sm">
+            <p>> Choose your path wisely. The system is watching...</p>
+            <p class="mt-2 text-green-500">© 2023 DEV_MATRIX. All systems operational.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Matrix Rain Effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+        const symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+
+        const alphabet = katakana + latin + nums + symbols;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+
+        const rainDrops = [];
+
+        for (let x = 0; x < columns; x++) {
+            rainDrops[x] = 1;
+        }
+
+        const draw = () => {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0f0';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+
+        setInterval(draw, 30);
+
+        // Terminal typing effect
+        const terminalText = document.querySelector('.terminal-text p');
+        const text = terminalText.textContent.replace('> Welcome to the developer matrix', '');
+        terminalText.textContent = '> Welcome to the developer matrix';
+
+        setTimeout(() => {
+            let i = 0;
+            const typing = setInterval(() => {
+                if (i < text.length) {
+                    terminalText.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typing);
+                }
+            }, 50);
+        }, 1000);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        });
+
+        // Random glitch effect
+        setInterval(() => {
+            const glitchElements = document.querySelectorAll('.glitch');
+            glitchElements.forEach(el => {
+                el.style.display = 'none';
+                setTimeout(() => {
+                    el.style.display = 'block';
+                }, 50);
+            });
+        }, 5000);
+    </script>
+</body>
+</html>

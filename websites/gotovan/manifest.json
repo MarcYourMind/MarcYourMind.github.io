@@ -1,0 +1,196 @@
+{
+  "index.css": {
+    "file": "assets/index-c01d5a45.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "assets/montserrat-latin-100-56b15344.woff2",
+      "assets/montserrat-latin-100-0b89ea33.woff",
+      "assets/montserrat-latin-100italic-742edbfd.woff2",
+      "assets/montserrat-latin-100italic-8216911f.woff",
+      "assets/montserrat-latin-200-dec277a0.woff2",
+      "assets/montserrat-latin-200-94221b9a.woff",
+      "assets/montserrat-latin-200italic-f4e7e734.woff2",
+      "assets/montserrat-latin-200italic-219d08ee.woff",
+      "assets/montserrat-latin-300-ab9241a0.woff2",
+      "assets/montserrat-latin-300-25f8f00a.woff",
+      "assets/montserrat-latin-300italic-8a8bc347.woff2",
+      "assets/montserrat-latin-300italic-c65fb5e8.woff",
+      "assets/montserrat-latin-400-8767f01c.woff2",
+      "assets/montserrat-latin-400-60cebea4.woff",
+      "assets/montserrat-latin-400italic-0eeb4ec8.woff2",
+      "assets/montserrat-latin-400italic-a52bbf7f.woff",
+      "assets/montserrat-latin-500-965574e9.woff2",
+      "assets/montserrat-latin-500-299e5f2b.woff",
+      "assets/montserrat-latin-500italic-11bfeece.woff2",
+      "assets/montserrat-latin-500italic-d7b23113.woff",
+      "assets/montserrat-latin-600-d10e701c.woff2",
+      "assets/montserrat-latin-600-46226abf.woff",
+      "assets/montserrat-latin-600italic-e25106e3.woff2",
+      "assets/montserrat-latin-600italic-681a53b9.woff",
+      "assets/montserrat-latin-700-4545eb1d.woff2",
+      "assets/montserrat-latin-700-2a5afdac.woff",
+      "assets/montserrat-latin-700italic-31d86314.woff2",
+      "assets/montserrat-latin-700italic-c900e20b.woff",
+      "assets/montserrat-latin-800-5a8c623b.woff2",
+      "assets/montserrat-latin-800-2849c719.woff",
+      "assets/montserrat-latin-800italic-d9a4514f.woff2",
+      "assets/montserrat-latin-800italic-a6f84021.woff",
+      "assets/montserrat-latin-900-d2fca2ae.woff2",
+      "assets/montserrat-latin-900-f0d96992.woff",
+      "assets/montserrat-latin-900italic-1cf50fce.woff2",
+      "assets/montserrat-latin-900italic-18effec3.woff"
+    ],
+    "css": [
+      "assets/index-c01d5a45.css"
+    ],
+    "file": "assets/index-11279044.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-100.woff": {
+    "file": "assets/montserrat-latin-100-0b89ea33.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-100.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-100.woff2": {
+    "file": "assets/montserrat-latin-100-56b15344.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-100.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-100italic.woff": {
+    "file": "assets/montserrat-latin-100italic-8216911f.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-100italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-100italic.woff2": {
+    "file": "assets/montserrat-latin-100italic-742edbfd.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-100italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-200.woff": {
+    "file": "assets/montserrat-latin-200-94221b9a.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-200.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-200.woff2": {
+    "file": "assets/montserrat-latin-200-dec277a0.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-200.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-200italic.woff": {
+    "file": "assets/montserrat-latin-200italic-219d08ee.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-200italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-200italic.woff2": {
+    "file": "assets/montserrat-latin-200italic-f4e7e734.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-200italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-300.woff": {
+    "file": "assets/montserrat-latin-300-25f8f00a.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-300.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-300.woff2": {
+    "file": "assets/montserrat-latin-300-ab9241a0.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-300.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-300italic.woff": {
+    "file": "assets/montserrat-latin-300italic-c65fb5e8.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-300italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-300italic.woff2": {
+    "file": "assets/montserrat-latin-300italic-8a8bc347.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-300italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-400.woff": {
+    "file": "assets/montserrat-latin-400-60cebea4.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-400.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-400.woff2": {
+    "file": "assets/montserrat-latin-400-8767f01c.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-400.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-400italic.woff": {
+    "file": "assets/montserrat-latin-400italic-a52bbf7f.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-400italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-400italic.woff2": {
+    "file": "assets/montserrat-latin-400italic-0eeb4ec8.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-400italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-500.woff": {
+    "file": "assets/montserrat-latin-500-299e5f2b.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-500.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-500.woff2": {
+    "file": "assets/montserrat-latin-500-965574e9.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-500.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-500italic.woff": {
+    "file": "assets/montserrat-latin-500italic-d7b23113.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-500italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-500italic.woff2": {
+    "file": "assets/montserrat-latin-500italic-11bfeece.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-500italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-600.woff": {
+    "file": "assets/montserrat-latin-600-46226abf.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-600.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-600.woff2": {
+    "file": "assets/montserrat-latin-600-d10e701c.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-600.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-600italic.woff": {
+    "file": "assets/montserrat-latin-600italic-681a53b9.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-600italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-600italic.woff2": {
+    "file": "assets/montserrat-latin-600italic-e25106e3.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-600italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-700.woff": {
+    "file": "assets/montserrat-latin-700-2a5afdac.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-700.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-700.woff2": {
+    "file": "assets/montserrat-latin-700-4545eb1d.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-700.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-700italic.woff": {
+    "file": "assets/montserrat-latin-700italic-c900e20b.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-700italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-700italic.woff2": {
+    "file": "assets/montserrat-latin-700italic-31d86314.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-700italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-800.woff": {
+    "file": "assets/montserrat-latin-800-2849c719.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-800.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-800.woff2": {
+    "file": "assets/montserrat-latin-800-5a8c623b.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-800.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-800italic.woff": {
+    "file": "assets/montserrat-latin-800italic-a6f84021.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-800italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-800italic.woff2": {
+    "file": "assets/montserrat-latin-800italic-d9a4514f.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-800italic.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-900.woff": {
+    "file": "assets/montserrat-latin-900-f0d96992.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-900.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-900.woff2": {
+    "file": "assets/montserrat-latin-900-d2fca2ae.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-900.woff2"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-900italic.woff": {
+    "file": "assets/montserrat-latin-900italic-18effec3.woff",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-900italic.woff"
+  },
+  "node_modules/typeface-montserrat/files/montserrat-latin-900italic.woff2": {
+    "file": "assets/montserrat-latin-900italic-1cf50fce.woff2",
+    "src": "node_modules/typeface-montserrat/files/montserrat-latin-900italic.woff2"
+  }
+}

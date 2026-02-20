@@ -1,0 +1,35 @@
+{
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "resume": "Resume",
+        "opensource": "Open Source",
+        "articles": "Articles",
+        "about": "About",
+        "creative": "Creative",
+        "contact": "Contact",
+        "commandPaletteHint": "Press Cmd / Ctrl + K to explore"
+    },
+    "hero": {
+        "title": "Multi-Domain Software Engineer",
+        "subtitle": "Building high-performance systems. Expert in Low-Latency Trading (C++), Distributed Architecture (Rust/Go), and AI-Driven Intelligence.",
+        "viewProjects": "View Projects",
+        "downloadResume": "Download Resume"
+    },
+    "specializations": {
+        "title": "Core Specializations",
+        "backend": "Backend Systems",
+        "quant": "Quant / Trading",
+        "web3": "Blockchain / Web3",
+        "ai": "AI / ML Engineering",
+        "web": "Fullstack Web"
+    },
+    "creative": {
+        "title": "Self-Expression",
+        "artTitle": "Art Gallery",
+        "musicTitle": "Soundscapes",
+        "philosophyTitle": "Philosophy",
+        "viewArt": "View Art",
+        "listenNow": "Listen Now"
+    }
+}

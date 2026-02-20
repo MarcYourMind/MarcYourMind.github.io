@@ -1,0 +1,35 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "resume": "Currículum",
+        "opensource": "Código Abierto",
+        "articles": "Artículos",
+        "about": "Sobre mí",
+        "creative": "Creatividad",
+        "contact": "Contacto",
+        "commandPaletteHint": "Pulsa Cmd / Ctrl + K para investigar"
+    },
+    "hero": {
+        "title": "Ingeniero Elite Multi-Dominio",
+        "subtitle": "Arquitectando el futuro de sistemas Quant, Backend y Web3 con un enfoque en rendimiento y confiabilidad.",
+        "viewProjects": "Ver Proyectos",
+        "downloadResume": "Descargar CV"
+    },
+    "specializations": {
+        "title": "Especializaciones Principales",
+        "backend": "Sistemas Backend",
+        "quant": "Quant / Trading",
+        "web3": "Blockchain / Web3",
+        "ai": "IA / Ingeniería ML",
+        "web": "Web Fullstack"
+    },
+    "creative": {
+        "title": "Autoexpresión",
+        "artTitle": "Galería de Arte",
+        "musicTitle": "Paisajes Sonoros",
+        "philosophyTitle": "Filosofía",
+        "viewArt": "Ver Arte",
+        "listenNow": "Escuchar Ahora"
+    }
+}

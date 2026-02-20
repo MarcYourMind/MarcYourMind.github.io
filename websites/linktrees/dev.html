@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services & Ebooks</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .circle:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .circle:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            top: 30%;
+            left: 70%;
+            animation-delay: 4s;
+        }
+
+        .circle:nth-child(4) {
+            width: 180px;
+            height: 180px;
+            top: 70%;
+            left: 80%;
+            animation-delay: 6s;
+        }
+
+        .circle:nth-child(5) {
+            width: 120px;
+            height: 120px;
+            top: 20%;
+            left: 50%;
+            animation-delay: 8s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-40px) rotate(180deg);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .link-card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
+        }
+
+        .link-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-white">
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12 flex flex-col items-center">
+        <!-- Profile Section -->
+        <div class="text-center mb-12">
+            <div class="relative inline-block mb-6 floating">
+                <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-full h-32 w-32 object-cover border-4 border-purple-400 shadow-lg">
+                <div class="absolute -bottom-2 -right-2 bg-purple-500 rounded-full p-2 shadow-lg">
+                    <i class="fas fa-check text-white text-sm"></i>
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-2 glow">John Doe</h1>
+            <p class="text-xl text-purple-200 mb-4">Digital Creator & Educator</p>
+            <p class="max-w-md mx-auto text-purple-100">Helping people grow their business through digital products and services</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="w-full max-w-md space-y-4">
+            <!-- Services -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-center text-purple-300 flex items-center justify-center">
+                    <i class="fas fa-cogs mr-2"></i> My Services
+                </h2>
+
+                <div class="space-y-4">
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Web Development</h3>
+                                <p class="text-sm text-purple-100">Custom websites & web apps</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-paint-brush text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">UI/UX Design</h3>
+                                <p class="text-sm text-blue-100">Beautiful & functional interfaces</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-pink-600 to-rose-500 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Digital Marketing</h3>
+                                <p class="text-sm text-pink-100">Grow your online presence</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ebooks -->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4 text-center text-purple-300 flex items-center justify-center">
+                    <i class="fas fa-book-open mr-2"></i> My Ebooks
+                </h2>
+
+                <div class="space-y-4">
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-amber-600 to-yellow-500 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-laptop-code text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Web Dev Mastery</h3>
+                                <p class="text-sm text-amber-100">Complete guide to modern web development</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-emerald-600 to-green-500 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-mobile-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Mobile First Design</h3>
+                                <p class="text-sm text-emerald-100">Designing for the mobile era</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="link-card bg-gradient-to-r from-cyan-600 to-blue-500 rounded-xl p-6 flex items-center shadow-lg relative overflow-hidden">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-bullseye text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">SEO Simplified</h3>
+                                <p class="text-sm text-cyan-100">Rank higher with these proven techniques</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-12 text-center">
+            <h3 class="text-xl font-semibold mb-4">Need something custom?</h3>
+            <a href="#" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 pulse">
+                Contact Me <i class="fas fa-paper-plane ml-2"></i>
+            </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="mt-12 flex space-x-6">
+            <a href="#" class="text-purple-300 hover:text-white transition-colors duration-300 text-2xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-purple-300 hover:text-white transition-colors duration-300 text-2xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-purple-300 hover:text-white transition-colors duration-300 text-2xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-purple-300 hover:text-white transition-colors duration-300 text-2xl">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-6 text-center text-purple-300 text-sm">
+        <p>© 2023 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add ripple effect to links
+        document.querySelectorAll('.link-card').forEach(link => {
+            link.addEventListener('click', function(e) {
+                let rect = this.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let y = e.clientY - rect.top;
+
+                let ripple = document.createElement('span');
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+
+                this.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 1000);
+            });
+        });
+
+        // Randomize circle positions on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const circles = document.querySelectorAll('.circle');
+            circles.forEach(circle => {
+                const randomTop = Math.random() * 100;
+                const randomLeft = Math.random() * 100;
+                const randomSize = 100 + Math.random() * 150;
+
+                circle.style.top = `${randomTop}%`;
+                circle.style.left = `${randomLeft}%`;
+                circle.style.width = `${randomSize}px`;
+                circle.style.height = `${randomSize}px`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+# Cervantes: The Autonomous AI Multi-Agent Storyteller
+
+## Introduction: The Dawn of AI Literature
+Cervantes is a sophisticated, multi-agent AI system designed to autonomously plan, write, and refine high-quality novels and story sagas. Named after the legendary author of *Don Quixote*, this project aims to bridge the gap between AI-generated text and professional-grade literary prose. By leveraging local Large Language Models (LLMs) via Ollama, Cervantes empowers creators to build entire literary universes with total privacy and zero API costs.
+
+## The Challenge: Coherence in Long-Form Narrative
+The primary hurdle in AI storytelling has always been "narrative drift"—the tendency for models to lose track of plot points, character traits, or thematic consistency over thousands of words. Traditional single-prompt approaches often result in generic, repetitive, or logically inconsistent stories that lack the depth of human-authored literature.
+
+## The Solution: A Multi-Agent "Quality Loop"
+To solve these challenges, Cervantes employs a hierarchical multi-agent architecture. Instead of asking a single AI to "write a book," the system breaks the process down into specialized roles, each mimicking a specific part of the traditional publishing house:
+
+1.  **The Planner (The Architect)**: Establishes the blueprint. It designs deep character profiles (complete with psychological arcs), builds consistent worlds with clear internal logic, and structures the plot into multi-act frameworks or "Hero’s Journeys."
+2.  **The Writer (The Craftsman)**: Transforms the plan into prose. It focuses on sensory immersion, authentic dialogue, and the fundamental principle of "Show, Don't Tell."
+3.  **The Evaluator (The Discerning Critic)**: Acts as the quality gatekeeper. Running on a different model to ensure objective critique, it scores every chapter against literary standards. If a chapter falls short, it is sent back for iterative refinement.
+
+## Implementation & Technology Stack
+Cervantes is built on a modern, robust technical foundation designed for performance and extensibility:
+
+*   **Language**: Python 3.10+ provides the flexibility for complex agent orchestration.
+*   **Orchestration**: **LangChain** is used to manage the state and communication between agents, ensuring that context from the story plan and previous chapters is preserved.
+*   **Local LLMs (Ollama)**:
+    *   **Phi-3 Mini**: Utilized for its efficiency and speed in the Planning and Writing phases.
+    *   **Qwen 3 (4B)**: Used for Evaluation due to its strong reasoning and critical analysis capabilities.
+*   **UI Framework**: **Gradio** provides a clean, web-based interface that handles library management, real-time progress monitoring, and a distraction-free reader mode.
+*   **Deployment**: Packaged as a standalone desktop application for Windows and Mac, making it accessible to writers who aren't necessarily developers.
+
+## Technical Specifications: The Agent Blueprints
+The secret to Cervantes' quality lies in its prompt engineering, which embeds the standards of history’s greatest writers.
+
+*   **Planner Prompting**: References the world-building depth of **Tolkien**, the psychological complexity of **Dostoevsky**, and the structural precision of **Vonnegut**.
+*   **Writer Prompting**: Incorporates the economy of language of **Hemingway**, the lyricism of **Fitzgerald**, and the sensory richness of **Atwood**.
+*   **Iterative Quality Loop**: Every chapter must pass an **Overall Score ≥ 75** (0-100) based on prose quality, character authenticity, pacing, and emotional resonance. If rejected, the Writer receives specific, actionable feedback for a rewrite (up to 3 revisions).
+
+## User Experience: From Prompt to Paperback
+The Cervantes interface is designed to be as "bookish" as the stories it creates:
+*   **Library**: A central hub to browse covers, metadata, and status of all works.
+*   **Sagas**: A feature that allows for the generation of multi-book series with overarching plots.
+*   **Reader Mode**: A beautiful, distraction-free environment with customizable themes (Light, Sepia, Dark) and serif typography.
+*   **Active Jobs**: Real-time transparency into what the agents are thinking, writing, and critiquing at any given moment.
+
+## Future Outlook
+Cervantes is not just a tool for writing; it's a demonstration of how multi-agent collaboration can achieve creative outputs that transcend simpler AI configurations. Future updates aim to include AI-generated illustrations for chapters, TTS voice narration for audiobooks, and deeper collaborative editing features, allowing humans and AI to co-write the next great saga together.
+
+---
+*Cervantes: Reimagining the craft of storytelling for the age of AI.*

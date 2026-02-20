@@ -2,9 +2,13 @@
 
 This document provides an exhaustive breakdown of every task required to transform the template into your personal professional website.
 
+Complete the first set of tasks in TODO.md. Ignore the rest of tasks
+
 
 --- COMPLETE ONLY THESE TASKS
-
+- [x] Cervantes project card has no image. Use cervantes-library.jpg inside public/projects. Add cervantes-reader.jpg to the case study image stack. It's made using langchain and gradio. Information on this project is contained in article-ideas/cervantes.md . Use this information to write the case study.
+- [x] My degree is now stored in public/certificates/degree.pdf. Link it to the cert in resume section.
+- [x] My transcript is now stored in public/certificates/transcript.pdf. Link it to the cert in resume section.
 
 --- IGNORE TASKS BELOW HERE
 
@@ -65,12 +69,11 @@ This document provides an exhaustive breakdown of every task required to transfo
 
 - [ ] Gotovan link does not work.
 - [ ] chainchampions project card has no image.
+- [ ] ChainChampions is missing website.
 - [ ] HiveFrequency project card has no image.
-- [ ] Cervantes project card has no image.
 - [ ] Cruzcampo tapeando project card has no image.
 - [ ] Cruzcampo tapeando is missing website.
 - [ ] Illuvium fusion is missing website.
-- [ ] ChainChampions is missing website.
 - [ ] Neurodivergent consulting is missing website.
 
 

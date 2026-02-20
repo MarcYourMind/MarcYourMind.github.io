@@ -193,13 +193,13 @@ export const projects: Project[] = [
         slug: "cervantes-ai",
         title: "Cervantes AI Book Writer",
         description: "Multi-agent story writer using LLMs to generate infinite narratives.",
-        longDescription: "A work-in-progress project aimed at creating an 'interdimensional cable' of stories. It utilizes local LLMs via Ollama and a multi-agent architecture to generate complex, evolving narratives with a Gradio interface.",
-        thumbnail: "/projects/technex-ai.jpg",
-        techStack: ["Python", "Ollama", "Gradio", "LLMs", "Multi-agent Systems"],
+        longDescription: "Cervantes is a sophisticated, multi-agent AI system designed to autonomously plan, write, and refine high-quality novels. Named after the legendary author of Don Quixote, it leverages local LLMs via Ollama to bridge the gap between AI-generated text and professional-grade literary prose, employing a hierarchical multi-agent architecture (Planner, Writer, and Evaluator) to ensure narrative coherence and quality.",
+        thumbnail: "/projects/cervantes-library.jpg",
+        techStack: ["Python", "LangChain", "Gradio", "Ollama", "Multi-agent Systems"],
         tags: ["AI"],
         githubUrl: "https://github.com/MarcYourMind/Cervantes-AI-Story-Writer",
         liveUrl: "#",
-        screenshots: ["/projects/technex-ai.jpg"],
+        screenshots: ["/projects/cervantes-library.jpg", "/projects/cervantes-reader.jpg"],
         featured: false
     },
     {

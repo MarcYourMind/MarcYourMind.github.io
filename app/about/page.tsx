@@ -88,6 +88,24 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-heading font-bold mb-12 uppercase tracking-widest text-sm text-center">My Philosophy</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
+                                {
+                                    title: "Artistic Precision",
+                                    desc: "I approach software as a canvas. Like my abstract art, I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.",
+                                    icon: Code,
+                                    color: "text-accent-blue"
+                                },
+                                {
+                                    title: "Rhythmic Pulse",
+                                    desc: "Inspired by high-energy soundscapes, I design backend architectures that maintain a perfect beat. Performance and stability are the rhythm of everything I build.",
+                                    icon: Activity,
+                                    color: "text-accent-purple"
+                                },
+                                {
+                                    title: "Resilient Innovation",
+                                    desc: "I bridge mathematical rigor with human intuition. My goal is to create products in AI and Web3 that are as robust as they are transformative.",
+                                    icon: Target,
+                                    color: "text-accent-pink"
+                                },
                                 { title: "Performance First", desc: "Latency isn't just a metric; it's a competitive advantage. I design systems where every microsecond and byte counts.", icon: Zap, color: "text-accent-blue" },
                                 { title: "Clean Architecture", desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.", icon: Code, color: "text-accent-purple" },
                                 { title: "User Centric", desc: "Great engineering solves real problems. I bridge the gap between complex backend logic and intuitive user experiences.", icon: Heart, color: "text-accent-pink" },

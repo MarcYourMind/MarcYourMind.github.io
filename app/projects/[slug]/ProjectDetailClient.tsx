@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { projects } from "@/data/projects"
 import { Button } from "@/components/Button"
-import { Github, ExternalLink, ArrowLeft, CheckCircle2, Zap, Shield, ChevronLeft, ChevronRight } from "lucide-react"
+import { Github, ExternalLink, ArrowLeft, CheckCircle2, Zap, Shield, ChevronLeft, ChevronRight, FileText } from "lucide-react"
 import Link from "next/link"
 import { ProjectCard } from "@/components/ProjectCard"
 import { useState } from "react"
@@ -171,6 +171,20 @@ export default function ProjectDetailClient() {
                                     ))}
                                 </div>
                             </section>
+
+                            {project.articleSlug && (
+                                <section className="glass-card p-8 border-accent-blue/30 border">
+                                    <h3 className="text-xs font-bold uppercase tracking-widest text-accent-blue mb-6">Further Reading</h3>
+                                    <p className="text-sm text-white/60 mb-6">
+                                        For a deep dive into the technical implementation and architecture of this project, read the full article.
+                                    </p>
+                                    <Link href={`/articles/${project.articleSlug}`}>
+                                        <Button variant="outline" size="sm" className="w-full border-accent-blue/50 text-accent-blue hover:bg-accent-blue hover:text-white">
+                                            <FileText className="mr-2 w-4 h-4" /> Technical Article
+                                        </Button>
+                                    </Link>
+                                </section>
+                            )}
                         </div>
                     </div>
 

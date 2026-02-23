@@ -56,14 +56,6 @@ export default function OpenSourcePage() {
 
                                 <div className="flex items-center justify-between pt-6 border-t border-white/5">
                                     <div className="flex items-center space-x-4">
-                                        <div className="flex items-center space-x-1.5 text-xs font-bold text-white/40">
-                                            <Star size={14} className="text-accent-gold" />
-                                            <span>{repo.stars.toLocaleString()}</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5 text-xs font-bold text-white/40">
-                                            <GitFork size={14} className="text-accent-teal" />
-                                            <span>{repo.forks.toLocaleString()}</span>
-                                        </div>
                                     </div>
                                     <span className="text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded bg-white/5 border border-white/5 text-white/40">
                                         {repo.language}

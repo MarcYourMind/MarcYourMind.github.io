@@ -73,7 +73,7 @@ export function ProjectCard({ project, index }: { project: Project, index: numbe
                             </a>
                         )}
                     </div>
-                    <Link href={project.articleSlug ? `/articles/${project.articleSlug}` : `/projects/${project.slug}`}>
+                    <Link href={`/projects/${project.slug}`}>
                         <button className="text-xs font-bold uppercase tracking-widest text-accent-blue hover:text-white transition-colors">
                             View Case Study
                         </button>

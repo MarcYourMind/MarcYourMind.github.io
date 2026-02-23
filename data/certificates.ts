@@ -47,7 +47,7 @@ export const certificates: Certificate[] = [
         id: "bubble-lost",
         title: "Bubble Certification",
         issuer: "Bubble",
-        description: "Certification in no-code application development. Lost in battle (Placeholder).",
+        description: "Certification in no-code application development.",
         image: "/certificates/placeholders/bubble-lost.png"
     },
     {

@@ -7,18 +7,29 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
-    - [ ] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
-    - [ ] Expand Article 2: "Smart Contract Security in Web3 Gaming"
-    - [ ] Expand Article 3: "The 78 Data Design Patterns for High-Scale Trading"
-    - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
-    - [ ] Expand Article 5: "Building a Transformer-Based Trading System"
-    - [ ] Expand Article 6: "Automated Market Making on Solana"
-    - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
-    - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
-    - [ ] Verify content rendering and readability
-
 - [ ] Remove the forks and stars info from the open source section because all my projects have 0 forks and 0 starts. It is not a good look.
+
+- [ ] aitrader links to article instead of case study. I'd like it to link to a case study like the rest and include a link to the relevant article in case the user wants further reading on the project. This applies to any other projects that link to articles instead of case studies as well.
+
+
+- [ ] Add languages to the languages section. The numbers next to each one correspond to experience and confidence in that language, in that order:
+
+- [ ] Python: 5, 5
+- [ ] C/C++: 2, 5
+- [ ] Java: 1, 3
+- [ ] Haskell: 1, 1
+- [ ] VHDL: 1, 5
+- [ ] Solidity: 2, 3
+- [ ] HTML: 5, 5
+- [ ] CSS: 5, 5
+- [ ] JavaScript: 5, 5
+- [ ] TypeScript: 5, 5
+- [ ] Verilog: 1, 2
+- [ ] E: 1, 2
+- [ ] SQL: 3, 3
+- [ ] PineScript: 2, 5
+- [ ] MatLab / Octave: 3, 3
+- [ ] Flutter (Dart): 1, 2
 
 --- IGNORE TASKS BELOW HERE
 
@@ -48,34 +59,36 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
-- [x] Add a section after the resumes and certificates listing all the programming languages I know. For each language I would like to give it 1-5 stars based on confidence and another 1-5 starts based on experience. It should be formatted in a nice way that is easy to read and follow.
-
 
 
 ## Creative section
 
-Specify somewhere that all my art hand-drawn using pencils and black pens.
+- [ ] Specify somewhere that all my art hand-drawn using pencils and black pens.
 
 
 ## Projects Section
 
 
-
-
-
-
-
-
-
-- [ ] aitrader links to article instead of case study. I'd like it to link to a case study like the rest and include a link to the relevant article in case the user wants further reading on the project.
-
-- [ ] Gotovan link does not work.
 - [ ] ChainChampions is missing website.
 - [ ] HiveFrequency project card has no image.
 - [ ] Cruzcampo tapeando project card has no image.
 - [ ] Cruzcampo tapeando is missing website.
 - [ ] Illuvium fusion is missing website.
 
+
+## Articles Section
+
+
+- [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
+    - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
+    - [ ] Expand Article 2: "Smart Contract Security in Web3 Gaming"
+    - [ ] Expand Article 3: "The 78 Data Design Patterns for High-Scale Trading"
+    - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
+    - [ ] Expand Article 5: "Building a Transformer-Based Trading System"
+    - [ ] Expand Article 6: "Automated Market Making on Solana"
+    - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
+    - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
+    - [ ] Verify content rendering and readability
 
 
 

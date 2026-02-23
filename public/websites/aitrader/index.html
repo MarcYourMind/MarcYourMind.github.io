@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartChampion AI | Pro Trading Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dark-theme">
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-text">CHART<span>CHAMPION</span></span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-view="dashboard">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item" data-view="agents">
+                    <i data-lucide="users"></i> Agents
+                </a>
+                <a href="#" class="nav-item" data-view="analysis">
+                    <i data-lucide="brain"></i> Intelligence
+                </a>
+                <a href="#" class="nav-item" data-view="logs">
+                    <i data-lucide="terminal"></i> Audit Trail
+                </a>
+                <a href="#" class="nav-item" data-view="performance">
+                    <i data-lucide="line-chart"></i> Performance
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div id="system-status" class="status-indicator">
+                    <span class="pulse"></span>
+                    <span class="status-text">INITIALIZING</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="page-title">
+                    <h2>Live Dashboard</h2>
+                    <p class="text-muted">Real-time multi-agent orchestration</p>
+                </div>
+                <div class="top-bar-actions">
+                    <div id="mode-indicator" class="mode-badge">
+                        <span class="mode-label">MODE:</span>
+                        <span id="mode-value" class="mode-value">--</span>
+                    </div>
+                    <div class="trading-status-card">
+                        <span class="label">Symbol:</span>
+                        <span id="symbol-value" class="value">--</span>
+                    </div>
+                    <button id="start-btn" class="btn btn-glow-success">
+                        <i data-lucide="play"></i> START SYSTEM
+                    </button>
+                    <button id="stop-btn" class="btn btn-glow-danger">
+                        <i data-lucide="square"></i> STOP SYSTEM
+                    </button>
+                    <button id="emergency-btn" class="btn btn-glow-danger"
+                        style="background: var(--danger); border: 2px solid white; animation: pulse-red 1s infinite;">
+                        <i data-lucide="alert-triangle"></i> EMERGENCY STOP
+                    </button>
+                </div>
+            </header>
+
+            <div id="view-dashboard" class="view">
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon signal"><i data-lucide="zap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total Signals</span>
+                            <span id="stat-signals" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon order"><i data-lucide="shopping-cart"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Orders Executed</span>
+                            <span id="stat-orders" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon regime"><i data-lucide="trending-up"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Market Regime</span>
+                            <span id="regime-value" class="stat-value" style="display: none;">--</span>
+                            <span class="stat-value text-small">See Table Below</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-section" style="margin-bottom: 2rem;">
+                    <div class="section-header">
+                        <h3><i data-lucide="briefcase"></i> Open Positions</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table" id="portfolio-table">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Side</th>
+                                    <th>Size</th>
+                                    <th>Entry</th>
+                                    <th>Price</th>
+                                    <th>PnL</th>
+                                    <th>SL / TP</th>
+                                </tr>
+                            </thead>
+                            <tbody id="portfolio-body">
+                                <tr>
+                                    <td colspan="7" class="empty-cell">No open positions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="regime-section" style="margin-bottom: 2rem;">
+                    <div class="section-header">
+                        <h3><i data-lucide="compass"></i> Market Regimes</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table" id="regime-table">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Regime</th>
+                                    <th>ADX</th>
+                                    <th>Last Update</th>
+                                </tr>
+                            </thead>
+                            <tbody id="regime-body">
+                                <tr>
+                                    <td colspan="4" class="empty-cell">Waiting for data...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <div class="content-grid">
+                    <section class="agents-section">
+                        <div class="section-header">
+                            <h3><i data-lucide="activity"></i> Active Agents</h3>
+                        </div>
+                        <div id="agents-container-mini" class="agents-grid">
+                            <!-- Agent cards will be injected here -->
+                            <div class="empty-state">No agents initialized</div>
+                        </div>
+                    </section>
+
+                    <section class="audit-section-mini">
+                        <div class="section-header">
+                            <h3><i data-lucide="scroll-text"></i> Live Events</h3>
+                        </div>
+                        <div id="log-container-mini" class="log-viewport mini">
+                            <div class="log-entry system-msg">Connecting to event stream...</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="view-agents" class="view" style="display: none;">
+                <div class="agent-view-layout">
+                    <div class="agent-sidebar-info">
+                        <div class="section-header">
+                            <h3><i data-lucide="share-2"></i> Information Flow</h3>
+                        </div>
+                        <div class="flow-preview-card">
+                            <div class="flow-node" id="node-market">
+                                <div class="node-icon"><i data-lucide="database"></i></div>
+                                <div class="node-label">Market Data</div>
+                                <div class="node-desc">Price & Volume Ingestion</div>
+                            </div>
+                            <div class="flow-arrow"><i data-lucide="chevron-down"></i></div>
+                            <div class="flow-node" id="node-analysis">
+                                <div class="node-icon"><i data-lucide="brain-circuit"></i></div>
+                                <div class="node-label">Intelligence</div>
+                                <div class="node-desc">Regime & Anomaly Detection</div>
+                            </div>
+                            <div class="flow-arrow"><i data-lucide="chevron-down"></i></div>
+                            <div class="flow-node" id="node-strategy">
+                                <div class="node-icon"><i data-lucide="trending-up"></i></div>
+                                <div class="node-label">Strategy</div>
+                                <div class="node-desc">Signal Generation (EMA, RSI)</div>
+                            </div>
+                            <div class="flow-arrow"><i data-lucide="chevron-down"></i></div>
+                            <div class="flow-node" id="node-risk">
+                                <div class="node-icon"><i data-lucide="shield-check"></i></div>
+                                <div class="node-label">Risk Guard</div>
+                                <div class="node-desc">Exposure & Drawdown Check</div>
+                            </div>
+                            <div class="flow-arrow"><i data-lucide="chevron-down"></i></div>
+                            <div class="flow-node" id="node-execution">
+                                <div class="node-icon"><i data-lucide="zap"></i></div>
+                                <div class="node-label">Execution</div>
+                                <div class="node-desc">Exchange Order Placement</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-main-content">
+                        <div class="section-header">
+                            <h3><i data-lucide="users"></i> Agent Orchestration</h3>
+                            <div class="header-stats">
+                                <span class="badge-outline">Healthy Threads: <span
+                                        id="healthy-threads-val">0/0</span></span>
+                            </div>
+                        </div>
+                        <div id="agents-container-full" class="agents-detailed-grid">
+                            <!-- Detailed agent cards will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view-analysis" class="view" style="display: none;">
+                <div class="analysis-layout">
+                    <aside class="analysis-sidebar">
+                        <div class="section-header">
+                            <h3><i data-lucide="search"></i> Symbols</h3>
+                        </div>
+                        <div class="symbol-search-box">
+                            <input type="text" id="symbol-search" placeholder="Search symbols...">
+                        </div>
+                        <div id="analysis-symbol-list" class="symbol-list">
+                            <!-- Symbols will be populated here -->
+                            <div class="empty-state">No symbols analyzed yet</div>
+                        </div>
+                    </aside>
+
+                    <div class="analysis-main">
+                        <div id="analysis-content-header" class="analysis-header" style="display: none;">
+                            <div class="analysis-title">
+                                <h2 id="current-analysis-symbol">BTC-USDT</h2>
+                                <span class="badge-status" id="analysis-state-badge">IN_PROGRESS</span>
+                            </div>
+                            <div class="analysis-meta">
+                                <span>Created: <span id="analysis-created-date">--</span></span>
+                                <span>Last Sync: <span id="analysis-sync-time">--</span></span>
+                                <button id="refresh-analysis" class="btn btn-icon"><i
+                                        data-lucide="refresh-cw"></i></button>
+                            </div>
+                        </div>
+
+                        <div id="analysis-placeholder" class="analysis-placeholder">
+                            <div class="placeholder-icon"><i data-lucide="brain-circuit"></i></div>
+                            <h3>Intelligence Hub</h3>
+                            <p>Select a symbol from the sidebar to explore its real-time multi-agent analysis.</p>
+                        </div>
+
+                        <div id="analysis-data-container" class="analysis-grid" style="display: none;">
+                            <!-- Sections will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view-logs" class="view" style="display: none;">
+                <div class="section-header">
+                    <h3><i data-lucide="terminal"></i> Transaction Audit Trail</h3>
+                    <div class="log-actions">
+                        <button id="clear-logs" class="btn-icon"><i data-lucide="trash-2"></i></button>
+                    </div>
+                </div>
+                <div id="log-container-full" class="log-viewport full">
+                    <div class="log-entry system-msg">Loading historical data...</div>
+                </div>
+            </div>
+
+            <div id="view-performance" class="view" style="display: none;">
+                <div class="section-header">
+                    <h3><i data-lucide="line-chart"></i> Equity Curve</h3>
+                </div>
+                <div class="chart-container"
+                    style="background: var(--bg-secondary); border-radius: 12px; padding: 1.5rem; margin-top: 1rem;">
+                    <canvas id="equity-chart"></canvas>
+                </div>
+
+                <div class="trade-history-section" style="margin-top: 2rem;">
+                    <div class="section-header">
+                        <h3><i data-lucide="history"></i> Trade History</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table" id="trade-history-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Symbol</th>
+                                    <th>Side</th>
+                                    <th>Size</th>
+                                    <th>Entry</th>
+                                    <th>Exit</th>
+                                    <th>PnL</th>
+                                    <th>Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody id="trade-history-body">
+                                <tr>
+                                    <td colspan="8" class="empty-cell">No trade history</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Agent Events Modal (Task 1) -->
+        <div id="agent-events-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Events: <span id="modal-agent-name"></span></h3>
+                    <button id="close-modal" class="btn-icon">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <div id="modal-events-list" class="modal-body">
+                    <!-- Events will be populated here -->
+                </div>
+            </div>
+        </div>
+        <!-- Prompt Viewer Modal -->
+        <div id="prompt-modal" class="modal">
+            <div class="modal-content" style="width: 70%; height: 70%;">
+                <div class="modal-header">
+                    <h3>Prompt: <span id="modal-prompt-name"></span></h3>
+                    <button id="close-prompt-modal" class="btn-icon">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div class="agent-metadata-title" style="font-size: 0.9rem;">System Prompt</div>
+                        <div
+                            style="background: #000; padding: 1rem; border-radius: 8px; border: 1px solid var(--border); max-height: 250px; overflow-y: auto;">
+                            <pre id="prompt-system-content"
+                                style="white-space: pre-wrap; word-break: break-all; font-size: 0.8rem; color: var(--text-primary);"></pre>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="agent-metadata-title" style="font-size: 0.9rem;">User Prompt Template</div>
+                        <div
+                            style="background: #000; padding: 1rem; border-radius: 8px; border: 1px solid var(--border); max-height: 250px; overflow-y: auto;">
+                            <pre id="prompt-user-content"
+                                style="white-space: pre-wrap; word-break: break-all; font-size: 0.8rem; color: var(--text-primary);"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mock-data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

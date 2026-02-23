@@ -26,7 +26,7 @@ export const openSourceData: OpenSourceRepo[] = [
     },
     {
         name: "NinjaFocus",
-        description: "Solana trading bot connected to Telegram for real-time trade execution.",
+        description: "Solana trading bot connected to Telegram for real-time trade signals.",
         stars: 1,
         forks: 0,
         language: "JavaScript",
@@ -51,15 +51,15 @@ export const openSourceData: OpenSourceRepo[] = [
     {
         name: "HiveFrequency",
         description: "GAN+RNN architecture for real-time live music generation.",
-        stars: 1,
+        stars: 0,
         forks: 0,
         language: "Python",
         url: "https://github.com/MarcYourMind/HiveFrequency"
     },
     {
         name: "Dartboard-Detection",
-        description: "Real-time computer vision system for dartboard detection.",
-        stars: 1,
+        description: "Dartboard detection algorithm implemented in C++ With OpenCV Computer Vision algorithms",
+        stars: 0,
         forks: 0,
         language: "C++",
         url: "https://github.com/MarcYourMind/Dartboard-Detection"

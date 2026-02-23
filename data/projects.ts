@@ -72,7 +72,8 @@ export const projects: Project[] = [
             "/projects/eternal-strategy.png",
             "/projects/learn.png",
             "/projects/trade-interface.png",
-            "/projects/watchlists.png"
+            "/projects/watchlists.png",
+            "/projects/behaviour.jpg"
         ],
         featured: true,
         challenge: "Fragmented trading tools and emotional decision-making often lead to inconsistent results for retail and professional traders alike.",
@@ -98,7 +99,13 @@ export const projects: Project[] = [
         tags: ["Web", "Backend"],
         githubUrl: "#",
         liveUrl: "https://technex.io",
-        screenshots: ["/projects/technex.jpg"],
+        screenshots: [
+            "/projects/technex.jpg",
+            "/projects/technex-portfolios.jpg",
+            "/projects/technex-algorithms.jpg",
+            "/projects/technex-plutus.jpg",
+            "/projects/technex-dev.jpg"
+        ],
         featured: true,
         challenge: "Enterprises often struggle to bridge the gap between complex business requirements and high-performance technical implementation.",
         solution: "Founded Technex to provide high-end consultancy and bespoke software engineering, focusing on scalable cloud architectures and fintech solutions.",
@@ -123,7 +130,7 @@ export const projects: Project[] = [
         tags: ["AI", "Backend"],
         githubUrl: "#",
         liveUrl: "https://technex-fe413.web.app/",
-        screenshots: ["/projects/technex-ai.jpg"],
+        screenshots: ["/projects/technex-ai.jpg", "/projects/make.jpg"],
         featured: true,
         challenge: "Many businesses lack the internal expertise to identify and automate repetitive, time-consuming manual processes using AI.",
         solution: "Provided expert consultancy to identify bottleneck processes and implement custom AI-driven automation workflows using LLMs and Python.",

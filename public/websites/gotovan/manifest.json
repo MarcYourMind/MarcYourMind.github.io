@@ -1,6 +1,6 @@
 {
   "index.css": {
-    "file": "assets/index-c01d5a45.css",
+    "file": "assets/index-45d6176a.css",
     "src": "index.css"
   },
   "index.html": {
@@ -43,9 +43,9 @@
       "assets/montserrat-latin-900italic-18effec3.woff"
     ],
     "css": [
-      "assets/index-c01d5a45.css"
+      "assets/index-45d6176a.css"
     ],
-    "file": "assets/index-11279044.js",
+    "file": "assets/index-27c9028a.js",
     "isEntry": true,
     "src": "index.html"
   },

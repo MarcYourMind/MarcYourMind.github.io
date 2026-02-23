@@ -50,6 +50,14 @@ body {
   width: 8px;
 }
 
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
+
 /* Premium Article Typography */
 .prose-hft {
   @apply max-w-none prose-invert;
@@ -108,12 +116,4 @@ body {
 
 .prose-hft pre {
   @apply bg-black/40 border border-white/10 p-8 rounded-2xl my-12 overflow-x-auto;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-background;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
 }

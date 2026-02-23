@@ -7,29 +7,13 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [ ] Remove the forks and stars info from the open source section because all my projects have 0 forks and 0 starts. It is not a good look.
-
-- [ ] aitrader links to article instead of case study. I'd like it to link to a case study like the rest and include a link to the relevant article in case the user wants further reading on the project. This applies to any other projects that link to articles instead of case studies as well.
+## Creative section
 
 
-- [ ] Add languages to the languages section. The numbers next to each one correspond to experience and confidence in that language, in that order:
+- [x] Articles lack spacing between paragraphs. Fix the spacing and font sizing of different elements.
 
-- [ ] Python: 5, 5
-- [ ] C/C++: 2, 5
-- [ ] Java: 1, 3
-- [ ] Haskell: 1, 1
-- [ ] VHDL: 1, 5
-- [ ] Solidity: 2, 3
-- [ ] HTML: 5, 5
-- [ ] CSS: 5, 5
-- [ ] JavaScript: 5, 5
-- [ ] TypeScript: 5, 5
-- [ ] Verilog: 1, 2
-- [ ] E: 1, 2
-- [ ] SQL: 3, 3
-- [ ] PineScript: 2, 5
-- [ ] MatLab / Octave: 3, 3
-- [ ] Flutter (Dart): 1, 2
+- [ ] Table of Contents should advance as the user scrolls down the article. Instead it currently remains on the first element despite the user going down the article until the end, signalling that the user is still in the first section when he is clearly not. Fix this.
+
 
 --- IGNORE TASKS BELOW HERE
 
@@ -59,11 +43,11 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
+## About Page
+
+- [ ] Update the text to something written by me.
 
 
-## Creative section
-
-- [ ] Specify somewhere that all my art hand-drawn using pencils and black pens.
 
 
 ## Projects Section
@@ -82,7 +66,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 - [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
     - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
     - [ ] Expand Article 2: "Smart Contract Security in Web3 Gaming"
-    - [ ] Expand Article 3: "The 78 Data Design Patterns for High-Scale Trading"
     - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
     - [ ] Expand Article 5: "Building a Transformer-Based Trading System"
     - [ ] Expand Article 6: "Automated Market Making on Solana"

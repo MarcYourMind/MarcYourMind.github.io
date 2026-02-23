@@ -70,8 +70,11 @@ export default function CreativePage() {
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 space-y-4 md:space-y-0">
                         <div>
                             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">{t("creative.artTitle")}</h2>
-                            <p className="text-white/60 max-w-xl">
+                            <p className="text-white/60 max-w-xl mb-4">
                                 A collection of visual experiments, digital paintings, and sketches that explore form, color, and emotion.
+                            </p>
+                            <p className="text-accent-blue/80 text-sm font-medium italic">
+                                Note: All visual art featured here is meticulously hand-drawn using traditional pencils and black pens, then digitized for display.
                             </p>
                         </div>
                         <div className="flex items-center space-x-2 text-accent-blue font-bold">

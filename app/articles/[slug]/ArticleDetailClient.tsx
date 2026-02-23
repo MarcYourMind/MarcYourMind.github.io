@@ -116,9 +116,12 @@ export default function ArticleDetailClient() {
                         <article
                             className="prose prose-invert prose-lg max-w-none 
                                 prose-headings:font-heading prose-headings:font-bold prose-headings:tracking-tight
-                                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6
-                                prose-p:text-white/70 prose-p:leading-relaxed prose-p:mb-8
-                                prose-code:text-accent-purple prose-code:bg-white/5 prose-code:px-1 prose-code:rounded
+                                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8
+                                prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6
+                                prose-p:text-white/70 prose-p:leading-relaxed prose-p:mb-10
+                                prose-li:text-white/70 prose-li:mb-4
+                                prose-ol:mb-12 prose-ul:mb-12
+                                prose-code:text-accent-purple prose-code:bg-white/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
                                 prose-pre:bg-black/50 prose-pre:border prose-pre:border-white/10 prose-pre:p-6 prose-pre:rounded-xl
                                 article-content"
                             dangerouslySetInnerHTML={{ __html: article.content }}

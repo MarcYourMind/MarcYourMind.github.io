@@ -118,27 +118,149 @@ function claimPrize(uint tournamentId) public nonReentrant {
     "data-design-patterns": {
         title: "The 78 Data Design Patterns for High-Scale Trading Platforms",
         date: "Apr 05, 2024",
-        readTime: "20 min read",
-        tags: ["Data Engineering", "Architecture", "FinTech"],
+        readTime: "25 min read",
+        tags: ["Data Engineering", "Architecture", "FinTech", "Scalability"],
         author: "Marc Mind",
         content: `
-            <h2 id="ingestion">Data Ingestion: The Entry Point</h2>
-            <p>Processing millions of market events requires more than just a pipe; it requires a structured ingestion strategy. We utilize <strong>Incremental Loaders</strong> for high-velocity streams and <strong>CDC (Change Data Capture)</strong> to maintain lakehouse synchronicity.</p>
+            <div class="prose-hft">
+                <p class="lead">Building a world-class trading platform like <strong>TopTrader</strong> isn't just about the "Alpha" or the ML models. It's about the <strong>engineering rigour</strong> behind the data. When you're processing millions of events across global markets, "best effort" doesn't cut it. I’ve compiled the <strong>complete blueprint</strong> of the 78 design patterns that keep our data engine running with surgical precision.</p>
 
-            <h2 id="idempotency">Idempotency & Consistency</h2>
-            <p>In financial systems, consistency is non-negotiable. We implement <strong>Transactional Writing</strong> and <strong>Keyed Idempotency</strong> to ensure that every tick is processed exactly once, regardless of network failures or pipeline restarts.</p>
+                <h2 id="ingestion">1. Data Ingestion: The Entry Point</h2>
+                <p><em>How we bring data into the lakehouse without losing our minds.</em></p>
+                <ol>
+                    <li><strong>Full Loader</strong>: For small, non-volatile datasets where a complete refresh is simplest.</li>
+                    <li><strong>Incremental Loader</strong>: The workhorse. Loading data in chunks to handle growth.</li>
+                    <li><strong>Change Data Capture (CDC)</strong>: Tracking row-level changes at the source.</li>
+                    <li><strong>Passthrough Replicator</strong>: Pure replication for auditing.</li>
+                    <li><strong>Transformation Replicator</strong>: Schema-aliasing data on the fly.</li>
+                    <li><strong>Compactor</strong>: Merging small files into "Right-Sized" blocks for performance.</li>
+                    <li><strong>Readiness Marker</strong>: The "green light" file that says "Data is Ready."</li>
+                    <li><strong>External Trigger</strong>: Event-driven ingestion for irregular market events.</li>
+                </ol>
 
-            <h2 id="quality">Data Quality & AWAP</h2>
-            <p>We enforce a strict <strong>Audit-Write-Audit-Publish (AWAP)</strong> pattern. Every batch must pass schema validation, anomaly detection, and business logic checks before being finalized for downstream consumers.</p>
+                <h2 id="error-management">2. Error Management: Resilience First</h2>
+                <p><em>In trading, errors are inevitable. Downtime is not.</em></p>
+                <ol start="9">
+                    <li><strong>Dead-Letter</strong>: Isolated queues for "poison" records.</li>
+                    <li><strong>Windowed Deduplicator</strong>: Removing duplicates in high-velocity streams.</li>
+                    <li><strong>Late Data Detector</strong>: Identifying events that arrive past their TTL.</li>
+                    <li><strong>Static/Dynamic Late Data Integrators</strong>: Intelligent backfilling of delayed ticks.</li>
+                    <li><strong>Filter Interceptor</strong>: Why was this record dropped? This pattern tells us.</li>
+                    <li><strong>Checkpointer</strong>: Resume from exactly where you left off.</li>
+                </ol>
 
-            <h2 id="storage">Optimized Storage & Manifests</h2>
-            <p>To achieve sub-second retrieval, we employ <strong>Vertical Partitioning</strong> for high-cardinality data and maintain a <strong>Global Manifest</strong> to prevent the "small file problem" common in distributed storage layers.</p>
+                <h2 id="idempotency">3. Idempotency: The Consistency Guard</h2>
+                <p><em>Ensuring that running a pipeline twice doesn't break the bank.</em></p>
+                <ol start="15">
+                    <li><strong>Fast Metadata Cleaner</strong>: Instant "undo" for failed batches.</li>
+                    <li><strong>Data Overwrite</strong>: Atomic replacement of physical partitions.</li>
+                    <li><strong>Merger</strong>: The classic Upsert logic for entity resolution.</li>
+                    <li><strong>Keyed Idempotency</strong>: Hard constraints at the database level.</li>
+                    <li><strong>Transactional Writer</strong>: The gold standard: Atomic, Multi-table commits.</li>
+                    <li><strong>Proxy</strong>: Immutability through abstraction.</li>
+                </ol>
+
+                <h2 id="data-value">4. Data Value: Turning Ticks into Alpha</h2>
+                <p><em>Adding context to raw numbers.</em></p>
+                <ol start="21">
+                    <li><strong>Static Joiner</strong>: Enrichment with reference data (e.g., sector info).</li>
+                    <li><strong>Dynamic Joiner</strong>: Joining two high-speed streams (Price + Volume).</li>
+                    <li><strong>Wrapper</strong>: Standardizing diverse exchange payloads into our internal format.</li>
+                    <li><strong>Metadata Decorator</strong>: Injecting lineage directly into the storage layer.</li>
+                    <li><strong>Distributed Aggregator</strong>: Handling global stats across CPU clusters.</li>
+                    <li><strong>Local Aggregator</strong>: Pre-aggregating on workers to save network bandwidth.</li>
+                    <li><strong>Incremental Sessionizer</strong>: Building time-based activity windows.</li>
+                    <li><strong>Stateful Sessionizer</strong>: Continuous session logic with low-latency state.</li>
+                    <li><strong>Bin Pack Orderer</strong>: Guaranteeing order without sacrificing throughput.</li>
+                    <li><strong>FIFO Orderer</strong>: Pure sequential processing where order is law.</li>
+                </ol>
+
+                <h2 id="data-flow">5. Data Flow: Orchestrating the Chaos</h2>
+                <p><em>Managing complex dependencies across global regions.</em></p>
+                <ol start="31">
+                    <li><strong>Local Sequencer</strong>: Intra-job task ordering.</li>
+                    <li><strong>Isolated Sequencer</strong>: Coordinating across different compute clusters.</li>
+                    <li><strong>Aligned Fan-In</strong>: Waiting for all "parents" before starting the child.</li>
+                    <li><strong>Unaligned Fan-In</strong>: Starting as soon as <em>one</em> input is ready.</li>
+                    <li><strong>Parallel Split</strong>: Running Valuation, Risk, and Alpha tasks concurrently.</li>
+                    <li><strong>Exclusive Choice</strong>: Conditional routing based on data quality.</li>
+                    <li><strong>Single Runner</strong>: Robust, sequential execution for critical paths.</li>
+                    <li><strong>Concurrent Runner</strong>: High-throughput scaling for distributed backfilling.</li>
+                </ol>
+
+                <h2 id="security">6. Data Security: Trust but Encrypt</h2>
+                <ol start="39">
+                    <li><strong>Vertical Partitioner (Security)</strong>: Separating PII from anonymized trade data.</li>
+                    <li><strong>In-Place Overwriter</strong>: Surgical removal of data for GDPR compliance.</li>
+                    <li><strong>Fine-Grained Accessor (Tables)</strong>: Row and Column level RBAC.</li>
+                    <li><strong>Fine-Grained Accessor (Resources)</strong>: Cloud IAM locked down to the "need to know."</li>
+                    <li><strong>Encryptor</strong>: AES-256 for data at rest.</li>
+                    <li><strong>Anonymizer</strong>: Irreversible hashing for research datasets.</li>
+                    <li><strong>Pseudo-Anonymizer</strong>: Tokenization for reversible debugging.</li>
+                    <li><strong>Secrets Pointer</strong>: Code never sees a password.</li>
+                    <li><strong>Secretless Connector</strong>: Identity-based auth (Workload Identity).</li>
+                </ol>
+
+                <h2 id="storage">7. Data Storage: The Foundation</h2>
+                <ol start="48">
+                    <li><strong>Horizontal Partitioner</strong>: Dividing data by Day/Symbol.</li>
+                    <li><strong>Vertical Partitioner (Storage)</strong>: Splitting wide tables for faster sub-column scans.</li>
+                    <li><strong>Bucket</strong>: Solving the "small file problem" for high-cardinality keys.</li>
+                    <li><strong>Sorter</strong>: Disk-level sorting for efficient range queries.</li>
+                    <li><strong>Metadata Enhancer</strong>: Helping the engine skip data before it reads it.</li>
+                    <li><strong>Dataset Materializer</strong>: Pre-calculating complex joins into views/tables.</li>
+                    <li><strong>Manifest</strong>: A "table of contents" to avoid expensive directory listings.</li>
+                    <li><strong>Normalizer</strong>: Reducing redundancy for reference data.</li>
+                    <li><strong>Denormalizer</strong>: Sacrificing storage for blazing fast read performance.</li>
+                </ol>
+
+                <h2 id="quality">8. Data Quality: The Filter</h2>
+                <ol start="57">
+                    <li><strong>Audit-Write-Audit-Publish (AWAP)</strong>: Mandatory 4-step quality gate.</li>
+                    <li><strong>Constraints Enforcer</strong>: Enforcing schemas and formats at the gateway.</li>
+                    <li><strong>Schema Compatibility Enforcer</strong>: Protecting downstream consumers from breaking changes.</li>
+                    <li><strong>Schema Migrator</strong>: Seamlessly evolving data structures.</li>
+                    <li><strong>Offline Observer</strong>: Asynchronous quality checks on historical data.</li>
+                    <li><strong>Online Observer</strong>: Integrated, real-time quality monitoring.</li>
+                </ol>
+
+                <h2 id="observability">9. Data Observability: Eyes on the Engine</h2>
+                <ol start="63">
+                    <li><strong>Flow Interruption Detector</strong>: Alerting on silence.</li>
+                    <li><strong>Skew Detector</strong>: Identifying bottlenecks in data distribution.</li>
+                    <li><strong>Lag Detector</strong>: Measuring the delay between tick and processing.</li>
+                    <li><strong>SLA Misses Detector</strong>: Tracking our promises to the business.</li>
+                    <li><strong>Dataset Tracker</strong>: The full lineage map.</li>
+                    <li><strong>Fine-Grained Tracker</strong>: Row and Column level lineage.</li>
+                </ol>
+
+                <h2 id="streaming">10. Streaming Data: The Edge</h2>
+                <ol start="69">
+                    <li><strong>API Gateway</strong>: Secure, scalable ingestion for external partners.</li>
+                    <li><strong>Zero-ETL Synchronizer</strong>: Instant sync between brokers and lakehouse.</li>
+                    <li><strong>Hybrid Source</strong>: Replaying history as if it were a live stream.</li>
+                    <li><strong>Sidecar</strong>: Adding "extra stats" to a stream without touching core logic.</li>
+                    <li><strong>Partial State Writer</strong>: Emitting intermediate results for early signals.</li>
+                    <li><strong>Streaming Reprocessor</strong>: Restoring state to fix live pipeline bugs.</li>
+                    <li><strong>Batch Reprocessor</strong>: Leveraging the lakehouse to "rewrite" the past.</li>
+                </ol>
+
+                <h2 id="conclusion">Conclusion</h2>
+                <p>This isn't just a list; it's a <strong>Standard Operating Procedure</strong>. By applying these 78 patterns, we’ve turned the "chaos" of market data into a predictable, scalable, and secure competitive advantage for <strong>TopTrader</strong>.</p>
+            </div>
         `,
         toc: [
-            { id: "ingestion", text: "Data Ingestion" },
-            { id: "idempotency", text: "Idempotency" },
-            { id: "quality", text: "Data Quality" },
-            { id: "storage", text: "Optimized Storage" }
+            { id: "ingestion", text: "1. Data Ingestion" },
+            { id: "error-management", text: "2. Error Management" },
+            { id: "idempotency", text: "3. Idempotency" },
+            { id: "data-value", text: "4. Data Value" },
+            { id: "data-flow", text: "5. Data Flow" },
+            { id: "security", text: "6. Data Security" },
+            { id: "storage", text: "7. Data Storage" },
+            { id: "quality", text: "8. Data Quality" },
+            { id: "observability", text: "9. Data Observability" },
+            { id: "streaming", text: "10. Streaming Data" },
+            { id: "conclusion", text: "Conclusion" }
         ]
     },
     "machine-learning-pipelines-production": {

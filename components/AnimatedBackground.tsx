@@ -37,7 +37,6 @@ export function AnimatedBackground() {
                 className="absolute -bottom-[10%] -right-[10%] w-[60%] h-[60%] rounded-full bg-accent-purple/10 blur-[120px]"
             />
 
-            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
         </div>
     )
 }

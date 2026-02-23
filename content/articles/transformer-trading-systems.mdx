@@ -1,0 +1,68 @@
+---
+title: "Building a Transformer-Based Trading System: From Data Leakage to a Robust 60% Win Rate"
+date: "2024-03-10"
+tags: ["PyTorch", "Transformers", "Quant", "Machine Learning"]
+readTime: "15 min read"
+excerpt: "A technical post-mortem on building a Transformer-based trading pipeline for sideways markets, uncovering critical data leakage, and achieving robust results."
+---
+
+# Building a Transformer-Based Trading System: From Data Leakage to a Robust 60% Win Rate
+
+In the world of quantitative finance, the bridge between a "mathematical model" and a "deployable trading system" is paved with data leakage, overfitting, and the harsh reality of market execution. This is the story of designing and auditing a complete machine learning pipeline aimed at a narrow but persistent problem: **identifying high-probability trade entries during range-bound conditions.**
+
+## 1. The Strategy: Why "Sideways" Markets?
+
+Most retail traders lose money in "chop"—the range-bound periods where price doesn't have a clear direction. However, from a modelling perspective, these periods exhibit a high degree of structure. Price oscillates within defined boundaries, volatility compresses, and volume distribution stabilizes around areas of fair value.
+
+By using **Rolling Linear Regression Slope** analysis, I built a filter that only activates when a market is consolidating. When the market is "boring" and the slope nears zero, it respects liquidity zones. That’s where the Transformer comes in.
+
+## 2. Problem Formulation: Outcomes over Forecasts
+
+Rather than attempting to forecast future prices (a high-dimensional, non-stationary problem), the task is framed as a **conditional outcome prediction**:
+
+> Given a potential entry price, what is the probability that price reaches a predefined take-profit level (1.0x ATR) before a stop-loss (1.0x ATR)?
+
+This formulation removes time as an explicit variable and allows outcomes to be evaluated objectively. It specifically targets long positions near the boundaries of a range, where risk asymmetry can be exploited.
+
+## 3. The Architecture: Transformers Beyond NLP
+
+While Transformers are famous for powering LLMs, they are effectively specialized **Pattern Recognition Engines**. Instead of feeding the model raw prices, I transformed price action into a **64-bin Volume Profile**.
+
+-   **Feature Engineering**: I divided the price range into 64 bins and calculated the normalized volume at each level. This collapses the time dimension and creates a "visual signature" of where participant positioning and liquidity are concentrated.
+-   **The Model**: A PyTorch-based **Transformer Encoder**. We treat the 64 volume bins as a sequence. The model uses self-attention to identify "High Volume Nodes" and "Liquidity Gaps," identifying structural features that a simple MLP might miss.
+-   **Contextual Features**: To provide a complete picture, I injected additional tokens representing Average True Range (ATR), Volatility, and Trend Slope.
+
+## 4. The 85% Win Rate "Trap"
+
+Early in the project, my backtests were showing an unbelievable **85% win rate**. In quant trading, 85% usually means you’ve accidentally built a time machine. A deep audit revealed three critical flaws:
+
+1.  **Zero-Day Leakage**: I was splitting the dataset *after* concatenating symbols, meaning the model was training on the "future" of assets it had already seen.
+2.  **Selection Bias**: The backtester was picking the "best" entry price only if it knew that price would be hit later in the day—a classic case of "peeking at the future."
+3.  **Global Scaling**: I was scaling volatility based on the mean of the *entire* dataset, including the test set, before the split.
+
+## 5. The Engineering Fix: Building for Reality
+
+I spent a week stripping out the "cheats" and rebuilding the pipeline for honesty:
+
+-   **Per-Symbol Time Splitting**: Data is now split by time *before* it ever touches the model.
+-   **Fair Execution**: The model picks one entry price. If the market doesn't hit it, the trade is marked as "Missed"—no second chances.
+-   **Chronological Backtester**: I built a custom engine that sorts all 50+ Binance symbols into a single global timeline, simulating a realistic portfolio equity curve rather than independent trade stats.
+
+## 6. The Results: Robustness Over Hype
+
+After correcting for data leakage and execution bias, the win rate dropped from a fake 85% to a robust and repeatable **60.1%**.
+
+-   **Universe**: 50+ Top Binance USDT pairs.
+-   **Calibration**: The model’s confidence scores now map almost perfectly to observed win rates, meaning a 0.7 probability prediction actually wins ~70% of the time.
+-   **Stability**: The system converged to stable performance characteristics that survived out-of-sample validation on "unseen" altcoins.
+
+## Conclusion: Validation is the Architecture
+
+The primary lesson from this project concerns **validation discipline** rather than model depth. Market-facing machine learning systems are constrained by the strict separation between historical data and future outcomes.
+
+By combining transformer-based attention mechanisms with structurally meaningful feature representations like Volume Profiles, we’ve built a system that doesn't just chase trends—it understands the physics of market equilibrium and executes within realistic operational constraints.
+
+---
+
+### Technical Stack
+**Python** · **PyTorch** · **Pandas** · **Binance API** · **Scikit-Learn** · **QuantStats**

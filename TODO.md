@@ -7,6 +7,17 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
+- [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
+    - [ ] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
+    - [ ] Expand Article 2: "Smart Contract Security in Web3 Gaming"
+    - [ ] Expand Article 3: "The 78 Data Design Patterns for High-Scale Trading"
+    - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
+    - [ ] Expand Article 5: "Building a Transformer-Based Trading System"
+    - [ ] Expand Article 6: "Automated Market Making on Solana"
+    - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
+    - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
+    - [ ] Verify content rendering and readability
+
 - [ ] Remove the forks and stars info from the open source section because all my projects have 0 forks and 0 starts. It is not a good look.
 
 --- IGNORE TASKS BELOW HERE
@@ -37,10 +48,13 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
+- [x] Add a section after the resumes and certificates listing all the programming languages I know. For each language I would like to give it 1-5 stars based on confidence and another 1-5 starts based on experience. It should be formatted in a nice way that is easy to read and follow.
 
 
 
+## Creative section
 
+Specify somewhere that all my art hand-drawn using pencils and black pens.
 
 
 ## Projects Section

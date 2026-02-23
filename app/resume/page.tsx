@@ -9,6 +9,7 @@ import { specializations } from "@/data/specializations"
 import { FileText, ArrowRight, Download } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { CertificatesSection } from "@/components/CertificatesSection"
+import { LanguagesSection } from "@/components/LanguagesSection"
 
 export default function ResumeHub() {
     return (
@@ -73,6 +74,7 @@ export default function ResumeHub() {
             </section>
 
             <CertificatesSection />
+            <LanguagesSection />
 
             <Footer />
         </main>

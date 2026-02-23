@@ -26,20 +26,28 @@ const articles = [
         tags: ["Web3", "Security", "Solidity"]
     },
     {
-        slug: "scaling-backend-event-driven",
-        title: "Event-Driven Scalability in Fintech: From Technex to Brite Payments",
-        excerpt: "How we leveraged event-driven architecture to scale real-time PSD2 bank transfers and fintech API integrations.",
-        date: "Jan 15, 2024",
-        readTime: "10 min read",
-        tags: ["Backend", "Fintech", "Scalability"]
+        slug: "data-design-patterns",
+        title: "The 78 Data Design Patterns for High-Scale Trading Platforms",
+        excerpt: "A complete blueprint of the 78 engineering patterns used to process millions of market events with surgical precision at TopTrader.",
+        date: "Apr 05, 2024",
+        readTime: "20 min read",
+        tags: ["Data Engineering", "Architecture", "FinTech"]
     },
     {
         slug: "machine-learning-pipelines-production",
-        title: "Machine Learning Pipelines: The Multi-Agent Trading Evolution",
-        excerpt: "Building a 20-agent autonomous trading system with LangChain, local LLMs, and event-driven pipelines.",
+        title: "Architecture of a Production-Grade Multi-Agent Trading System",
+        excerpt: "A deep dive into the AiTrader architecture: leveraging 20+ specialized autonomous agents and multi-layer risk management.",
         date: "Mar 01, 2024",
-        readTime: "14 min read",
+        readTime: "18 min read",
         tags: ["AI", "MLOps", "Python"]
+    },
+    {
+        slug: "transformer-trading-systems",
+        title: "Building a Transformer-Based Trading System: Robust 60% Win Rates",
+        excerpt: "Technical post-mortem on building a Transformer-based trading pipeline for sideways markets and achieving robust results.",
+        date: "Mar 10, 2024",
+        readTime: "15 min read",
+        tags: ["PyTorch", "Transformers", "Quant"]
     },
     {
         slug: "automated-market-making-solana",
@@ -56,6 +64,14 @@ const articles = [
         date: "Mar 20, 2024",
         readTime: "10 min read",
         tags: ["AI", "Python", "MAS"]
+    },
+    {
+        slug: "event-driven-trading-design",
+        title: "The Nervous System of Scalable Trading: Event-Driven Design",
+        excerpt: "How to coordinate 20+ specialized agents across 1,000+ symbols in real-time using asynchronous event buses.",
+        date: "Mar 25, 2024",
+        readTime: "8 min read",
+        tags: ["Architecture", "Event-Driven", "Scalability"]
     }
 ]
 

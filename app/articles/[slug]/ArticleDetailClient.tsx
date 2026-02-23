@@ -42,24 +42,38 @@ export default function ArticleDetailClient() {
     const [activeSection, setActiveSection] = useState("")
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id)
+        const handleScroll = () => {
+            const headings = article.toc.map(item => ({
+                id: item.id,
+                el: document.getElementById(item.id)
+            }));
+
+            let current = "";
+            for (const { id, el } of headings) {
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    // If the heading has crossed the 150px threshold from the top
+                    if (rect.top <= 150) {
+                        current = id;
+                    } else {
+                        // Stop at the first heading that is still below the threshold
+                        break;
                     }
-                })
-            },
-            { rootMargin: "-100px 0px -70% 0px" }
-        )
+                }
+            }
 
-        article.toc.forEach((item: any) => {
-            const el = document.getElementById(item.id)
-            if (el) observer.observe(el)
-        })
+            setActiveSection(current);
+        };
 
-        return () => observer.disconnect()
-    }, [article])
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        // Small delay to ensure content is rendered before initial check
+        const timer = setTimeout(handleScroll, 200);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            clearTimeout(timer);
+        };
+    }, [article]);
 
     return (
         <main className="relative min-h-screen">

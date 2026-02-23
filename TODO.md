@@ -7,12 +7,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-## Creative section
-
-
-- [x] Articles lack spacing between paragraphs. Fix the spacing and font sizing of different elements.
-
-- [ ] Table of Contents should advance as the user scrolls down the article. Instead it currently remains on the first element despite the user going down the article until the end, signalling that the user is still in the first section when he is clearly not. Fix this.
 
 
 --- IGNORE TASKS BELOW HERE
@@ -71,7 +65,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Expand Article 6: "Automated Market Making on Solana"
     - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
     - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
-    - [ ] Verify content rendering and readability
 
 
 

@@ -26,6 +26,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 7. **Readiness Marker**: The "green light" file that says "Data is Ready."
 8. **External Trigger**: Event-driven ingestion for irregular market events.
 
+---
+
 ## 🛑 2. Error Management: Resilience First
 *In trading, errors are inevitable. Downtime is not.*
 
@@ -36,6 +38,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 13. **Filter Interceptor**: Why was this record dropped? This pattern tells us.
 14. **Checkpointer**: Resume from exactly where you left off.
 
+---
+
 ## ✍️ 3. Idempotency: The Consistency Guard
 *Ensuring that running a pipeline twice doesn't break the bank.*
 
@@ -45,6 +49,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 18. **Keyed Idempotency**: Hard constraints at the database level.
 19. **Transactional Writer**: The gold standard: Atomic, Multi-table commits.
 20. **Proxy**: Immutability through abstraction.
+
+---
 
 ## 💎 4. Data Value: Turning Ticks into Alpha
 *Adding context to raw numbers.*
@@ -60,6 +66,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 29. **Bin Pack Orderer**: Guaranteeing order without sacrificing throughput.
 30. **FIFO Orderer**: Pure sequential processing where order is law.
 
+---
+
 ## 🌊 5. Data Flow: Orchestrating the Chaos
 *Managing complex dependencies across global regions.*
 
@@ -71,6 +79,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 36. **Exclusive Choice**: Conditional routing based on data quality.
 37. **Single Runner**: Robust, sequential execution for critical paths.
 38. **Concurrent Runner**: High-throughput scaling for distributed backfilling.
+
+---
 
 ## 🔐 6. Data Security: Trust but Encrypt
 *Protecting our competitive advantage and user data.*
@@ -85,6 +95,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 46. **Secrets Pointer**: Code never sees a password.
 47. **Secretless Connector**: Identity-based auth (Workload Identity).
 
+---
+
 ## 🗄️ 7. Data Storage: The Foundation
 *Optimizing how bits hit the disk for sub-second retrieval.*
 
@@ -98,6 +110,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 55. **Normalizer**: Reducing redundancy for reference data.
 56. **Denormalizer**: Sacrificing storage for blazing fast read performance.
 
+---
+
 ## ✅ 8. Data Quality: The Filter
 *Bad data in = Bad trades out.*
 
@@ -108,6 +122,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 61. **Offline Observer**: Asynchronous quality checks on historical data.
 62. **Online Observer**: Integrated, real-time quality monitoring.
 
+---
+
 ## 🔭 9. Data Observability: The Eyes on the Engine
 *Knowing something is wrong before the traders do.*
 
@@ -117,6 +133,8 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 66. **SLA Misses Detector**: Tracking our promises to the business.
 67. **Dataset Tracker**: The full lineage map.
 68. **Fine-Grained Tracker**: Row and Column level lineage.
+
+---
 
 ## 📉 10. Streaming Data: The Edge
 *Surviving the "Firehose" with low latency.*

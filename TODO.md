@@ -50,7 +50,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 - [ ] ChainChampions is missing website.
-- [ ] HiveFrequency project card has no image.
 - [ ] Cruzcampo tapeando project card has no image.
 - [ ] Cruzcampo tapeando is missing website.
 - [ ] Illuvium fusion is missing website.

@@ -218,30 +218,30 @@ export const projects: Project[] = [
             { label: "simulations", value: "100+" }
         ]
     },
-    {
-        slug: "lazarus",
-        title: "Lazarus Stock Futures Algorithm",
-        description: "Statistical model for Futures market after-hours activity with +90% accuracy.",
-        longDescription: "Statistical model for Futures market after-hours activity with +90% accuracy.",
-        thumbnail: "/projects/lazarus.png",
-        techStack: ["Python", "Pandas", "Statistical Modelling", "Data Analysis"],
-        tags: ["Quant"],
-        githubUrl: "#",
-        liveUrl: "#",
-        screenshots: ["/projects/lazarus.png"],
-        featured: false,
-        challenge: "It is well known that large after-hours activity has a strong correlation to market reactions once the market opens. The challenge was to capture these correlations and identify high-probability trade setups.",
-        solution: "Developed a system that tracks large price drops during after-hours across the entire stock market. For each drop, it analyses historical data to determine the likelihood of various percentage price recoveries the following day, based on previous occurrences of the same scenario. Some stocks demonstrate a >80% probability of recovering at least +3% the next day, with historical backing across more than 500 occurrences — constituting a high-probability setup.",
-        achievements: [
-            ">90% accuracy",
-            "~200% ROI during the summer of 2019",
-            "First successful statistical modelling of financial data"
-        ],
-        metrics: [
-            { label: "accuracy", value: ">90%" },
-            { label: "roi", value: "~200%" }
-        ]
-    },
+    // {
+    //     slug: "lazarus",
+    //     title: "Lazarus Stock Futures Algorithm",
+    //     description: "Statistical model for Futures market after-hours activity with +90% accuracy.",
+    //     longDescription: "Statistical model for Futures market after-hours activity with +90% accuracy.",
+    //     thumbnail: "/projects/lazarus.png",
+    //     techStack: ["Python", "Pandas", "Statistical Modelling", "Data Analysis"],
+    //     tags: ["Quant"],
+    //     githubUrl: "#",
+    //     liveUrl: "#",
+    //     screenshots: ["/projects/lazarus.png"],
+    //     featured: false,
+    //     challenge: "It is well known that large after-hours activity has a strong correlation to market reactions once the market opens. The challenge was to capture these correlations and identify high-probability trade setups.",
+    //     solution: "Developed a system that tracks large price drops during after-hours across the entire stock market. For each drop, it analyses historical data to determine the likelihood of various percentage price recoveries the following day, based on previous occurrences of the same scenario. Some stocks demonstrate a >80% probability of recovering at least +3% the next day, with historical backing across more than 500 occurrences — constituting a high-probability setup.",
+    //     achievements: [
+    //         ">90% accuracy",
+    //         "~200% ROI during the summer of 2019",
+    //         "First successful statistical modelling of financial data"
+    //     ],
+    //     metrics: [
+    //         { label: "accuracy", value: ">90%" },
+    //         { label: "roi", value: "~200%" }
+    //     ]
+    // },
     {
         slug: "solanaMarketMaker",
         title: "Solana Token Market Maker (Share Inc.)",
@@ -399,32 +399,32 @@ export const projects: Project[] = [
             "Responsive design"
         ]
     },
-    {
-        slug: "hivefrequency",
-        title: "HiveFrequency",
-        description: "GAN+RNN architecture for real-time live music generation.",
-        longDescription: "An experimental music project that combines Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to generate dynamic, evolving musical patterns in real-time.",
-        thumbnail: "/projects/hivefrequency-files.png",
-        techStack: ["Python", "PyTorch", "RNN", "GAN", "FFmpeg", "tqdm", "Torch Audio", "Torch FX"],
-        tags: ["AI", "Quant"],
-        githubUrl: "https://github.com/MarcYourMind/HiveFrequency",
-        liveUrl: "#",
-        screenshots: ["/projects/hivefrequency-files.png"],
-        featured: false,
-        challenge: "Recent advances in real-time AI music generation have pushed the boundaries of creative expression. However, many of these models are optimised for offline generation with limited interactive potential. HiveFrequency addresses this by delivering low-latency dynamic live performance integration — a unique contribution to the field: generating authentic music in real time while allowing seamless human–AI co-creation.",
-        solution: "Developed a novel hybrid AI model integrating GANs for high-fidelity audio segment creation and RNNs to maintain temporal coherence. The system utilises advanced compression techniques and GPU parallel processing to achieve real-time streaming with under 20ms latency. Built up from basic signal generation in Python using torchFX, the architecture evolved to feature complex multi-track generation, custom MIDI generators for basslines, and a reinforcement learning component that dynamically adjusts parameters in response to real-time user input during live performances.",
-        achievements: [
-            "Achieved an ultra-low average latency of 18 milliseconds",
-            "Ran continuously for 12 hours without crashes during live performance testing",
-            "Scored an average of 8.8/10 in user evaluations for authenticity and creative impact",
-            "Built an interactive sequencer operating in a continuous 16-bar looping system with extensive MIDI integration"
-        ],
-        metrics: [
-            { label: "avgLatency", value: "18ms" },
-            { label: "stability", value: "12 hours" },
-            { label: "audioQuality", value: "4.2/5 PEAQ" }
-        ]
-    },
+    // {
+    //     slug: "hivefrequency",
+    //     title: "HiveFrequency",
+    //     description: "GAN+RNN architecture for real-time live music generation.",
+    //     longDescription: "An experimental music project that combines Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to generate dynamic, evolving musical patterns in real-time.",
+    //     thumbnail: "/projects/hivefrequency-files.jpg",
+    //     techStack: ["Python", "PyTorch", "RNN", "GAN", "FFmpeg", "tqdm", "Torch Audio", "Torch FX"],
+    //     tags: ["AI", "Quant"],
+    //     githubUrl: "https://github.com/MarcYourMind/HiveFrequency",
+    //     liveUrl: "#",
+    //     screenshots: ["/projects/hivefrequency-files.jpg"],
+    //     featured: false,
+    //     challenge: "Recent advances in real-time AI music generation have pushed the boundaries of creative expression. However, many of these models are optimised for offline generation with limited interactive potential. HiveFrequency addresses this by delivering low-latency dynamic live performance integration — a unique contribution to the field: generating authentic music in real time while allowing seamless human–AI co-creation.",
+    //     solution: "Developed a novel hybrid AI model integrating GANs for high-fidelity audio segment creation and RNNs to maintain temporal coherence. The system utilises advanced compression techniques and GPU parallel processing to achieve real-time streaming with under 20ms latency. Built up from basic signal generation in Python using torchFX, the architecture evolved to feature complex multi-track generation, custom MIDI generators for basslines, and a reinforcement learning component that dynamically adjusts parameters in response to real-time user input during live performances.",
+    //     achievements: [
+    //         "Achieved an ultra-low average latency of 18 milliseconds",
+    //         "Ran continuously for 12 hours without crashes during live performance testing",
+    //         "Scored an average of 8.8/10 in user evaluations for authenticity and creative impact",
+    //         "Built an interactive sequencer operating in a continuous 16-bar looping system with extensive MIDI integration"
+    //     ],
+    //     metrics: [
+    //         { label: "avgLatency", value: "18ms" },
+    //         { label: "stability", value: "12 hours" },
+    //         { label: "audioQuality", value: "4.2/5 PEAQ" }
+    //     ]
+    // },
     {
         slug: "cruzcampo",
         title: "Cruzcampo Tapeando 2025",

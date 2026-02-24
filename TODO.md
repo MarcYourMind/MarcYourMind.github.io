@@ -7,8 +7,9 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
-    - [ ] Change future modifications to include developing sagas and creating images for the stories. The goal is to eventually generate audio and video too.
+- [x] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System". Use the article-ides/ to get any additional info to add to the article. Make it technical and professional.
+- [x] Article 4 contains a code block for a mermaid diagram that doesn't display the way its intended. Instead, can you throw an image in there? It is the thumbnail for aitrader project in the projects section. That is the mermaid chart that is intended.
+
 --- IGNORE TASKS BELOW HERE
 
 ## 🌍 Global & Locales
@@ -63,7 +64,6 @@ Decide on my philosophy
 
 - [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
     - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
-    - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
     - [ ] Expand Article 6: "Automated Market Making on Solana"
     - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
 

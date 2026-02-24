@@ -39,9 +39,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 
-## About Page
-
-Decide on my philosophy
 
 
 

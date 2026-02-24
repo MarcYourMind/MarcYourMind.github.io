@@ -5,7 +5,12 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { specializations } from "@/data/specializations"
-import { Code, Zap, Heart, Layers, Activity, Search, Target } from "lucide-react"
+import {
+    Code, Zap, Heart, Layers, Activity, Search, Target,
+    Cpu, PenTool, Shield, TrendingUp, Clock,
+    Database, BookOpen, Sparkles, Brain,
+    Fingerprint, Globe, Microscope, Radio
+} from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function AboutPage() {
@@ -87,38 +92,79 @@ export default function AboutPage() {
 
                     <section className="py-20 border-t border-white/5">
                         <h2 className="text-2xl font-heading font-bold mb-12 uppercase tracking-widest text-sm text-center">My Philosophy</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 {
                                     title: "Artistic Precision",
-                                    desc: "I approach software as a canvas. Like my abstract art, I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.",
+                                    desc: "I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.",
                                     icon: Code,
                                     color: "text-accent-blue"
                                 },
                                 {
-                                    title: "Rhythmic Pulse",
-                                    desc: "Inspired by high-energy soundscapes, I design backend architectures that maintain a perfect beat. Performance and stability are the rhythm of everything I build.",
-                                    icon: Activity,
+                                    title: "Engineering Excellence",
+                                    desc: "Following best practices and highest performance standards is my personal obsession. I apply rigorous engineering principles to ensure every system is optimized, secure, and built to last.",
+                                    icon: Shield,
                                     color: "text-accent-purple"
                                 },
                                 {
-                                    title: "Resilient Innovation",
-                                    desc: "I bridge mathematical rigor with human intuition. My goal is to create products in AI and Web3 that are as robust as they are transformative.",
-                                    icon: Target,
+                                    title: "Clean Architecture",
+                                    desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.",
+                                    icon: Code,
+                                    color: "text-accent-purple"
+                                },
+                                {
+                                    title: "User Centric",
+                                    desc: "Great minds are capable of turning complex ideas into simple and elegant solutions. I bridge the gap between complex systems and intuitive user experiences.",
+                                    icon: Heart,
                                     color: "text-accent-pink"
                                 },
-                                { title: "Performance First", desc: "Latency isn't just a metric; it's a competitive advantage. I design systems where every microsecond and byte counts.", icon: Zap, color: "text-accent-blue" },
-                                { title: "Clean Architecture", desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.", icon: Code, color: "text-accent-purple" },
-                                { title: "User Centric", desc: "Great engineering solves real problems. I bridge the gap between complex backend logic and intuitive user experiences.", icon: Heart, color: "text-accent-pink" },
+                                {
+                                    title: "Anti-Fragile Design",
+                                    desc: "Engineered for correctness from the first line. My background in design verification and validation allows me to build robust, anti-fragile systems with a 'design for failure' mindset, ensuring reliability where it matters most.",
+                                    icon: Radio,
+                                    color: "text-orange-400"
+                                },
+                                {
+                                    title: "The Agentic Shift",
+                                    desc: "Moving from passive tools to active agents. I focus on autonomous architectures that plan, reason, and execute complex workflows independently.",
+                                    icon: Brain,
+                                    color: "text-fuchsia-400"
+                                },
+                                {
+                                    title: "Data as Narrative",
+                                    desc: "Every dataset tells a story. I build pipelines that transform raw noise into clear, actionable signals for human and machine understanding.",
+                                    icon: Database,
+                                    color: "text-accent-teal"
+                                },
+                                {
+                                    title: "Strategic Depth",
+                                    desc: "Beyond the code lies the mission. I approach every project with a long-term vision, ensuring today's solutions scale and serve a purpose.",
+                                    icon: Microscope,
+                                    color: "text-lime-400"
+                                },
+                                {
+                                    title: "Spark of Curiosity",
+                                    desc: "The 'Why' is as important as the 'How'. Constant experimentation and a beginner's mind keep the engineering process fresh and vibrant.",
+                                    icon: Sparkles,
+                                    color: "text-amber-400"
+                                },
                             ].map((item, i) => (
-                                <div key={i} className="glass-card p-8 text-center group">
+                                <motion.div
+                                    key={i}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                    className="glass-card p-8 text-center group"
+                                >
                                     <item.icon className={cn("w-10 h-10 mx-auto mb-6 transition-transform group-hover:scale-110", item.color)} />
                                     <h3 className="text-xl font-heading font-bold mb-4">{item.title}</h3>
                                     <p className="text-sm text-white/40">{item.desc}</p>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </section>
+
                 </div>
             </section>
 

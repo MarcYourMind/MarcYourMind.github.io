@@ -6,8 +6,6 @@ readTime: "25 min read"
 excerpt: "A deep technical post-mortem on building a Transformer-based trading pipeline for sideways crypto markets — covering the full journey from problem formulation and feature engineering to the critical data leakage audit that changed everything, and the engineering fixes that produced a repeatable 60% win rate."
 ---
 
-# Building a Transformer-Based Trading System: From Data Leakage to a Robust 60% Win Rate
-
 In the world of quantitative finance, the bridge between a "mathematical model" and a "deployable trading system" is paved with data leakage, overfitting, and the harsh reality of market execution. This is the full technical story of designing and auditing a complete machine learning pipeline aimed at a narrow but persistent problem: **identifying high-probability trade entries during range-bound conditions in cryptocurrency markets.**
 
 This is not a tutorial on how to build a trading bot. It is a post-mortem on the engineering discipline — and lack thereof — that separates a system that looks good on paper from one that can survive contact with reality.

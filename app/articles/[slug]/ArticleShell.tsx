@@ -1,79 +1,57 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useParams } from "next/navigation"
 import { motion, useScroll, useSpring } from "framer-motion"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { Calendar, Clock, ArrowLeft, ChevronRight, Share2, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
+import type { Article } from "@/lib/articles"
 
-import { articleContent } from "@/data/articles_content"
+interface ArticleShellProps {
+    article: Article
+    children: React.ReactNode
+}
 
-export default function ArticleDetailClient() {
-    const params = useParams()
-    const slug = params?.slug as string
-    const article = articleContent[slug]
-
-    if (!article) {
-        return (
-            <main className="relative min-h-screen">
-                <AnimatedBackground />
-                <Navbar />
-                <section className="pt-32 pb-20 px-6 text-center">
-                    <h1 className="text-4xl font-heading font-black mb-8">Article Not Found</h1>
-                    <Link href="/articles" className="text-accent-blue hover:underline">
-                        Return to articles
-                    </Link>
-                </section>
-                <Footer />
-            </main>
-        )
-    }
-
+export default function ArticleShell({ article, children }: ArticleShellProps) {
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
         damping: 30,
-        restDelta: 0.001
+        restDelta: 0.001,
     })
 
     const [activeSection, setActiveSection] = useState("")
 
     useEffect(() => {
         const handleScroll = () => {
-            const headings = article.toc.map(item => ({
+            const headings = article.toc.map((item) => ({
                 id: item.id,
-                el: document.getElementById(item.id)
-            }));
+                el: document.getElementById(item.id),
+            }))
 
-            let current = "";
+            let current = ""
             for (const { id, el } of headings) {
                 if (el) {
-                    const rect = el.getBoundingClientRect();
-                    // If the heading has crossed the 150px threshold from the top
+                    const rect = el.getBoundingClientRect()
                     if (rect.top <= 150) {
-                        current = id;
+                        current = id
                     } else {
-                        // Stop at the first heading that is still below the threshold
-                        break;
+                        break
                     }
                 }
             }
+            setActiveSection(current)
+        }
 
-            setActiveSection(current);
-        };
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        // Small delay to ensure content is rendered before initial check
-        const timer = setTimeout(handleScroll, 200);
-
+        window.addEventListener("scroll", handleScroll, { passive: true })
+        const timer = setTimeout(handleScroll, 200)
         return () => {
-            window.removeEventListener("scroll", handleScroll);
-            clearTimeout(timer);
-        };
-    }, [article]);
+            window.removeEventListener("scroll", handleScroll)
+            clearTimeout(timer)
+        }
+    }, [article.toc])
 
     return (
         <main className="relative min-h-screen">
@@ -122,15 +100,15 @@ export default function ArticleDetailClient() {
                                 </div>
                                 <div className="flex items-center gap-2 text-white/60">
                                     <span className="w-8 h-8 rounded-full bg-accent-blue/20 flex items-center justify-center font-bold text-xs text-accent-blue font-heading">MM</span>
-                                    {article.author}
+                                    Marc Mind
                                 </div>
                             </div>
                         </motion.header>
 
-                        <article
-                            className="prose prose-invert prose-2xl max-w-none prose-hft article-content"
-                            dangerouslySetInnerHTML={{ __html: article.content }}
-                        />
+                        {/* MDX Content */}
+                        <article className="prose prose-invert prose-2xl max-w-none prose-hft article-content">
+                            {children}
+                        </article>
 
                         {/* Footer Social */}
                         <div className="mt-20 pt-10 border-t border-white/10 flex flex-wrap items-center justify-between gap-6">
@@ -157,21 +135,26 @@ export default function ArticleDetailClient() {
                         </div>
                     </div>
 
-                    {/* Sidebar / TOC */}
+                    {/* Sidebar TOC */}
                     <aside className="hidden lg:block">
                         <div className="sticky top-40">
                             <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Table of Contents</h3>
-                            <nav className="flex flex-col gap-4">
-                                {article.toc.map((item: any) => (
+                            <nav className="flex flex-col gap-3">
+                                {article.toc.map((item) => (
                                     <a
                                         key={item.id}
                                         href={`#${item.id}`}
-                                        className={`text-sm font-medium transition-all flex items-center ${activeSection === item.id
-                                            ? "text-accent-blue translate-x-1"
-                                            : "text-white/40 hover:text-white/60"
+                                        className={`text-sm font-medium transition-all flex items-center ${item.level === 3 ? "pl-4" : ""
+                                            } ${activeSection === item.id
+                                                ? "text-accent-blue translate-x-1"
+                                                : "text-white/40 hover:text-white/60"
                                             }`}
                                     >
-                                        <ChevronRight size={14} className={`mr-2 transition-transform ${activeSection === item.id ? "opacity-100" : "opacity-0"}`} />
+                                        <ChevronRight
+                                            size={14}
+                                            className={`mr-2 flex-shrink-0 transition-transform ${activeSection === item.id ? "opacity-100" : "opacity-0"
+                                                }`}
+                                        />
                                         {item.text}
                                     </a>
                                 ))}

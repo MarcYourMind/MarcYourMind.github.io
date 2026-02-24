@@ -37,6 +37,10 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
+- [ ] Education specifies first class honours when that is not what Igot exactly. My grades average a first class but because I left without finishing my final year I don't have a first class honours, only a normal bachelors degree.
+
+- [ ] Add Flask as a backend framework in the relevant resume sections.
+
 ## About Page
 
 Decide on my philosophy

@@ -287,7 +287,6 @@ export const projects: Project[] = [
         liveUrl: "#",
         screenshots: ["/projects/brite.jpg"],
         featured: false,
-        articleSlug: "scaling-backend-event-driven",
         challenge: "Integrating with the PSD2 framework required meeting extremely high standards for security, data privacy, and transaction reliability.",
         solution: "Engineered a secure Node.js integration layer that handled complex authentication flows and real-time bank data synchronization via REST APIs.",
         achievements: [

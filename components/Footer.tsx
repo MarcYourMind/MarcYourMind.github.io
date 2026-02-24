@@ -61,10 +61,7 @@ export function Footer() {
                     <p className="text-white/40 text-sm">
                         © {new Date().getFullYear()} MarcYourMind. {t('footer.builtWith')}
                     </p>
-                    <div className="flex space-x-6 text-sm text-white/40">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-                    </div>
+
                 </div>
             </div>
         </footer>

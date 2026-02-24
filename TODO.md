@@ -7,7 +7,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-
+- [x] Remove privacy policy and terms of service pages if they exist and remove any links to them.
 
 --- IGNORE TASKS BELOW HERE
 

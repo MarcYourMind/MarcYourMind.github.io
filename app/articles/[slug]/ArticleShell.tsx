@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from "framer-motion"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
+import { useI18n } from "@/components/I18nProvider"
 import { Calendar, Clock, ArrowLeft, ChevronRight, Share2, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
 import type { Article } from "@/lib/articles"
@@ -15,6 +16,7 @@ interface ArticleShellProps {
 }
 
 export default function ArticleShell({ article, children }: ArticleShellProps) {
+    const { t } = useI18n()
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -73,7 +75,7 @@ export default function ArticleShell({ article, children }: ArticleShellProps) {
                             className="inline-flex items-center text-white/60 hover:text-white mb-8 transition-colors group"
                         >
                             <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                            Back to Articles
+                            {t("articles.back")}
                         </Link>
 
                         <motion.header
@@ -113,7 +115,7 @@ export default function ArticleShell({ article, children }: ArticleShellProps) {
                         {/* Footer Social */}
                         <div className="mt-20 pt-10 border-t border-white/10 flex flex-wrap items-center justify-between gap-6">
                             <div className="flex items-center gap-4">
-                                <span className="text-white/40 uppercase tracking-widest text-xs font-bold">Share Article</span>
+                                <span className="text-white/40 uppercase tracking-widest text-xs font-bold">{t("articles.share")}</span>
                                 <div className="flex gap-2">
                                     <button className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent-blue/20 hover:text-accent-blue transition-all">
                                         <Twitter size={18} />
@@ -130,7 +132,7 @@ export default function ArticleShell({ article, children }: ArticleShellProps) {
                                 href="/contact"
                                 className="px-8 py-3 rounded-full bg-accent-blue/10 border border-accent-blue/30 text-accent-blue font-bold uppercase tracking-widest text-xs hover:bg-accent-blue hover:text-white transition-all"
                             >
-                                Discuss with me
+                                {t("articles.discuss")}
                             </Link>
                         </div>
                     </div>
@@ -138,7 +140,7 @@ export default function ArticleShell({ article, children }: ArticleShellProps) {
                     {/* Sidebar TOC */}
                     <aside className="hidden lg:block">
                         <div className="sticky top-40">
-                            <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Table of Contents</h3>
+                            <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">{t("articles.toc")}</h3>
                             <nav className="flex flex-col gap-3">
                                 {article.toc.map((item) => (
                                     <a

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { useI18n } from "./I18nProvider"
 import { Globe, Menu, X, ChevronDown, Command } from "lucide-react"
@@ -20,6 +20,7 @@ const navItems = [
 
 export function Navbar() {
     const pathname = usePathname()
+    const router = useRouter()
     const { locale, setLocale, t } = useI18n()
     const [isScrolled, setIsScrolled] = useState(false)
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -108,6 +109,7 @@ export function Navbar() {
                                             onClick={() => {
                                                 setLocale(l as any)
                                                 setLangOpen(false)
+                                                router.refresh()
                                             }}
                                             className={cn(
                                                 "w-full px-3 py-2 text-left text-sm rounded-lg transition-colors",

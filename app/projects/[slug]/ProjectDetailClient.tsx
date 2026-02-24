@@ -11,9 +11,11 @@ import { Github, ExternalLink, ArrowLeft, CheckCircle2, Zap, Shield, ChevronLeft
 import Link from "next/link"
 import { ProjectCard } from "@/components/ProjectCard"
 import { useState } from "react"
+import { useI18n } from "@/components/I18nProvider"
 
 export default function ProjectDetailClient() {
     const { slug } = useParams()
+    const { t, locale } = useI18n()
     const project = projects.find(p => p.slug === slug) || projects[0]
     const relatedProjects = projects.filter(p => p.slug !== project.slug && p.tags.some(tag => project.tags.includes(tag))).slice(0, 2)
 
@@ -33,7 +35,7 @@ export default function ProjectDetailClient() {
             <section className="pt-32 pb-20">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <Link href="/projects" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-white/40 hover:text-white mb-12 transition-colors">
-                        <ArrowLeft className="mr-2 w-4 h-4" /> Back to Gallery
+                        <ArrowLeft className="mr-2 w-4 h-4" /> {t("projects.ui.backToGallery")}
                     </Link>
 
                     <header className="mb-16">
@@ -44,9 +46,9 @@ export default function ProjectDetailClient() {
                                 </span>
                             ))}
                         </div>
-                        <h1 className="text-4xl md:text-7xl font-heading font-black mb-6 tracking-tighter">{project.title}</h1>
+                        <h1 className="text-4xl md:text-7xl font-heading font-black mb-6 tracking-tighter">{t(`projects.${project.slug}.title`)}</h1>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed">
-                            {project.longDescription}
+                            {t(`projects.${project.slug}.longDescription`)}
                         </p>
                     </header>
 
@@ -95,14 +97,14 @@ export default function ProjectDetailClient() {
                             {project.liveUrl !== "#" && (
                                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                                     <Button variant="primary" size="sm">
-                                        <ExternalLink className="mr-2 w-4 h-4" /> Demo
+                                        <ExternalLink className="mr-2 w-4 h-4" /> {t("projects.ui.demo")}
                                     </Button>
                                 </a>
                             )}
                             {project.githubUrl !== "#" && (
                                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                                     <Button variant="secondary" size="sm">
-                                        <Github className="mr-2 w-4 h-4" /> Code
+                                        <Github className="mr-2 w-4 h-4" /> {t("projects.ui.code")}
                                     </Button>
                                 </a>
                             )}
@@ -113,27 +115,22 @@ export default function ProjectDetailClient() {
                         <div className="md:col-span-2 space-y-12">
                             <section>
                                 <h2 className="text-2xl font-heading font-bold mb-6 flex items-center">
-                                    <Zap className="mr-3 text-accent-blue" /> The Challenge
+                                    <Zap className="mr-3 text-accent-blue" /> {t("projects.ui.theChallenge")}
                                 </h2>
                                 <p className="text-white/60 leading-relaxed text-lg">
-                                    {project.challenge || "The primary objective was to build a system that could handle extreme throughput without sacrificing consistency. Traditional architectures were falling short due to garbage collection pauses and thread contention."}
+                                    {t(`projects.${project.slug}.challenge`)}
                                 </p>
                             </section>
 
                             <section>
                                 <h2 className="text-2xl font-heading font-bold mb-6 flex items-center">
-                                    <Shield className="mr-3 text-accent-purple" /> The Solution
+                                    <Shield className="mr-3 text-accent-purple" /> {t("projects.ui.theSolution")}
                                 </h2>
                                 <p className="text-white/60 leading-relaxed text-lg mb-6">
-                                    {project.solution || "We implemented a specialized architecture tailored to the performance requirements of this project, ensuring a deterministic profile that exceeded standard expectations."}
+                                    {t(`projects.${project.slug}.solution`)}
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {(project.achievements || [
-                                        "Optimized data structures",
-                                        "High-performance processing",
-                                        "Custom memory management",
-                                        "Real-time monitoring"
-                                    ]).map((item, i) => (
+                                    {((t(`projects.${project.slug}.achievements`, { returnObjects: true }) as string[]) || []).map((item, i) => (
                                         <li key={i} className="flex items-center space-x-3 text-sm text-white/80 p-4 rounded-xl bg-white/5 border border-white/10">
                                             <CheckCircle2 className="text-green-500 w-5 h-5 flex-shrink-0" />
                                             <span>{item}</span>
@@ -145,7 +142,7 @@ export default function ProjectDetailClient() {
 
                         <div className="space-y-12">
                             <section className="glass-card p-8">
-                                <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Tech Stack</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">{t("projects.ui.techStack")}</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {project.techStack.map(tech => (
                                         <div key={tech} className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 text-sm font-medium">
@@ -156,17 +153,14 @@ export default function ProjectDetailClient() {
                             </section>
 
                             <section className="glass-card p-8">
-                                <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Key Metrics</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">{t("projects.ui.keyMetrics")}</h3>
                                 <div className="space-y-6">
-                                    {(project.metrics || [
-                                        { label: "p99 Latency", value: "< 10ms" },
-                                        { label: "Events / Second", value: "1.2M+" }
-                                    ]).map((metric, i) => (
+                                    {project.metrics?.map((metric, i) => (
                                         <div key={i}>
                                             <div className={`text-2xl font-heading font-black ${i % 2 === 0 ? 'text-accent-blue' : 'text-accent-purple'}`}>
                                                 {metric.value}
                                             </div>
-                                            <div className="text-[10px] uppercase font-bold text-white/40">{metric.label}</div>
+                                            <div className="text-[10px] uppercase font-bold text-white/40">{t(`projects.${project.slug}.metrics.${metric.label}`)}</div>
                                         </div>
                                     ))}
                                 </div>
@@ -174,13 +168,13 @@ export default function ProjectDetailClient() {
 
                             {project.articleSlug && (
                                 <section className="glass-card p-8 border-accent-blue/30 border">
-                                    <h3 className="text-xs font-bold uppercase tracking-widest text-accent-blue mb-6">Further Reading</h3>
+                                    <h3 className="text-xs font-bold uppercase tracking-widest text-accent-blue mb-6">{t("projects.ui.furtherReading")}</h3>
                                     <p className="text-sm text-white/60 mb-6">
-                                        For a deep dive into the technical implementation and architecture of this project, read the full article.
+                                        {t("projects.ui.furtherReadingDesc")}
                                     </p>
                                     <Link href={`/articles/${project.articleSlug}`}>
                                         <Button variant="outline" size="sm" className="w-full border-accent-blue/50 text-accent-blue hover:bg-accent-blue hover:text-white">
-                                            <FileText className="mr-2 w-4 h-4" /> Technical Article
+                                            <FileText className="mr-2 w-4 h-4" /> {t("projects.ui.technicalArticle")}
                                         </Button>
                                     </Link>
                                 </section>
@@ -191,7 +185,17 @@ export default function ProjectDetailClient() {
                     {/* Related Projects */}
                     {relatedProjects.length > 0 && (
                         <section className="pt-20 border-t border-white/10">
-                            <h2 className="text-3xl font-heading font-black mb-12 tracking-tighter">Related <span className="text-gradient">Projects</span></h2>
+                            {(() => {
+                                const fullTitle = t("projects.ui.relatedProjects");
+                                const words = fullTitle.split(' ');
+                                const lastWord = words.pop();
+                                const firstPart = words.join(' ');
+                                return (
+                                    <h2 className="text-3xl font-heading font-black mb-12 tracking-tighter">
+                                        {firstPart} <span className="text-gradient">{lastWord}</span>
+                                    </h2>
+                                );
+                            })()}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {relatedProjects.map((p, i) => (
                                     <ProjectCard key={p.slug} project={p} index={i} />

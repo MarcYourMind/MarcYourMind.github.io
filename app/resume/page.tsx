@@ -10,8 +10,11 @@ import { FileText, ArrowRight, Download } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { CertificatesSection } from "@/components/CertificatesSection"
 import { LanguagesSection } from "@/components/LanguagesSection"
+import { useI18n } from "@/components/I18nProvider"
 
 export default function ResumeHub() {
+    const { t } = useI18n();
+
     return (
         <main className="relative min-h-screen">
             <AnimatedBackground />
@@ -20,9 +23,11 @@ export default function ResumeHub() {
             <section className="pt-32 pb-20">
                 <div className="container mx-auto px-6">
                     <header className="text-center mb-16">
-                        <h1 className="text-4xl md:text-6xl font-heading font-black mb-6 tracking-tighter">Resume Hub</h1>
+                        <h1 className="text-4xl md:text-6xl font-heading font-black mb-6 tracking-tighter">
+                            {t("resume.ui.hubTitle")}
+                        </h1>
                         <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                            Select a specialized track to view a tailored resume and portfolio of relevant experience.
+                            {t("resume.ui.hubSubtitle")}
                         </p>
                     </header>
 
@@ -47,13 +52,13 @@ export default function ResumeHub() {
                                             <FileText className="w-10 h-10 transition-colors group-hover:text-accent-blue" style={{ color: spec.color }} />
                                         </div>
 
-                                        <h3 className="text-2xl font-heading font-bold mb-4">{spec.title}</h3>
+                                        <h3 className="text-2xl font-heading font-bold mb-4">{t(spec.title)}</h3>
                                         <p className="text-white/40 mb-8 flex-grow">
-                                            Tailored overview for roles in {spec.title.toLowerCase()}, including relevant tech stack and key achievements.
+                                            {t("resume.ui.tailoredOverview", { role: t(spec.title).toLowerCase() })}
                                         </p>
 
                                         <div className="flex items-center text-accent-blue font-bold uppercase tracking-widest text-xs group-hover:translate-x-2 transition-transform">
-                                            Explore Track <ArrowRight className="ml-2 w-4 h-4" />
+                                            {t("resume.ui.exploreTrack")} <ArrowRight className="ml-2 w-4 h-4" />
                                         </div>
                                     </div>
                                 </Link>

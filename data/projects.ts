@@ -52,12 +52,12 @@ export const projects: Project[] = [
             "Scalable training on distributed GPU clusters"
         ],
         metrics: [
-            { label: "Directional Accuracy", value: "82%" },
-            { label: "Inference Latency", value: "< 50ms" }
+            { label: "directionalAccuracy", value: "82%" },
+            { label: "inferenceLatency", value: "< 50ms" }
         ]
     },
     {
-        slug: "toptrader-platform",
+        slug: "toptrader",
         title: "TopTrader Platform",
         description: "Smart trading platform focused on discipline for crypto with automated market screening, sentiment analysis and risk management.",
         longDescription: "TopTrader merges all trading accounts into one platform, offering automated market screening, risk management, algorithm execution, journalling, behavioural analysis and a unified trading experience.",
@@ -85,8 +85,8 @@ export const projects: Project[] = [
             "Sub-second order execution across all accounts"
         ],
         metrics: [
-            { label: "Exchanges Integrated", value: "5+" },
-            { label: "Execution Speed", value: "< 100ms" }
+            { label: "exchanges", value: "5+" },
+            { label: "speed", value: "< 100ms" }
         ]
     },
     {
@@ -116,12 +116,12 @@ export const projects: Project[] = [
             "Established a reputation for technical excellence and reliability"
         ],
         metrics: [
-            { label: "Enterprise Clients", value: "10+" },
-            { label: "System Uptime", value: "99.9%" }
+            { label: "clients", value: "10+" },
+            { label: "uptime", value: "99.9%" }
         ]
     },
     {
-        slug: "technex-consultancy",
+        slug: "technexConsultancy",
         title: "Freelance AI & Automation Consultancy",
         description: "Specialized AI and automation consultancy services to streamline bottleneck processes for companies.",
         longDescription: "Offered expert AI and automation consultancy services to streamline bottleneck processes for various companies, focusing on operational efficiency and strategic integration of AI technologies.",
@@ -164,7 +164,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "chain-champions-nft",
+        slug: "chainchampions",
         title: "Chain Champions NFT Platform",
         description: "Web3 gaming tournament platform with Solidity smart contracts for escrow, buy-ins, and payouts.",
         longDescription: "An NFT-driven tournament platform where users can compete in blockchain-based gaming. Features secure smart contracts for managing entry fees and automated distribution of prize pools, all running on a scalable cloud infrastructure.",
@@ -186,7 +186,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "nasdaq-futures-algorithm",
+        slug: "nasdaq",
         title: "NASDAQ Futures Trading Algorithm",
         description: "High-performance C++ trading system integrated with Interactive Brokers for automated execution. (Plutus)",
         longDescription: "Developed a robust trading system for NASDAQ futures, implementing real-time market data processing and automated execution. The system features statistical risk controls and was optimized for consistent performance under various market conditions. This project is part of the Plutus live trading algorithm.",
@@ -207,12 +207,12 @@ export const projects: Project[] = [
             "Implemented advanced statistical risk guardrails"
         ],
         metrics: [
-            { label: "Tick-to-Trade", value: "2.5ms" },
-            { label: "Throughput", value: "120k/s" }
+            { label: "tickToTrade", value: "2.5ms" },
+            { label: "throughput", value: "120k/s" }
         ]
     },
     {
-        slug: "solana-market-maker",
+        slug: "solanaMarketMaker",
         title: "Solana Token Market Maker (Share Inc.)",
         description: "Automated liquidity provision bot for Solana-based tokens using Raydium SDK.",
         longDescription: "Built a sophisticated market-making bot that provides liquidity and price discovery for Solana tokens. Integrated directly with the Raydium SDK and implemented automated pricing strategies based on real-time market depth.",
@@ -234,7 +234,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "gotovan-logistics",
+        slug: "gotovan",
         title: "GotoVan Logistics Optimizer",
         description: "Logistics and routing optimization platform for delivery services.",
         longDescription: "Developed a comprehensive logistics optimizer for GotoVan, focusing on efficient route planning and resource management to streamline delivery operations.",
@@ -255,7 +255,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "cripto-trading-infra",
+        slug: "criptoInfra",
         title: "CRIPTO Ltd Automated Trading Infrastructure",
         description: "Foundational infrastructure for high-frequency algorithmic trading across multiple exchanges.",
         longDescription: "Built the core trading infrastructure for CRIPTO Ltd, enabling automated market participation and high-speed execution across various cryptocurrency exchanges.",
@@ -276,28 +276,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "brite-payments",
-        title: "Brite Payments PSD2 API Integration",
-        description: "Integration of PSD2 compliant payment APIs for real-time bank transfers.",
-        longDescription: "Implemented secure and scalable integration with Brite Payments' PSD2 APIs, enabling seamless real-time account-to-account payments and bank account information services.",
-        thumbnail: "/projects/brite.jpg",
-        techStack: ["Python", "FastAPI", "PSD2 Open Banking API"],
-        tags: ["Backend", "Web"],
-        githubUrl: "#",
-        liveUrl: "#",
-        screenshots: ["/projects/brite.jpg"],
-        featured: false,
-        challenge: "Integrating with the PSD2 framework required meeting extremely high standards for security, data privacy, and transaction reliability.",
-        solution: "Engineered a secure Node.js integration layer that handled complex authentication flows and real-time bank data synchronization via REST APIs.",
-        achievements: [
-            "Fully compliant PSD2 API implementation",
-            "Securely processed thousands of real-time transfers",
-            "Implemented robust error handling for bank timeouts",
-            "Reduced transaction friction for end-users by 30%"
-        ]
-    },
-    {
-        slug: "snake-3d",
+        slug: "snake3d",
         title: "3D Snake Minigame",
         description: "Classic Snake game reimagined in 3D using Three.js.",
         longDescription: "Originally developed in C++, this project was translated to Three.js to be showcased in a web environment. It features a fully interactive 3D environment where players can control the snake and collect items.",
@@ -318,7 +297,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "cervantes-ai",
+        slug: "cervantes",
         title: "Cervantes AI Book Writer",
         description: "Multi-agent story writer using LLMs to generate infinite narratives.",
         longDescription: "Cervantes is a sophisticated, multi-agent AI system designed to autonomously plan, write, and refine high-quality novels. Named after the legendary author of Don Quixote, it leverages local LLMs via Ollama to bridge the gap between AI-generated text and professional-grade literary prose, employing a hierarchical multi-agent architecture (Planner, Writer, and Evaluator) to ensure narrative coherence and quality.",
@@ -361,7 +340,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "neurodivergent-consulting",
+        slug: "neurodivergentConsulting",
         title: "Neurodivergent Consulting",
         description: "Freelance coaching website tailored for neurodivergent professionals.",
         longDescription: "A premium consulting website built with a focus on accessibility and clean design. Features a modern UI using React, TailwindCSS, and Shadcn UI components.",
@@ -382,7 +361,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "hive-frequency",
+        slug: "hivefrequency",
         title: "HiveFrequency",
         description: "GAN+RNN architecture for real-time live music generation.",
         longDescription: "An experimental music project that combines Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to generate dynamic, evolving musical patterns in real-time.",
@@ -403,7 +382,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "cruzcampo-tapeando",
+        slug: "cruzcampo",
         title: "Cruzcampo Tapeando 2025",
         description: "Emergency full-stack web application for a major Spanish beer brand.",
         longDescription: "Developed in just 48 hours to save a large-scale marketing campaign. This high-pressure project involved building a robust, high-traffic web application for Cruzcampo.",
@@ -424,7 +403,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "illuvium-fusion",
+        slug: "illuvium",
         title: "Illuvium Fusion Simulator",
         description: "Market-scanning simulator for the Illuvium Web3 NFT game.",
         longDescription: "A strategic tool for Illuvium players that simulates NFT fusions and scans market data to identify the most profitable fusion opportunities for collectors.",
@@ -445,7 +424,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        slug: "dartboard-detection",
+        slug: "dartboard",
         title: "Dartboard Object Detection",
         description: "Real-time computer vision system for dartboard detection.",
         longDescription: "A high-performance computer vision project using OpenCV and C++ to detect and track dartboards in real-time video streams with high accuracy.",
@@ -456,11 +435,10 @@ export const projects: Project[] = [
         liveUrl: "#",
         screenshots: ["/projects/dart9.jpg"],
         featured: false,
-        challenge: "Accurately detecting dartboards under varying lighting conditions and camera angles while maintaining high-speed real-time performance.",
+        challenge: "Accurately detecting dartboards under varying lighting conditions and camera angles.",
         solution: "Implemented a series of custom computer vision filters and geometric constraints using OpenCV in C++ for maximum throughput.",
         achievements: [
-            "99.5% dartboard detection accuracy",
-            "Real-time processing at 120 FPS on standard CPUs",
+            "100% dartboard detection accuracy on provided dataset",
             "Robust tracking through occlusion and motion blur",
             "Automated scoring system integration"
         ]

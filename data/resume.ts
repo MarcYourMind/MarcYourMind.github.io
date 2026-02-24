@@ -5,6 +5,7 @@ export interface Experience {
     role: string;
     period: string;
     description: string[];
+    i18nKey?: string;
 }
 
 export interface SkillCategory {
@@ -40,6 +41,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Brite Payments (Spain)",
                 role: "Senior Backend Python Developer",
                 period: "May 2025 – July 2025",
+                i18nKey: "brite",
                 description: [
                     "Designed and implemented PSD2-compliant APIs using Python and FastAPI",
                     "Delivered OpenAPI-standard interfaces for Open Banking integrations",
@@ -51,6 +53,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Technex (UK)",
                 role: "Director & CTO",
                 period: "Jan 2021 – Sept 2024",
+                i18nKey: "technex",
                 description: [
                     "Led backend development for multiple FinTech automation clients",
                     "Designed scalable Python-based services for trading, analytics, and data ingestion",
@@ -63,6 +66,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "GotoVan (UK)",
                 role: "Full Stack Developer",
                 period: "Mar 2022 – Nov 2023",
+                i18nKey: "gotovan",
                 description: [
                     "Developed backend services using Python FastAPI and SQL on GCP",
                     "Implemented route-based pricing algorithms improving logistics cost efficiency",
@@ -100,6 +104,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Technex (UK)",
                 role: "Quantitative Developer",
                 period: "Jan 2021 – Sept 2024",
+                i18nKey: "technex",
                 description: [
                     "Designed algorithmic trading systems across equities, futures, and crypto",
                     "Built real-time execution engines processing market data feeds",
@@ -111,6 +116,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "NASDAQ Futures Trading Algorithm",
                 role: "Quantitative Developer (Client Project)",
                 period: "Jan 2023 – May 2024",
+                i18nKey: "nasdaq",
                 description: [
                     "Developed C++ trading system integrated with Interactive Brokers",
                     "Implemented real-time market data processing and automated execution",
@@ -169,6 +175,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Technex (UK)",
                 role: "Web3 Engineer / Director & CTO",
                 period: "Jan 2021 – Sept 2024",
+                i18nKey: "technex",
                 description: [
                     "Designed and deployed smart contracts for DeFi and NFT platforms",
                     "Built automated crypto trading and market-making systems",
@@ -180,6 +187,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Share Inc.",
                 role: "Solana Token Market Maker",
                 period: "Sept 2020 – Dec 2021",
+                i18nKey: "share",
                 description: [
                     "Built market-making bot providing liquidity to Solana-based token",
                     "Integrated with Solana blockchain using Node.js and Raydium SDK",
@@ -216,6 +224,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 company: "Technex (UK)",
                 role: "Director & CTO (AI Focus)",
                 period: "Jan 2021 – Sept 2024",
+                i18nKey: "technex",
                 description: [
                     "Developed predictive volatility models using Gaussian Processes",
                     "Built automated risk management systems driven by ML analytics",

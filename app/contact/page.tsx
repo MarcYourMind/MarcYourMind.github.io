@@ -7,8 +7,10 @@ import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { Button } from "@/components/Button"
 import { Mail, MessageSquare, Send, CheckCircle2, AlertCircle, Phone } from "lucide-react"
+import { useI18n } from "@/components/I18nProvider"
 
 export default function ContactPage() {
+    const { t } = useI18n()
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -29,10 +31,17 @@ export default function ContactPage() {
 
                         <div>
                             <h1 className="text-4xl md:text-7xl font-heading font-black mb-6 tracking-tighter">
-                                Let's Build <span className="text-gradient">The Future</span>
+                                {t("contact.title")?.split("The Future").length > 1
+                                    ? <>{t("contact.title")?.split("The Future")[0]}<span className="text-gradient">The Future</span></>
+                                    : t("contact.title")?.split("El Futuro").length > 1
+                                        ? <>{t("contact.title")?.split("El Futuro")[0]}<span className="text-gradient">El Futuro</span></>
+                                        : t("contact.title")?.split("L'Avenir").length > 1
+                                            ? <>{t("contact.title")?.split("L'Avenir")[0]}<span className="text-gradient">L'Avenir</span></>
+                                            : t("contact.title")
+                                }
                             </h1>
                             <p className="text-xl text-white/60 mb-12 max-w-md">
-                                Have a project in mind? Drop me a message and I'll get back to you within 24 hours.
+                                {t("contact.subtitle")}
                             </p>
 
                             <div className="space-y-8">
@@ -41,7 +50,7 @@ export default function ContactPage() {
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Email Me</h4>
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">{t("contact.emailTitle")}</h4>
                                         <p className="text-lg font-medium text-white/80">mgtojar@gmail.com</p>
                                     </div>
                                 </div>
@@ -50,7 +59,7 @@ export default function ContactPage() {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Call Me</h4>
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">{t("contact.callTitle")}</h4>
                                         <p className="text-lg font-medium text-white/80">0789 272 2727</p>
                                     </div>
                                 </div>
@@ -59,7 +68,7 @@ export default function ContactPage() {
                                         <MessageSquare size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Socials</h4>
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">{t("contact.socialsTitle")}</h4>
                                         <p className="text-lg font-medium text-white/80">@marcyourmind</p>
                                     </div>
                                 </div>
@@ -70,9 +79,9 @@ export default function ContactPage() {
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent-blue to-accent-purple rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative glass-panel p-8 md:p-12 flex flex-col items-center justify-center text-center">
                                 <MessageSquare className="w-16 h-16 text-accent-blue mb-8 animate-bounce" />
-                                <h2 className="text-3xl font-heading font-bold mb-6">Skip the email.</h2>
+                                <h2 className="text-3xl font-heading font-bold mb-6">{t("contact.whatsappTitle")}</h2>
                                 <p className="text-white/60 mb-10 text-lg">
-                                    I'm most responsive on WhatsApp. Click below to start a conversation directly with me.
+                                    {t("contact.whatsappDesc")}
                                 </p>
                                 <a
                                     href="https://api.whatsapp.com/send/?phone=636388672&text&type=phone_number&app_absent=0"
@@ -81,7 +90,7 @@ export default function ContactPage() {
                                     className="w-full"
                                 >
                                     <Button variant="primary" size="lg" className="w-full py-8 text-xl">
-                                        Message on WhatsApp
+                                        {t("contact.whatsappButton")}
                                         <Send className="ml-2 w-6 h-6" />
                                     </Button>
                                 </a>

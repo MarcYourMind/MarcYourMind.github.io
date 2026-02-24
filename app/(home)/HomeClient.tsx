@@ -44,7 +44,7 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                             >
                                 <span className="flex h-2 w-2 rounded-full bg-accent-blue animate-pulse" />
                                 <span className="text-xs font-bold uppercase tracking-widest text-white/60">
-                                    Open for world-class opportunities
+                                    {t('hero.status')}
                                 </span>
                             </motion.div>
 
@@ -54,7 +54,7 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                                 transition={{ duration: 0.5, delay: 0.1 }}
                                 className="text-5xl md:text-7xl lg:text-8xl font-heading font-black mb-6 tracking-tighter"
                             >
-                                {t('hero.title').split(' ').map((word, i) => (
+                                {t('hero.title').split(' ').map((word: string, i: number) => (
                                     <span key={i} className={i === 2 ? "text-gradient" : ""}>
                                         {word}{' '}
                                     </span>
@@ -117,10 +117,10 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                         className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
                     >
                         {[
-                            { label: "Years Exp.", value: "6+" },
-                            { label: "Projects", value: "30+" },
-                            { label: "Professional Certs", value: "8+ " },
-                            { label: "Languages", value: "19" },
+                            { label: t('home.stats.years'), value: "6+" },
+                            { label: t('home.stats.projects'), value: "30+" },
+                            { label: t('home.stats.certs'), value: "8+ " },
+                            { label: t('home.stats.languages'), value: "19" },
                         ].map((stat, i) => (
                             <div key={i} className="text-center">
                                 <div className="text-3xl font-heading font-black text-white mb-1">{stat.value}</div>
@@ -156,9 +156,9 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                                     <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-white/10 transition-colors">
                                         <Icon className="w-8 h-8 transition-colors group-hover:text-accent-blue" style={{ color: spec.color }} />
                                     </div>
-                                    <h3 className="font-heading font-bold mb-3">{spec.title}</h3>
+                                    <h3 className="font-heading font-bold mb-3">{t(spec.title)}</h3>
                                     <p className="text-sm text-white/40 leading-relaxed">
-                                        {spec.description}
+                                        {t(spec.description)}
                                     </p>
                                 </motion.div>
                             )
@@ -172,13 +172,13 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                 <div className="container mx-auto px-6">
                     <div className="flex items-end justify-between mb-12">
                         <div>
-                            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">Featured Projects</h2>
+                            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">{t('home.featuredProjects.title')}</h2>
                             <p className="text-white/40 max-w-lg">
-                                A selection of high-impact engineering challenges and technological breakthroughs.
+                                {t('home.featuredProjects.subtitle')}
                             </p>
                         </div>
                         <Link href="/projects" className="hidden md:flex items-center text-accent-blue font-bold uppercase tracking-widest text-sm hover:text-white transition-colors">
-                            All Projects <ArrowRight className="ml-2 w-4 h-4" />
+                            {t('home.featuredProjects.viewAll')} <ArrowRight className="ml-2 w-4 h-4" />
                         </Link>
                     </div>
 
@@ -196,14 +196,20 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="flex flex-col md:flex-row items-center justify-between mb-16">
                         <div className="text-center md:text-left mb-8 md:mb-0">
-                            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">Engineering <span className="text-gradient">Insights</span></h2>
+                            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">
+                                {t('home.insights.title').split(' ').map((word: string, i: number) => (
+                                    <span key={i} className={word === "Insights" ? "text-gradient" : ""}>
+                                        {word}{' '}
+                                    </span>
+                                ))}
+                            </h2>
                             <p className="text-white/40 max-w-lg">
-                                Deep dives into low-latency systems, multi-agent AI, and production-grade architecture.
+                                {t('home.insights.subtitle')}
                             </p>
                         </div>
                         <Link href="/articles">
                             <Button variant="secondary" size="md">
-                                View All Articles
+                                {t('home.insights.viewAll')}
                                 <ArrowRight className="ml-2 w-4 h-4" />
                             </Button>
                         </Link>
@@ -236,7 +242,7 @@ export function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                                         {article.excerpt}
                                     </p>
                                     <div className="flex items-center text-xs font-bold uppercase tracking-widest text-accent-blue group-hover:translate-x-2 transition-transform">
-                                        Read More <ArrowRight className="ml-2 w-3 h-3" />
+                                        {t('home.insights.readMore')} <ArrowRight className="ml-2 w-3 h-3" />
                                     </div>
                                     <div className="absolute top-8 right-8 text-white/5 group-hover:text-accent-blue/10 transition-colors pointer-events-none">
                                         <BookOpen size={40} />

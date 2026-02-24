@@ -11,36 +11,36 @@ export interface Specialization {
 export const specializations: Specialization[] = [
     {
         id: 'Backend',
-        title: 'Backend Engineering',
-        description: 'Highly scalable distributed systems and microservices architecture.',
+        title: 'specializations.backend.title',
+        description: 'specializations.backend.description',
         icon: 'Server',
         color: '#0070f3'
     },
     {
         id: 'Quant',
-        title: 'Quant / Trading',
-        description: 'low-mid frequency trading systems and algorithmic financial statistical models.',
+        title: 'specializations.quant.title',
+        description: 'specializations.quant.description',
         icon: 'TrendingUp',
         color: '#f5a623'
     },
     {
         id: 'Web3',
-        title: 'Web3 / Blockchain',
-        description: 'Smart contracts, DAO governance, and decentralized finance protocols.',
+        title: 'specializations.web3.title',
+        description: 'specializations.web3.description',
         icon: 'Shield',
         color: '#7928ca'
     },
     {
         id: 'AI',
-        title: 'AI / ML Engineering',
-        description: 'Neural Networks, Transformers, Computer Vision, data processing pipelines.',
+        title: 'specializations.ai.title',
+        description: 'specializations.ai.description',
         icon: 'Cpu',
         color: '#00dfd8'
     },
     {
         id: 'Web',
-        title: 'Fullstack Web',
-        description: 'Premium user interfaces with high performance and interactive animations.',
+        title: 'specializations.web.title',
+        description: 'specializations.web.description',
         icon: 'Layout',
         color: '#ff0080'
     }

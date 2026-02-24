@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
-    const article = getArticleBySlug(slug)
+    const article = getArticleBySlug(slug, 'en')
     if (!article) return {}
     return {
         title: article.title,
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ArticleDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
-    const article = getArticleBySlug(slug)
+    const article = getArticleBySlug(slug, 'en')
     if (!article) notFound()
 
     const { content } = await compileMDX({

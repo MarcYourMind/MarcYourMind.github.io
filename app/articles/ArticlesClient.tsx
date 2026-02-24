@@ -5,10 +5,13 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { AnimatedBackground } from "@/components/AnimatedBackground"
 import { Clock, Calendar, ArrowRight, BookOpen } from "lucide-react"
+import { useI18n } from "@/components/I18nProvider"
 import Link from "next/link"
 import type { ArticleMeta } from "@/lib/articles"
 
-export default function ArticlesClient({ articles }: { articles: ArticleMeta[] }) {
+export default function ArticlesClient({ articles, articlesMap }: { articles: ArticleMeta[], articlesMap?: Record<string, ArticleMeta[]> }) {
+    const { t, locale } = useI18n()
+
     return (
         <main className="relative min-h-screen">
             <AnimatedBackground />
@@ -17,14 +20,29 @@ export default function ArticlesClient({ articles }: { articles: ArticleMeta[] }
             <section className="pt-32 pb-20">
                 <div className="container mx-auto px-6 max-w-6xl">
                     <header className="mb-16 text-center">
-                        <h1 className="text-4xl md:text-7xl font-heading font-black mb-6 tracking-tighter">Insights &amp; <span className="text-gradient">Articles</span></h1>
+                        <h1 className="text-4xl md:text-7xl font-heading font-black mb-6 tracking-tighter">
+                            {(() => {
+                                const title = t("articles.title") || "Insights & Articles"
+                                if (title.includes('&')) {
+                                    const parts = title.split('&')
+                                    return <>{parts[0].trim()} &amp; <span className="text-gradient">{parts[1].trim()}</span></>
+                                } else if (title.includes(' y ')) {
+                                    const parts = title.split(' y ')
+                                    return <>{parts[0].trim()} y <span className="text-gradient">{parts[1].trim()}</span></>
+                                } else if (title.includes(' et ')) {
+                                    const parts = title.split(' et ')
+                                    return <>{parts[0].trim()} et <span className="text-gradient">{parts[1].trim()}</span></>
+                                }
+                                return title
+                            })()}
+                        </h1>
                         <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                            Deep dives into engineering challenges, architectural patterns, and the future of technology.
+                            {t("articles.subtitle")}
                         </p>
                     </header>
 
                     <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
-                        {articles.map((article, i) => (
+                        {(articlesMap?.[locale] || articles).map((article, i) => (
                             <Link href={`/articles/${article.slug}`} key={article.slug}>
                                 <motion.div
                                     initial={{ opacity: 0, x: -20 }}
@@ -56,7 +74,7 @@ export default function ArticlesClient({ articles }: { articles: ArticleMeta[] }
                                     </p>
 
                                     <div className="flex items-center text-white font-bold uppercase tracking-widest text-xs group-hover:translate-x-2 transition-transform">
-                                        Read Full Article <ArrowRight className="ml-2 w-4 h-4 text-accent-blue" />
+                                        {t("articles.readFull")} <ArrowRight className="ml-2 w-4 h-4 text-accent-blue" />
                                     </div>
 
                                     <div className="absolute top-8 right-8 text-white/5 group-hover:text-accent-blue/10 transition-colors">

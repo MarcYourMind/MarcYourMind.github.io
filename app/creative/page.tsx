@@ -12,9 +12,8 @@ import Image from "next/image"
 import { useMusicStore } from "@/lib/music-store"
 
 export default function CreativePage() {
-    const { t, locale } = useI18n()
+    const { t } = useI18n()
     const { playSong } = useMusicStore()
-    const philosophy = creativeData.philosophy[locale as keyof typeof creativeData.philosophy] || creativeData.philosophy.en
 
     return (
         <main className="min-h-screen bg-background">
@@ -44,7 +43,12 @@ export default function CreativePage() {
                             transition={{ delay: 0.1 }}
                             className="text-5xl md:text-7xl font-heading font-bold mb-8 tracking-tighter"
                         >
-                            Creativity is the <span className="text-gradient">Soul&apos;s Voice</span>
+                            {(() => {
+                                const tagline = t("creative.heroTagline")
+                                const words = tagline.split(" ")
+                                const last = words.pop()
+                                return <>{words.join(" ")} <span className="text-gradient">{last}</span></>
+                            })()}
                         </motion.h1>
 
                         <motion.div
@@ -57,7 +61,7 @@ export default function CreativePage() {
                                 <Sparkles className="w-20 h-20 text-accent-blue" />
                             </div>
                             <p className="text-xl md:text-2xl text-white/80 leading-relaxed italic font-light">
-                                &quot;{philosophy}&quot;
+                                &quot;{t("creative.philosophy")}&quot;
                             </p>
                         </motion.div>
                     </div>
@@ -71,15 +75,15 @@ export default function CreativePage() {
                         <div>
                             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">{t("creative.artTitle")}</h2>
                             <p className="text-white/60 max-w-xl mb-4">
-                                A collection of visual experiments, digital paintings, and sketches that explore form, color, and emotion.
+                                {t("creative.artSubtitle")}
                             </p>
                             <p className="text-accent-blue/80 text-sm font-medium italic">
-                                Note: All visual art featured here is meticulously hand-drawn using traditional pencils and black pens, then digitized for display.
+                                {t("creative.artNote")}
                             </p>
                         </div>
                         <div className="flex items-center space-x-2 text-accent-blue font-bold">
                             <Palette className="w-6 h-6" />
-                            <span className="text-sm uppercase tracking-wider">{creativeData.arts.length} Works</span>
+                            <span className="text-sm uppercase tracking-wider">{creativeData.arts.length} {t("creative.worksLabel")}</span>
                         </div>
                     </div>
 
@@ -94,12 +98,12 @@ export default function CreativePage() {
                         <div>
                             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">{t("creative.musicTitle")}</h2>
                             <p className="text-white/60 max-w-xl">
-                                Sonic journeys composed to facilitate focus, meditation, and emotional resonance.
+                                {t("creative.musicSubtitle")}
                             </p>
                         </div>
                         <div className="flex items-center space-x-2 text-accent-purple font-bold">
                             <Music className="w-6 h-6" />
-                            <span className="text-sm uppercase tracking-wider">{creativeData.songs.length} Tracks</span>
+                            <span className="text-sm uppercase tracking-wider">{creativeData.songs.length} {t("creative.tracksLabel")}</span>
                         </div>
                     </div>
 

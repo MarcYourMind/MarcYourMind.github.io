@@ -5,7 +5,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArtItem } from "@/data/creative"
 import { useI18n } from "./I18nProvider"
-import { ExternalLink, Palette } from "lucide-react"
+import { Palette } from "lucide-react"
 
 interface ArtGalleryProps {
     items: ArtItem[]
@@ -40,15 +40,11 @@ export function ArtGallery({ items }: ArtGalleryProps) {
                             </span>
                         </div>
                         <h3 className="font-heading font-bold text-xl text-white mb-1">
-                            {item.title}
+                            {t(`creative.items.${item.id}.title`) || item.title}
                         </h3>
-                        <p className="text-white/60 text-sm line-clamp-2 mb-4">
-                            {item.description}
+                        <p className="text-white/60 text-sm line-clamp-2">
+                            {t(`creative.items.${item.id}.description`) || item.description}
                         </p>
-                        <button className="flex items-center space-x-2 text-accent-blue text-sm font-medium hover:underline">
-                            <span>{t("creative.viewArt")}</span>
-                            <ExternalLink className="w-4 h-4" />
-                        </button>
                     </div>
 
                     {/* Badge */}

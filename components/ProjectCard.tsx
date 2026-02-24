@@ -4,9 +4,12 @@ import { motion } from "framer-motion"
 import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 import { Project } from "@/data/projects"
+import { useI18n } from "./I18nProvider"
 import { cn } from "@/lib/utils"
 
 export function ProjectCard({ project, index }: { project: Project, index: number }) {
+    const { t } = useI18n()
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -19,10 +22,10 @@ export function ProjectCard({ project, index }: { project: Project, index: numbe
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                 <img
                     src={project.thumbnail}
-                    alt={project.title}
+                    alt={t(`projects.${project.slug}.title`)}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
-                        (e.target as HTMLImageElement).src = `https://placehold.co/600x400/0a0a0a/0070f3?text=${project.title}`
+                        (e.target as HTMLImageElement).src = `https://placehold.co/600x400/0a0a0a/0070f3?text=${t(`projects.${project.slug}.title`)}`
                     }}
                 />
                 <div className="absolute top-4 right-4 z-20 flex space-x-2">
@@ -36,10 +39,10 @@ export function ProjectCard({ project, index }: { project: Project, index: numbe
 
             <div className="p-6 flex-grow flex flex-col">
                 <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-accent-blue transition-colors">
-                    {project.title}
+                    {t(`projects.${project.slug}.title`)}
                 </h3>
                 <p className="text-white/60 text-sm mb-4 line-clamp-2">
-                    {project.description}
+                    {t(`projects.${project.slug}.description`)}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -75,7 +78,7 @@ export function ProjectCard({ project, index }: { project: Project, index: numbe
                     </div>
                     <Link href={`/projects/${project.slug}`}>
                         <button className="text-xs font-bold uppercase tracking-widest text-accent-blue hover:text-white transition-colors">
-                            View Case Study
+                            {t("projects.ui.viewCaseStudy")}
                         </button>
                     </Link>
                 </div>

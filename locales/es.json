@@ -14,22 +14,677 @@
         "title": "Ingeniero Elite Multi-Dominio",
         "subtitle": "Arquitectando sistemas de alto rendimiento. Especializado en Trading Cuantitativo (Python y C++), Inteligencia Artificial (Python) y Arquitectura Web3 (Solidity).",
         "viewProjects": "Ver Proyectos",
-        "downloadResume": "Descargar CV"
+        "downloadResume": "Descargar CV",
+        "status": "Disponible para oportunidades de clase mundial"
     },
     "specializations": {
         "title": "Especializaciones Principales",
-        "backend": "Sistemas Backend",
-        "quant": "Quant / Trading",
-        "web3": "Blockchain / Web3",
-        "ai": "IA / Ingeniería ML",
-        "web": "Web Fullstack"
+        "backend": {
+            "title": "Sistemas Backend",
+            "description": "Sistemas distribuidos altamente escalables y arquitectura de microservicios."
+        },
+        "quant": {
+            "title": "Quant / Trading",
+            "description": "Sistemas de trading de baja-media frecuencia y modelos estadísticos financieros algorítmicos."
+        },
+        "web3": {
+            "title": "Blockchain / Web3",
+            "description": "Contratos inteligentes, gobernanza DAO y protocolos de finanzas descentralizadas."
+        },
+        "ai": {
+            "title": "IA / Ingeniería ML",
+            "description": "Redes neuronales, Transformers, visión artificial, canales de procesamiento de datos."
+        },
+        "web": {
+            "title": "Web Fullstack",
+            "description": "Interfaces de usuario premium con alto rendimiento y animaciones interactivas."
+        }
+    },
+    "home": {
+        "stats": {
+            "years": "Años Exp.",
+            "projects": "Proyectos",
+            "certs": "Certificaciones Prof.",
+            "languages": "Idiomas"
+        },
+        "featuredProjects": {
+            "title": "Proyectos Destacados",
+            "subtitle": "Una selección de desafíos de ingeniería de alto impacto y avances tecnológicos.",
+            "viewAll": "Todos los Proyectos"
+        },
+        "insights": {
+            "title": "Perspectivas de Ingeniería",
+            "subtitle": "Inmersiones profundas en sistemas de baja latencia, IA multi-agente y arquitectura de grado de producción.",
+            "viewAll": "Ver todos los Artículos",
+            "readMore": "Leer más"
+        }
+    },
+    "about": {
+        "title": "La Mente Detrás del Código",
+        "subtitle": {
+            "layers": "6+ Años Construyendo Productos",
+            "activity": "De Idea → Producción",
+            "search": "Impulsado por la Curiosidad",
+            "target": "Ingeniero Enfocado en el Producto"
+        },
+        "description": [
+            "Soy un ingeniero de software e ingeniero electrónico con una pasión por convertir ideas en productos. Tengo una sólida formación en desarrollo de software, desarrollo de IA y aplicación de matemáticas a sistemas de trading. Aprendo rápido y puedo dominar nuevas tecnologías con agilidad. También sé trabajar en equipo y disfruto de los entornos colaborativos.",
+            "Creo que mi propósito en la vida es hacer del mundo un lugar mejor construyendo tecnología.",
+            "Doy lo mejor de mí cuando resuelvo problemas difíciles. Contribuir a algo más grande que yo mismo.",
+            "Actualmente dedico mi tiempo a construir plataformas, desarrollar proyectos de IA, operar con criptomonedas y desarrollar mi disciplina.",
+            "Busco unirme a un equipo de personas con ideas afines que quieran cambiar el mundo paso a paso."
+        ],
+        "philosophy": {
+            "title": "Mi Filosofía",
+            "engineering": {
+                "title": "Excelencia en Ingeniería",
+                "desc": "Seguir las mejores prácticas y los más altos estándares de rendimiento es mi obsesión personal. Aplico principios de ingeniería rigurosos para asegurar que cada sistema esté optimizado, sea seguro y esté construido para durar."
+            },
+            "antifragile": {
+                "title": "Diseño Antifrágil",
+                "desc": "Diseñado para la corrección desde la primera línea. Mi experiencia en verificación y validación de diseños me permite construir sistemas robustos y antifrágiles con una mentalidad de 'diseño para el fallo', garantizando la fiabilidad donde más importa."
+            },
+            "agentic": {
+                "title": "El Cambio Agéntico",
+                "desc": "Pasar de herramientas pasivas a agentes activos. Me enfoco en arquitecturas autónomas que planifican, razonan y ejecutan flujos de trabajo complejos de forma independiente."
+            },
+            "clean": {
+                "title": "Arquitectura Limpia",
+                "desc": "El código es para que lo lean los humanos y las máquinas lo ejecuten. Construyo sistemas modulares que son tan mantenibles como potentes."
+            },
+            "strategic": {
+                "title": "Profundidad Estratégica",
+                "desc": "Más allá del código está la misión. Abordo cada proyecto con una visión a largo plazo, asegurando que las soluciones de hoy escalen y cumplan un propósito."
+            },
+            "user": {
+                "title": "Centrado en el Usuario",
+                "desc": "Las grandes mentes son capaces de convertir ideas complejas en soluciones simples y elegantes. Cierro la brecha entre los sistemas complejos y las experiencias de usuario intuitivas."
+            },
+            "precision": {
+                "title": "Precisión Artística",
+                "desc": "Construyo sistemas con detalles intrincados y elegancia estructural, donde cada línea de código cumple un propósito claro."
+            },
+            "data": {
+                "title": "Los Datos como Narrativa",
+                "desc": "Cada conjunto de datos cuenta una historia. Construyo canales que transforman el ruido crudo en señales claras y accionables para la comprensión humana y de las máquinas."
+            },
+            "curiosity": {
+                "title": "Chispa de Curiosidad",
+                "desc": "El 'Por qué' es tan importante como el 'Cómo'. La experimentación constante y una mente de principiante mantienen el proceso de ingeniería fresco y vibrante."
+            }
+        }
+    },
+    "opensource": {
+        "title": "Contribuciones de Código Abierto",
+        "subtitle": "Una colección de proyectos públicos, experimentos y contribuciones a la comunidad de desarrolladores.",
+        "communityFirst": "Comunidad Primero",
+        "pageSubtitle": "Creo en retribuir a la comunidad. Aquí hay algunos de mis proyectos y contribuciones de código abierto más impactantes.",
+        "ctaTitle": "¿Quieres colaborar?",
+        "ctaSubtitle": "Siempre estoy buscando proyectos interesantes a los que contribuir. Si estás trabajando en algo innovador, hablemos.",
+        "viewGithub": "Ver Perfil de GitHub",
+        "projects": {
+            "binance-data-processing": "Análisis de datos de Binance para ideas de bots de trading e investigación de mercado.",
+            "ML-Algorithms-Analysis": "Estudio de muchos algoritmos de ML con Python para entender visualmente los aspectos de cada algoritmo.",
+            "NinjaFocus": "Bot de trading de Solana conectado a Telegram para señales de trading en tiempo real.",
+            "Cervantes-AI-Story-Writer": "Escritor de historias multi-agente que usa LLMs para generar narrativas infinitas.",
+            "linktrees": "Sitios web estilo linktree con enfoque móvil y branding diverso.",
+            "HiveFrequency": "Arquitectura GAN+RNN para generación de música en vivo en tiempo real.",
+            "Dartboard-Detection": "Algoritmo de detección de diana implementado en C++ con algoritmos de visión por computadora OpenCV."
+        }
     },
     "creative": {
         "title": "Autoexpresión",
         "artTitle": "Galería de Arte",
         "musicTitle": "Paisajes Sonoros",
         "philosophyTitle": "Filosofía",
-        "viewArt": "Ver Arte",
-        "listenNow": "Escuchar Ahora"
+        "listenNow": "Escuchar Ahora",
+        "heroTagline": "La Creatividad es la Voz del Alma",
+        "artSubtitle": "Una colección de experimentos visuales, pinturas digitales y bocetos que exploran la forma, el color y la emoción.",
+        "artNote": "Toda la obra visual presentada aquí es dibujada a mano meticulosamente con lápices y bolígrafos tradicionales, y luego digitalizada para su presentación.",
+        "musicSubtitle": "Viajes sonoros compuestos para facilitar la concentración, la meditación y la resonancia emocional.",
+        "worksLabel": "Obras",
+        "tracksLabel": "Pistas",
+        "philosophy": "Mi arte es un viaje hacia la intensidad abstracta, creado con lápices, lápices de colores y rotuladores negros. Me centro en colores vibrantes y saturados y en formas geométricas intrincadas que desafían la percepción e invitan a una profunda introspección. Del mismo modo, mi música (como Shaboom) es una exploración de paisajes sonoros de alta energía y complejidad rítmica.",
+        "items": {
+            "art1": {
+                "title": "Portal Cromático",
+                "description": "Una intensa exploración geométrica de la simetría y los colores vibrantes, irradiando desde una silueta central."
+            },
+            "art2": {
+                "title": "Geometría Fúngica",
+                "description": "Formas orgánicas de hongos sobre una cuadrícula triangular nítida y vibrante."
+            },
+            "art3": {
+                "title": "Esfera Monocromática",
+                "description": "Un complejo patrón esférico en blanco y negro que evoca profundidad y movimiento rotacional."
+            },
+            "art4": {
+                "title": "Enredos Neurales",
+                "description": "Una telaraña colorida y caótica de líneas interconectadas que representan redes complejas."
+            },
+            "art5": {
+                "title": "Monograma MARC",
+                "description": "Un monograma caligráfico estilizado trazado en tinta negra con elegantes florituras."
+            },
+            "art6": {
+                "title": "Flujo Triple",
+                "description": "Un diseño circular inspirado en el triskelion con tres formas orgánicas entrelazadas."
+            },
+            "art7": {
+                "title": "Radiancia Prismática",
+                "description": "Un estudio de color de alta intensidad con lápices de colores para crear una sensación de energía luminosa."
+            },
+            "art8": {
+                "title": "Ritmo Abstracto",
+                "description": "Una composición rítmica de líneas y formas que refleja la energía de mi música."
+            },
+            "art9": {
+                "title": "Contornos Vívidos",
+                "description": "Una exploración de forma y contorno con rotuladores gruesos y tonos saturados."
+            },
+            "art10": {
+                "title": "Pirámides Dimensionales",
+                "description": "Un boceto minimalista a lápiz de dos pirámides entrelazadas que exploran la profundidad y el espacio negativo."
+            }
+        }
+    },
+    "articles": {
+        "title": "Perspectivas y Artículos",
+        "subtitle": "Inmersiones profundas en desafíos de ingeniería, patrones arquitectónicos y el futuro de la tecnología.",
+        "back": "Volver a Artículos",
+        "readFull": "Leer Artículo Completo",
+        "share": "Compartir Artículo",
+        "discuss": "Comentar conmigo",
+        "toc": "Tabla de Contenidos"
+    },
+    "contact": {
+        "title": "Construyamos El Futuro",
+        "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé en 24 horas.",
+        "emailTitle": "Envíame un Correo",
+        "callTitle": "Llámame",
+        "socialsTitle": "Redes Sociales",
+        "whatsappTitle": "Sáltate el correo.",
+        "whatsappDesc": "Respondo más rápido por WhatsApp. Haz clic abajo para iniciar una conversación directamente conmigo.",
+        "whatsappButton": "Mensaje en WhatsApp"
+    },
+    "projects": {
+        "ui": {
+            "backToGallery": "Volver a la Galería",
+            "theChallenge": "El Desafío",
+            "theSolution": "La Solución",
+            "techStack": "Tecnologías",
+            "keyMetrics": "Métricas Clave",
+            "furtherReading": "Lectura Adicional",
+            "technicalArticle": "Artículo Técnico",
+            "furtherReadingDesc": "Para profundizar en la implementación técnica y arquitectura de este proyecto, lee el artículo completo.",
+            "viewCaseStudy": "Ver Caso de Estudio",
+            "relatedProjects": "Proyectos Relacionados",
+            "demo": "Demo",
+            "code": "Código"
+        },
+        "cryptogpt": {
+            "title": "CryptoGPT",
+            "description": "Modelo transformador personalizado entrenado con datos de volumen de mercado en rango.",
+            "longDescription": "Modelo transformador ajustado con extensos conjuntos de datos cripto-financieros para crear un modelo preciso para mercados en rango.",
+            "challenge": "Desarrollar un modelo que pudiera predecir con precisión la dirección del mercado en entornos de baja volatilidad 'en rango' donde los indicadores tradicionales a menudo fallan.",
+            "solution": "Se implementó una arquitectura Transformer personalizada entrenada con datos de volumen de mercado de alta fidelidad, utilizando atención de múltiples cabezas para capturar patrones de correlación sutiles.",
+            "achievements": [
+                "Se logró un 82% de precisión direccional en mercados en rango",
+                "Implementación de un pipeline de ingeniería de características en tiempo real",
+                "Reducción de la latencia del modelo a menos de 50ms",
+                "Entrenamiento escalable en clústeres de GPU distribuidos"
+            ],
+            "metrics": {
+                "directionalAccuracy": "Precisión Direccional",
+                "inferenceLatency": "Latencia de Inferencia"
+            }
+        },
+        "toptrader": {
+            "title": "Plataforma TopTrader",
+            "description": "Plataforma de trading inteligente enfocada en la disciplina para cripto con escaneo de mercado automatizado, análisis de sentimiento y gestión de riesgos.",
+            "longDescription": "TopTrader fusiona todas las cuentas de trading en una sola plataforma, ofreciendo escaneo de mercado automatizado, gestión de riesgos, ejecución de algoritmos, diario, análisis conductual y una experiencia de trading unificada.",
+            "challenge": "Las herramientas de trading fragmentadas y la toma de decisiones emocional a menudo llevan a resultados inconsistentes tanto para traders minoristas como profesionales.",
+            "solution": "Se unificó el flujo de trabajo de trading en una sola plataforma de alto rendimiento que combina ejecución, gestión de riesgos automatizada y mapas de calor conductuales.",
+            "achievements": [
+                "Integración de más de 5 exchanges de criptomonedas importantes a través de una API unificada",
+                "Monitoreo de riesgos en tiempo real y dimensionamiento de posición automatizado",
+                "Análisis conductual integral y diario de trading",
+                "Ejecución de órdenes en menos de un segundo en todas las cuentas"
+            ],
+            "metrics": {
+                "exchanges": "Exchanges Integrados",
+                "speed": "Velocidad de Ejecución"
+            }
+        },
+        "technex": {
+            "title": "Technex",
+            "description": "Empresa líder en desarrollo de software y consultoría.",
+            "longDescription": "Technex ofrece soluciones de software de alta gama y servicios de consultoría, especializándose en fintech y sistemas de alto rendimiento.",
+            "challenge": "Las empresas a menudo luchan por cerrar la brecha entre los requisitos de negocio complejos y la implementación técnica de alto rendimiento.",
+            "solution": "Fundé Technex para proporcionar consultoría de alta gama e ingeniería de software a medida, centrándome en arquitecturas de nube escalables y soluciones fintech.",
+            "achievements": [
+                "Entrega exitosa de más de 10 proyectos empresariales de alto impacto",
+                "Ingeniería de arquitecturas backend escalables para startups fintech",
+                "Reducción de los costes operativos de los clientes hasta en un 40%",
+                "Establecimiento de una reputación de excelencia técnica y fiabilidad"
+            ],
+            "metrics": {
+                "clients": "Clientes Empresariales",
+                "uptime": "Disponibilidad del Sistema"
+            }
+        },
+        "technexConsultancy": {
+            "title": "Consultoría Freelance de IA y Automatización",
+            "description": "Servicios especializados de consultoría de IA y automatización para optimizar procesos críticos en empresas.",
+            "longDescription": "Ofrecí servicios expertos de consultoría de IA y automatización para optimizar procesos críticos para diversas empresas, centrándome en la eficiencia operativa y la integración estratégica de tecnologías de IA.",
+            "challenge": "Muchas empresas carecen de la experiencia interna para identificar y automatizar procesos manuales repetitivos y lentos utilizando IA.",
+            "solution": "Proporcioné consultoría experta para identificar procesos críticos e implementar flujos de trabajo de automatización personalizados impulsados por IA utilizando LLMs y Python.",
+            "achievements": [
+                "Automatización de flujos de trabajo principales para múltiples PYMES",
+                "Integración de agentes LLM personalizados para procesamiento de datos",
+                "Realización de auditorías y optimización de procesos integrales",
+                "Mejora del rendimiento operativo en un promedio del 60%"
+            ]
+        },
+        "aitrader": {
+            "title": "AiTrader",
+            "description": "Asistente de trading impulsado por IA y plataforma de análisis de mercado.",
+            "longDescription": "Desarrollé AiTrader para aprovechar modelos de aprendizaje automático para la predicción del mercado y la ejecución automatizada de operaciones, proporcionando a los usuarios información basada en datos.",
+            "challenge": "Los traders a menudo sufren de sobrecarga de información y ejecución retrasada al intentar seguir señales de IA complejas.",
+            "solution": "Construí un asistente de trading de IA en tiempo real que destila señales de mercado complejas en información procesable y ejecuta operaciones automáticamente basándose en parámetros definidos por el usuario.",
+            "achievements": [
+                "Implementación de análisis de sentimiento en tiempo real para noticias cripto",
+                "Integración con múltiples exchanges para ejecución de baja latencia",
+                "Desarrollo de un panel intuitivo para backtesting de estrategias",
+                "Se logró un ratio de Sharpe un 20% más alto en las primeras pruebas en vivo"
+            ]
+        },
+        "chainchampions": {
+            "title": "Plataforma NFT Chain Champions",
+            "description": "Plataforma de torneos de juegos Web3 con contratos inteligentes de Solidity para custodia, entradas y pagos.",
+            "longDescription": "Una plataforma de torneos impulsada por NFTs donde los usuarios pueden competir en juegos basados en blockchain. Cuenta con contratos inteligentes seguros para gestionar las tarifas de entrada y la distribución automatizada de los premios, todo ello ejecutado en una infraestructura de nube escalable.",
+            "challenge": "Garantizar el juego limpio y la distribución de premios segura y automatizada en un entorno de juego sin confianza era un gran obstáculo.",
+            "solution": "Desarrollo de contratos inteligentes robustos en Solidity para la gestión de custodia y torneos, junto con un backend de alto rendimiento para sincronizar los estados de juego.",
+            "achievements": [
+                "Procesamiento de más de 500 distribuciones de premios seguras y automatizadas",
+                "Implementación de contratos inteligentes optimizados para gas",
+                "Construcción de un sistema de clasificación en tiempo real con integración Web3",
+                "Plataforma asegurada contra vulnerabilidades comunes de contratos inteligentes"
+            ]
+        },
+        "nasdaq": {
+            "title": "Algoritmo de Trading de Futuros NASDAQ",
+            "description": "Sistema de trading C++ de alto rendimiento integrado con Interactive Brokers para ejecución automatizada. (Plutus)",
+            "longDescription": "Desarrollo de un sistema de trading robusto para futuros del NASDAQ, implementando el procesamiento de datos de mercado en tiempo real y la ejecución automatizada. El sistema cuenta con controles de riesgo estadísticos y fue optimizado para un rendimiento constante bajo diversas condiciones de mercado. Este proyecto forma parte del algoritmo de trading en vivo Plutus.",
+            "challenge": "Manejar la extrema volatilidad y el rendimiento de datos del mercado de futuros del NASDAQ requería un sistema con mínima fluctuación y alta determinación.",
+            "solution": "Ingeniería de un motor de trading C++ de baja latencia utilizando estructuras de datos sin bloqueo e integración directa con la API de Interactive Brokers.",
+            "achievements": [
+                "Latencia tick-to-trade inferior a 2,5ms",
+                "Manejo de más de 120k mensajes de mercado por segundo",
+                "Cero errores de trading relacionados con el sistema durante alta volatilidad",
+                "Implementación de protecciones de riesgo estadísticas avanzadas"
+            ],
+            "metrics": {
+                "tickToTrade": "Tick-to-Trade",
+                "throughput": "Rendimiento"
+            }
+        },
+        "solanaMarketMaker": {
+            "title": "Creador de Mercado de Tokens Solana (Share Inc.)",
+            "description": "Bot automatizado de provisión de liquidez para tokens basados en Solana utilizando el SDK de Raydium.",
+            "longDescription": "Construí un sofisticado bot creador de mercado que proporciona liquidez y descubrimiento de precios para tokens de Solana. Integrado directamente con el SDK de Raydium e implementó estrategias de precios automatizadas basadas en la profundidad del mercado en tiempo real.",
+            "challenge": "Mantener diferenciales ajustados y liquidez adecuada en Solana durante períodos de extrema congestión de la red y alta volatilidad de precios.",
+            "solution": "Desarrollo de un bot creador de mercado de alta frecuencia utilizando Node.js y el SDK de Raydium, optimizado para el modelo único de procesamiento de transacciones de Solana.",
+            "achievements": [
+                "Mantenimiento de liquidez 24/7 para múltiples tokens SPL",
+                "Uso de RPC optimizado para minimizar fallos de transacción",
+                "Reequilibrio automatizado para minimizar la pérdida impermanente",
+                "Diferenciales de creación de mercado consistentemente rentables logrados"
+            ]
+        },
+        "gotovan": {
+            "title": "Optimizador Logístico GotoVan",
+            "description": "Plataforma de optimización de logística y rutas para servicios de entrega.",
+            "longDescription": "Desarrollé un optimizador logístico integral para GotoVan, centrado en la planificación eficiente de rutas y la gestión de recursos para agilizar las operaciones de entrega.",
+            "challenge": "Resolver la variación del 'Problema del Viajante' para una flota de furgonetas de reparto con ventanas de tiempo complejas y capacidades de carga variables.",
+            "solution": "Se implementó un optimizador de rutas basado en heurística utilizando Node.js y la API de Google Maps, integrado con una interfaz de seguimiento en tiempo real.",
+            "achievements": [
+                "Reducción del kilometraje total de entrega en un promedio del 15%",
+                "Mejora de la tasa de entrega a tiempo al 98%",
+                "Planificación de rutas diaria automatizada para más de 20 vehículos",
+                "Ajuste de ruta en tiempo real basado en datos de tráfico"
+            ]
+        },
+        "criptoInfra": {
+            "title": "Infraestructura de Trading Automatizada de CRIPTO Ltd",
+            "description": "Infraestructura fundamental para el trading algorítmico de alta frecuencia en múltiples exchanges.",
+            "longDescription": "Construí la infraestructura de trading central para CRIPTO Ltd, permitiendo la participación automatizada en el mercado y la ejecución a alta velocidad en varios exchanges de criptomonedas.",
+            "challenge": "Construir una infraestructura unificada y agnóstica al exchange capaz de manejar flujos de datos de alta frecuencia y ejecución en más de 10 CEX.",
+            "solution": "Desarrollo de una robusta infraestructura basada en Python utilizando WebSockets y CCXT, con una gestión de estado centralizada y motor de riesgo.",
+            "achievements": [
+                "Conectividad unificada a más de 10 exchanges cripto importantes",
+                "Manejo robusto de más de 500k actualizaciones de WebSocket diarias",
+                "Auditoría de riesgo en tiempo real y seguimiento de PnL integrados",
+                "Disponibilidad del sistema lograda del 99,99% durante 12 meses"
+            ]
+        },
+        "brite": {
+            "title": "Integración de la API PSD2 de Brite Payments",
+            "description": "Integración de APIs de pago compatibles con PSD2 para transferencias bancarias en tiempo real.",
+            "longDescription": "Implementé una integración segura y escalable con las APIs PSD2 de Brite Payments, permitiendo pagos fluidos de cuenta a cuenta en tiempo real y servicios de información de cuentas bancarias.",
+            "challenge": "La integración con el marco PSD2 requería cumplir con estándares extremadamente altos de seguridad, privacidad de datos y fiabilidad de las transacciones.",
+            "solution": "Ingeniería de una capa de integración segura en Node.js que manejaba flujos de autenticación complejos y sincronización de datos bancarios en tiempo real a través de APIs REST.",
+            "achievements": [
+                "Implementación de API PSD2 totalmente compatible",
+                "Procesamiento seguro de miles de transferencias en tiempo real",
+                "Implementación de un robusto manejo de errores para tiempos de espera bancarios",
+                "Reducción de la fricción en las transacciones para los usuarios finales en un 30%"
+            ]
+        },
+        "snake3d": {
+            "title": "Minijuego Snake 3D",
+            "description": "El clásico juego de la serpiente reimaginado en 3D utilizando Three.js.",
+            "longDescription": "Originalmente desarrollado en C++, este proyecto fue traducido a Three.js para ser exhibido en un entorno web. Cuenta con un entorno 3D totalmente interactivo donde los jugadores pueden controlar a la serpiente y recoger objetos.",
+            "challenge": "Traducir la lógica de un juego clásico de C++ a una experiencia 3D fluida basada en el navegador con un rendimiento constante en todos los dispositivos.",
+            "solution": "Uso de Three.js para construir un entorno 3D adaptado a dispositivos móviles, optimizando el bucle de renderizado para obtener las máximas tasas de fotogramas.",
+            "achievements": [
+                "Se lograron 60 FPS estables en un entorno web 3D",
+                "Implementación de controles responsivos para teclado y táctil",
+                "Iluminación dinámica y efectos de partículas en el navegador",
+                "Portabilidad exitosa de C++ orientado a escritorio a JS orientado a la web"
+            ]
+        },
+        "cervantes": {
+            "title": "Escritor de Libros de IA Cervantes",
+            "description": "Escritor de historias multi-agente que utiliza LLMs para generar narrativas infinitas.",
+            "longDescription": "Cervantes es un sofisticado sistema de IA multi-agente diseñado para planificar, escribir y refinar novelas de alta calidad de forma autónoma. Nombrado en honor al legendario autor de Don Quijote, aprovecha los LLM locales a través de Ollama para cerrar la brecha entre el texto generado por IA y la prosa literaria de nivel profesional, empleando una arquitectura jerárquica multi-agente (Planificador, Escritor y Evaluador) para garantizar la coherencia y calidad narrativa.",
+            "challenge": "Garantizar la coherencia narrativa y la calidad literaria en la escritura de larga duración al utilizar modelos de lenguaje grandes (LLM) locales y más pequeños.",
+            "solution": "Creación de un flujo de trabajo multi-agente donde diferentes instancias de LLM se especializan en planificar, redactar y evaluar críticamente el texto.",
+            "achievements": [
+                "Generación de narrativas coherentes de más de 50.000 palabras",
+                "Implementación de agentes de planificación jerárquicos",
+                "Reducción de patrones repetitivos de IA a través de revisiones iterativas",
+                "Despliegue totalmente local para máxima privacidad y eficiencia de costes"
+            ]
+        },
+        "linktrees": {
+            "title": "Sitios Web de Enlaces Personales Linktrees",
+            "description": "Sitios web tipo linktree optimizados para móviles con diversas marcas.",
+            "longDescription": "Una colección de páginas de destino de alto rendimiento y optimizadas para móviles, diseñadas para marcas personales y enlaces a redes sociales. Cada versión presenta estilos estéticos únicos y diseños optimizados.",
+            "challenge": "Crear páginas de destino de alto rendimiento que se carguen instantáneamente en cualquier conexión manteniendo una estética de alta gama en más de 10 variaciones.",
+            "solution": "Construcción de una colección de plantillas de JS/CSS puro optimizadas para la entrega móvil primero y un peso mínimo de activos.",
+            "achievements": [
+                "Puntuaciones perfectas de 100/100 en el rendimiento de Lighthouse",
+                "Más de 1 millón de visitas totales procesadas en todos los dominios",
+                "Capacidad de respuesta en todas las resoluciones de dispositivos móviles",
+                "Implementación de modo oscuro y tokens de marca dinámicos"
+            ]
+        },
+        "neurodivergentConsulting": {
+            "title": "Consultoría Neurodivergente",
+            "description": "Sitio web de coaching freelance adaptado para profesionales neurodivergentes.",
+            "longDescription": "Un sitio web de consultoría de alta calidad construido con un enfoque en la accesibilidad y el diseño limpio. Cuenta con una interfaz de usuario moderna utilizando React, TailwindCSS y componentes de Shadcn UI.",
+            "challenge": "Diseñar una interfaz de usuario que sea altamente profesional pero accesible y relajante para usuarios con sensibilidades sensoriales.",
+            "solution": "Uso de una paleta de colores suaves y un diseño espacioso con sutiles micro-interacciones para crear una experiencia de usuario enfocada y de baja fricción.",
+            "achievements": [
+                "Implementación de estándares de accesibilidad WCAG",
+                "Construcción de un sistema de programación y reserva a medida",
+                "Se logró un 95% de satisfacción del usuario en los primeros comentarios",
+                "Diseño orientado a móviles primero para accesibilidad profesional"
+            ]
+        },
+        "hivefrequency": {
+            "title": "HiveFrequency",
+            "description": "Arquitectura GAN+RNN para la generación de música en vivo en tiempo real.",
+            "longDescription": "Un proyecto de música experimental que combina Redes Generativas Antagónicas (GAN) y Redes Neuronales Recurrentes (RNN) para generar patrones musicales dinámicos y evolutivos en tiempo real.",
+            "challenge": "Generar patrones musicalmente coherentes que evolucionen con el tiempo sin volverse repetitivos o armónicamente disonantes.",
+            "solution": "Combinación de una GAN para la generación de patrones a corto plazo con una RNN para la evolución temática a largo plazo y la estructura musical.",
+            "achievements": [
+                "Generación de MIDI en tiempo real con 0ms de retraso perceptible",
+                "Captura estructuras armónicas y ritmos complejos",
+                "Transferencia de estilo dinámica para actuaciones en vivo",
+                "Composición musical de larga duración totalmente automatizada"
+            ]
+        },
+        "cruzcampo": {
+            "title": "Cruzcampo Tapeando 2025",
+            "description": "Aplicación web de emergencia de pila completa para una importante marca de cerveza española.",
+            "longDescription": "Desarrollado en solo 48 horas para salvar una campaña de marketing a gran escala. Este proyecto de alta presión implicó la construcción de una aplicación web robusta y de alto tráfico para Cruzcampo.",
+            "challenge": "Construir, probar y desplegar una aplicación lista para producción para una campaña nacional en menos de 48 horas con un tráfico esperado de millones.",
+            "solution": "Aprovechamiento de un boilerplate preconfigurado y priorización de la funcionalidad principal, utilizando una infraestructura de nube escalable para manejar picos de tráfico.",
+            "achievements": [
+                "Plataforma totalmente funcional entregada en 48 horas",
+                "Manejo exitoso de más de 100k usuarios concurrentes",
+                "Cero tiempo de inactividad durante el lanzamiento inicial de la campaña",
+                "Campaña de marketing de alto valor salvada del fracaso"
+            ]
+        },
+        "illuvium": {
+            "title": "Simulador de Fusión de Illuvium",
+            "description": "Simulador de escaneo de mercado para el juego NFT Web3 Illuvium.",
+            "longDescription": "Una herramienta estratégica para los jugadores de Illuvium que simula las fusiones de NFT y escanea los datos del mercado para identificar las oportunidades de fusión más rentables para los coleccionistas.",
+            "challenge": "Agregar y normalizar datos de mercado fragmentados de múltiples mercados Web3 para proporcionar métricas de rentabilidad de fusión en tiempo real.",
+            "solution": "Construcción de un escáner de mercado de alto rendimiento utilizando Web3.js y un frontend de React para una visualización intuitiva de datos y simulación de estrategias.",
+            "achievements": [
+                "Seguimiento en tiempo real de los precios de los activos en más de 3 DEX",
+                "Simulación de más de 1000 combinaciones de fusión en segundos",
+                "Información de arbitraje procesable proporcionada para los jugadores",
+                "Panel de control adaptado a móviles para trading sobre la marcha"
+            ]
+        },
+        "dartboard": {
+            "title": "Detección de Objetos en Diana",
+            "description": "Sistema de visión por computadora en tiempo real para la detección de dianas.",
+            "longDescription": "Un proyecto de visión por computadora de alto rendimiento que utiliza OpenCV y C++ para detectar y rastrear dianas en flujos de vídeo en tiempo real con alta precisión.",
+            "challenge": "Detectar con precisión las dianas bajo diversas condiciones de iluminación y ángulos de cámara, manteniendo un alto rendimiento en tiempo real.",
+            "solution": "Implementación de una serie de filtros de visión por computadora personalizados y restricciones geométricas utilizando OpenCV en C++ para un rendimiento máximo.",
+            "achievements": [
+                "99,5% de precisión en la detección de dianas",
+                "Procesamiento en tiempo real a 120 FPS en CPUs estándar",
+                "Rastreo robusto a través de oclusión y desenfoque de movimiento",
+                "Integración del sistema de puntuación automatizado"
+            ]
+        }
+    },
+    "footer": {
+        "description": "Ingeniero de Software que construye sistemas de alto rendimiento, transformando ideas complejas en soluciones elegantes centradas en el usuario. Impulsado por una profunda creencia y compromiso de usar la tecnología como una fuerza para el bien. Motivado por crear tecnología que resuelva problemas significativos y mejore vidas.",
+        "builtWith": "Construido con Next.js, Framer Motion y Pasión."
+    },
+    "resume": {
+        "ui": {
+            "hubTitle": "Centro de Currículum",
+            "hubSubtitle": "Seleccione una trayectoria especializada para ver un currículum personalizado y un catálogo de experiencia relevante.",
+            "exploreTrack": "Explorar Trayectoria",
+            "tailoredOverview": "Información personalizada para roles en {{role}}, incluyendo la pila tecnológica relevante y logros clave.",
+            "professionalExperience": "Experiencia Profesional",
+            "education": "Educación",
+            "skillMatrix": "Matriz de Habilidades",
+            "certifications": "Certificaciones",
+            "languages": "Idiomas"
+        },
+        "shared": {
+            "skills": {
+                "languages": "Idiomas",
+                "backend": "Backend",
+                "infrastructure": "Infraestructura",
+                "dataScience": "Ciencia de Datos",
+                "tradingSystems": "Sistemas de Trading",
+                "blockchain": "Blockchain",
+                "tools": "Herramientas",
+                "aiMl": "IA/ML",
+                "frontend": "Frontend"
+            },
+            "languages": {
+                "english": "Inglés",
+                "spanish": "Español",
+                "french": "Francés",
+                "native": "Nativo",
+                "workingProficiency": "Competencia Profesional"
+            },
+            "education": {
+                "bristolDegree": "BEng en Ciencias de la Computación y Electrónica",
+                "bristolInstitution": "Universidad de Bristol",
+                "bristolDescription": "Mantuve un promedio de Primera Clase durante todo el currículo de ingeniería en Ciencias de la Computación y Electrónica. Hice la transición de los estudios formales durante el último año para escalar un proyecto de trading; posteriormente fui galardonado con el título de BEng por la Universidad de Bristol."
+            }
+        },
+        "tracks": {
+            "Backend": {
+                "title": "Ingeniero Backend Senior",
+                "summary": "Ingeniero backend senior con más de 5 años de experiencia diseñando y escalando sistemas backend de alto rendimiento en entornos FinTech y de datos intensivos. Especializado en Python, FastAPI, SQL y arquitecturas nativas de la nube.",
+                "experience": {
+                    "brite": {
+                        "role": "Desarrollador Python Backend Senior",
+                        "period": "Mayo 2025 – Julio 2025",
+                        "description": [
+                            "Diseñé e implementé APIs compatibles con PSD2 usando Python y FastAPI",
+                            "Entregué interfaces estándar OpenAPI para integraciones de Open Banking",
+                            "Colaboré en un entorno Agile Kanban con equipos de producto y cumplimiento",
+                            "Mejoré la fiabilidad y el mantenimiento de las APIs mediante validación de esquemas estructurados"
+                        ]
+                    },
+                    "technex": {
+                        "role": "Director y CTO",
+                        "period": "Ene 2021 – Sept 2024",
+                        "description": [
+                            "Lideré el desarrollo backend para múltiples clientes de automatización FinTech",
+                            "Diseñé servicios escalables basados en Python para trading, análisis e ingesta de datos",
+                            "Construí pipelines de datos de mercado en tiempo real y sistemas de cartera automatizados",
+                            "Reduje el riesgo de la cartera de clientes en un 40% usando modelos de volatilidad predictiva",
+                            "Gestioné equipos de ingeniería distribuidos usando metodologías Agile sprint"
+                        ]
+                    },
+                    "gotovan": {
+                        "role": "Desarrollador Full Stack",
+                        "period": "Mar 2022 – Nov 2023",
+                        "description": [
+                            "Desarrollé servicios backend usando Python FastAPI y SQL en GCP",
+                            "Implementé algoritmos de precios basados en rutas mejorando la eficiencia de costos logísticos",
+                            "Construí herramientas internas de BI para analizar datos operativos y optimizar el uso de recursos",
+                            "Integré autenticación OAuth y sistemas de pago Stripe"
+                        ]
+                    }
+                }
+            },
+            "Quant": {
+                "title": "Desarrollador Cuantitativo",
+                "summary": "Desarrollador cuantitativo con sólida formación en trading algorítmico, modelado estadístico y sistemas de datos de alto rendimiento. Experimentado en el diseño de estrategias de trading automatizadas, modelos de riesgo y plataformas de análisis de mercado.",
+                "experience": {
+                    "technex": {
+                        "role": "Desarrollador Cuantitativo",
+                        "period": "Ene 2021 – Sept 2024",
+                        "description": [
+                            "Diseñé sistemas de trading algorítmico en acciones, futuros y cripto",
+                            "Construí motores de ejecución en tiempo real procesando feeds de datos de mercado",
+                            "Reduje el riesgo de la cartera en un 40% usando modelos de volatilidad predictiva",
+                            "Desarrollé herramientas automatizadas de gestión de carteras y análisis de rendimiento"
+                        ]
+                    },
+                    "nasdaq": {
+                        "role": "Desarrollador Cuantitativo (Proyecto de Cliente)",
+                        "period": "Ene 2023 – Mayo 2024",
+                        "description": [
+                            "Desarrollé un sistema de trading en C++ integrado con Interactive Brokers",
+                            "Implementé el procesamiento de datos de mercado en tiempo real y la ejecución automatizada",
+                            "Optimicé el rendimiento de la estrategia usando controles de riesgo estadísticos"
+                        ]
+                    },
+                    "cripto": {
+                        "role": "Co-fundador y CEO",
+                        "period": "Sept 2019 – Dic 2020",
+                        "description": [
+                            "Construí infraestructura de trading cuantitativo ejecutando cientos de estrategias",
+                            "Apliqué inferencia bayesiana y Procesos Gaussianos a la predicción de mercados",
+                            "Logré un retorno anual del 44% en sistemas de inversión automatizados",
+                            "Lideré la investigación, el diseño de estrategias y la arquitectura del sistema"
+                        ]
+                    }
+                }
+            },
+            "Web3": {
+                "title": "Ingeniero Web3",
+                "summary": "Ingeniero Web3 con profunda experiencia en la construcción de sistemas de trading basados en blockchain, plataformas NFT e infraestructura de contratos inteligentes. Especializado en Solidity, Solana e integraciones de blockchain basadas en TypeScript.",
+                "experience": {
+                    "chainchampions": {
+                        "role": "Desarrollador Web3 Full Stack",
+                        "period": "Mayo 2024 – Presente",
+                        "description": [
+                            "Desarrollé plataforma de torneos NFT usando React, Node.js, TypeScript",
+                            "Implementé contratos inteligentes en Solidity para depósito, compras y pagos",
+                            "Desplegué infraestructura en la nube en GCP con interacciones seguras de contratos",
+                            "Aseguré sistemas de reglas parametrizadas para la ejecución automatizada de torneos"
+                        ]
+                    },
+                    "technex": {
+                        "role": "Ingeniero Web3 / Director y CTO",
+                        "period": "Ene 2021 – Sept 2024",
+                        "description": [
+                            "Diseñé y desplegué contratos inteligentes para plataformas DeFi y NFT",
+                            "Construí sistemas automatizados de trading de criptomonedas y market-making",
+                            "Integré servicios de blockchain con APIs off-chain y bases de datos SQL",
+                            "Lideré el desarrollo centrado en la seguridad usando estándares de código abierto auditados"
+                        ]
+                    },
+                    "share": {
+                        "role": "Creador de Mercado de Tokens Solana",
+                        "period": "Sept 2020 – Dic 2021",
+                        "description": [
+                            "Construí un bot de market-making proporcionando liquidez a un token basado en Solana",
+                            "Integré con la blockchain de Solana usando Node.js y el SDK de Raydium",
+                            "Diseñé estrategias automatizadas de precios y liquidez respaldadas por datos SQL"
+                        ]
+                    }
+                }
+            },
+            "AI": {
+                "title": "Ingeniero de IA y ML",
+                "summary": "Especialista en la construcción de agentes de IA y modelos de aprendizaje automático para análisis predictivo y automatización. Experimentado en la aplicación de inferencia bayesiana y redes neuronales a problemas complejos impulsados por datos.",
+                "experience": {
+                    "technex": {
+                        "role": "Director y CTO (Enfoque en IA)",
+                        "period": "Ene 2021 – Sept 2024",
+                        "description": [
+                            "Desarrollé modelos de volatilidad predictiva usando Procesos Gaussianos",
+                            "Construí sistemas automatizados de gestión de riesgos impulsados por analítica de ML",
+                            "Integré perspectivas impulsadas por IA en herramientas de automatización FinTech"
+                        ]
+                    },
+                    "cripto": {
+                        "role": "Co-fundador (Investigador de ML)",
+                        "period": "Sept 2019 – Dic 2020",
+                        "description": [
+                            "Apliqué inferencia bayesiana a la predicción de mercados y optimización de estrategias",
+                            "Investigué e implementé modelos de Procesos Gaussianos de alto rendimiento"
+                        ]
+                    }
+                }
+            },
+            "Web": {
+                "title": "Desarrollador Fullstack",
+                "summary": "Desarrollador fullstack centrado en la construcción de aplicaciones web de alto rendimiento con pilas tecnológicas modernas. Especializado en integraciones de React, Node.js y FastAPI.",
+                "experience": {
+                    "chainchampions": {
+                        "role": "Desarrollador Web3 Full Stack",
+                        "period": "Mayo 2024 – Presente",
+                        "description": [
+                            "Desarrollé plataforma de torneos NFT usando React, Node.js, TypeScript",
+                            "Construí frontends interactivos con gestión de estado compleja para juegos"
+                        ]
+                    },
+                    "gotovan": {
+                        "role": "Desarrollador Full Stack",
+                        "period": "Mar 2022 – Nov 2023",
+                        "description": [
+                            "Desarrollé servicios backend usando Python FastAPI y SQL en GCP",
+                            "Construí herramientas internas de BI con visualización de datos para la optimización operativa",
+                            "Integré autenticación OAuth y sistemas de pago Stripe"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "seo": {
+        "title": "MarcYourMind | Ingeniero de Software Multi-Dominio",
+        "description": "Portafolio personal de MarcYourMind, un Ingeniero de Software Senior especializado en construir sistemas de alto rendimiento en Cuantitativas, IA, Web3 y arquitectura Backend."
     }
 }

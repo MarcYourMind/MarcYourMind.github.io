@@ -58,9 +58,12 @@ function extractToc(content: string): TocEntry[] {
 }
 
 /** Format a date string like "2024-03-10" → "Mar 10, 2024" */
-function formatDate(dateStr: string): string {
+function formatDate(dateStr: string, locale: string = "en"): string {
     const date = new Date(dateStr)
-    return date.toLocaleDateString("en-US", {
+    // Convert generic language code to BCP 47
+    const localeMap: Record<string, string> = { en: "en-US", es: "es-ES", fr: "fr-FR" }
+    const bcp47 = localeMap[locale] || "en-US"
+    return date.toLocaleDateString(bcp47, {
         year: "numeric",
         month: "short",
         day: "2-digit",
@@ -70,17 +73,27 @@ function formatDate(dateStr: string): string {
 /** Get sorted list of all article slugs */
 export function getAllArticleSlugs(): string[] {
     if (!fs.existsSync(ARTICLES_DIR)) return []
-    return fs
+    const files = fs
         .readdirSync(ARTICLES_DIR)
         .filter((file) => file.endsWith(".mdx"))
-        .map((file) => file.replace(/\.mdx$/, ""))
+
+    // Extract base slugs (e.g., 'foo.es.mdx' -> 'foo', 'foo.mdx' -> 'foo')
+    const slugs = new Set<string>()
+    files.forEach(f => {
+        const base = f.replace(/\.(en|es|fr)?\.?mdx$/, "")
+        slugs.add(base)
+    })
+    return Array.from(slugs)
 }
 
 /** Get metadata for all articles (for the listing page), sorted by date desc */
-export function getAllArticleMeta(): ArticleMeta[] {
+export function getAllArticleMeta(locale: string = "en"): ArticleMeta[] {
     const slugs = getAllArticleSlugs()
     const articles = slugs.map((slug) => {
-        const fullPath = path.join(ARTICLES_DIR, `${slug}.mdx`)
+        let fullPath = path.join(ARTICLES_DIR, `${slug}.${locale}.mdx`)
+        if (!fs.existsSync(fullPath)) {
+            fullPath = path.join(ARTICLES_DIR, `${slug}.mdx`) // fallback to default
+        }
         const fileContents = fs.readFileSync(fullPath, "utf8")
         const { data } = matter(fileContents)
 
@@ -88,7 +101,7 @@ export function getAllArticleMeta(): ArticleMeta[] {
             slug,
             title: data.title ?? slug,
             rawDate: data.date ?? "1970-01-01",
-            date: data.date ? formatDate(data.date) : "",
+            date: data.date ? formatDate(data.date, locale) : "",
             readTime: data.readTime ?? "",
             tags: data.tags ?? [],
             excerpt: data.excerpt ?? "",
@@ -106,8 +119,11 @@ export function getAllArticleMeta(): ArticleMeta[] {
 }
 
 /** Get a single article (meta + content + toc) by slug */
-export function getArticleBySlug(slug: string): Article | null {
-    const fullPath = path.join(ARTICLES_DIR, `${slug}.mdx`)
+export function getArticleBySlug(slug: string, locale: string = "en"): Article | null {
+    let fullPath = path.join(ARTICLES_DIR, `${slug}.${locale}.mdx`)
+    if (!fs.existsSync(fullPath)) {
+        fullPath = path.join(ARTICLES_DIR, `${slug}.mdx`) // fallback
+    }
     if (!fs.existsSync(fullPath)) return null
 
     const fileContents = fs.readFileSync(fullPath, "utf8")
@@ -118,7 +134,7 @@ export function getArticleBySlug(slug: string): Article | null {
     return {
         slug,
         title: data.title ?? slug,
-        date: data.date ? formatDate(data.date) : "",
+        date: data.date ? formatDate(data.date, locale) : "",
         readTime: data.readTime ?? "",
         tags: data.tags ?? [],
         excerpt: data.excerpt ?? "",

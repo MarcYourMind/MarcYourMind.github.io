@@ -11,7 +11,7 @@ type Translations = typeof en
 interface I18nContextProps {
     locale: Locale
     setLocale: (locale: Locale) => void
-    t: (key: string) => string
+    t: (key: string, options?: { returnObjects?: boolean } & Record<string, any>) => any
 }
 
 const translations: Record<Locale, any> = { en, es, fr }
@@ -25,21 +25,32 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const savedLocale = localStorage.getItem('locale') as Locale
         if (savedLocale && ['en', 'es', 'fr'].includes(savedLocale)) {
             setLocaleState(savedLocale)
+            document.cookie = `locale=${savedLocale}; path=/; max-age=31536000`
         }
     }, [])
 
     const setLocale = (newLocale: Locale) => {
         setLocaleState(newLocale)
         localStorage.setItem('locale', newLocale)
+        document.cookie = `locale=${newLocale}; path=/; max-age=31536000`
     }
 
-    const t = (key: string) => {
+    const t = (key: string, options?: { returnObjects?: boolean } & Record<string, any>) => {
         const keys = key.split('.')
         let value = translations[locale]
         for (const k of keys) {
             value = value?.[k]
         }
-        return value || key
+
+        if (!value) return key
+
+        if (typeof value === 'string' && options) {
+            Object.keys(options).forEach(optKey => {
+                value = value.replace(new RegExp(`{{${optKey}}}`, 'g'), options[optKey])
+            })
+        }
+
+        return value
     }
 
     return (

@@ -10,19 +10,23 @@ import { projects } from "@/data/projects"
 import { specializations } from "@/data/specializations"
 import { Search, Filter, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useI18n } from "@/components/I18nProvider"
 
 export default function ProjectsPage() {
+    const { t } = useI18n()
     const [searchQuery, setSearchQuery] = useState("")
     const [activeTag, setActiveTag] = useState<string | null>(null)
 
     const filteredProjects = useMemo(() => {
         return projects.filter(project => {
-            const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                project.description.toLowerCase().includes(searchQuery.toLowerCase())
+            const projectTitle = t(`projects.${project.slug}.title`) || project.title
+            const projectDesc = t(`projects.${project.slug}.description`) || project.description
+            const matchesSearch = projectTitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                projectDesc.toLowerCase().includes(searchQuery.toLowerCase())
             const matchesTag = !activeTag || project.tags.includes(activeTag as any)
             return matchesSearch && matchesTag
         })
-    }, [searchQuery, activeTag])
+    }, [searchQuery, activeTag, t])
 
     return (
         <main className="relative min-h-screen">
@@ -32,9 +36,9 @@ export default function ProjectsPage() {
             <section className="pt-32 pb-20">
                 <div className="container mx-auto px-6">
                     <header className="mb-12">
-                        <h1 className="text-4xl md:text-6xl font-heading font-black mb-4">Engineering Gallery</h1>
+                        <h1 className="text-4xl md:text-6xl font-heading font-black mb-4">{t("nav.projects")}</h1>
                         <p className="text-white/60 max-w-2xl">
-                            A deep dive into my professional work across multiple domains. Use the filters to explore specific specializations.
+                            {t("hero.subtitle")}
                         </p>
                     </header>
 
@@ -44,7 +48,7 @@ export default function ProjectsPage() {
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
                             <input
                                 type="text"
-                                placeholder="Search projects by name or tech..."
+                                placeholder={t("projects.ui.searchPlaceholder") || "Search projects by name or tech..."}
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-accent-blue/50 transition-colors"
@@ -88,13 +92,13 @@ export default function ProjectsPage() {
                     ) : (
                         <div className="py-20 text-center glass-card border-dashed">
                             <X className="w-12 h-12 text-white/20 mx-auto mb-4" />
-                            <h3 className="text-xl font-heading font-bold mb-2">No projects found</h3>
-                            <p className="text-white/40">Try adjusting your filters or search query.</p>
+                            <h3 className="text-xl font-heading font-bold mb-2">{t("projects.ui.noProjectsFound") || "No projects found"}</h3>
+                            <p className="text-white/40">{t("projects.ui.tryAdjusting") || "Try adjusting your filters or search query."}</p>
                             <button
                                 onClick={() => { setSearchQuery(""); setActiveTag(null) }}
                                 className="mt-6 text-accent-blue font-bold uppercase text-xs tracking-widest"
                             >
-                                Clear all filters
+                                {t("projects.ui.clearFilters") || "Clear all filters"}
                             </button>
                         </div>
                     )}

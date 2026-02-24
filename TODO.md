@@ -7,25 +7,12 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [x] Some translations do not match the original english text. They match the old text. Fix it so that all languages match what is written in english. Do not modify the english text.
 
 
 --- IGNORE TASKS BELOW HERE
 
 
 
-
-## 🌍 Global & Locales
-- [ ] Sync Language Switcher with Article Navigation if required <!-- id: 50 -->
-
-
-
-
-
-- [ ] **Metadata & SEO (`app/layout.tsx`)**
-    - [ ] Update `title` metadata to the new accurate information
-    - [ ] Update `description` metadata to the new accurate information
-    - [ ] Replace OpenGraph (`og:image`) placeholder images
 
 
 

@@ -23,6 +23,14 @@ export const metadata: Metadata = {
         title: "MarcYourMind | Multi-Domain Software Engineer",
         description: "Portfolio of a Senior Software Engineer specializing in high-impact domains including Quant, AI, Web3, and Backend architecture.",
         type: "website",
+        images: [
+            {
+                url: "/me.png",
+                width: 1200,
+                height: 630,
+                alt: "MarcYourMind Profile",
+            }
+        ]
     },
 };
 

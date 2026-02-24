@@ -152,19 +152,21 @@ export default function ProjectDetailClient() {
                                 </div>
                             </section>
 
-                            <section className="glass-card p-8">
-                                <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">{t("projects.ui.keyMetrics")}</h3>
-                                <div className="space-y-6">
-                                    {project.metrics?.map((metric, i) => (
-                                        <div key={i}>
-                                            <div className={`text-2xl font-heading font-black ${i % 2 === 0 ? 'text-accent-blue' : 'text-accent-purple'}`}>
-                                                {metric.value}
+                            {project.metrics && project.metrics.length > 0 && (
+                                <section className="glass-card p-8">
+                                    <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-6">{t("projects.ui.keyMetrics")}</h3>
+                                    <div className="space-y-6">
+                                        {project.metrics?.map((metric, i) => (
+                                            <div key={i}>
+                                                <div className={`text-2xl font-heading font-black ${i % 2 === 0 ? 'text-accent-blue' : 'text-accent-purple'}`}>
+                                                    {metric.value}
+                                                </div>
+                                                <div className="text-[10px] uppercase font-bold text-white/40">{t(`projects.${project.slug}.metrics.${metric.label}`)}</div>
                                             </div>
-                                            <div className="text-[10px] uppercase font-bold text-white/40">{t(`projects.${project.slug}.metrics.${metric.label}`)}</div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </section>
+                                        ))}
+                                    </div>
+                                </section>
+                            )}
 
                             {project.articleSlug && (
                                 <section className="glass-card p-8 border-accent-blue/30 border">

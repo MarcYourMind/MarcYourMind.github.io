@@ -15,29 +15,29 @@
         "subtitle": "Arquitectando sistemas de alto rendimiento. Especializado en Trading Cuantitativo (Python y C++), Inteligencia Artificial (Python) y Arquitectura Web3 (Solidity).",
         "viewProjects": "Ver Proyectos",
         "downloadResume": "Descargar CV",
-        "status": "Disponible para oportunidades de clase mundial"
+        "status": "Abierto a oportunidades de categoría mundial"
     },
     "specializations": {
         "title": "Especializaciones Principales",
         "backend": {
-            "title": "Sistemas Backend",
+            "title": "Ingeniería Backend",
             "description": "Sistemas distribuidos altamente escalables y arquitectura de microservicios."
         },
         "quant": {
             "title": "Quant / Trading",
-            "description": "Sistemas de trading de baja-media frecuencia y modelos estadísticos financieros algorítmicos."
+            "description": "Sistemas de trading de baja-media frecuencia y modelos estadísticos algorítmicos financieros."
         },
         "web3": {
-            "title": "Blockchain / Web3",
+            "title": "Web3 / Blockchain",
             "description": "Contratos inteligentes, gobernanza DAO y protocolos de finanzas descentralizadas."
         },
         "ai": {
-            "title": "IA / Ingeniería ML",
-            "description": "Redes neuronales, Transformers, visión artificial, canales de procesamiento de datos."
+            "title": "Ingeniería en IA / ML",
+            "description": "Redes neuronales, Transformers, visión artificial, pipelines de procesamiento de datos."
         },
         "web": {
-            "title": "Web Fullstack",
-            "description": "Interfaces de usuario premium con alto rendimiento y animaciones interactivas."
+            "title": "Desarrollo Web Fullstack",
+            "description": "Interfaces de usuario premium de alto rendimiento y animaciones interactivas."
         }
     },
     "home": {
@@ -212,11 +212,11 @@
             "backToGallery": "Volver a la Galería",
             "theChallenge": "El Desafío",
             "theSolution": "La Solución",
-            "techStack": "Tecnologías",
+            "techStack": "Stack Tecnológico",
             "keyMetrics": "Métricas Clave",
             "furtherReading": "Lectura Adicional",
             "technicalArticle": "Artículo Técnico",
-            "furtherReadingDesc": "Para profundizar en la implementación técnica y arquitectura de este proyecto, lee el artículo completo.",
+            "furtherReadingDesc": "Para profundizar en la implementación técnica y la arquitectura de este proyecto, lea el artículo completo.",
             "viewCaseStudy": "Ver Caso de Estudio",
             "relatedProjects": "Proyectos Relacionados",
             "demo": "Demo",
@@ -224,266 +224,261 @@
         },
         "cryptogpt": {
             "title": "CryptoGPT",
-            "description": "Modelo transformador personalizado entrenado con datos de volumen de mercado en rango.",
-            "longDescription": "Modelo transformador ajustado con extensos conjuntos de datos cripto-financieros para crear un modelo preciso para mercados en rango.",
-            "challenge": "Desarrollar un modelo que pudiera predecir con precisión la dirección del mercado en entornos de baja volatilidad 'en rango' donde los indicadores tradicionales a menudo fallan.",
-            "solution": "Se implementó una arquitectura Transformer personalizada entrenada con datos de volumen de mercado de alta fidelidad, utilizando atención de múltiples cabezas para capturar patrones de correlación sutiles.",
+            "description": "Modelo de transformador personalizado entrenado con datos de volumen en mercados en rango.",
+            "longDescription": "Modelo de transformador entrenado con extensos conjuntos de datos de volumen criptofinancieros para crear un modelo preciso para los mercados financieros.",
+            "challenge": "Desarrollar un modelo que pudiera predecir la dirección del mercado en entornos de 'baja volatilidad' donde los indicadores tradicionales fallan. El objetivo era eludir el análisis de series temporales y aplicar técnicas modernas de aprendizaje automático para predecir la dirección del mercado. El desafío central: los datos del mercado no siguen una distribución gaussiana, lo que hace que la mayoría de los modelos formales sean inadecuados para la tarea.",
+            "solution": "Se implementó una arquitectura Transformer personalizada entrenada con datos de volumen del mercado, utilizando atención multicabezal para capturar patrones de correlación sutiles. La clave del enfoque radicó en la ingeniería de características: al capturar ventanas de tiempo donde las regresiones lineales tienen una pendiente casi horizontal, el modelo observa períodos donde los perfiles de volumen se asemejan más a una distribución gaussiana — asegurando que los datos sean estructuralmente consistentes en lugar de simple ruido de precios.",
             "achievements": [
-                "Se logró un 82% de precisión direccional en mercados en rango",
-                "Implementación de un pipeline de ingeniería de características en tiempo real",
-                "Reducción de la latencia del modelo a menos de 50ms",
-                "Entrenamiento escalable en clústeres de GPU distribuidos"
+                "60.4% de precisión en datos no vistos",
+                "Implementación de pipeline de ingeniería de características en tiempo real",
+                "Entrenamiento escalable en múltiples núcleos de CPU y 100% de capacidad de GPU",
+                "Validación de la generalización del modelo sin sobreajuste — funciona para cualquier criptoactivo"
             ],
             "metrics": {
-                "directionalAccuracy": "Precisión Direccional",
-                "inferenceLatency": "Latencia de Inferencia"
+                "accuracy": "Precisión en Datos no Vistos",
+                "gpuEfficiency": "Eficiencia de GPU durante Entrenamiento"
             }
         },
         "toptrader": {
             "title": "Plataforma TopTrader",
-            "description": "Plataforma de trading inteligente enfocada en la disciplina para cripto con escaneo de mercado automatizado, análisis de sentimiento y gestión de riesgos.",
-            "longDescription": "TopTrader fusiona todas las cuentas de trading en una sola plataforma, ofreciendo escaneo de mercado automatizado, gestión de riesgos, ejecución de algoritmos, diario, análisis conductual y una experiencia de trading unificada.",
-            "challenge": "Las herramientas de trading fragmentadas y la toma de decisiones emocional a menudo llevan a resultados inconsistentes tanto para traders minoristas como profesionales.",
-            "solution": "Se unificó el flujo de trabajo de trading en una sola plataforma de alto rendimiento que combina ejecución, gestión de riesgos automatizada y mapas de calor conductuales.",
+            "description": "Plataforma de trading inteligente enfocada en la disciplina para criptomonedas con escáner de mercado automatizado, análisis de sentimiento y gestión de riesgos.",
+            "longDescription": "Dicen que el trading es 90% psicología y 10% estrategia. Sin embargo, todas las plataformas se centran al 100% en la estrategia, ignorando por completo la psicología. TopTrader fusiona todas las cuentas de trading en una sola plataforma, ofreciendo escaneo automático de mercado, gestión de riesgos, ejecución de algoritmos, diario, análisis de comportamiento y una experiencia de trading unificada.",
+            "challenge": "Las herramientas de trading fragmentadas y la toma de decisiones emocionales a menudo conducen a resultados inconsistentes tanto para traders minoristas como profesionales. Al integrar la disciplina en la propia interfaz de trading, los traders obtienen medidas de seguridad que evitan decisiones impulsivas y respaldan los aspectos psicológicos del trading.",
+            "solution": "TopTrader unifica todas las cuentas en una plataforma. Se integra con las principales bolsas de criptomonedas a través de la biblioteca CCXT. El escáner de mercado automatizado analiza constantemente el mercado buscando nuevas oportunidades basadas en estrategias multiseñal, ahorrando incontables horas. Se aplican ejercicios de regulación emocional y un registro detallado de cada operación para garantizar que los usuarios mantengan la disciplina. Los algoritmos se pueden activar y monitorear en tiempo real, reduciendo la fatiga de decisiones. Los extensos análisis de comportamiento ayudan a los usuarios a mejorar su psicología. Más de cien videos educativos llevan a los usuarios de principiantes a expertos.",
             "achievements": [
-                "Integración de más de 5 exchanges de criptomonedas importantes a través de una API unificada",
-                "Monitoreo de riesgos en tiempo real y dimensionamiento de posición automatizado",
-                "Análisis conductual integral y diario de trading",
-                "Ejecución de órdenes en menos de un segundo en todas las cuentas"
+                "Se integra con +100 bolsas de criptomonedas para ejecución en tiempo real",
+                "Ejecuta múltiples algoritmos simultáneamente",
+                "Ejecución de operaciones y tamaño de posición completamente automatizados para una correcta gestión del riesgo",
+                "Análisis exhaustivo del comportamiento y registro (journalling)"
             ],
             "metrics": {
-                "exchanges": "Exchanges Integrados",
-                "speed": "Velocidad de Ejecución"
+                "marketScreening": "Escaneo de Mercado",
+                "strategies": "Estrategias Rentables",
+                "education": "Videos Educativos"
             }
         },
         "technex": {
             "title": "Technex",
-            "description": "Empresa líder en desarrollo de software y consultoría.",
-            "longDescription": "Technex ofrece soluciones de software de alta gama y servicios de consultoría, especializándose en fintech y sistemas de alto rendimiento.",
-            "challenge": "Las empresas a menudo luchan por cerrar la brecha entre los requisitos de negocio complejos y la implementación técnica de alto rendimiento.",
-            "solution": "Fundé Technex para proporcionar consultoría de alta gama e ingeniería de software a medida, centrándome en arquitecturas de nube escalables y soluciones fintech.",
+            "description": "Firma líder en consultoría y desarrollo de software.",
+            "longDescription": "Se fundó Technex para proporcionar consultoría de alto nivel e ingeniería de software a medida, centrándose en arquitecturas en la nube escalables y soluciones fintech. Desarrollamos plataformas de trading, algoritmos, paneles analíticos y más para una variedad de clientes en todo el mundo.",
+            "challenge": "Existen muy pocos algoritmos de trading consistentemente rentables en el espacio de las criptomonedas. Technex tenía 4 de ellos. Ofrecer estos vehículos de inversión a los clientes hizo que muchos solicitaran proyectos de desarrollo personalizados en lugar de las soluciones existentes — lo que dio origen a Technex como consultora de inteligencia de software.",
+            "solution": "Se fundó Technex para proporcionar consultoría de alto nivel e ingeniería de software a medida, centrándose en arquitecturas en la nube escalables y soluciones fintech. Desarrollamos plataformas de trading, algoritmos, y más para clientes en el Reino Unido, Estados Unidos, México y España.",
             "achievements": [
-                "Entrega exitosa de más de 10 proyectos empresariales de alto impacto",
-                "Ingeniería de arquitecturas backend escalables para startups fintech",
-                "Reducción de los costes operativos de los clientes hasta en un 40%",
-                "Establecimiento de una reputación de excelencia técnica y fiabilidad"
+                "Arquitecturas backend escalables diseñadas para startups fintech",
+                "Entrega exitosa de 5+ proyectos de alto impacto para clientes en diferentes industrias",
+                "Consolidación de una reputación de excelencia técnica y confiabilidad",
+                "Reducción de costos operativos para clientes en hasta un 40%"
             ],
             "metrics": {
-                "clients": "Clientes Empresariales",
-                "uptime": "Disponibilidad del Sistema"
+                "projectsDelivered": "Proyectos de Alto Impacto Entregados",
+                "countries": "Países Atendidos"
             }
         },
         "technexConsultancy": {
-            "title": "Consultoría Freelance de IA y Automatización",
-            "description": "Servicios especializados de consultoría de IA y automatización para optimizar procesos críticos en empresas.",
-            "longDescription": "Ofrecí servicios expertos de consultoría de IA y automatización para optimizar procesos críticos para diversas empresas, centrándome en la eficiencia operativa y la integración estratégica de tecnologías de IA.",
+            "title": "Consultora Freelance en IA y Automatización",
+            "description": "Servicios especializados de consultoría en IA y automatización para agilizar procesos de cuello de botella empresariales.",
+            "longDescription": "Se ofrecieron servicios de consultoría experta en IA y automatización para agilizar cuellos de botella para diversas empresas, centrándose en la eficiencia operativa y la integración estratégica de tecnologías de IA.",
             "challenge": "Muchas empresas carecen de la experiencia interna para identificar y automatizar procesos manuales repetitivos y lentos utilizando IA.",
-            "solution": "Proporcioné consultoría experta para identificar procesos críticos e implementar flujos de trabajo de automatización personalizados impulsados por IA utilizando LLMs y Python.",
+            "solution": "Se proporcionó consultoría experta para identificar procesos estancados y ejecutar flujos de trabajo de automatización impulsados por IA personalizados utilizando LLMs y n8n o Make interactuando con agentes autónomos.",
             "achievements": [
-                "Automatización de flujos de trabajo principales para múltiples PYMES",
+                "Automatización de flujos de trabajo centrales para múltiples PYMES",
                 "Integración de agentes LLM personalizados para procesamiento de datos",
-                "Realización de auditorías y optimización de procesos integrales",
-                "Mejora del rendimiento operativo en un promedio del 60%"
+                "Auditoría integral de procesos y optimización",
+                "Mejora de la capacidad operativa en un promedio del 60%"
             ]
         },
         "aitrader": {
             "title": "AiTrader",
-            "description": "Asistente de trading impulsado por IA y plataforma de análisis de mercado.",
-            "longDescription": "Desarrollé AiTrader para aprovechar modelos de aprendizaje automático para la predicción del mercado y la ejecución automatizada de operaciones, proporcionando a los usuarios información basada en datos.",
-            "challenge": "Los traders a menudo sufren de sobrecarga de información y ejecución retrasada al intentar seguir señales de IA complejas.",
-            "solution": "Construí un asistente de trading de IA en tiempo real que destila señales de mercado complejas en información procesable y ejecuta operaciones automáticamente basándose en parámetros definidos por el usuario.",
+            "description": "Asistente de trading y analista de mercado impulsado por IA.",
+            "longDescription": "Se desarrolló AiTrader para aprovechar los LLM en la predicción del mercado y la ejecución automatizada de operaciones, brindando a los usuarios un sistema de trading completamente automatizado que aplica razonamiento e intuición casi humanos.",
+            "challenge": "La mayoría de los sistemas algorítmicos son incapaces de traducir la intuición humana incorporada por los traders al sistema. Son demasiado rígidos y carecen de adaptabilidad a las cambiantes condiciones del mercado. El objetivo era implementar un sistema capaz de orquestar múltiples agentes realizando tareas mientras incorporaban razonamientos cuasi humanos.",
+            "solution": "Los LLM fueron la solución. Se desarrolló un sistema para orquestar múltiples agentes, cada uno con su especialización. Los agentes y prompts se crearon transcribiendo +130 GB de videos de cursos de un trader top de criptomonedas — reconvertido a texto, luego material clasificado por tema para formar el contexto de cada agente. Se usó una estructura modular y un orquestador que asegura una sola fuente de verdad para todos los agentes, y agentes evaluadores revisan el resultado.",
             "achievements": [
-                "Implementación de análisis de sentimiento en tiempo real para noticias cripto",
-                "Integración con múltiples exchanges para ejecución de baja latencia",
-                "Desarrollo de un panel intuitivo para backtesting de estrategias",
-                "Se logró un ratio de Sharpe un 20% más alto en las primeras pruebas en vivo"
-            ]
+                "Arquitectura con una sola fuente de verdad en todos los agentes",
+                "20+ sub-agentes especializados orquestados para diferentes tareas",
+                "Panel de monitoreo del rendimiento de los agentes",
+                "Pruebas sólidas y mejores prácticas de Ingeniería en IA para LLMs y prompts"
+            ],
+            "metrics": {
+                "subAgents": "Sub-Agentes Especializados",
+                "llmFailRate": "Tasa de Fallos de LLM"
+            }
         },
         "chainchampions": {
-            "title": "Plataforma NFT Chain Champions",
-            "description": "Plataforma de torneos de juegos Web3 con contratos inteligentes de Solidity para custodia, entradas y pagos.",
-            "longDescription": "Una plataforma de torneos impulsada por NFTs donde los usuarios pueden competir en juegos basados en blockchain. Cuenta con contratos inteligentes seguros para gestionar las tarifas de entrada y la distribución automatizada de los premios, todo ello ejecutado en una infraestructura de nube escalable.",
-            "challenge": "Garantizar el juego limpio y la distribución de premios segura y automatizada en un entorno de juego sin confianza era un gran obstáculo.",
-            "solution": "Desarrollo de contratos inteligentes robustos en Solidity para la gestión de custodia y torneos, junto con un backend de alto rendimiento para sincronizar los estados de juego.",
+            "title": "Plataforma de NFTs Chain Champions",
+            "description": "Plataforma de torneos de juegos Web3 con contratos inteligentes Solidity para custodia segura, buy-ins y pagos.",
+            "longDescription": "Una plataforma de torneos impulsada por NFT donde los usuarios pueden competir en juegos basados en blockchain. Cuenta con contratos inteligentes seguros para la gestión de las tarifas de entrada y distribución automatizada de botes de premios.",
+            "challenge": "Asegurar el juego limpio y la distribución de premios automatizada y segura en un entorno sin confianza (trustless) fue un obstáculo importante.",
+            "solution": "Desarrollo de contratos Solidity robustos para custodias de premios (escrow) y gestión de torneos, combinados con un backend de alto rendimiento para sincronizar estados de partidas.",
             "achievements": [
-                "Procesamiento de más de 500 distribuciones de premios seguras y automatizadas",
-                "Implementación de contratos inteligentes optimizados para gas",
-                "Construcción de un sistema de clasificación en tiempo real con integración Web3",
-                "Plataforma asegurada contra vulnerabilidades comunes de contratos inteligentes"
+                "Exitosa integración web3 y conectividad de billeteras",
+                "Implementación de contratos inteligentes optimizados para el consumo de gas según mejores prácticas",
+                "Construcción de un sistema automatizado de pagos que permitió jugar torneos con dinero real y premios en un ecosistema totalmente libre de intermediarios",
+                "Seguridad en la plataforma ante exploits comunes conocidos en smart contracts"
             ]
         },
         "nasdaq": {
             "title": "Algoritmo de Trading de Futuros NASDAQ",
-            "description": "Sistema de trading C++ de alto rendimiento integrado con Interactive Brokers para ejecución automatizada. (Plutus)",
-            "longDescription": "Desarrollo de un sistema de trading robusto para futuros del NASDAQ, implementando el procesamiento de datos de mercado en tiempo real y la ejecución automatizada. El sistema cuenta con controles de riesgo estadísticos y fue optimizado para un rendimiento constante bajo diversas condiciones de mercado. Este proyecto forma parte del algoritmo de trading en vivo Plutus.",
-            "challenge": "Manejar la extrema volatilidad y el rendimiento de datos del mercado de futuros del NASDAQ requería un sistema con mínima fluctuación y alta determinación.",
-            "solution": "Ingeniería de un motor de trading C++ de baja latencia utilizando estructuras de datos sin bloqueo e integración directa con la API de Interactive Brokers.",
+            "description": "Se desarrolló un robusto sistema de trading de futuros del NASDAQ para un cliente, procesando datos en tiempo real y ejecutando indicadores técnicos complejos automáticamente.",
+            "longDescription": "Se desarrolló un sistema robusto de trading automatizado de futuros del NASDAQ para un cliente. Implementa procesamiento en tiempo real de mercados y una ejecución automatizada. Dispone de controles de riesgo y optimización de hiperparámetros que logran consolidar el algoritmo ante las fuertes variantes y condiciones del mercado.",
+            "challenge": "El cliente tenía una estrategia manual consistente, utilizada durante años, la cual quería 100% automatizada.",
+            "solution": "Ingeniería de un algoritmo C++ de baja latencia mediante una máquina de estados e integración directa con la API de Interactive Brokers.",
             "achievements": [
-                "Latencia tick-to-trade inferior a 2,5ms",
-                "Manejo de más de 120k mensajes de mercado por segundo",
-                "Cero errores de trading relacionados con el sistema durante alta volatilidad",
-                "Implementación de protecciones de riesgo estadísticas avanzadas"
+                "80% de ROI en el primer año",
+                "<25% de Drawdown máximo",
+                "Extensivo backtest del sistema para optimizar los parámetros idealmente cientos de veces"
             ],
             "metrics": {
-                "tickToTrade": "Tick-to-Trade",
-                "throughput": "Rendimiento"
+                "roi": "Retorno de la Inversión (Año 1)",
+                "drawdown": "Drawdown Máximo",
+                "simulations": "Simulaciones Ejecutadas"
+            }
+        },
+        "lazarus": {
+            "title": "Algoritmo para Futuros de Acciones Lazarus",
+            "description": "Modelo estadístico de altísima precisión para la acción en horarios extendidos de futuros del mercado con más de +90% de exactitud.",
+            "longDescription": "Modelo estadístico de altísima precisión para la acción en horarios extendidos de futuros del mercado con más de +90% de exactitud.",
+            "challenge": "Se sabe bien que la vasta actividad en horas posteriores al mercado regular posee una gran correlación en el mercado al momento en que éste abre. El reto consistió en identificar estas correlaciones y aislar la creación de transacciones con altísimas probabilidades.",
+            "solution": "Se desarrolló un sistema que evalúa amplios desplomes en precios durante horarios After-Hours aplicados al mercado total de acciones, calculando mediante data del historial la probabilidad real del repunte futuro o de ciertas recuperaciones en forma de porcentajes diarios el día subsiguiente al analizarlos con más de 500 escenarios similares del pasado.",
+            "achievements": [
+                ">90% de precisión direccional algorítmica",
+                "~200% ROI el verano del 2019",
+                "Primer modelo de modelado estadístico financiero exitoso implementado"
+            ],
+            "metrics": {
+                "accuracy": "Precisión de Predicción",
+                "roi": "ROI (Verano 2019)"
             }
         },
         "solanaMarketMaker": {
-            "title": "Creador de Mercado de Tokens Solana (Share Inc.)",
+            "title": "Market Maker para Token de Solana (Share Inc.)",
             "description": "Bot automatizado de provisión de liquidez para tokens basados en Solana utilizando el SDK de Raydium.",
-            "longDescription": "Construí un sofisticado bot creador de mercado que proporciona liquidez y descubrimiento de precios para tokens de Solana. Integrado directamente con el SDK de Raydium e implementó estrategias de precios automatizadas basadas en la profundidad del mercado en tiempo real.",
-            "challenge": "Mantener diferenciales ajustados y liquidez adecuada en Solana durante períodos de extrema congestión de la red y alta volatilidad de precios.",
-            "solution": "Desarrollo de un bot creador de mercado de alta frecuencia utilizando Node.js y el SDK de Raydium, optimizado para el modelo único de procesamiento de transacciones de Solana.",
+            "longDescription": "Se construyó un sofisticado bot creador de mercado que proporciona liquidez y descubrimiento de precios para tokens en Solana. Se integró directamente con el SDK de Raydium e implementó estrategias de precios automáticos basados en liquidez del depth.",
+            "challenge": "Mantener spreads ajustados y liquidez adecuada en Solana durante períodos de congestión extrema de red y alta volatilidad de precios.",
+            "solution": "Desarrollador de Frecuencia Alta (HFT bot) construido en Node.js integrando recursos a la API Raydium SDK, fuertemente optimizadas las transacciones asíncronas de Solana.",
             "achievements": [
-                "Mantenimiento de liquidez 24/7 para múltiples tokens SPL",
-                "Uso de RPC optimizado para minimizar fallos de transacción",
-                "Reequilibrio automatizado para minimizar la pérdida impermanente",
-                "Diferenciales de creación de mercado consistentemente rentables logrados"
+                "Mantuvo 24/7 liquidez en múltiples tokens de Solana (SPL)",
+                "Optimización de redes RPC minimizando los envíos fallidos",
+                "Gestión automatizada para minimización del Impermanent Loss",
+                "Consecución constante de Spreads consistentes rentables operando mercado algorítmico"
             ]
         },
         "gotovan": {
             "title": "Optimizador Logístico GotoVan",
-            "description": "Plataforma de optimización de logística y rutas para servicios de entrega.",
-            "longDescription": "Desarrollé un optimizador logístico integral para GotoVan, centrado en la planificación eficiente de rutas y la gestión de recursos para agilizar las operaciones de entrega.",
-            "challenge": "Resolver la variación del 'Problema del Viajante' para una flota de furgonetas de reparto con ventanas de tiempo complejas y capacidades de carga variables.",
-            "solution": "Se implementó un optimizador de rutas basado en heurística utilizando Node.js y la API de Google Maps, integrado con una interfaz de seguimiento en tiempo real.",
+            "description": "Plataforma de logística y optimización de rutas de los servicios de entrega.",
+            "longDescription": "Se desarrolló para GotoVan una potente aplicación general que provee organización interna eficiente a sus trabajadores y planificación en vivo enfocándose prioritariamente en una operación impecable de reparto diario logístico de mercancía y entregables variados a domicilio.",
+            "challenge": "Resolver el desafío en la rama del \"Representante Itinerante\" de rutas lógicas operables y capacitadas, considerando cargas máximas físicas por empleado de la flota interna del negocio con exigente control cronometrable.",
+            "solution": "Aplicación Node.Js que procesa heurísticas topológicas sobre API Maps. A su lado una app integral del rastro de localización que notifica la hora final orientada de llegada precisa en base al tráfico en curso del vehículo particular del conductor asociado localizados simultáneamente.",
             "achievements": [
-                "Reducción del kilometraje total de entrega en un promedio del 15%",
-                "Mejora de la tasa de entrega a tiempo al 98%",
-                "Planificación de rutas diaria automatizada para más de 20 vehículos",
-                "Ajuste de ruta en tiempo real basado en datos de tráfico"
+                "Redujo distancias vehiculares logísticas en media un 15%",
+                "Ascenso del índice del éxito logístico en puntualidad de reparto al 98%",
+                "Planificación algorítmica de 20 flotas motorizadas sincronizable matutina en tiempo automático",
+                "Gestor Inteligente dinámico basado al tráfico por horas"
             ]
         },
         "criptoInfra": {
-            "title": "Infraestructura de Trading Automatizada de CRIPTO Ltd",
-            "description": "Infraestructura fundamental para el trading algorítmico de alta frecuencia en múltiples exchanges.",
-            "longDescription": "Construí la infraestructura de trading central para CRIPTO Ltd, permitiendo la participación automatizada en el mercado y la ejecución a alta velocidad en varios exchanges de criptomonedas.",
-            "challenge": "Construir una infraestructura unificada y agnóstica al exchange capaz de manejar flujos de datos de alta frecuencia y ejecución en más de 10 CEX.",
-            "solution": "Desarrollo de una robusta infraestructura basada en Python utilizando WebSockets y CCXT, con una gestión de estado centralizada y motor de riesgo.",
+            "title": "Infraestructura Automatizada de Trading CRIPTO Ltd",
+            "description": "Infraestructura fundamental base para automatización HFT multi-exchange o en múltiples bolsas criptográficas del mismo sistema algorítmico globalmente descentralizadas conectadas al sistema propietario.",
+            "longDescription": "Elaboración de central algorítmica fundacional operativa integral programable Cripto Ltd asumiendo conexiones directos de ejecución bursátil o exchanges masivos operativizados.",
+            "challenge": "Existen muy escasos desarrollos verdaderamente ganadores implementables sostenibles en el espacio algorítmico para altcoins (Trading algorítmico de cifrado Cripto).",
+            "solution": "Plataforma que somete y desarrolla exhaustivo plan riguroso que asimila y aprende errores base para consolidación fundamental construyéndose 4 años probados e incorporados. 1,000 bots creados midiendo back-test parametrizando todas integraciones facturables de trading de tutoriales formales lográndose en síntesis que tan solo doce de ellas resulten fiablidamente exitosas consistentemente bajo Principios SÓLIDOS (SOLID) y arquitectura Escalable orientadas todos en el monopolio lógico local (Trading Monolith) reportando 90%+ efectividad y aciertos.",
             "achievements": [
-                "Conectividad unificada a más de 10 exchanges cripto importantes",
-                "Manejo robusto de más de 500k actualizaciones de WebSocket diarias",
-                "Auditoría de riesgo en tiempo real y seguimiento de PnL integrados",
-                "Disponibilidad del sistema lograda del 99,99% durante 12 meses"
-            ]
+                "Conexión a través al servidor integral +100 exchange interplataformas criptográficas globales unificadas API Rest / WeBSockets combinadamente integrados",
+                "Robusta base estructural y lógica transaccional y financiera segura para comercio HFT (mercancías emergentes)",
+                "Descenso severamente restrictivos con algoritmos defensivos operables bajo inestabilidad de riesgo y altísima varianza del mercado real financiero del precio",
+                "Desarrolladores implementaron un filtro analítico rigurosísimo con validación integral para la obtención documentada exhaustivamente para validaciones 12 rentables reales sólidas sistemas programables finales con ROI consistente"
+            ],
+            "metrics": {
+                "strategiesBacktested": "Estrategias Probadas & Evaluadas Backtested",
+                "profitableStrategies": "Confiablemente Estrategias Exitosas / Rentables Creadas",
+                "modelAccuracy": "Eficacia Predicción Precisa Del Optímo Sub-Agente Modelístico % (Acierto)"
+            }
         },
         "brite": {
-            "title": "Integración de la API PSD2 de Brite Payments",
-            "description": "Integración de APIs de pago compatibles con PSD2 para transferencias bancarias en tiempo real.",
-            "longDescription": "Implementé una integración segura y escalable con las APIs PSD2 de Brite Payments, permitiendo pagos fluidos de cuenta a cuenta en tiempo real y servicios de información de cuentas bancarias.",
-            "challenge": "La integración con el marco PSD2 requería cumplir con estándares extremadamente altos de seguridad, privacidad de datos y fiabilidad de las transacciones.",
-            "solution": "Ingeniería de una capa de integración segura en Node.js que manejaba flujos de autenticación complejos y sincronización de datos bancarios en tiempo real a través de APIs REST.",
+            "title": "Brite Payments PSD2 Integración vía API",
+            "description": "Regulación PSD2 estricta de pago APIs que garantizan cobros fiablemente reales y en tiempo-real sin fronteras geográficas europeas a transacciones fiables a transferencias del ámbito general entre banca global y generalista abierta interoperativa integral local europea interconectables en API del país y la UE continentalmente regulado al banco unida o vinculada por mandato local u oficial.",
+            "longDescription": "Ejecución escalablemente segura y garantizando estrictamente interconectables APIs relativas implementando soluciones transparentes transferibles en cobro y pagos real banco del mandato de la Regulación Europea en servicios y APIs fiables al banco PSD2 y normativa bancaria de datos locales de sincronía asíncrona abierta segura relativas PSD2 abierta Open Banking (Open Finance).",
+            "challenge": "Cumplimiento normativo y del marco legal y financiero PSD2 extremadamente elevado en cuanto a privacidad analítica bancaria, confidencial y fiabilidad continua estricta técnica transaccional europea obligatoria in-extremis e inmutable operativa.",
+            "solution": "Autenticar flujo técnico o técnico estricto seguro de ingeniería unificada usando capa Node-express en servidores dedicados API/REST conectadas transfronterizas operativizadas y garantizadas y autorizaciones bancarias.",
             "achievements": [
-                "Implementación de API PSD2 totalmente compatible",
-                "Procesamiento seguro de miles de transferencias en tiempo real",
-                "Implementación de un robusto manejo de errores para tiempos de espera bancarios",
-                "Reducción de la fricción en las transacciones para los usuarios finales en un 30%"
+                "Aprobado íntegro en certificación PSD2/Regulaciones y Bancarias FinTech Open Finance completada",
+                "Gestión automatizada de pasarela a múltiples procesados reales a miles en transacciones con volumen al tiempo seguro al banco procesables integrados",
+                "Implementando arquitectura y control unificado anti error resolviendo tiempo límite u \"timeouts\" del banco",
+                "Desarrollos que mitigaron de un 30% a fricciones financieras del Front de operabilidad o compra garantizable a pasarela"
             ]
         },
         "snake3d": {
-            "title": "Minijuego Snake 3D",
-            "description": "El clásico juego de la serpiente reimaginado en 3D utilizando Three.js.",
-            "longDescription": "Originalmente desarrollado en C++, este proyecto fue traducido a Three.js para ser exhibido en un entorno web. Cuenta con un entorno 3D totalmente interactivo donde los jugadores pueden controlar a la serpiente y recoger objetos.",
-            "challenge": "Traducir la lógica de un juego clásico de C++ a una experiencia 3D fluida basada en el navegador con un rendimiento constante en todos los dispositivos.",
-            "solution": "Uso de Three.js para construir un entorno 3D adaptado a dispositivos móviles, optimizando el bucle de renderizado para obtener las máximas tasas de fotogramas.",
+            "title": "Minijuego Snake en 3D",
+            "description": "Juego clásico interactivo 3D completo reimaginado a base motor librerías visuales para web en Web-Three js interactivo portado.",
+            "longDescription": "Generador de mapas originados local visual de forma base pura en C , portado a librerías interactivo Three.js para render Web.",
+            "challenge": "Portar gráficos GUI puros básicos interactuar de visualmente desarrollados iniciales visual a 3D visual orientando programabilidad o lógica desde librerías GUI formales orientados original escrito C++. ",
+            "solution": "Juegos visualmente cúbicos implementados visual tridimensionales con renderización y transición topología a base e integral envolventes caras uniendo geometría lógica.",
             "achievements": [
-                "Se lograron 60 FPS estables en un entorno web 3D",
-                "Implementación de controles responsivos para teclado y táctil",
-                "Iluminación dinámica y efectos de partículas en el navegador",
-                "Portabilidad exitosa de C++ orientado a escritorio a JS orientado a la web"
+                "Integraciones de interactuar en espacio Render gráfico ambiente Completo en gráficos Tridimensional y Lógica Operables interactivos integrados",
+                "Interactivos mandos y portables accesibles y control manual en ordenador keyboard",
+                "Port exitosísimo implementable sin fronteras interplataformas lógicos originales del viejo escrito original lenguaje PC Desktop a Moderno Lenguaje C FrontEnd o en JS."
             ]
         },
         "cervantes": {
-            "title": "Escritor de Libros de IA Cervantes",
-            "description": "Escritor de historias multi-agente que utiliza LLMs para generar narrativas infinitas.",
-            "longDescription": "Cervantes es un sofisticado sistema de IA multi-agente diseñado para planificar, escribir y refinar novelas de alta calidad de forma autónoma. Nombrado en honor al legendario autor de Don Quijote, aprovecha los LLM locales a través de Ollama para cerrar la brecha entre el texto generado por IA y la prosa literaria de nivel profesional, empleando una arquitectura jerárquica multi-agente (Planificador, Escritor y Evaluador) para garantizar la coherencia y calidad narrativa.",
-            "challenge": "Garantizar la coherencia narrativa y la calidad literaria en la escritura de larga duración al utilizar modelos de lenguaje grandes (LLM) locales y más pequeños.",
-            "solution": "Creación de un flujo de trabajo multi-agente donde diferentes instancias de LLM se especializan en planificar, redactar y evaluar críticamente el texto.",
+            "title": "Escritor de Libros IA Cervantes",
+            "description": "IA Multiagente impulsado utilizando múltiples LLMs generando un número inimaginable de obras elaboradas en ficción historias y tramas novelas originales e infinitas.",
+            "longDescription": "Sistema Cervantes altamente multiagente complejo e IA diseñado y perfeccionado planificablemente operativizado en escribir y generar iterativos novelas elaboradas íntegras y de gran finura y madurez. Honorando autor autor legendario del título de la novela del Quijote en memoria asimilando LLMs vía API conectores u host Ollama local usando arquitectónicamente en tres base evaluadores (Escritores Evaluatorios y Redactor Planner Evaluadores Planner IA Planner y Draft).",
+            "challenge": "Logrando sostener altísima narrativa asertora con calidad estilista literariamente extensa sobre un texto en forma macro extensivo usando parámetros simples con LLMs acotados u LLMs localizados local ejecutables.",
+            "solution": "Desarrollando agente múltiple o redes que iteran y planifican al nivel Macro de evaluar u escribir. Extrema dedicación en guiones base (Prompts) implementables o en base a estándares industriales del prompt design para modelado o en modelos algorítmicos restrictivos.",
             "achievements": [
-                "Generación de narrativas coherentes de más de 50.000 palabras",
-                "Implementación de agentes de planificación jerárquicos",
-                "Reducción de patrones repetitivos de IA a través de revisiones iterativas",
-                "Despliegue totalmente local para máxima privacidad y eficiencia de costes"
-            ]
+                "Concreción masiva generada exitosa narrativas generativas en obras extensivas coherentes con calidad iterada algorítmica y léxica lógica extensa u orientada sin fallos ni incoherencias narrables en largo plazo o tiempo lógico",
+                "Multi Planner Red agentes organizativos programáticos evaluativos",
+                "Mitigando un reducionismo en patrones lingüísticamente robóticos con métodos repetitivos cíclicamente mitigando iterativo revisor",
+                "Conseguido a uso total operativo ejecutivamente bajo servidores ejecutables u computacionales locales 100% integrales operados mitigados sobre servidores (no Cloud) mitigando costo al máximo privativo logrando cero API costo facturables u en costo total externalizable."
+            ],
+            "metrics": {
+                "agents": "Agentes IA Especialistas Creados Analíticamente",
+                "apiCosts": "Recurso en Costes y Tarifación API Externas Explotables (Gasto API)"
+            }
         },
         "linktrees": {
-            "title": "Sitios Web de Enlaces Personales Linktrees",
-            "description": "Sitios web tipo linktree optimizados para móviles con diversas marcas.",
-            "longDescription": "Una colección de páginas de destino de alto rendimiento y optimizadas para móviles, diseñadas para marcas personales y enlaces a redes sociales. Cada versión presenta estilos estéticos únicos y diseños optimizados.",
-            "challenge": "Crear páginas de destino de alto rendimiento que se carguen instantáneamente en cualquier conexión manteniendo una estética de alta gama en más de 10 variaciones.",
-            "solution": "Construcción de una colección de plantillas de JS/CSS puro optimizadas para la entrega móvil primero y un peso mínimo de activos.",
+            "title": "Sitios Web Personales tipo Linktree",
+            "description": "Versiones web estéticamente optimizadas linktress para usos móviles con diferentes y muy variados estilos operables web estéticos branding o UI personal de uso personal o negocio de red social en landing link o bio personales orientativas.",
+            "longDescription": "Ecosistema de links coleccionados elaborables portafolios web u portadas para perfiles de enlace social variando diseños e incrementos de usabilidad optimizadas a UI / performance base estética.",
+            "challenge": "Obtención programática en diseño Landing visual interactivo estética UI sin descender latencia operativa en tiempos del loading o operables en velocidad web sin descender la calidad ni carga gráfica a redes celulares lentas variando en 10 plantillas implementables variadas.",
+            "solution": "Diseño Front UI minimalistas puros nativos en Vanill/Javascript implementando bajo peso y máxima accesibilidad visual del estilo puro.",
             "achievements": [
-                "Puntuaciones perfectas de 100/100 en el rendimiento de Lighthouse",
-                "Más de 1 millón de visitas totales procesadas en todos los dominios",
-                "Capacidad de respuesta en todas las resoluciones de dispositivos móviles",
-                "Implementación de modo oscuro y tokens de marca dinámicos"
-            ]
+                "Orientación operativa First-Mobile priorizada escalablemente optimizadas 100%",
+                "Peso liviano o mínimos KBs descargados analíticos UI UX y HTML/CSS UI escalables accesibilidad alta y rendimientos Lighthouse u velocidad web",
+                "Diversificados Front de variadas opciones estética estiles del landing y en personal Branding del marca"
+            ],
+            "metrics": {
+                "templates": "Plantillas Diferenciales Únicas del Landing Visualizadas"
+            }
         },
         "neurodivergentConsulting": {
-            "title": "Consultoría Neurodivergente",
-            "description": "Sitio web de coaching freelance adaptado para profesionales neurodivergentes.",
-            "longDescription": "Un sitio web de consultoría de alta calidad construido con un enfoque en la accesibilidad y el diseño limpio. Cuenta con una interfaz de usuario moderna utilizando React, TailwindCSS y componentes de Shadcn UI.",
-            "challenge": "Diseñar una interfaz de usuario que sea altamente profesional pero accesible y relajante para usuarios con sensibilidades sensoriales.",
-            "solution": "Uso de una paleta de colores suaves y un diseño espacioso con sutiles micro-interacciones para crear una experiencia de usuario enfocada y de baja fricción.",
+            "title": "Consultoría de Neurodivergencia",
+            "description": "Servidor autónomas y plataforma web a un experto de Coaching diseñados específicamente al cliente autista, TDAH profesionales neurodivergente especializando estéticas e integral uso orgánico accesible y amable en uso operativo logísticas cognitivas amables (UI Accessible).",
+            "longDescription": "Desarrollo y portales o App plataforma Front integrales Coaching profesional premium accesible implementables diseño moderno con Framework integrativos reactivos React UI y UI CSS framework React.js o tailwind integradas y accesibles de UI orientados y construibles web limpia orientables UI accesible a la vista implementables.",
+            "challenge": "UI diseño y accesibilidad muy alta de estética o cognitivamente suaves amigables con el entorno amigables minimizando saturar visual UX e inhibiciones para personas TEA y personas hipersensibles en visualmente saturadas cognitivo estrés ambiental y UI de impacto bajo o amigables y accesibles cognitivo y funcionales al profesional logrando uso orgánico.",
+            "solution": "Implementación en bases paleta a escala color integral e interactivo suaves UI con espaciados y amigabilidades micro (Microinteractions UX) enfocadas baja o en la fricción de accesibilidad minimizando impacto analítico y de interactivas cognitivo logrando uso operables en accesibilidad y en experiencia. Node/Next serverles o Server function en GCloud para la distribución y servidor y Server-side render ejecutadas para optimización Web deploy. UI Accesibilidad UX UI accesible.",
             "achievements": [
-                "Implementación de estándares de accesibilidad WCAG",
-                "Construcción de un sistema de programación y reserva a medida",
-                "Se logró un 95% de satisfacción del usuario en los primeros comentarios",
-                "Diseño orientado a móviles primero para accesibilidad profesional"
+                "Aprobado de Accesibilidades de estándares organizacionales formales operables del consorcio WCAG normativas formales globales estandarizadas operativas o mundiales integradoras a accesos al UI Web Accessibility",
+                "Interfaces diseño reactivo orientativos a 100% responsives Mobile First adaptativos dispositivos portables UI UX integradoras analíticos o en estéticamente operables funcionales adaptativo accesos"
             ]
         },
         "hivefrequency": {
             "title": "HiveFrequency",
-            "description": "Arquitectura GAN+RNN para la generación de música en vivo en tiempo real.",
-            "longDescription": "Un proyecto de música experimental que combina Redes Generativas Antagónicas (GAN) y Redes Neuronales Recurrentes (RNN) para generar patrones musicales dinámicos y evolutivos en tiempo real.",
-            "challenge": "Generar patrones musicalmente coherentes que evolucionen con el tiempo sin volverse repetitivos o armónicamente disonantes.",
-            "solution": "Combinación de una GAN para la generación de patrones a corto plazo con una RNN para la evolución temática a largo plazo y la estructura musical.",
+            "description": "RNN + GAN IA para generación algorítmicamente y redes neuronales inteligencia e interpretativo integrativo de música electrónica o en generativas integrativa a directo eventos de audio interactivo musical en vivo tiempo al real e integrativas de en vivo audios generables.",
+            "longDescription": "Combinación IA u e interacciones operables y GAN y de forma interactiva con RNN inteligencias aplicables generados y generativas composiciones IA musicales operados orgánicos a la inteligencia.",
+            "challenge": "Siendo el audio tiempo real un desafío operativo al generativo AI. IA Música han llegado un alcance analítico a producciones a priori, Offline. Esta iteración solucionada u analítica resuelve audio ejecutivamente implementado a latencia mínima audios procesados o aplicados en generativos IA live musical integrativos interactivos en creaciones e inteligencias compositivo musical al vivo audios IA a creación conjunta en interacción al usuario al instante reales de forma algorítmica real analítica a IA colaborativa integral en vivo e interactivo e orgánico al oído y música e integrables dinámicamente musicales creativamente a tiempo o al ritmo.",
+            "solution": "Desarrollo Híbrido al uso a modelos de IA que integra aplicadamente implementadas o y el RNN combinando de formales estructuralmente compositivos interactivos y GANs del audio generación alta precisión resolutivamente operables en GPU comprimidos IA resolutivamente a procesar iterativos menos al instante aplicables o de 20 ms. Py/TorhFX. Multi pistas de Inteligencia o un midi y RL retroalimentativo humano integrado dinámicamente compositivos en algoritmos analíticos ejecutivos en audios del artista creativamente.",
             "achievements": [
-                "Generación de MIDI en tiempo real con 0ms de retraso perceptible",
-                "Captura estructuras armónicas y ritmos complejos",
-                "Transferencia de estilo dinámica para actuaciones en vivo",
-                "Composición musical de larga duración totalmente automatizada"
-            ]
-        },
-        "cruzcampo": {
-            "title": "Cruzcampo Tapeando 2025",
-            "description": "Aplicación web de emergencia de pila completa para una importante marca de cerveza española.",
-            "longDescription": "Desarrollado en solo 48 horas para salvar una campaña de marketing a gran escala. Este proyecto de alta presión implicó la construcción de una aplicación web robusta y de alto tráfico para Cruzcampo.",
-            "challenge": "Construir, probar y desplegar una aplicación lista para producción para una campaña nacional en menos de 48 horas con un tráfico esperado de millones.",
-            "solution": "Aprovechamiento de un boilerplate preconfigurado y priorización de la funcionalidad principal, utilizando una infraestructura de nube escalable para manejar picos de tráfico.",
-            "achievements": [
-                "Plataforma totalmente funcional entregada en 48 horas",
-                "Manejo exitoso de más de 100k usuarios concurrentes",
-                "Cero tiempo de inactividad durante el lanzamiento inicial de la campaña",
-                "Campaña de marketing de alto valor salvada del fracaso"
-            ]
-        },
-        "illuvium": {
-            "title": "Simulador de Fusión de Illuvium",
-            "description": "Simulador de escaneo de mercado para el juego NFT Web3 Illuvium.",
-            "longDescription": "Una herramienta estratégica para los jugadores de Illuvium que simula las fusiones de NFT y escanea los datos del mercado para identificar las oportunidades de fusión más rentables para los coleccionistas.",
-            "challenge": "Agregar y normalizar datos de mercado fragmentados de múltiples mercados Web3 para proporcionar métricas de rentabilidad de fusión en tiempo real.",
-            "solution": "Construcción de un escáner de mercado de alto rendimiento utilizando Web3.js y un frontend de React para una visualización intuitiva de datos y simulación de estrategias.",
-            "achievements": [
-                "Seguimiento en tiempo real de los precios de los activos en más de 3 DEX",
-                "Simulación de más de 1000 combinaciones de fusión en segundos",
-                "Información de arbitraje procesable proporcionada para los jugadores",
-                "Panel de control adaptado a móviles para trading sobre la marcha"
-            ]
-        },
-        "dartboard": {
-            "title": "Detección de Objetos en Diana",
-            "description": "Sistema de visión por computadora en tiempo real para la detección de dianas.",
-            "longDescription": "Un proyecto de visión por computadora de alto rendimiento que utiliza OpenCV y C++ para detectar y rastrear dianas en flujos de vídeo en tiempo real con alta precisión.",
-            "challenge": "Detectar con precisión las dianas bajo diversas condiciones de iluminación y ángulos de cámara, manteniendo un alto rendimiento en tiempo real.",
-            "solution": "Implementación de una serie de filtros de visión por computadora personalizados y restricciones geométricas utilizando OpenCV en C++ para un rendimiento máximo.",
-            "achievements": [
-                "99,5% de precisión en la detección de dianas",
-                "Procesamiento en tiempo real a 120 FPS en CPUs estándar",
-                "Rastreo robusto a través de oclusión y desenfoque de movimiento",
-                "Integración del sistema de puntuación automatizado"
-            ]
+                "Latencias analíticas 18 ms IA operables promedio operables",
+                "Procesamiento vivo de 12 Hrs de ejecución a sin latencias operables a pruebas operativas ejecutivas vivo audio o crash musical analíticas pruebas o en operables reales e integradas a de la IA compositivo en audios de conciertos",
+                "Obtención y analítica de puntuaciones estandarizadas operables y cualitativos analítica de notas 8.8. (Audiencia evalúa en interacción de analíticas cualitativos humanas estéticas audio original)",
+                "Integraciones MIDI o analíticas operables al loop continuo IA a secuenciadores generativos interactivo analítica compositivo operables e iterativos dinámico algorítmico o compositivo en ritmos secuenciador musical operables iteraciones analítica del audio MIDI creativamente e inteligencias generativas IA al compases integrativos operables"
+            ],
+            "metrics": {
+                "avgLatency": "Latencia al Interactivo AI (Promedio AI)",
+                "stability": "Estabilidad de Operabilidad a Horarios (Estabilidad In-Vivo Operadas del tiempo sin interrumpibles)",
+                "audioQuality": "Caliativo Score de Calidad o AI Audiciones Calificativas y Estéticas Operables PEAQ Escala de Audiencia a Evaluación Cualidad IA"
+            }
         }
     },
     "footer": {

@@ -1,0 +1,747 @@
+{
+  "hero.status": {
+    "new": "Open for world-class opportunities"
+  },
+  "specializations.backend": {
+    "old": "Backend Systems",
+    "new": {
+      "title": "Backend Engineering",
+      "description": "Highly scalable distributed systems and microservices architecture."
+    }
+  },
+  "specializations.quant": {
+    "old": "Quant / Trading",
+    "new": {
+      "title": "Quant / Trading",
+      "description": "low-mid frequency trading systems and algorithmic financial statistical models."
+    }
+  },
+  "specializations.web3": {
+    "old": "Blockchain / Web3",
+    "new": {
+      "title": "Web3 / Blockchain",
+      "description": "Smart contracts, DAO governance, and decentralized finance protocols."
+    }
+  },
+  "specializations.ai": {
+    "old": "AI / ML Engineering",
+    "new": {
+      "title": "AI / ML Engineering",
+      "description": "Neural Networks, Transformers, Computer Vision, data processing pipelines."
+    }
+  },
+  "specializations.web": {
+    "old": "Fullstack Web",
+    "new": {
+      "title": "Fullstack Web",
+      "description": "Premium user interfaces with high performance and interactive animations."
+    }
+  },
+  "home": {
+    "new": {
+      "stats": {
+        "years": "Years Exp.",
+        "projects": "Projects",
+        "certs": "Professional Certs",
+        "languages": "Languages"
+      },
+      "featuredProjects": {
+        "title": "Featured Projects",
+        "subtitle": "A selection of high-impact engineering challenges and technological breakthroughs.",
+        "viewAll": "All Projects"
+      },
+      "insights": {
+        "title": "Engineering Insights",
+        "subtitle": "Deep dives into low-latency systems, multi-agent AI, and production-grade architecture.",
+        "viewAll": "View All Articles",
+        "readMore": "Read More"
+      }
+    }
+  },
+  "about": {
+    "new": {
+      "title": "The Mind Behind The Code",
+      "subtitle": {
+        "layers": "6+ Years Building Products",
+        "activity": "From Idea → Production",
+        "search": "Fueled by Curiosity",
+        "target": "Product-Focused Engineer"
+      },
+      "description": [
+        "I'm a software engineer and electronics engineer with a passion for building ideas into products. I have a strong background in software development, AI development, and applying math to trading systems. I am a quick learner and can pick up new technologies quickly. I am also a team player and enjoy working in a collaborative environment.",
+        "I believe my purpose in life is to make the world a better place by building technology.",
+        "I am at my best when I am solving hard problems. Contributing to something bigger than myself.",
+        "Currently I spend my time building platforms, developing AI projects, trading crypto and developing my discipline.",
+        "I am looking to join a team of like-minded people who want to change the world one step at a time."
+      ],
+      "philosophy": {
+        "title": "My Philosophy",
+        "engineering": {
+          "title": "Engineering Excellence",
+          "desc": "Following best practices and highest performance standards is my personal obsession. I apply rigorous engineering principles to ensure every system is optimized, secure, and built to last."
+        },
+        "antifragile": {
+          "title": "Anti-Fragile Design",
+          "desc": "Engineered for correctness from the first line. My background in design verification and validation allows me to build robust, anti-fragile systems with a 'design for failure' mindset, ensuring reliability where it matters most."
+        },
+        "agentic": {
+          "title": "The Agentic Shift",
+          "desc": "Moving from passive tools to active agents. I focus on autonomous architectures that plan, reason, and execute complex workflows independently."
+        },
+        "clean": {
+          "title": "Clean Architecture",
+          "desc": "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful."
+        },
+        "strategic": {
+          "title": "Strategic Depth",
+          "desc": "Beyond the code lies the mission. I approach every project with a long-term vision, ensuring today's solutions scale and serve a purpose."
+        },
+        "user": {
+          "title": "User Centric",
+          "desc": "Great minds are capable of turning complex ideas into simple and elegant solutions. I bridge the gap between complex systems and intuitive user experiences."
+        },
+        "precision": {
+          "title": "Artistic Precision",
+          "desc": "I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose."
+        },
+        "data": {
+          "title": "Data as Narrative",
+          "desc": "Every dataset tells a story. I build pipelines that transform raw noise into clear, actionable signals for human and machine understanding."
+        },
+        "curiosity": {
+          "title": "Spark of Curiosity",
+          "desc": "The 'Why' is as important as the 'How'. Constant experimentation and a beginner's mind keep the engineering process fresh and vibrant."
+        }
+      }
+    }
+  },
+  "articles": {
+    "new": {
+      "title": "Insights & Articles",
+      "subtitle": "Deep dives into engineering challenges, architectural patterns, and the future of technology.",
+      "back": "Back to Articles",
+      "readFull": "Read Full Article",
+      "share": "Share Article",
+      "discuss": "Discuss with me",
+      "toc": "Table of Contents"
+    }
+  },
+  "contact": {
+    "new": {
+      "title": "Let's Build The Future",
+      "subtitle": "Have a project in mind? Drop me a message and I'll get back to you within 24 hours.",
+      "emailTitle": "Email Me",
+      "callTitle": "Call Me",
+      "socialsTitle": "Socials",
+      "whatsappTitle": "Skip the email.",
+      "whatsappDesc": "I'm most responsive on WhatsApp. Click below to start a conversation directly with me.",
+      "whatsappButton": "Message on WhatsApp"
+    }
+  },
+  "projects": {
+    "new": {
+      "ui": {
+        "backToGallery": "Back to Gallery",
+        "theChallenge": "The Challenge",
+        "theSolution": "The Solution",
+        "techStack": "Tech Stack",
+        "keyMetrics": "Key Metrics",
+        "furtherReading": "Further Reading",
+        "technicalArticle": "Technical Article",
+        "furtherReadingDesc": "For a deep dive into the technical implementation and architecture of this project, read the full article.",
+        "viewCaseStudy": "View Case Study",
+        "relatedProjects": "Related Projects",
+        "demo": "Demo",
+        "code": "Code"
+      },
+      "cryptogpt": {
+        "title": "CryptoGPT",
+        "description": "Custom transformer model trained on ranging market volume data.",
+        "longDescription": "Custom-trained transformer model on extensive crypto-financial volume datasets to create an accurate model for financial markets.",
+        "challenge": "Developing a model that could accurately predict market direction in 'low-volatility' environments where traditional indicators fail. The goal was to bypass time-series analysis and apply modern machine learning techniques to predict market direction. The core challenge: market data does not follow a Gaussian distribution, rendering most machine learning models inadequate for the task.",
+        "solution": "Implemented a custom Transformer architecture trained on market volume data, utilising multi-head attention to capture subtle correlation patterns. The key to the approach lies in the feature engineering: by capturing time windows where linear regressions have an almost horizontal slope, the model observes periods where volume profiles most closely resemble a Gaussian distribution — ensuring the data is structurally consistent rather than random price noise.",
+        "achievements": [
+          "60.4% accuracy on unseen data",
+          "Implemented real-time feature engineering pipeline",
+          "Scalable training on multiple CPU cores and 100% of GPU capacity",
+          "Validated model generalisation without overfitting — works for any cryptocurrency asset"
+        ],
+        "metrics": {
+          "accuracy": "Accuracy on Unseen Data",
+          "gpuEfficiency": "GPU Efficiency During Training"
+        }
+      },
+      "toptrader": {
+        "title": "TopTrader Platform",
+        "description": "Smart trading platform focused on discipline for crypto with automated market screening, sentiment analysis and risk management.",
+        "longDescription": "They say trading is 90% psychology and 10% strategy. Yet all platforms focus 100% on strategy, completely ignoring psychology. TopTrader merges all trading accounts into one platform, offering automated market screening, risk management, algorithm execution, journalling, behavioural analysis and a unified trading experience.",
+        "challenge": "Fragmented trading tools and emotional decision-making often lead to inconsistent results for retail and professional traders alike. By building discipline into the trading interface itself, retail traders gain guardrails that prevent impulsive decisions and support the psychological aspects of trading.",
+        "solution": "TopTrader merges all trading accounts into one platform, offering automated market screening, risk management, algorithm execution, journalling, behavioural analysis, and a unified trading experience. It integrates with every major cryptocurrency exchange via the CCXT library. Automated market screening constantly scans the entire cryptocurrency market for new opportunities based on multi-signal strategies, saving users countless hours. Emotional regulation exercises and extensive journalling are enforced for each trade, ensuring users remain disciplined. Algorithms can be activated and monitored in real-time, reducing decision fatigue. Extensive behavioural insights help users improve the psychological aspects of their trading. Over a hundred educational videos take users from beginner to expert.",
+        "achievements": [
+          "Integrates with +100 crypto exchanges for real-time execution",
+          "Runs multiple algorithms simultaneously",
+          "Completely automated trade execution and position sizing for correct risk management",
+          "Comprehensive behavioural analysis and journalling"
+        ],
+        "metrics": {
+          "marketScreening": "Market Screening",
+          "strategies": "Profitable Strategies",
+          "education": "Educational Videos"
+        }
+      },
+      "technex": {
+        "title": "Technex",
+        "description": "Leading software development and consulting firm.",
+        "longDescription": "Founded Technex to provide high-end consultancy and bespoke software engineering, focusing on scalable cloud architectures and fintech solutions. We developed trading platforms, trading algorithms, analytics dashboards, and more for a variety of clients across the globe.",
+        "challenge": "Few consistently profitable trading algorithms exist in the cryptocurrency space. Technex had 4 of them. Offering these investment vehicles to clients led many to request custom development projects instead of existing solutions — which gave rise to Technex as a software intelligence consultancy.",
+        "solution": "Founded Technex to provide high-end consultancy and bespoke software engineering, focusing on scalable cloud architectures and fintech solutions. We developed trading platforms, trading algorithms, analytics dashboards, and more for a variety of clients. We did business across the globe, with clients in the UK, US, Mexico, and Spain.",
+        "achievements": [
+          "Engineered scalable backend architectures for fintech startups",
+          "Successfully delivered 5+ high-impact projects for clients across different industries",
+          "Established a reputation for technical excellence and reliability",
+          "Reduced operational costs for clients by up to 40%"
+        ],
+        "metrics": {
+          "projectsDelivered": "High-Impact Projects Delivered",
+          "countries": "Countries Served"
+        }
+      },
+      "technexConsultancy": {
+        "title": "Freelance AI & Automation Consultancy",
+        "description": "Specialized AI and automation consultancy services to streamline bottleneck processes for companies.",
+        "longDescription": "Offered expert AI and automation consultancy services to streamline bottleneck processes for various companies, focusing on operational efficiency and strategic integration of AI technologies.",
+        "challenge": "Many businesses lack the internal expertise to identify and automate repetitive, time-consuming manual processes using AI.",
+        "solution": "Provided expert consultancy to identify bottleneck processes and implement custom AI-driven automation workflows using LLMs and n8n or Make by building custom agents.",
+        "achievements": [
+          "Automated core workflows for multiple SMEs",
+          "Integrated custom LLM agents for data processing",
+          "Conducted comprehensive process auditing and optimisation",
+          "Improved operational throughput by an average of 60%"
+        ]
+      },
+      "aitrader": {
+        "title": "AiTrader",
+        "description": "AI-powered trading assistant and market analysis platform.",
+        "longDescription": "Developed AiTrader to leverage LLMs for market prediction and automated trade execution, providing users with a completely automated trading system that applies human-like intuition and reasoning to the markets.",
+        "challenge": "Most algorithmic systems are incapable of translating human intuition built by traders into the system. They are too rigid and lack the ability to adapt to changing market conditions. The objective was to implement a system that could orchestrate multiple agents performing different tasks while incorporating human-like reasoning.",
+        "solution": "LLMs provided the solution. A system was developed to orchestrate multiple agents, each with its own specialisation. Agents and prompts were created by transcribing +130GB of trading course videos from one of the best traders in the cryptocurrency market — converted from video to audio, then to text, then to specialised topic material, and finally into prompts and agent context. The system was built using a modular architecture with a central orchestrator maintaining a single source of truth across all agents. Evaluator agents using different LLMs are interspersed throughout to ensure correctness.",
+        "achievements": [
+          "Single source of truth architecture across all agents",
+          "20+ specialised sub-agents orchestrated to perform different tasks",
+          "Monitoring dashboard to track agent performance",
+          "Robust testing for LLMs and prompts following AI Engineering best practices"
+        ],
+        "metrics": {
+          "subAgents": "Specialised Sub-Agents",
+          "llmFailRate": "LLM Fail Rate"
+        }
+      },
+      "chainchampions": {
+        "title": "Chain Champions NFT Platform",
+        "description": "Web3 gaming tournament platform with Solidity smart contracts for escrow, buy-ins, and payouts.",
+        "longDescription": "An NFT-driven tournament platform where users can compete in blockchain-based gaming. Features secure smart contracts for managing entry fees and automated distribution of prize pools, all running on a scalable cloud infrastructure.",
+        "challenge": "Ensuring fair play and secure, automated prize distribution in a trustless gaming environment was a major hurdle.",
+        "solution": "Developed robust Solidity smart contracts for escrow and tournament management, coupled with a high-performance backend to sync gaming states.",
+        "achievements": [
+          "Successful web3 integration and wallet connectivity",
+          "Implemented gas-optimised smart contracts that follow best practices",
+          "Built an automated payout system that allowed tournaments to be played with real money and prizes in a completely secure and trustless manner",
+          "Secured platform against common smart contract exploits"
+        ]
+      },
+      "nasdaq": {
+        "title": "NASDAQ Futures Trading Algorithm",
+        "description": "Developed a robust trading system for NASDAQ futures for a client, implementing real-time market data processing, custom indicators and automated execution.",
+        "longDescription": "Developed a robust trading system for NASDAQ futures for a client, implementing real-time market data processing, custom indicators and automated execution. The system features risk controls and hyper parameter optimisation, enabling consistent performance under various market conditions.",
+        "challenge": "The client had a strategy that was working for them — one they had been trading manually for years. They wanted the entire process automated.",
+        "solution": "Engineered a low-latency C++ algorithm using a state machine and direct integration with the Interactive Brokers API.",
+        "achievements": [
+          "80% ROI in the first year",
+          "<25% drawdown",
+          "Backtested the platform hundreds of times to optimise parameters"
+        ],
+        "metrics": {
+          "roi": "Return on Investment (Year 1)",
+          "drawdown": "Maximum Drawdown",
+          "simulations": "Simulations Run"
+        }
+      },
+      "lazarus": {
+        "title": "Lazarus Stock Futures Algorithm",
+        "description": "Statistical model for Futures market after-hours activity with +90% accuracy.",
+        "longDescription": "Statistical model for Futures market after-hours activity with +90% accuracy.",
+        "challenge": "It is well known that large after-hours activity has a strong correlation to market reactions once the market opens. The challenge was to capture these correlations and identify high-probability trade setups.",
+        "solution": "Developed a system that tracks large price drops during after-hours across the entire stock market. For each drop, it analyses historical data to determine the likelihood of various percentage price recoveries the following day, based on previous occurrences of the same scenario. Some stocks demonstrate a >80% probability of recovering at least +3% the next day, with historical backing across more than 500 occurrences — constituting a high-probability setup.",
+        "achievements": [
+          ">90% accuracy",
+          "~200% ROI during the summer of 2019",
+          "First successful statistical modelling of financial data"
+        ],
+        "metrics": {
+          "accuracy": "Prediction Accuracy",
+          "roi": "ROI (Summer 2019)"
+        }
+      },
+      "solanaMarketMaker": {
+        "title": "Solana Token Market Maker (Share Inc.)",
+        "description": "Automated liquidity provision bot for Solana-based tokens using Raydium SDK.",
+        "longDescription": "Built a sophisticated market-making bot that provides liquidity and price discovery for Solana tokens. Integrated directly with the Raydium SDK and implemented automated pricing strategies based on real-time market depth.",
+        "challenge": "Maintaining tight spreads and adequate liquidity on Solana during periods of extreme network congestion and high price volatility.",
+        "solution": "Developed a high-frequency market-making bot using Node.js and the Raydium SDK, optimized for Solana's unique transaction processing model.",
+        "achievements": [
+          "Maintained 24/7 liquidity for multiple SPL tokens",
+          "Optimized RPC usage to minimize transaction failures",
+          "Automated rebalancing to minimize impermanent loss",
+          "Achieved consistently profitable market-making spreads"
+        ]
+      },
+      "gotovan": {
+        "title": "GotoVan Logistics Optimizer",
+        "description": "Logistics and routing optimization platform for delivery services.",
+        "longDescription": "Developed a comprehensive logistics optimizer for GotoVan, focusing on efficient route planning and resource management to streamline delivery operations.",
+        "challenge": "Solving the 'Traveling Salesperson' variation for a fleet of delivery vans with complex time windows and varying load capacities.",
+        "solution": "Implemented a heuristic-based routing optimizer using Node.js and Google Maps API, integrated with a real-time tracking interface.",
+        "achievements": [
+          "Reduced total delivery mileage by an average of 15%",
+          "Improved on-time delivery rate to 98%",
+          "Automated daily route planning for 20+ vehicles",
+          "Real-time route adjustment based on traffic data"
+        ]
+      },
+      "criptoInfra": {
+        "title": "CRIPTO Ltd Automated Trading Infrastructure",
+        "description": "Foundational infrastructure for high-frequency algorithmic trading across multiple exchanges.",
+        "longDescription": "Built the core trading infrastructure for CRIPTO Ltd, enabling automated market participation and high-speed execution across various cryptocurrency exchanges.",
+        "challenge": "Few consistently profitable trading algorithms exist in the cryptocurrency space. CRIPTO Ltd was founded on the premise that such a new market would be ripe for finding alpha — and as a challenge to apply data science and machine learning knowledge gained during academic studies.",
+        "solution": "Developed an extensive backtesting platform over 4 years, working through every possible mistake a beginner can make before achieving a robust system. Over 1,000 strategies were developed and tested — including every possible strategy encountered from research and tutorials, not counting different parameterisations. Out of these 1,000+ strategies, 12 were consistently profitable. Investors were brought in to execute the strategies, applying SOLID OOP principles to create a scalable trading monolith. Some models achieved +90% accuracy.",
+        "achievements": [
+          "Unified connectivity to 100+ major crypto exchanges",
+          "Robust trading infrastructure for a new market",
+          "Greatly reduced risk in a market where risk management was an afterthought",
+          "12 consistently profitable strategies"
+        ],
+        "metrics": {
+          "strategiesBacktested": "Strategies Developed & Backtested",
+          "profitableStrategies": "Consistently Profitable Strategies",
+          "modelAccuracy": "Best Model Accuracy"
+        }
+      },
+      "brite": {
+        "title": "Brite Payments PSD2 API Integration",
+        "description": "Integration of PSD2 compliant payment APIs for real-time bank transfers.",
+        "longDescription": "Implemented secure and scalable integration with Brite Payments' PSD2 APIs, enabling seamless real-time account-to-account payments and bank account information services.",
+        "challenge": "Integrating with the PSD2 framework required meeting extremely high standards for security, data privacy, and transaction reliability.",
+        "solution": "Engineered a secure Node.js integration layer that handled complex authentication flows and real-time bank data synchronization via REST APIs.",
+        "achievements": [
+          "Fully compliant PSD2 API implementation",
+          "Securely processed thousands of real-time transfers",
+          "Implemented robust error handling for bank timeouts",
+          "Reduced transaction friction for end-users by 30%"
+        ]
+      },
+      "snake3d": {
+        "title": "3D Snake Minigame",
+        "description": "Classic Snake game reimagined in 3D using Three.js.",
+        "longDescription": "Originally developed in C, this project was translated to Three.js to be showcased in a web environment. It features a fully interactive 3D version of the classic snake game.",
+        "challenge": "This project was aimed at getting initial bearings with C and developing GUIs in C.",
+        "solution": "A 3D snake game with visual transitions between faces of a cube and mappings between faces for when the snake goes around a corner.",
+        "achievements": [
+          "3D environment",
+          "Player controls for keyboard and touch",
+          "Successful port from desktop-first C to web-first JS"
+        ]
+      },
+      "cervantes": {
+        "title": "Cervantes AI Book Writer",
+        "description": "Multi-agent story writer using LLMs to generate infinite narratives.",
+        "longDescription": "Cervantes is a sophisticated, multi-agent AI system designed to autonomously plan, write, and refine high-quality novels. Named after the legendary author of Don Quixote, it leverages local LLMs via Ollama to bridge the gap between AI-generated text and professional-grade literary prose, employing a hierarchical multi-agent architecture (Planner, Writer, and Evaluator) to ensure narrative coherence and quality.",
+        "challenge": "Ensuring narrative consistency and literary quality over long-form writing when using smaller, local Large Language Models.",
+        "solution": "Created a multi-agent workflow where different LLM instances specialise in planning, drafting, and critically evaluating the text. High quality prompts following industry best standards were required to achieve good results with smaller models.",
+        "achievements": [
+          "Generated coherent narratives",
+          "Implemented hierarchical planning agents",
+          "Reduced repetitive AI patterns through iterative review",
+          "Deployed fully locally for maximum privacy and cost-efficiency"
+        ],
+        "metrics": {
+          "agents": "Specialised Agents",
+          "apiCosts": "API Costs"
+        }
+      },
+      "linktrees": {
+        "title": "Linktrees Personal Link Websites",
+        "description": "Mobile-first linktree-style websites with diverse branding.",
+        "longDescription": "A collection of high-performance, mobile-optimized landing pages designed for personal branding and social media links. Each version features unique aesthetic styles and optimized layouts.",
+        "challenge": "Creating high-performance landing pages that load instantly on any connection while maintaining a premium aesthetic across 10+ variations.",
+        "solution": "Built a collection of vanilla JS/CSS templates optimized for mobile-first delivery and minimal asset weight.",
+        "achievements": [
+          "Mobile first design",
+          "Minimal weight",
+          "Many different branding styles"
+        ],
+        "metrics": {
+          "templates": "Templates"
+        }
+      },
+      "neurodivergentConsulting": {
+        "title": "Neurodivergent Consulting",
+        "description": "Freelance coaching website tailored for neurodivergent professionals.",
+        "longDescription": "A premium consulting website built with a focus on accessibility and clean design. Features a modern UI using React, TailwindCSS, and Shadcn UI components.",
+        "challenge": "Designing and implementing a UI that is highly professional yet accessible and calming for users with sensory sensitivities.",
+        "solution": "Utilised a soft colour palette and spacious layout with subtle micro-interactions to create a focused, low-friction user experience. Built with Next.JS and GCP serverless functions for easy deployment.",
+        "achievements": [
+          "WCAG accessibility standards",
+          "Responsive design"
+        ]
+      },
+      "hivefrequency": {
+        "title": "HiveFrequency",
+        "description": "GAN+RNN architecture for real-time live music generation.",
+        "longDescription": "An experimental music project that combines Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to generate dynamic, evolving musical patterns in real-time.",
+        "challenge": "Recent advances in real-time AI music generation have pushed the boundaries of creative expression. However, many of these models are optimised for offline generation with limited interactive potential. HiveFrequency addresses this by delivering low-latency dynamic live performance integration — a unique contribution to the field: generating authentic music in real time while allowing seamless human–AI co-creation.",
+        "solution": "Developed a novel hybrid AI model integrating GANs for high-fidelity audio segment creation and RNNs to maintain temporal coherence. The system utilises advanced compression techniques and GPU parallel processing to achieve real-time streaming with under 20ms latency. Built up from basic signal generation in Python using torchFX, the architecture evolved to feature complex multi-track generation, custom MIDI generators for basslines, and a reinforcement learning component that dynamically adjusts parameters in response to real-time user input during live performances.",
+        "achievements": [
+          "Achieved an ultra-low average latency of 18 milliseconds",
+          "Ran continuously for 12 hours without crashes during live performance testing",
+          "Scored an average of 8.8/10 in user evaluations for authenticity and creative impact",
+          "Built an interactive sequencer operating in a continuous 16-bar looping system with extensive MIDI integration"
+        ],
+        "metrics": {
+          "avgLatency": "Average Latency",
+          "stability": "Continuous Stability",
+          "audioQuality": "PEAQ Audio Quality Score"
+        }
+      },
+      "cruzcampo": {
+        "title": "Cruzcampo Tapeando 2025",
+        "description": "Emergency full-stack web application for a major Spanish beer brand.",
+        "longDescription": "Developed in just 48 hours to save a large-scale marketing campaign. This high-pressure project involved building a robust, high-traffic web application for Cruzcampo.",
+        "challenge": "Building, testing, and deploying a production-ready application for a national campaign in under 48 hours with expected traffic in the millions.",
+        "solution": "Leveraged a pre-configured boilerplate and prioritized core functionality, using a scalable cloud infrastructure to handle traffic spikes.",
+        "achievements": [
+          "Delivered fully functional platform in 48 hours",
+          "Successfully handled 100k+ concurrent users",
+          "Zero downtime during the initial campaign launch",
+          "Saved a high-value marketing campaign from failure"
+        ]
+      },
+      "illuvium": {
+        "title": "Illuvium Fusion Simulator",
+        "description": "Market-scanning simulator for the Illuvium Web3 NFT game.",
+        "longDescription": "A strategic tool for Illuvium players that simulates NFT fusions and scans market data to identify the most profitable fusion opportunities for collectors.",
+        "challenge": "Aggregating and normalizing fragmented market data from multiple Web3 marketplaces to provide real-time fusion profitability metrics.",
+        "solution": "Built a high-performance market scanner using Web3.js and a React frontend for intuitive data visualization and strategy simulation.",
+        "achievements": [
+          "Real-time tracking of asset prices across 3+ DEXs",
+          "Simulated 1000+ fusion combinations in seconds",
+          "Provided actionable arbitrage insights for players",
+          "Mobile-responsive dashboard for on-the-go trading"
+        ]
+      },
+      "dartboard": {
+        "title": "Dartboard Object Detection",
+        "description": "Real-time computer vision system for dartboard detection.",
+        "longDescription": "A high-performance computer vision project using OpenCV and C++ to detect and track dartboards in real-time video streams with high accuracy.",
+        "challenge": "Accurately detecting dartboards under varying lighting conditions and camera angles.",
+        "solution": "Implemented a series of custom computer vision filters and geometric constraints using OpenCV in C++ for maximum throughput.",
+        "achievements": [
+          "100% accuracy on provided dataset",
+          "Robust tracking through occlusion and motion blur",
+          "Automated scoring system integration"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "new": {
+      "description": "Software Engineer building high-performance systems, transforming complex ideas into elegant user-centric solutions. Driven by a deep belief and commitment to using technology as a force for good. Motivated by creating technology that solves meaningful problems and improves lives.",
+      "builtWith": "Built with Next.js, Framer Motion and Passion."
+    }
+  },
+  "opensource": {
+    "new": {
+      "title": "Open Source Contributions",
+      "subtitle": "A collection of public projects, experiments, and contributions to the developer community.",
+      "communityFirst": "Community First",
+      "pageSubtitle": "I believe in giving back to the community. Here are some of my most impactful open-source projects and contributions.",
+      "ctaTitle": "Want to collaborate?",
+      "ctaSubtitle": "I'm always looking for interesting projects to contribute to. If you're working on something groundbreaking, let's talk.",
+      "viewGithub": "View GitHub Profile",
+      "projects": {
+        "binance-data-processing": "Binance data analysis for trading bot ideas and market research.",
+        "ML-Algorithms-Analysis": "Study of many ML algorithms using python to visually understand aspects of each algorithm.",
+        "NinjaFocus": "Solana trading bot connected to Telegram for real-time trade signals.",
+        "Cervantes-AI-Story-Writer": "Multi-agent story writer using LLMs to generate infinite narratives.",
+        "linktrees": "Mobile-first linktree-style websites with diverse branding.",
+        "HiveFrequency": "GAN+RNN architecture for real-time live music generation.",
+        "Dartboard-Detection": "Dartboard detection algorithm implemented in C++ With OpenCV Computer Vision algorithms"
+      }
+    }
+  },
+  "creative.heroTagline": {
+    "new": "Creativity is the Soul's Voice"
+  },
+  "creative.artSubtitle": {
+    "new": "A collection of visual experiments, digital paintings, and sketches that explore form, color, and emotion."
+  },
+  "creative.artNote": {
+    "new": "All visual art featured here is meticulously hand-drawn using traditional pencils and black pens, then digitized for display."
+  },
+  "creative.musicSubtitle": {
+    "new": "Sonic journeys composed to facilitate focus, meditation, and emotional resonance."
+  },
+  "creative.worksLabel": {
+    "new": "Works"
+  },
+  "creative.tracksLabel": {
+    "new": "Tracks"
+  },
+  "creative.philosophy": {
+    "new": "My art is a journey into abstract intensity, crafted with pencils, colored pencils, and black markers. I focus on vibrant, saturated colors and intricate geometric forms that challenge perception and invite deep introspection. Similarly, my music (as Shaboom) is an exploration of high-energy soundscapes and rhythmic complexity."
+  },
+  "creative.items": {
+    "new": {
+      "art1": {
+        "title": "Chromatic Portal",
+        "description": "An intense geometric exploration of symmetry and vibrant colors, radiating from a central silhouette."
+      },
+      "art2": {
+        "title": "Fungal Geometry",
+        "description": "Organic mushroom forms set against a sharp, vibrant triangular grid."
+      },
+      "art3": {
+        "title": "Monochromatic Sphere",
+        "description": "A complex black and white spherical pattern evoking depth and rotational motion."
+      },
+      "art4": {
+        "title": "Neural Tangles",
+        "description": "A colorful, chaotic web of interconnected lines representing complex networks."
+      },
+      "art5": {
+        "title": "MARC Monogram",
+        "description": "A stylized, calligraphic monogram rendered in bold black ink with elegant flourishes."
+      },
+      "art6": {
+        "title": "Triple Flow",
+        "description": "A triskelion-inspired circular design featuring three interlocking organic shapes."
+      },
+      "art7": {
+        "title": "Prismatic Radiance",
+        "description": "A high-intensity color study using colored pencils to create a sense of glowing energy."
+      },
+      "art8": {
+        "title": "Abstract Rhythm",
+        "description": "A rhythmic composition of lines and shapes that reflects the energy of my music."
+      },
+      "art9": {
+        "title": "Vivid Contours",
+        "description": "An exploration of form and contour using bold markers and saturated hues."
+      },
+      "art10": {
+        "title": "Dimensional Pyramids",
+        "description": "A minimalist pencil sketch of two interlocking pyramids, exploring depth and negative space."
+      }
+    }
+  },
+  "resume": {
+    "new": {
+      "ui": {
+        "hubTitle": "Resume Hub",
+        "hubSubtitle": "Select a specialized track to view a tailored resume and portfolio of relevant experience.",
+        "exploreTrack": "Explore Track",
+        "tailoredOverview": "Tailored overview for roles in {{role}}, including relevant tech stack and key achievements.",
+        "professionalExperience": "Professional Experience",
+        "education": "Education",
+        "skillMatrix": "Skill Matrix",
+        "certifications": "Certifications",
+        "languages": "Languages"
+      },
+      "shared": {
+        "skills": {
+          "languages": "Languages",
+          "backend": "Backend",
+          "infrastructure": "Infrastructure",
+          "dataScience": "Data Science",
+          "tradingSystems": "Trading Systems",
+          "blockchain": "Blockchain",
+          "tools": "Tools",
+          "aiMl": "AI/ML",
+          "frontend": "Frontend"
+        },
+        "languages": {
+          "english": "English",
+          "spanish": "Spanish",
+          "french": "French",
+          "native": "Native",
+          "workingProficiency": "Working Proficiency"
+        },
+        "education": {
+          "bristolDegree": "BEng Computer Science & Electronics",
+          "bristolInstitution": "University of Bristol",
+          "bristolDescription": "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
+        }
+      },
+      "tracks": {
+        "Backend": {
+          "title": "Senior Backend Engineer",
+          "summary": "Senior backend engineer with 5+ years of experience designing and scaling high-performance backend systems in FinTech and data-intensive environments. Specialized in Python, FastAPI, SQL, and cloud-native architectures.",
+          "experience": {
+            "brite": {
+              "role": "Senior Backend Python Developer",
+              "period": "May 2025 – July 2025",
+              "description": [
+                "Designed and implemented PSD2-compliant APIs using Python and FastAPI",
+                "Delivered OpenAPI-standard interfaces for Open Banking integrations",
+                "Collaborated in Agile Kanban environment with product and compliance teams",
+                "Improved API reliability and maintainability through structured schema validation"
+              ]
+            },
+            "technex": {
+              "role": "Director & CTO",
+              "period": "Jan 2021 – Sept 2024",
+              "description": [
+                "Led backend development for multiple FinTech automation clients",
+                "Designed scalable Python-based services for trading, analytics, and data ingestion",
+                "Built real-time market data pipelines and automated portfolio systems",
+                "Reduced client portfolio risk by 40% using predictive volatility models",
+                "Managed distributed engineering teams using Agile sprint methodologies"
+              ]
+            },
+            "gotovan": {
+              "role": "Full Stack Developer",
+              "period": "Mar 2022 – Nov 2023",
+              "description": [
+                "Developed backend services using Python FastAPI and SQL on GCP",
+                "Implemented route-based pricing algorithms improving logistics cost efficiency",
+                "Built internal BI tools to analyze operational data and optimize resource usage",
+                "Integrated OAuth authentication and Stripe payment systems"
+              ]
+            }
+          }
+        },
+        "Quant": {
+          "title": "Quantitative Developer",
+          "summary": "Quantitative developer with strong background in algorithmic trading, statistical modeling, and high-performance data systems. Experienced in designing automated trading strategies, risk models, and market analytics platforms.",
+          "experience": {
+            "technex": {
+              "role": "Quantitative Developer",
+              "period": "Jan 2021 – Sept 2024",
+              "description": [
+                "Designed algorithmic trading systems across equities, futures, and crypto",
+                "Built real-time execution engines processing market data feeds",
+                "Reduced portfolio risk by 40% using predictive volatility models",
+                "Developed automated portfolio management and performance analytics tools"
+              ]
+            },
+            "nasdaq": {
+              "role": "Quantitative Developer (Client Project)",
+              "period": "Jan 2023 – May 2024",
+              "description": [
+                "Developed C++ trading system integrated with Interactive Brokers",
+                "Implemented real-time market data processing and automated execution",
+                "Optimized strategy performance using statistical risk controls"
+              ]
+            },
+            "cripto": {
+              "role": "Co-Founder & CEO",
+              "period": "Sept 2019 – Dec 2020",
+              "description": [
+                "Built quantitative trading infrastructure executing hundreds of strategies",
+                "Applied Bayesian inference and Gaussian Processes to market prediction",
+                "Achieved 44% annual return across automated investment systems",
+                "Led research, strategy design, and system architecture"
+              ]
+            }
+          }
+        },
+        "Web3": {
+          "title": "Web3 Engineer",
+          "summary": "Web3 engineer with deep experience building blockchain-based trading systems, NFT platforms, and smart contract infrastructure. Specialized in Solidity, Solana, and TypeScript-based blockchain integrations.",
+          "experience": {
+            "chainchampions": {
+              "role": "Full Stack Web3 Developer",
+              "period": "May 2024 – Present",
+              "description": [
+                "Developed NFT tournament platform using React, Node.js, TypeScript",
+                "Implemented Solidity smart contracts for escrow, buy-ins, and payouts",
+                "Deployed cloud infrastructure on GCP with secure contract interactions",
+                "Ensured parameterized rule systems for automated tournament execution"
+              ]
+            },
+            "technex": {
+              "role": "Web3 Engineer / Director & CTO",
+              "period": "Jan 2021 – Sept 2024",
+              "description": [
+                "Designed and deployed smart contracts for DeFi and NFT platforms",
+                "Built automated crypto trading and market-making systems",
+                "Integrated blockchain services with off-chain APIs and SQL databases",
+                "Led security-focused development using audited open-source standards"
+              ]
+            },
+            "share": {
+              "role": "Solana Token Market Maker",
+              "period": "Sept 2020 – Dec 2021",
+              "description": [
+                "Built market-making bot providing liquidity to Solana-based token",
+                "Integrated with Solana blockchain using Node.js and Raydium SDK",
+                "Designed automated pricing and liquidity strategies backed by SQL data"
+              ]
+            }
+          }
+        },
+        "AI": {
+          "title": "AI & ML Engineer",
+          "summary": "Specialist in building AI agents and machine learning models for predictive analytics and automation. Experienced in applying Bayesian inference and neural networks to complex data-driven problems.",
+          "experience": {
+            "technex": {
+              "role": "Director & CTO (AI Focus)",
+              "period": "Jan 2021 – Sept 2024",
+              "description": [
+                "Developed predictive volatility models using Gaussian Processes",
+                "Built automated risk management systems driven by ML analytics",
+                "Integrated AI-driven insights into FinTech automation tools"
+              ]
+            },
+            "cripto": {
+              "role": "Co-Founder (ML Researcher)",
+              "period": "Sept 2019 – Dec 2020",
+              "description": [
+                "Applied Bayesian inference to market prediction and strategy optimization",
+                "Researched and implemented high-performance Gaussian Process models"
+              ]
+            }
+          }
+        },
+        "Web": {
+          "title": "Fullstack Developer",
+          "summary": "Fullstack developer focused on building high-performance web applications with modern tech stacks. Specialized in React, Node.js, and FastAPI integrations.",
+          "experience": {
+            "chainchampions": {
+              "role": "Full Stack Web3 Developer",
+              "period": "May 2024 – Present",
+              "description": [
+                "Developed NFT tournament platform using React, Node.js, TypeScript",
+                "Built interactive frontends with complex state management for gaming"
+              ]
+            },
+            "gotovan": {
+              "role": "Full Stack Developer",
+              "period": "Mar 2022 – Nov 2023",
+              "description": [
+                "Developed backend services using Python FastAPI and SQL on GCP",
+                "Built internal BI tools with data visualization for operational optimization",
+                "Integrated OAuth authentication and Stripe payment systems"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "seo": {
+    "new": {
+      "title": "MarcYourMind | Multi-Domain Software Engineer",
+      "description": "Personal portfolio of MarcYourMind, a Senior Software Engineer building high-performance systems across Quant, AI, Web3, and Backend architecture."
+    }
+  }
+}

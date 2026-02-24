@@ -1,0 +1,2225 @@
+Key: nav.home
+EN: Home
+ES: Inicio
+FR: Accueil
+
+Key: nav.projects
+EN: Projects
+ES: Proyectos
+FR: Projets
+
+Key: nav.resume
+EN: Resume
+ES: Currículum
+FR: Résumé
+
+Key: nav.opensource
+EN: Open Source
+ES: Código Abierto
+FR: Open Source
+
+Key: nav.articles
+EN: Articles
+ES: Artículos
+FR: Articles
+
+Key: nav.about
+EN: About
+ES: Sobre mí
+FR: À propos
+
+Key: nav.creative
+EN: Creative
+ES: Creatividad
+FR: Créativité
+
+Key: nav.contact
+EN: Contact
+ES: Contacto
+FR: Contact
+
+Key: nav.commandPaletteHint
+EN: Press Cmd / Ctrl + K to explore
+ES: Pulsa Cmd / Ctrl + K para investigar
+FR: Appuyez sur Cmd / Ctrl + K pour naviguer
+
+Key: hero.title
+EN: Multi-Domain Software Engineer
+ES: Ingeniero Elite Multi-Dominio
+FR: Ingénieur Élite Multi-Domaines
+
+Key: hero.subtitle
+EN: Building high-performance systems. Specialised in Quantitative Trading (Python and C++), AI-Driven Intelligence (Python), and Web3 Architecture (Solidity).
+ES: Arquitectando sistemas de alto rendimiento. Especializado en Trading Cuantitativo (Python y C++), Inteligencia Artificial (Python) y Arquitectura Web3 (Solidity).
+FR: Architecte de systèmes haute performance. Spécialisé en Trading Quantitatif (Python et C++), Intelligence Artificielle (Python) et Architecture Web3 (Solidity).
+
+Key: hero.viewProjects
+EN: View Projects
+ES: Ver Proyectos
+FR: Voir les Projets
+
+Key: hero.downloadResume
+EN: Download Resume
+ES: Descargar CV
+FR: Télécharger le CV
+
+Key: hero.status
+EN: Open for world-class opportunities
+ES: Disponible para oportunidades de clase mundial
+FR: Ouvert aux opportunités de classe mondiale
+
+Key: specializations.title
+EN: Core Specializations
+ES: Especializaciones Principales
+FR: Spécialisations Principales
+
+Key: specializations.backend.title
+EN: Backend Engineering
+ES: Sistemas Backend
+FR: Systèmes Backend
+
+Key: specializations.backend.description
+EN: Highly scalable distributed systems and microservices architecture.
+ES: Sistemas distribuidos altamente escalables y arquitectura de microservicios.
+FR: Systèmes distribués hautement évolutifs et architecture de microservices.
+
+Key: specializations.quant.title
+EN: Quant / Trading
+ES: Quant / Trading
+FR: Quant / Trading
+
+Key: specializations.quant.description
+EN: low-mid frequency trading systems and algorithmic financial statistical models.
+ES: Sistemas de trading de baja-media frecuencia y modelos estadísticos financieros algorítmicos.
+FR: Systèmes de trading de basse-moyenne fréquence et modèles statistiques financiers algorithmiques.
+
+Key: specializations.web3.title
+EN: Web3 / Blockchain
+ES: Blockchain / Web3
+FR: Blockchain / Web3
+
+Key: specializations.web3.description
+EN: Smart contracts, DAO governance, and decentralized finance protocols.
+ES: Contratos inteligentes, gobernanza DAO y protocolos de finanzas descentralizadas.
+FR: Contrats intelligents, gouvernance DAO et protocoles de finance décentralisée.
+
+Key: specializations.ai.title
+EN: AI / ML Engineering
+ES: IA / Ingeniería ML
+FR: IA / Ingénierie ML
+
+Key: specializations.ai.description
+EN: Neural Networks, Transformers, Computer Vision, data processing pipelines.
+ES: Redes neuronales, Transformers, visión artificial, canales de procesamiento de datos.
+FR: Réseaux neuronaux, Transformers, vision par ordinateur, pipelines de traitement de données.
+
+Key: specializations.web.title
+EN: Fullstack Web
+ES: Web Fullstack
+FR: Web Fullstack
+
+Key: specializations.web.description
+EN: Premium user interfaces with high performance and interactive animations.
+ES: Interfaces de usuario premium con alto rendimiento y animaciones interactivas.
+FR: Interfaces utilisateur premium avec haute performance et animations interactives.
+
+Key: home.stats.years
+EN: Years Exp.
+ES: Años Exp.
+FR: Années Exp.
+
+Key: home.stats.projects
+EN: Projects
+ES: Proyectos
+FR: Projets
+
+Key: home.stats.certs
+EN: Professional Certs
+ES: Certificaciones Prof.
+FR: Certifs Prof.
+
+Key: home.stats.languages
+EN: Languages
+ES: Idiomas
+FR: Langues
+
+Key: home.featuredProjects.title
+EN: Featured Projects
+ES: Proyectos Destacados
+FR: Projets Vedettes
+
+Key: home.featuredProjects.subtitle
+EN: A selection of high-impact engineering challenges and technological breakthroughs.
+ES: Una selección de desafíos de ingeniería de alto impacto y avances tecnológicos.
+FR: Une sélection de défis d'ingénierie à fort impact et de percées technologiques.
+
+Key: home.featuredProjects.viewAll
+EN: All Projects
+ES: Todos los Proyectos
+FR: Tous les Projets
+
+Key: home.insights.title
+EN: Engineering Insights
+ES: Perspectivas de Ingeniería
+FR: Perspectives d'Ingénierie
+
+Key: home.insights.subtitle
+EN: Deep dives into low-latency systems, multi-agent AI, and production-grade architecture.
+ES: Inmersiones profundas en sistemas de baja latencia, IA multi-agente y arquitectura de grado de producción.
+FR: Plongeons profonds dans les systèmes à faible latence, l'IA multi-agents et l'architecture de classe production.
+
+Key: home.insights.viewAll
+EN: View All Articles
+ES: Ver todos los Artículos
+FR: Voir tous les Articles
+
+Key: home.insights.readMore
+EN: Read More
+ES: Leer más
+FR: Lire plus
+
+Key: about.title
+EN: The Mind Behind The Code
+ES: La Mente Detrás del Código
+FR: L'Esprit Derrière le Code
+
+Key: about.subtitle.layers
+EN: 6+ Years Building Products
+ES: 6+ Años Construyendo Productos
+FR: 6+ Ans de Construction de Produits
+
+Key: about.subtitle.activity
+EN: From Idea → Production
+ES: De Idea → Producción
+FR: De l'Idée → Production
+
+Key: about.subtitle.search
+EN: Fueled by Curiosity
+ES: Impulsado por la Curiosidad
+FR: Alimenté por la Curiosité
+
+Key: about.subtitle.target
+EN: Product-Focused Engineer
+ES: Ingeniero Enfocado en el Producto
+FR: Ingénieur Axé sur le Produit
+
+Key: about.description.0
+EN: I'm a software engineer and electronics engineer with a passion for building ideas into products. I have a strong background in software development, AI development, and applying math to trading systems. I am a quick learner and can pick up new technologies quickly. I am also a team player and enjoy working in a collaborative environment.
+ES: Soy un ingeniero de software e ingeniero electrónico con una pasión por convertir ideas en productos. Tengo una sólida formación en desarrollo de software, desarrollo de IA y aplicación de matemáticas a sistemas de trading. Aprendo rápido y puedo dominar nuevas tecnologías con agilidad. También sé trabajar en equipo y disfruto de los entornos colaborativos.
+FR: Je suis un ingénieur logiciel et un ingénieur en électronique passionné par la transformation d'idées en produits. J'ai une solide formation en développement de logiciels, en développement d'IA et en application des mathématiques aux systèmes de trading. J'apprends vite et je peux maîtriser de nouvelles technologies rapidement. Je suis également un joueur d'équipe et j'aime travailler dans un environnement collaboratif.
+
+Key: about.description.1
+EN: I believe my purpose in life is to make the world a better place by building technology.
+ES: Creo que mi propósito en la vida es hacer del mundo un lugar mejor construyendo tecnología.
+FR: Je crois que mon but dans la vie est de rendre le monde meilleur en construisant de la technologie.
+
+Key: about.description.2
+EN: I am at my best when I am solving hard problems. Contributing to something bigger than myself.
+ES: Doy lo mejor de mí cuando resuelvo problemas difíciles. Contribuir a algo más grande que yo mismo.
+FR: Je suis au sommet de mon art quand je résous des problèmes difficiles. Contribuer à quelque chose de plus grand que moi-même.
+
+Key: about.description.3
+EN: Currently I spend my time building platforms, developing AI projects, trading crypto and developing my discipline.
+ES: Actualmente dedico mi tiempo a construir plataformas, desarrollar proyectos de IA, operar con criptomonedas y desarrollar mi disciplina.
+FR: Actuellement, je passe mon temps à construire des plateformes, à développer des projets d'IA, à trader des cryptos et à développer ma discipline.
+
+Key: about.description.4
+EN: I am looking to join a team of like-minded people who want to change the world one step at a time.
+ES: Busco unirme a un equipo de personas con ideas afines que quieran cambiar el mundo paso a paso.
+FR: Je cherche à rejoindre une équipe de personnes partageant les mêmes idées qui veulent changer le monde étape par étape.
+
+Key: about.philosophy.title
+EN: My Philosophy
+ES: Mi Filosofía
+FR: Ma Philosophie
+
+Key: about.philosophy.engineering.title
+EN: Engineering Excellence
+ES: Excelencia en Ingeniería
+FR: Excellence en Ingénierie
+
+Key: about.philosophy.engineering.desc
+EN: Following best practices and highest performance standards is my personal obsession. I apply rigorous engineering principles to ensure every system is optimized, secure, and built to last.
+ES: Seguir las mejores prácticas y los más altos estándares de rendimiento es mi obsesión personal. Aplico principios de ingeniería rigurosos para asegurar que cada sistema esté optimizado, sea seguro y esté construido para durar.
+FR: Suivre les meilleures pratiques et les normes de performance les plus élevées est mon obsession personnelle. J'applique des principes d'ingénierie rigoureux pour m'assurer que chaque système est optimisé, sécurisé et construit pour durer.
+
+Key: about.philosophy.antifragile.title
+EN: Anti-Fragile Design
+ES: Diseño Antifrágil
+FR: Conception Anti-Fragile
+
+Key: about.philosophy.antifragile.desc
+EN: Engineered for correctness from the first line. My background in design verification and validation allows me to build robust, anti-fragile systems with a 'design for failure' mindset, ensuring reliability where it matters most.
+ES: Diseñado para la corrección desde la primera línea. Mi experiencia en verificación y validación de diseños me permite construir sistemas robustos y antifrágiles con una mentalidad de 'diseño para el fallo', garantizando la fiabilidad donde más importa.
+FR: Conçu pour la justesse dès la première ligne. Mon expérience en vérification et validation de conception me permet de construire des systèmes robustes et anti-fragiles avec un état d'esprit de 'conception pour l'échec', garantissant la fiabilité là où elle compte le plus.
+
+Key: about.philosophy.agentic.title
+EN: The Agentic Shift
+ES: El Cambio Agéntico
+FR: Le Virage Agentique
+
+Key: about.philosophy.agentic.desc
+EN: Moving from passive tools to active agents. I focus on autonomous architectures that plan, reason, and execute complex workflows independently.
+ES: Pasar de herramientas pasivas a agentes activos. Me enfoco en arquitecturas autónomas que planifican, razonan y ejecutan flujos de trabajo complejos de forma independiente.
+FR: Passer des outils passifs aux agents actifs. Je me concentre sur des architectures autonomes qui planifient, raisonnent et exécutent des flux de travail complexes de manière indépendante.
+
+Key: about.philosophy.clean.title
+EN: Clean Architecture
+ES: Arquitectura Limpia
+FR: Architecture Propre
+
+Key: about.philosophy.clean.desc
+EN: Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.
+ES: El código es para que lo lean los humanos y las máquinas lo ejecuten. Construyo sistemas modulares que son tan mantenibles como potentes.
+FR: Le code est fait pour être lu par les humains et exécuté par les machines. Je construis des systèmes modulaires aussi faciles à maintenir qu'ils sont puissants.
+
+Key: about.philosophy.strategic.title
+EN: Strategic Depth
+ES: Profundidad Estratégica
+FR: Profondeur Stratégique
+
+Key: about.philosophy.strategic.desc
+EN: Beyond the code lies the mission. I approach every project with a long-term vision, ensuring today's solutions scale and serve a purpose.
+ES: Más allá del código está la misión. Abordo cada proyecto con una visión a largo plazo, asegurando que las soluciones de hoy escalen y cumplan un propósito.
+FR: Au-delà du code se trouve la mission. J'aborde chaque projet avec une vision à long terme, en m'assurant que les solutions d'aujourd'hui sont évolutives et servent un but.
+
+Key: about.philosophy.user.title
+EN: User Centric
+ES: Centrado en el Usuario
+FR: Centré sur l'Utilisateur
+
+Key: about.philosophy.user.desc
+EN: Great minds are capable of turning complex ideas into simple and elegant solutions. I bridge the gap between complex systems and intuitive user experiences.
+ES: Las grandes mentes son capaces de convertir ideas complejas en soluciones simples y elegantes. Cierro la brecha entre los sistemas complejos y las experiencias de usuario intuitivas.
+FR: Les grands esprits sont capables de transformer des idées complexes en solutions simples et élégantes. Je comble le fossé entre les systèmes complexes et les expériences utilisateur intuitives.
+
+Key: about.philosophy.precision.title
+EN: Artistic Precision
+ES: Precisión Artística
+FR: Précision Artistique
+
+Key: about.philosophy.precision.desc
+EN: I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.
+ES: Construyo sistemas con detalles intrincados y elegancia estructural, donde cada línea de código cumple un propósito claro.
+FR: Je construis des systèmes avec des détails complexes et une élégance structurelle, où chaque ligne de code sert un objectif clair.
+
+Key: about.philosophy.data.title
+EN: Data as Narrative
+ES: Los Datos como Narrativa
+FR: La Donnée comme Récit
+
+Key: about.philosophy.data.desc
+EN: Every dataset tells a story. I build pipelines that transform raw noise into clear, actionable signals for human and machine understanding.
+ES: Cada conjunto de datos cuenta una historia. Construyo canales que transforman el ruido crudo en señales claras y accionables para la comprensión humana y de las máquinas.
+FR: Chaque ensemble de données raconte une histoire. Je construis des pipelines qui transforment le bruit brut en signaux clairs et exploitables pour la compréhension humaine et machine.
+
+Key: about.philosophy.curiosity.title
+EN: Spark of Curiosity
+ES: Chispa de Curiosidad
+FR: Étincelle de Curiosité
+
+Key: about.philosophy.curiosity.desc
+EN: The 'Why' is as important as the 'How'. Constant experimentation and a beginner's mind keep the engineering process fresh and vibrant.
+ES: El 'Por qué' es tan importante como el 'Cómo'. La experimentación constante y una mente de principiante mantienen el proceso de ingeniería fresco y vibrante.
+FR: Le 'Pourquoi' est aussi important que le 'Comment'. L'expérimentation constante et un esprit de débutant maintiennent le processus d'ingénierie frais et vibrant.
+
+Key: articles.title
+EN: Insights & Articles
+ES: Perspectivas y Artículos
+FR: Perspectives et Articles
+
+Key: articles.subtitle
+EN: Deep dives into engineering challenges, architectural patterns, and the future of technology.
+ES: Inmersiones profundas en desafíos de ingeniería, patrones arquitectónicos y el futuro de la tecnología.
+FR: Plongeons profonds dans les défis d'ingénierie, les modèles architecturaux et l'avenir de la technologie.
+
+Key: articles.back
+EN: Back to Articles
+ES: Volver a Artículos
+FR: Retour aux Articles
+
+Key: articles.readFull
+EN: Read Full Article
+ES: Leer Artículo Completo
+FR: Lire l'Article Complet
+
+Key: articles.share
+EN: Share Article
+ES: Compartir Artículo
+FR: Partager l'Article
+
+Key: articles.discuss
+EN: Discuss with me
+ES: Comentar conmigo
+FR: Discuter avec moi
+
+Key: articles.toc
+EN: Table of Contents
+ES: Tabla de Contenidos
+FR: Table des Matières
+
+Key: contact.title
+EN: Let's Build The Future
+ES: Construyamos El Futuro
+FR: Construisons L'Avenir
+
+Key: contact.subtitle
+EN: Have a project in mind? Drop me a message and I'll get back to you within 24 hours.
+ES: ¿Tienes un proyecto en mente? Envíame un mensaje y te responderé en 24 horas.
+FR: Vous avez un projet en tête ? Laissez-moi un message et je vous répondrai dans les 24 heures.
+
+Key: contact.emailTitle
+EN: Email Me
+ES: Envíame un Correo
+FR: Envoyez-moi un E-mail
+
+Key: contact.callTitle
+EN: Call Me
+ES: Llámame
+FR: Appelez-moi
+
+Key: contact.socialsTitle
+EN: Socials
+ES: Redes Sociales
+FR: Réseaux Sociaux
+
+Key: contact.whatsappTitle
+EN: Skip the email.
+ES: Sáltate el correo.
+FR: Passez l'e-mail.
+
+Key: contact.whatsappDesc
+EN: I'm most responsive on WhatsApp. Click below to start a conversation directly with me.
+ES: Respondo más rápido por WhatsApp. Haz clic abajo para iniciar una conversación directamente conmigo.
+FR: Je suis plus réactif sur WhatsApp. Cliquez ci-dessous pour démarrer une conversation directement avec moi.
+
+Key: contact.whatsappButton
+EN: Message on WhatsApp
+ES: Mensaje en WhatsApp
+FR: Message sur WhatsApp
+
+Key: projects.ui.backToGallery
+EN: Back to Gallery
+ES: Volver a la Galería
+FR: Retour à la Galerie
+
+Key: projects.ui.theChallenge
+EN: The Challenge
+ES: El Desafío
+FR: Le Défi
+
+Key: projects.ui.theSolution
+EN: The Solution
+ES: La Solución
+FR: La Solution
+
+Key: projects.ui.techStack
+EN: Tech Stack
+ES: Tecnologías
+FR: Technologies
+
+Key: projects.ui.keyMetrics
+EN: Key Metrics
+ES: Métricas Clave
+FR: Métriques Clés
+
+Key: projects.ui.furtherReading
+EN: Further Reading
+ES: Lectura Adicional
+FR: Lecture Complémentaire
+
+Key: projects.ui.technicalArticle
+EN: Technical Article
+ES: Artículo Técnico
+FR: Article Technique
+
+Key: projects.ui.furtherReadingDesc
+EN: For a deep dive into the technical implementation and architecture of this project, read the full article.
+ES: Para profundizar en la implementación técnica y arquitectura de este proyecto, lee el artículo completo.
+FR: Pour approfondir l'implémentation technique et l'architecture de ce projet, lisez l'article complet.
+
+Key: projects.ui.viewCaseStudy
+EN: View Case Study
+ES: Ver Caso de Estudio
+FR: Voir l'étude de cas
+
+Key: projects.ui.relatedProjects
+EN: Related Projects
+ES: Proyectos Relacionados
+FR: Projets Connexes
+
+Key: projects.ui.demo
+EN: Demo
+ES: Demo
+FR: Démo
+
+Key: projects.ui.code
+EN: Code
+ES: Código
+FR: Code
+
+Key: projects.cryptogpt.title
+EN: CryptoGPT
+ES: CryptoGPT
+FR: CryptoGPT
+
+Key: projects.cryptogpt.description
+EN: Custom transformer model trained on ranging market volume data.
+ES: Modelo transformador personalizado entrenado con datos de volumen de mercado en rango.
+FR: Modèle transformateur personnalisé entraîné sur des données de volume de marché en range.
+
+Key: projects.cryptogpt.longDescription
+EN: Custom-trained transformer model on extensive crypto-financial volume datasets to create an accurate model for financial markets.
+ES: Modelo transformador ajustado con extensos conjuntos de datos cripto-financieros para crear un modelo preciso para mercados en rango.
+FR: Modèle transformateur affiné sur de vastes ensembles de données crypto-financières pour créer un modèle précis pour les marchés en range.
+
+Key: projects.cryptogpt.challenge
+EN: Developing a model that could accurately predict market direction in 'low-volatility' environments where traditional indicators fail. The goal was to bypass time-series analysis and apply modern machine learning techniques to predict market direction. The core challenge: market data does not follow a Gaussian distribution, rendering most machine learning models inadequate for the task.
+ES: Desarrollar un modelo que pudiera predecir con precisión la dirección del mercado en entornos de baja volatilidad 'en rango' donde los indicadores tradicionales a menudo fallan.
+FR: Développer un modèle capable de prédire avec précision la direction du marché dans des environnements de faible volatilité 'en range' où les indicateurs traditionnels échouent souvent.
+
+Key: projects.cryptogpt.solution
+EN: Implemented a custom Transformer architecture trained on market volume data, utilising multi-head attention to capture subtle correlation patterns. The key to the approach lies in the feature engineering: by capturing time windows where linear regressions have an almost horizontal slope, the model observes periods where volume profiles most closely resemble a Gaussian distribution — ensuring the data is structurally consistent rather than random price noise.
+ES: Se implementó una arquitectura Transformer personalizada entrenada con datos de volumen de mercado de alta fidelidad, utilizando atención de múltiples cabezas para capturar patrones de correlación sutiles.
+FR: Mise en œuvre d'une architecture Transformer personnalisée entraînée sur des données de volume de marché de haute fidélité, utilisant l'attention multi-têtes pour capturer des modèles de corrélation subtils.
+
+Key: projects.cryptogpt.achievements.0
+EN: 60.4% accuracy on unseen data
+ES: Se logró un 82% de precisión direccional en mercados en rango
+FR: Atteinte d'une précision directionnelle de 82 % sur les marchés en range
+
+Key: projects.cryptogpt.achievements.1
+EN: Implemented real-time feature engineering pipeline
+ES: Implementación de un pipeline de ingeniería de características en tiempo real
+FR: Mise en place d'un pipeline d'ingénierie de fonctionnalités en temps réel
+
+Key: projects.cryptogpt.achievements.2
+EN: Scalable training on multiple CPU cores and 100% of GPU capacity
+ES: Reducción de la latencia del modelo a menos de 50ms
+FR: Réduction de la latence du modèle à moins de 50 ms
+
+Key: projects.cryptogpt.achievements.3
+EN: Validated model generalisation without overfitting — works for any cryptocurrency asset
+ES: Entrenamiento escalable en clústeres de GPU distribuidos
+FR: Entraînement évolutif sur des clusters de GPU distribués
+
+Key: projects.cryptogpt.metrics.accuracy
+EN: Accuracy on Unseen Data
+ES: undefined
+FR: undefined
+
+Key: projects.cryptogpt.metrics.gpuEfficiency
+EN: GPU Efficiency During Training
+ES: undefined
+FR: undefined
+
+Key: projects.toptrader.title
+EN: TopTrader Platform
+ES: Plataforma TopTrader
+FR: Plateforme TopTrader
+
+Key: projects.toptrader.description
+EN: Smart trading platform focused on discipline for crypto with automated market screening, sentiment analysis and risk management.
+ES: Plataforma de trading inteligente enfocada en la disciplina para cripto con escaneo de mercado automatizado, análisis de sentimiento y gestión de riesgos.
+FR: Plateforme de trading intelligente axée sur la discipline pour la crypto avec screening automatisé du marché, analyse des sentiments et gestion des risques.
+
+Key: projects.toptrader.longDescription
+EN: They say trading is 90% psychology and 10% strategy. Yet all platforms focus 100% on strategy, completely ignoring psychology. TopTrader merges all trading accounts into one platform, offering automated market screening, risk management, algorithm execution, journalling, behavioural analysis and a unified trading experience.
+ES: TopTrader fusiona todas las cuentas de trading en una sola plataforma, ofreciendo escaneo de mercado automatizado, gestión de riesgos, ejecución de algoritmos, diario, análisis conductual y una experiencia de trading unificada.
+FR: TopTrader fusionne tous les comptes de trading en une seule plateforme, offrant un screening automatisé du marché, une gestion des risques, l'exécution d'algorithmes, un journal, une analyse comportementale et une expérience de trading unifiée.
+
+Key: projects.toptrader.challenge
+EN: Fragmented trading tools and emotional decision-making often lead to inconsistent results for retail and professional traders alike. By building discipline into the trading interface itself, retail traders gain guardrails that prevent impulsive decisions and support the psychological aspects of trading.
+ES: Las herramientas de trading fragmentadas y la toma de decisiones emocional a menudo llevan a resultados inconsistentes tanto para traders minoristas como profesionales.
+FR: Les outils de trading fragmentés et la prise de décision émotionnelle conduisent souvent à des résultats incohérents pour les traders particuliers et professionnels.
+
+Key: projects.toptrader.solution
+EN: TopTrader merges all trading accounts into one platform, offering automated market screening, risk management, algorithm execution, journalling, behavioural analysis, and a unified trading experience. It integrates with every major cryptocurrency exchange via the CCXT library. Automated market screening constantly scans the entire cryptocurrency market for new opportunities based on multi-signal strategies, saving users countless hours. Emotional regulation exercises and extensive journalling are enforced for each trade, ensuring users remain disciplined. Algorithms can be activated and monitored in real-time, reducing decision fatigue. Extensive behavioural insights help users improve the psychological aspects of their trading. Over a hundred educational videos take users from beginner to expert.
+ES: Se unificó el flujo de trabajo de trading en una sola plataforma de alto rendimiento que combina ejecución, gestión de riesgos automatizada y mapas de calor conductuales.
+FR: Unification du flux de travail de trading dans une plateforme unique de haute performance qui combine l'exécution, la gestion automatisée des risques et des cartes thermiques comportementales.
+
+Key: projects.toptrader.achievements.0
+EN: Integrates with +100 crypto exchanges for real-time execution
+ES: Integración de más de 5 exchanges de criptomonedas importantes a través de una API unificada
+FR: Intégration de plus de 5 bourses crypto majeures via une API unifiée
+
+Key: projects.toptrader.achievements.1
+EN: Runs multiple algorithms simultaneously
+ES: Monitoreo de riesgos en tiempo real y dimensionamiento de posición automatizado
+FR: Surveillance des risques en temps réel et dimensionnement automatisé des positions
+
+Key: projects.toptrader.achievements.2
+EN: Completely automated trade execution and position sizing for correct risk management
+ES: Análisis conductual integral y diario de trading
+FR: Analyse comportementale complète et journalisation
+
+Key: projects.toptrader.achievements.3
+EN: Comprehensive behavioural analysis and journalling
+ES: Ejecución de órdenes en menos de un segundo en todas las cuentas
+FR: Exécution des ordres en moins d'une seconde sur tous les comptes
+
+Key: projects.toptrader.metrics.marketScreening
+EN: Market Screening
+ES: undefined
+FR: undefined
+
+Key: projects.toptrader.metrics.strategies
+EN: Profitable Strategies
+ES: undefined
+FR: undefined
+
+Key: projects.toptrader.metrics.education
+EN: Educational Videos
+ES: undefined
+FR: undefined
+
+Key: projects.technex.title
+EN: Technex
+ES: Technex
+FR: Technex
+
+Key: projects.technex.description
+EN: Leading software development and consulting firm.
+ES: Empresa líder en desarrollo de software y consultoría.
+FR: Société de conseil et de développement de logiciels de premier plan.
+
+Key: projects.technex.longDescription
+EN: Founded Technex to provide high-end consultancy and bespoke software engineering, focusing on scalable cloud architectures and fintech solutions. We developed trading platforms, trading algorithms, analytics dashboards, and more for a variety of clients across the globe.
+ES: Technex ofrece soluciones de software de alta gama y servicios de consultoría, especializándose en fintech y sistemas de alto rendimiento.
+FR: Technex fournit des solutions logicielles haut de gamme et des services de conseil, se spécialisant dans la fintech et les systèmes de haute performance.
+
+Key: projects.technex.challenge
+EN: Few consistently profitable trading algorithms exist in the cryptocurrency space. Technex had 4 of them. Offering these investment vehicles to clients led many to request custom development projects instead of existing solutions — which gave rise to Technex as a software intelligence consultancy.
+ES: Las empresas a menudo luchan por cerrar la brecha entre los requisitos de negocio complejos y la implementación técnica de alto rendimiento.
+FR: Les entreprises ont souvent du mal à combler le fossé entre les exigences métier complexes et la mise en œuvre technique de haute performance.
+
+Key: projects.technex.solution
+EN: Founded Technex to provide high-end consultancy and bespoke software engineering, focusing on scalable cloud architectures and fintech solutions. We developed trading platforms, trading algorithms, analytics dashboards, and more for a variety of clients. We did business across the globe, with clients in the UK, US, Mexico, and Spain.
+ES: Fundé Technex para proporcionar consultoría de alta gama e ingeniería de software a medida, centrándome en arquitecturas de nube escalables y soluciones fintech.
+FR: Fondation de Technex pour fournir des conseils haut de gamme et de l'ingénierie logicielle sur mesure, en se concentrant sur les architectures cloud évolutives et les solutions fintech.
+
+Key: projects.technex.achievements.0
+EN: Engineered scalable backend architectures for fintech startups
+ES: Entrega exitosa de más de 10 proyectos empresariales de alto impacto
+FR: Livraison réussie de plus de 10 projets d'entreprise à fort impact
+
+Key: projects.technex.achievements.1
+EN: Successfully delivered 5+ high-impact projects for clients across different industries
+ES: Ingeniería de arquitecturas backend escalables para startups fintech
+FR: Conception d'architectures backend évolutives pour les startups fintech
+
+Key: projects.technex.achievements.2
+EN: Established a reputation for technical excellence and reliability
+ES: Reducción de los costes operativos de los clientes hasta en un 40%
+FR: Réduction des coûts opérationnels pour les clients jusqu'à 40 %
+
+Key: projects.technex.achievements.3
+EN: Reduced operational costs for clients by up to 40%
+ES: Establecimiento de una reputación de excelencia técnica y fiabilidad
+FR: Établissement d'une réputation d'excellence technique et de fiabilité
+
+Key: projects.technex.metrics.projectsDelivered
+EN: High-Impact Projects Delivered
+ES: undefined
+FR: undefined
+
+Key: projects.technex.metrics.countries
+EN: Countries Served
+ES: undefined
+FR: undefined
+
+Key: projects.technexConsultancy.title
+EN: Freelance AI & Automation Consultancy
+ES: Consultoría Freelance de IA y Automatización
+FR: Conseil en IA et Automatisation Freelance
+
+Key: projects.technexConsultancy.description
+EN: Specialized AI and automation consultancy services to streamline bottleneck processes for companies.
+ES: Servicios especializados de consultoría de IA y automatización para optimizar procesos críticos en empresas.
+FR: Services spécialisés de conseil en IA et automatisation pour rationaliser les processus goulots d'étranglement des entreprises.
+
+Key: projects.technexConsultancy.longDescription
+EN: Offered expert AI and automation consultancy services to streamline bottleneck processes for various companies, focusing on operational efficiency and strategic integration of AI technologies.
+ES: Ofrecí servicios expertos de consultoría de IA y automatización para optimizar procesos críticos para diversas empresas, centrándome en la eficiencia operativa y la integración estratégica de tecnologías de IA.
+FR: Offre de services d'expert en conseil en IA et automatisation pour rationaliser les processus goulots d'étranglement pour diverses entreprises, en se concentrant sur l'efficacité opérationnelle et l'intégration stratégique des technologies d'IA.
+
+Key: projects.technexConsultancy.challenge
+EN: Many businesses lack the internal expertise to identify and automate repetitive, time-consuming manual processes using AI.
+ES: Muchas empresas carecen de la experiencia interna para identificar y automatizar procesos manuales repetitivos y lentos utilizando IA.
+FR: De nombreuses entreprises manquent de l'expertise interne pour identifier et automatiser les processus manuels répétitifs et chronophages à l'aide de l'IA.
+
+Key: projects.technexConsultancy.solution
+EN: Provided expert consultancy to identify bottleneck processes and implement custom AI-driven automation workflows using LLMs and n8n or Make by building custom agents.
+ES: Proporcioné consultoría experta para identificar procesos críticos e implementar flujos de trabajo de automatización personalizados impulsados por IA utilizando LLMs y Python.
+FR: Fourniture de conseils d'expert pour identifier les processus goulots d'étranglement et mettre en œuvre des flux de travail d'automatisation personnalisés pilotés par l'IA à l'aide de LLM et de Python.
+
+Key: projects.technexConsultancy.achievements.0
+EN: Automated core workflows for multiple SMEs
+ES: Automatización de flujos de trabajo principales para múltiples PYMES
+FR: Automatisation des flux de travail de base pour plusieurs PME
+
+Key: projects.technexConsultancy.achievements.1
+EN: Integrated custom LLM agents for data processing
+ES: Integración de agentes LLM personalizados para procesamiento de datos
+FR: Intégration d'agents LLM personnalisés pour le traitement des données
+
+Key: projects.technexConsultancy.achievements.2
+EN: Conducted comprehensive process auditing and optimisation
+ES: Realización de auditorías y optimización de procesos integrales
+FR: Réalisation d'audits et d'optimisations de processus complets
+
+Key: projects.technexConsultancy.achievements.3
+EN: Improved operational throughput by an average of 60%
+ES: Mejora del rendimiento operativo en un promedio del 60%
+FR: Amélioration du débit opérationnel de 60 % en moyenne
+
+Key: projects.aitrader.title
+EN: AiTrader
+ES: AiTrader
+FR: AiTrader
+
+Key: projects.aitrader.description
+EN: AI-powered trading assistant and market analysis platform.
+ES: Asistente de trading impulsado por IA y plataforma de análisis de mercado.
+FR: Assistant de trading alimenté par l'IA et plateforme d'analyse de marché.
+
+Key: projects.aitrader.longDescription
+EN: Developed AiTrader to leverage LLMs for market prediction and automated trade execution, providing users with a completely automated trading system that applies human-like intuition and reasoning to the markets.
+ES: Desarrollé AiTrader para aprovechar modelos de aprendizaje automático para la predicción del mercado y la ejecución automatizada de operaciones, proporcionando a los usuarios información basada en datos.
+FR: Développement d'AiTrader pour exploiter les modèles d'apprentissage automatique pour la prédiction du marché et l'exécution automatisée des transactions, offrant aux utilisateurs des informations basées sur les données.
+
+Key: projects.aitrader.challenge
+EN: Most algorithmic systems are incapable of translating human intuition built by traders into the system. They are too rigid and lack the ability to adapt to changing market conditions. The objective was to implement a system that could orchestrate multiple agents performing different tasks while incorporating human-like reasoning.
+ES: Los traders a menudo sufren de sobrecarga de información y ejecución retrasada al intentar seguir señales de IA complejas.
+FR: Les traders souffrent souvent d'une surcharge d'informations et d'une exécution retardée lorsqu'ils tentent de suivre des signaux d'IA complexes.
+
+Key: projects.aitrader.solution
+EN: LLMs provided the solution. A system was developed to orchestrate multiple agents, each with its own specialisation. Agents and prompts were created by transcribing +130GB of trading course videos from one of the best traders in the cryptocurrency market — converted from video to audio, then to text, then to specialised topic material, and finally into prompts and agent context. The system was built using a modular architecture with a central orchestrator maintaining a single source of truth across all agents. Evaluator agents using different LLMs are interspersed throughout to ensure correctness.
+ES: Construí un asistente de trading de IA en tiempo real que destila señales de mercado complejas en información procesable y ejecuta operaciones automáticamente basándose en parámetros definidos por el usuario.
+FR: Construction d'un assistant de trading IA en temps réel qui distille les signaux de marché complexes en informations exploitables et exécute les transactions automatiquement selon des paramètres définis par l'utilisateur.
+
+Key: projects.aitrader.achievements.0
+EN: Single source of truth architecture across all agents
+ES: Implementación de análisis de sentimiento en tiempo real para noticias cripto
+FR: Mise en œuvre d'une analyse des sentiments en temps réel pour les actualités crypto
+
+Key: projects.aitrader.achievements.1
+EN: 20+ specialised sub-agents orchestrated to perform different tasks
+ES: Integración con múltiples exchanges para ejecución de baja latencia
+FR: Intégration avec plusieurs bourses pour une exécution à faible latence
+
+Key: projects.aitrader.achievements.2
+EN: Monitoring dashboard to track agent performance
+ES: Desarrollo de un panel intuitivo para backtesting de estrategias
+FR: Développement d'un tableau de bord intuitif pour le backtesting des stratégies
+
+Key: projects.aitrader.achievements.3
+EN: Robust testing for LLMs and prompts following AI Engineering best practices
+ES: Se logró un ratio de Sharpe un 20% más alto en las primeras pruebas en vivo
+FR: Atteinte d'un ratio de Sharpe 20 % plus élevé lors des premiers tests en direct
+
+Key: projects.aitrader.metrics.subAgents
+EN: Specialised Sub-Agents
+ES: undefined
+FR: undefined
+
+Key: projects.aitrader.metrics.llmFailRate
+EN: LLM Fail Rate
+ES: undefined
+FR: undefined
+
+Key: projects.chainchampions.title
+EN: Chain Champions NFT Platform
+ES: Plataforma NFT Chain Champions
+FR: Plateforme NFT Chain Champions
+
+Key: projects.chainchampions.description
+EN: Web3 gaming tournament platform with Solidity smart contracts for escrow, buy-ins, and payouts.
+ES: Plataforma de torneos de juegos Web3 con contratos inteligentes de Solidity para custodia, entradas y pagos.
+FR: Plateforme de tournois de jeux Web3 avec des contrats intelligents Solidity pour le séquestre, les frais d'entrée et les paiements.
+
+Key: projects.chainchampions.longDescription
+EN: An NFT-driven tournament platform where users can compete in blockchain-based gaming. Features secure smart contracts for managing entry fees and automated distribution of prize pools, all running on a scalable cloud infrastructure.
+ES: Una plataforma de torneos impulsada por NFTs donde los usuarios pueden competir en juegos basados en blockchain. Cuenta con contratos inteligentes seguros para gestionar las tarifas de entrada y la distribución automatizada de los premios, todo ello ejecutado en una infraestructura de nube escalable.
+FR: Une plateforme de tournois pilotée par NFT où les utilisateurs peuvent s'affronter dans des jeux basés sur la blockchain. Comprend des contrats intelligents sécurisés pour la gestion des frais d'entrée et la distribution automatisée des prix, le tout fonctionnant sur une infrastructure cloud évolutive.
+
+Key: projects.chainchampions.challenge
+EN: Ensuring fair play and secure, automated prize distribution in a trustless gaming environment was a major hurdle.
+ES: Garantizar el juego limpio y la distribución de premios segura y automatizada en un entorno de juego sin confianza era un gran obstáculo.
+FR: Garantir le fair-play et une distribution sécurisée et automatisée des prix dans un environnement de jeu sans confiance était un obstacle majeur.
+
+Key: projects.chainchampions.solution
+EN: Developed robust Solidity smart contracts for escrow and tournament management, coupled with a high-performance backend to sync gaming states.
+ES: Desarrollo de contratos inteligentes robustos en Solidity para la gestión de custodia y torneos, junto con un backend de alto rendimiento para sincronizar los estados de juego.
+FR: Développement de contrats intelligents Solidity robustes pour le séquestre et la gestion des tournois, couplés à un backend haute performance pour synchroniser les états de jeu.
+
+Key: projects.chainchampions.achievements.0
+EN: Successful web3 integration and wallet connectivity
+ES: Procesamiento de más de 500 distribuciones de premios seguras y automatizadas
+FR: Traitement de plus de 500 distributions de prix sécurisées et automatisées
+
+Key: projects.chainchampions.achievements.1
+EN: Implemented gas-optimised smart contracts that follow best practices
+ES: Implementación de contratos inteligentes optimizados para gas
+FR: Mise en œuvre de contrats intelligents optimisés en gaz
+
+Key: projects.chainchampions.achievements.2
+EN: Built an automated payout system that allowed tournaments to be played with real money and prizes in a completely secure and trustless manner
+ES: Construcción de un sistema de clasificación en tiempo real con integración Web3
+FR: Construction d'un système de classement en temps réel avec intégration Web3
+
+Key: projects.chainchampions.achievements.3
+EN: Secured platform against common smart contract exploits
+ES: Plataforma asegurada contra vulnerabilidades comunes de contratos inteligentes
+FR: Plateforme sécurisée contre les failles courantes des contrats intelligents
+
+Key: projects.nasdaq.title
+EN: NASDAQ Futures Trading Algorithm
+ES: Algoritmo de Trading de Futuros NASDAQ
+FR: Algorithme de Trading de Futures NASDAQ
+
+Key: projects.nasdaq.description
+EN: Developed a robust trading system for NASDAQ futures for a client, implementing real-time market data processing, custom indicators and automated execution.
+ES: Sistema de trading robusto para futuros del NASDAQ para un cliente, implementando procesamiento de datos de mercado en tiempo real, indicadores personalizados y ejecución automatizada.
+FR: Système de trading robuste pour les futures du NASDAQ pour un client, implémentant le traitement des données de marché en temps réel, des indicateurs personnalisés et une exécution automatisée.
+
+Key: projects.nasdaq.longDescription
+EN: Developed a robust trading system for NASDAQ futures for a client, implementing real-time market data processing, custom indicators and automated execution. The system features risk controls and hyper parameter optimisation, enabling consistent performance under various market conditions.
+ES: Sistema de trading robusto para futuros del NASDAQ para un cliente, implementando procesamiento de datos de mercado en tiempo real, indicadores personalizados y ejecución automatizada. El sistema cuenta con controles de riesgo y optimización de hiperparámetros, permitiendo un rendimiento constante bajo diversas condiciones de mercado.
+FR: Système de trading robuste pour les futures du NASDAQ pour un client, implémentant le traitement des données de marché en temps réel, des indicateurs personnalisés et une exécution automatisée. Le système comprend des contrôles de risque et une optimisation des hyperparamètres, permettant une performance constante sous diverses conditions de marché.
+
+Key: projects.nasdaq.challenge
+EN: The client had a strategy that was working for them — one they had been trading manually for years. They wanted the entire process automated.
+ES: El cliente tenía una estrategia que le funcionaba — una que había estado operando manualmente durante años. Querían que todo el proceso fuera automatizado.
+FR: Le client avait une stratégie qui fonctionnait pour lui — une qu'il avait tradée manuellement pendant des années. Il voulait que tout le processus soit automatisé.
+
+Key: projects.nasdaq.solution
+EN: Engineered a low-latency C++ algorithm using a state machine and direct integration with the Interactive Brokers API.
+ES: Se diseñó un algoritmo C++ de baja latencia utilizando una máquina de estados e integración directa con la API de Interactive Brokers.
+FR: Conception d'un algorithme C++ à faible latence utilisant une machine à états et une intégration directe avec l'API d'Interactive Brokers.
+
+Key: projects.nasdaq.achievements.0
+EN: 80% ROI in the first year
+ES: 80% de ROI en el primer año
+FR: 80 % de ROI la première année
+
+Key: projects.nasdaq.achievements.1
+EN: <25% drawdown
+ES: <25% de drawdown
+FR: <25 % de drawdown
+
+Key: projects.nasdaq.achievements.2
+EN: Backtested the platform hundreds of times to optimise parameters
+ES: Se realizaron cientos de backtests para optimizar los parámetros
+FR: Backtesting de la plateforme des centaines de fois pour optimiser les paramètres
+
+Key: projects.nasdaq.metrics.roi
+EN: Return on Investment (Year 1)
+ES: Retorno de Inversión (Año 1)
+FR: Retour sur Investissement (An 1)
+
+Key: projects.nasdaq.metrics.drawdown
+EN: Maximum Drawdown
+ES: Drawdown Máximo
+FR: Drawdown Maximum
+
+Key: projects.nasdaq.metrics.simulations
+EN: Simulations Run
+ES: Simulaciones Realizadas
+FR: Simulations Effectuées
+
+Key: projects.lazarus.title
+EN: Lazarus Stock Futures Algorithm
+ES: Algoritmo de Futuros de Acciones Lazarus
+FR: Algorithme de Futures d'Actions Lazarus
+
+Key: projects.lazarus.description
+EN: Statistical model for Futures market after-hours activity with +90% accuracy.
+ES: Modelo estadístico para actividad fuera de horas del mercado de futuros con +90% de precisión.
+FR: Modèle statistique pour l'activité après heures du marché des futures avec +90 % de précision.
+
+Key: projects.lazarus.longDescription
+EN: Statistical model for Futures market after-hours activity with +90% accuracy.
+ES: Modelo estadístico para actividad fuera de horas del mercado de futuros con +90% de precisión.
+FR: Modèle statistique pour l'activité après heures du marché des futures avec +90 % de précision.
+
+Key: projects.lazarus.challenge
+EN: It is well known that large after-hours activity has a strong correlation to market reactions once the market opens. The challenge was to capture these correlations and identify high-probability trade setups.
+ES: Es bien sabido que la gran actividad fuera de horas tiene una fuerte correlación con las reacciones del mercado una vez que éste abre. El desafío era capturar estas correlaciones e identificar setups de trading de alta probabilidad.
+FR: Il est bien connu que l'importante activité après heures a une forte corrélation avec les réactions du marché à l'ouverture. Le défi consistait à capturer ces corrélations et à identifier des setups de trading à haute probabilité.
+
+Key: projects.lazarus.solution
+EN: Developed a system that tracks large price drops during after-hours across the entire stock market. For each drop, it analyses historical data to determine the likelihood of various percentage price recoveries the following day, based on previous occurrences of the same scenario. Some stocks demonstrate a >80% probability of recovering at least +3% the next day, with historical backing across more than 500 occurrences — constituting a high-probability setup.
+ES: Se desarrolló un sistema que rastrea las grandes caídas de precio fuera de horas en todo el mercado de acciones. Para cada caída, analiza datos históricos para determinar la probabilidad de varias recuperaciones de precio porcentuales al día siguiente, basándose en ocurrencias anteriores del mismo escenario. Algunas acciones demuestran una probabilidad >80% de recuperar al menos +3% al día siguiente, con respaldo histórico en más de 500 ocurrencias.
+FR: Développement d'un système qui suit les importantes baisses de prix après heures sur l'ensemble du marché boursier. Pour chaque baisse, il analyse les données historiques pour déterminer la probabilité de diverses récupérations de prix en pourcentage le lendemain, en se basant sur les occurrences précédentes du même scénario. Certaines actions démontrent une probabilité >80 % de récupérer au moins +3 % le lendemain, avec un soutien historique sur plus de 500 occurrences.
+
+Key: projects.lazarus.achievements.0
+EN: >90% accuracy
+ES: >90% de precisión
+FR: >90 % de précision
+
+Key: projects.lazarus.achievements.1
+EN: ~200% ROI during the summer of 2019
+ES: ~200% ROI durante el verano de 2019
+FR: ~200 % ROI pendant l'été 2019
+
+Key: projects.lazarus.achievements.2
+EN: First successful statistical modelling of financial data
+ES: Primera modelización estadística exitosa de datos financieros
+FR: Première modélisation statistique réussie de données financières
+
+Key: projects.lazarus.metrics.accuracy
+EN: Prediction Accuracy
+ES: Precisión de Predicción
+FR: Précision de Prédiction
+
+Key: projects.lazarus.metrics.roi
+EN: ROI (Summer 2019)
+ES: ROI (Verano 2019)
+FR: ROI (Été 2019)
+
+Key: projects.solanaMarketMaker.title
+EN: Solana Token Market Maker (Share Inc.)
+ES: Creador de Mercado de Tokens Solana (Share Inc.)
+FR: Teneur de Marché de Tokens Solana (Share Inc.)
+
+Key: projects.solanaMarketMaker.description
+EN: Automated liquidity provision bot for Solana-based tokens using Raydium SDK.
+ES: Bot automatizado de provisión de liquidez para tokens basados en Solana utilizando el SDK de Raydium.
+FR: Bot automatisé de fourniture de liquidité pour les tokens basés sur Solana utilisant le SDK Raydium.
+
+Key: projects.solanaMarketMaker.longDescription
+EN: Built a sophisticated market-making bot that provides liquidity and price discovery for Solana tokens. Integrated directly with the Raydium SDK and implemented automated pricing strategies based on real-time market depth.
+ES: Construí un sofisticado bot creador de mercado que proporciona liquidez y descubrimiento de precios para tokens de Solana. Integrado directamente con el SDK de Raydium e implementó estrategias de precios automatizadas basadas en la profundidad del mercado en tiempo real.
+FR: Construction d'un bot sophistiqué de tenue de marché qui fournit de la liquidité et la découverte des prix pour les tokens Solana. Intégré directement au SDK Raydium et mise en œuvre de stratégies de prix automatisées basées sur la profondeur du marché en temps réel.
+
+Key: projects.solanaMarketMaker.challenge
+EN: Maintaining tight spreads and adequate liquidity on Solana during periods of extreme network congestion and high price volatility.
+ES: Mantener diferenciales ajustados y liquidez adecuada en Solana durante períodos de extrema congestión de la red y alta volatilidad de precios.
+FR: Maintenir des spreads serrés et une liquidité adéquate sur Solana pendant les périodes de congestion extrême du réseau et de forte volatilité des prix.
+
+Key: projects.solanaMarketMaker.solution
+EN: Developed a high-frequency market-making bot using Node.js and the Raydium SDK, optimized for Solana's unique transaction processing model.
+ES: Desarrollo de un bot creador de mercado de alta frecuencia utilizando Node.js y el SDK de Raydium, optimizado para el modelo único de procesamiento de transacciones de Solana.
+FR: Développement d'un bot de tenue de marché à haute fréquence utilisant Node.js et le SDK Raydium, optimisé pour le modèle unique de traitement des transactions de Solana.
+
+Key: projects.solanaMarketMaker.achievements.0
+EN: Maintained 24/7 liquidity for multiple SPL tokens
+ES: Mantenimiento de liquidez 24/7 para múltiples tokens SPL
+FR: Maintien de la liquidité 24/7 pour plusieurs tokens SPL
+
+Key: projects.solanaMarketMaker.achievements.1
+EN: Optimized RPC usage to minimize transaction failures
+ES: Uso de RPC optimizado para minimizar fallos de transacción
+FR: Optimisation de l'utilisation des RPC pour minimiser les échecs de transaction
+
+Key: projects.solanaMarketMaker.achievements.2
+EN: Automated rebalancing to minimize impermanent loss
+ES: Reequilibrio automatizado para minimizar la pérdida impermanente
+FR: Rééquilibrage automatisé pour minimiser la perte impermanente
+
+Key: projects.solanaMarketMaker.achievements.3
+EN: Achieved consistently profitable market-making spreads
+ES: Diferenciales de creación de mercado consistentemente rentables logrados
+FR: Atteinte de spreads de tenue de marché systématiquement rentables
+
+Key: projects.gotovan.title
+EN: GotoVan Logistics Optimizer
+ES: Optimizador Logístico GotoVan
+FR: Optimiseur Logistique GotoVan
+
+Key: projects.gotovan.description
+EN: Logistics and routing optimization platform for delivery services.
+ES: Plataforma de optimización de logística y rutas para servicios de entrega.
+FR: Plateforme d'optimisation de la logistique et des itinéraires pour les services de livraison.
+
+Key: projects.gotovan.longDescription
+EN: Developed a comprehensive logistics optimizer for GotoVan, focusing on efficient route planning and resource management to streamline delivery operations.
+ES: Desarrollé un optimizador logístico integral para GotoVan, centrado en la planificación eficiente de rutas y la gestión de recursos para agilizar las operaciones de entrega.
+FR: Développement d'un optimiseur logistique complet pour GotoVan, axé sur une planification efficace des itinéraires et la gestion des ressources pour rationaliser les opérations de livraison.
+
+Key: projects.gotovan.challenge
+EN: Solving the 'Traveling Salesperson' variation for a fleet of delivery vans with complex time windows and varying load capacities.
+ES: Resolver la variación del 'Problema del Viajante' para una flota de furgonetas de reparto con ventanas de tiempo complejas y capacidades de carga variables.
+FR: Résoudre la variation du 'problème du voyageur de commerce' pour une flotte de fourgonnettes de livraison avec des fenêtres de temps complexes et des capacités de charge variables.
+
+Key: projects.gotovan.solution
+EN: Implemented a heuristic-based routing optimizer using Node.js and Google Maps API, integrated with a real-time tracking interface.
+ES: Se implementó un optimizador de rutas basado en heurística utilizando Node.js y la API de Google Maps, integrado con una interfaz de seguimiento en tiempo real.
+FR: Mise en œuvre d'un optimiseur d'itinéraire basé sur des heuristiques utilisant Node.js et l'API Google Maps, intégré à une interface de suivi en temps réel.
+
+Key: projects.gotovan.achievements.0
+EN: Reduced total delivery mileage by an average of 15%
+ES: Reducción del kilometraje total de entrega en un promedio del 15%
+FR: Réduction du kilométrage total de livraison de 15 % en moyenne
+
+Key: projects.gotovan.achievements.1
+EN: Improved on-time delivery rate to 98%
+ES: Mejora de la tasa de entrega a tiempo al 98%
+FR: Amélioration du taux de livraison à temps à 98 %
+
+Key: projects.gotovan.achievements.2
+EN: Automated daily route planning for 20+ vehicles
+ES: Planificación de rutas diaria automatizada para más de 20 vehículos
+FR: Planification quotidienne automatisée des itinéraires pour plus de 20 véhicules
+
+Key: projects.gotovan.achievements.3
+EN: Real-time route adjustment based on traffic data
+ES: Ajuste de ruta en tiempo real basado en datos de tráfico
+FR: Ajustement d'itinéraire en temps réel basé sur les données de trafic
+
+Key: projects.criptoInfra.title
+EN: CRIPTO Ltd Automated Trading Infrastructure
+ES: Infraestructura de Trading Automatizada de CRIPTO Ltd
+FR: Infrastructure de Trading Automatisée de CRIPTO Ltd
+
+Key: projects.criptoInfra.description
+EN: Foundational infrastructure for high-frequency algorithmic trading across multiple exchanges.
+ES: Infraestructura fundamental para el trading algorítmico de alta frecuencia en múltiples exchanges.
+FR: Infrastructure de base pour le trading algorithmique à haute fréquence sur plusieurs bourses.
+
+Key: projects.criptoInfra.longDescription
+EN: Built the core trading infrastructure for CRIPTO Ltd, enabling automated market participation and high-speed execution across various cryptocurrency exchanges.
+ES: Construí la infraestructura de trading central para CRIPTO Ltd, permitiendo la participación automatizada en el mercado y la ejecución a alta velocidad en varios exchanges de criptomonedas.
+FR: Construction de l'infrastructure de trading centrale pour CRIPTO Ltd, permettant la participation automatisée au marché et l'exécution à grande vitesse sur diverses bourses de crypto-monnaies.
+
+Key: projects.criptoInfra.challenge
+EN: Few consistently profitable trading algorithms exist in the cryptocurrency space. CRIPTO Ltd was founded on the premise that such a new market would be ripe for finding alpha — and as a challenge to apply data science and machine learning knowledge gained during academic studies.
+ES: Construir una infraestructura unificada y agnóstica al exchange capaz de manejar flujos de datos de alta frecuencia y ejecución en más de 10 CEX.
+FR: Construire une infrastructure unifiée et agnostique vis-à-vis des bourses capable de gérer des flux de données à haute fréquence et l'exécution sur plus de 10 CEX.
+
+Key: projects.criptoInfra.solution
+EN: Developed an extensive backtesting platform over 4 years, working through every possible mistake a beginner can make before achieving a robust system. Over 1,000 strategies were developed and tested — including every possible strategy encountered from research and tutorials, not counting different parameterisations. Out of these 1,000+ strategies, 12 were consistently profitable. Investors were brought in to execute the strategies, applying SOLID OOP principles to create a scalable trading monolith. Some models achieved +90% accuracy.
+ES: Desarrollo de una robusta infraestructura basada en Python utilizando WebSockets y CCXT, con una gestión de estado centralizada y motor de riesgo.
+FR: Développement d'une infrastructure Python robuste utilisant WebSockets et CCXT, comprenant une gestion centralisée des états et un moteur de risque.
+
+Key: projects.criptoInfra.achievements.0
+EN: Unified connectivity to 100+ major crypto exchanges
+ES: Conectividad unificada a más de 10 exchanges cripto importantes
+FR: Connectivité unifiée à plus de 10 bourses crypto majeures
+
+Key: projects.criptoInfra.achievements.1
+EN: Robust trading infrastructure for a new market
+ES: Manejo robusto de más de 500k actualizaciones de WebSocket diarias
+FR: Gestion robuste de plus de 500k mises à jour WebSocket par jour
+
+Key: projects.criptoInfra.achievements.2
+EN: Greatly reduced risk in a market where risk management was an afterthought
+ES: Auditoría de riesgo en tiempo real y seguimiento de PnL integrados
+FR: Audit des risques en temps réel et suivi des PnL intégrés
+
+Key: projects.criptoInfra.achievements.3
+EN: 12 consistently profitable strategies
+ES: Disponibilidad del sistema lograda del 99,99% durante 12 meses
+FR: Atteinte d'une disponibilité système de 99,99 % sur 12 mois
+
+Key: projects.criptoInfra.metrics.strategiesBacktested
+EN: Strategies Developed & Backtested
+ES: undefined
+FR: undefined
+
+Key: projects.criptoInfra.metrics.profitableStrategies
+EN: Consistently Profitable Strategies
+ES: undefined
+FR: undefined
+
+Key: projects.criptoInfra.metrics.modelAccuracy
+EN: Best Model Accuracy
+ES: undefined
+FR: undefined
+
+Key: projects.brite.title
+EN: Brite Payments PSD2 API Integration
+ES: Integración de la API PSD2 de Brite Payments
+FR: Intégration de l'API PSD2 de Brite Payments
+
+Key: projects.brite.description
+EN: Integration of PSD2 compliant payment APIs for real-time bank transfers.
+ES: Integración de APIs de pago compatibles con PSD2 para transferencias bancarias en tiempo real.
+FR: Intégration d'API de paiement conformes à la directive PSD2 pour des virements bancaires en temps réel.
+
+Key: projects.brite.longDescription
+EN: Implemented secure and scalable integration with Brite Payments' PSD2 APIs, enabling seamless real-time account-to-account payments and bank account information services.
+ES: Implementé una integración segura y escalable con las APIs PSD2 de Brite Payments, permitiendo pagos fluidos de cuenta a cuenta en tiempo real y servicios de información de cuentas bancarias.
+FR: Mise en œuvre d'une intégration sécurisée et évolutive avec les API PSD2 de Brite Payments, permettant des paiements de compte à compte en temps réel et des services d'information sur les comptes bancaires.
+
+Key: projects.brite.challenge
+EN: Integrating with the PSD2 framework required meeting extremely high standards for security, data privacy, and transaction reliability.
+ES: La integración con el marco PSD2 requería cumplir con estándares extremadamente altos de seguridad, privacidad de datos y fiabilidad de las transacciones.
+FR: L'intégration au cadre PSD2 exigeait de répondre à des normes extrêmement élevées en matière de sécurité, de confidentialité des données et de fiabilité des transactions.
+
+Key: projects.brite.solution
+EN: Engineered a secure Node.js integration layer that handled complex authentication flows and real-time bank data synchronization via REST APIs.
+ES: Ingeniería de una capa de integración segura en Node.js que manejaba flujos de autenticación complejos y sincronización de datos bancarios en tiempo real a través de APIs REST.
+FR: Ingénierie d'une couche d'intégration Node.js sécurisée gérant des flux d'authentification complexes et la synchronisation des données bancaires en temps réel via des API REST.
+
+Key: projects.brite.achievements.0
+EN: Fully compliant PSD2 API implementation
+ES: Implementación de API PSD2 totalmente compatible
+FR: Mise en œuvre d'une API PSD2 entièrement conforme
+
+Key: projects.brite.achievements.1
+EN: Securely processed thousands of real-time transfers
+ES: Procesamiento seguro de miles de transferencias en tiempo real
+FR: Traitement sécurisé de milliers de virements en temps réel
+
+Key: projects.brite.achievements.2
+EN: Implemented robust error handling for bank timeouts
+ES: Implementación de un robusto manejo de errores para tiempos de espera bancarios
+FR: Mise en œuvre d'une gestion robuste des erreurs pour les délais d'attente bancaires
+
+Key: projects.brite.achievements.3
+EN: Reduced transaction friction for end-users by 30%
+ES: Reducción de la fricción en las transacciones para los usuarios finales en un 30%
+FR: Réduction de la friction des transactions pour les utilisateurs finaux de 30 %
+
+Key: projects.snake3d.title
+EN: 3D Snake Minigame
+ES: Minijuego Snake 3D
+FR: Minijeu Snake 3D
+
+Key: projects.snake3d.description
+EN: Classic Snake game reimagined in 3D using Three.js.
+ES: El clásico juego de la serpiente reimaginado en 3D utilizando Three.js.
+FR: Le jeu classique Snake réimaginé en 3D avec Three.js.
+
+Key: projects.snake3d.longDescription
+EN: Originally developed in C, this project was translated to Three.js to be showcased in a web environment. It features a fully interactive 3D version of the classic snake game.
+ES: Originalmente desarrollado en C++, este proyecto fue traducido a Three.js para ser exhibido en un entorno web. Cuenta con un entorno 3D totalmente interactivo donde los jugadores pueden controlar a la serpiente y recoger objetos.
+FR: Développé à l'origine en C++, ce projet a été traduit en Three.js pour être présenté dans un environnement web. Il propose un environnement 3D entièrement interactif où les joueurs peuvent contrôler le serpent et collecter des objets.
+
+Key: projects.snake3d.challenge
+EN: This project was aimed at getting initial bearings with C and developing GUIs in C.
+ES: Traducir la lógica de un juego clásico de C++ a una experiencia 3D fluida basada en el navegador con un rendimiento constante en todos los dispositivos.
+FR: Traduire la logique d'un jeu classique en C++ en une expérience 3D fluide basée sur le navigateur avec des performances constantes sur tous les types d'appareils.
+
+Key: projects.snake3d.solution
+EN: A 3D snake game with visual transitions between faces of a cube and mappings between faces for when the snake goes around a corner.
+ES: Uso de Three.js para construir un entorno 3D adaptado a dispositivos móviles, optimizando el bucle de renderizado para obtener las máximas tasas de fotogramas.
+FR: Utilisation de Three.js pour construire un environnement 3D mobile-responsive, en optimisant la boucle de rendu pour des taux de rafraîchissement maximaux.
+
+Key: projects.snake3d.achievements.0
+EN: 3D environment
+ES: Se lograron 60 FPS estables en un entorno web 3D
+FR: Atteinte d'un 60 FPS stable dans un environnement web 3D
+
+Key: projects.snake3d.achievements.1
+EN: Player controls for keyboard and touch
+ES: Implementación de controles responsivos para teclado y táctil
+FR: Mise en œuvre de contrôles réactifs pour clavier et tactile
+
+Key: projects.snake3d.achievements.2
+EN: Successful port from desktop-first C to web-first JS
+ES: Iluminación dinámica y efectos de partículas en el navegador
+FR: Éclairage dynamique et effets de particules dans le navigateur
+
+Key: projects.cervantes.title
+EN: Cervantes AI Book Writer
+ES: Escritor de Libros de IA Cervantes
+FR: Écrivain de Livres IA Cervantes
+
+Key: projects.cervantes.description
+EN: Multi-agent story writer using LLMs to generate infinite narratives.
+ES: Escritor de historias multi-agente que utiliza LLMs para generar narrativas infinitas.
+FR: Écrivain d'histoires multi-agents utilisant des LLM pour générer des récits infinis.
+
+Key: projects.cervantes.longDescription
+EN: Cervantes is a sophisticated, multi-agent AI system designed to autonomously plan, write, and refine high-quality novels. Named after the legendary author of Don Quixote, it leverages local LLMs via Ollama to bridge the gap between AI-generated text and professional-grade literary prose, employing a hierarchical multi-agent architecture (Planner, Writer, and Evaluator) to ensure narrative coherence and quality.
+ES: Cervantes es un sofisticado sistema de IA multi-agente diseñado para planificar, escribir y refinar novelas de alta calidad de forma autónoma. Nombrado en honor al legendario autor de Don Quijote, aprovecha los LLM locales a través de Ollama para cerrar la brecha entre el texto generado por IA y la prosa literaria de nivel profesional, empleando una arquitectura jerárquica multi-agente (Planificador, Escritor y Evaluador) para garantizar la coherencia y calidad narrativa.
+FR: Cervantes est un système d'IA multi-agents sophistiqué conçu pour planifier, écrire et affiner de manière autonome des romans de haute qualité. Nommé d'après le légendaire auteur de Don Quichotte, il exploite des LLM locaux via Ollama pour combler le fossé entre le texte généré par l'IA et la prose littéraire de niveau professionnel, employant une architecture hiérarchique multi-agents (Planner, Writer et Evaluator) pour garantir la cohérence et la qualité du récit.
+
+Key: projects.cervantes.challenge
+EN: Ensuring narrative consistency and literary quality over long-form writing when using smaller, local Large Language Models.
+ES: Garantizar la coherencia narrativa y la calidad literaria en la escritura de larga duración al utilizar modelos de lenguaje grandes (LLM) locales y más pequeños.
+FR: Garantir la cohérence narrative et la qualité littéraire sur des écrits de longue durée lors de l'utilisation de modèles de langage (LLM) locaux plus petits.
+
+Key: projects.cervantes.solution
+EN: Created a multi-agent workflow where different LLM instances specialise in planning, drafting, and critically evaluating the text. High quality prompts following industry best standards were required to achieve good results with smaller models.
+ES: Creación de un flujo de trabajo multi-agente donde diferentes instancias de LLM se especializan en planificar, redactar y evaluar críticamente el texto.
+FR: Création d'un flux de travail multi-agents où différentes instances de LLM se spécialisent dans la planification, la rédaction et l'évaluation critique du texte.
+
+Key: projects.cervantes.achievements.0
+EN: Generated coherent narratives
+ES: Generación de narrativas coherentes de más de 50.000 palabras
+FR: Génération de récits cohérents de plus de 50 000 mots
+
+Key: projects.cervantes.achievements.1
+EN: Implemented hierarchical planning agents
+ES: Implementación de agentes de planificación jerárquicos
+FR: Mise en œuvre d'agents de planification hiérarchiques
+
+Key: projects.cervantes.achievements.2
+EN: Reduced repetitive AI patterns through iterative review
+ES: Reducción de patrones repetitivos de IA a través de revisiones iterativas
+FR: Réduction des schémas d'IA répétitifs grâce à une révision itérative
+
+Key: projects.cervantes.achievements.3
+EN: Deployed fully locally for maximum privacy and cost-efficiency
+ES: Despliegue totalmente local para máxima privacidad y eficiencia de costes
+FR: Déploiement entièrement local pour une confidentialité et une rentabilité maximales
+
+Key: projects.cervantes.metrics.agents
+EN: Specialised Agents
+ES: undefined
+FR: undefined
+
+Key: projects.cervantes.metrics.apiCosts
+EN: API Costs
+ES: undefined
+FR: undefined
+
+Key: projects.linktrees.title
+EN: Linktrees Personal Link Websites
+ES: Sitios Web de Enlaces Personales Linktrees
+FR: Sites Web de Liens Personnels Linktrees
+
+Key: projects.linktrees.description
+EN: Mobile-first linktree-style websites with diverse branding.
+ES: Sitios web tipo linktree optimizados para móviles con diversas marcas.
+FR: Sites web style linktree mobile-first avec diverses identités visuelles.
+
+Key: projects.linktrees.longDescription
+EN: A collection of high-performance, mobile-optimized landing pages designed for personal branding and social media links. Each version features unique aesthetic styles and optimized layouts.
+ES: Una colección de páginas de destino de alto rendimiento y optimizadas para móviles, diseñadas para marcas personales y enlaces a redes sociales. Cada versión presenta estilos estéticos únicos y diseños optimizados.
+FR: Une collection de pages de destination haute performance, optimisées pour le mobile, conçues pour le branding personnel et les liens vers les réseaux sociaux. Chaque version présente des styles esthétiques uniques et des mises en page optimisées.
+
+Key: projects.linktrees.challenge
+EN: Creating high-performance landing pages that load instantly on any connection while maintaining a premium aesthetic across 10+ variations.
+ES: Crear páginas de destino de alto rendimiento que se carguen instantáneamente en cualquier conexión manteniendo una estética de alta gama en más de 10 variaciones.
+FR: Créer des pages de destination haute performance qui se chargent instantanément sur n'importe quelle connexion tout en maintenant une esthétique premium à travers plus de 10 variations.
+
+Key: projects.linktrees.solution
+EN: Built a collection of vanilla JS/CSS templates optimized for mobile-first delivery and minimal asset weight.
+ES: Construcción de una colección de plantillas de JS/CSS puro optimizadas para la entrega móvil primero y un peso mínimo de activos.
+FR: Construction d'une collection de templates JS/CSS natifs optimisés pour une distribution mobile-first et un poids d'actifs minimal.
+
+Key: projects.linktrees.achievements.0
+EN: Mobile first design
+ES: Puntuaciones perfectas de 100/100 en el rendimiento de Lighthouse
+FR: Scores de performance Lighthouse parfaits de 100/100
+
+Key: projects.linktrees.achievements.1
+EN: Minimal weight
+ES: Más de 1 millón de visitas totales procesadas en todos los dominios
+FR: Plus d'un million de pages vues au total sur les domaines
+
+Key: projects.linktrees.achievements.2
+EN: Many different branding styles
+ES: Capacidad de respuesta en todas las resoluciones de dispositivos móviles
+FR: Responsive sur toutes les résolutions d'appareils mobiles
+
+Key: projects.linktrees.metrics.templates
+EN: Templates
+ES: undefined
+FR: undefined
+
+Key: projects.neurodivergentConsulting.title
+EN: Neurodivergent Consulting
+ES: Consultoría Neurodivergente
+FR: Conseil Neurodivergent
+
+Key: projects.neurodivergentConsulting.description
+EN: Freelance coaching website tailored for neurodivergent professionals.
+ES: Sitio web de coaching freelance adaptado para profesionales neurodivergentes.
+FR: Site web de coaching freelance adapté aux professionnels neurodivergents.
+
+Key: projects.neurodivergentConsulting.longDescription
+EN: A premium consulting website built with a focus on accessibility and clean design. Features a modern UI using React, TailwindCSS, and Shadcn UI components.
+ES: Un sitio web de consultoría de alta calidad construido con un enfoque en la accesibilidad y el diseño limpio. Cuenta con una interfaz de usuario moderna utilizando React, TailwindCSS y componentes de Shadcn UI.
+FR: Un site web de conseil premium construit avec un accent sur l'accessibilité et un design épuré. Comprend une interface utilisateur moderne utilisant React, TailwindCSS et les composants Shadcn UI.
+
+Key: projects.neurodivergentConsulting.challenge
+EN: Designing and implementing a UI that is highly professional yet accessible and calming for users with sensory sensitivities.
+ES: Diseñar una interfaz de usuario que sea altamente profesional pero accesible y relajante para usuarios con sensibilidades sensoriales.
+FR: Concevoir une interface utilisateur hautement professionnelle but accessible et apaisante pour les utilisateurs ayant des sensibilités sensorielles.
+
+Key: projects.neurodivergentConsulting.solution
+EN: Utilised a soft colour palette and spacious layout with subtle micro-interactions to create a focused, low-friction user experience. Built with Next.JS and GCP serverless functions for easy deployment.
+ES: Uso de una paleta de colores suaves y un diseño espacioso con sutiles micro-interacciones para crear una experiencia de usuario enfocada y de baja fricción.
+FR: Utilisation d'une palette de couleurs douces et d'une mise en page spacieuse avec des micro-interactions subtiles pour créer une expérience utilisateur ciblée et sans friction.
+
+Key: projects.neurodivergentConsulting.achievements.0
+EN: WCAG accessibility standards
+ES: Implementación de estándares de accesibilidad WCAG
+FR: Mise en œuvre des normes d'accessibilité WCAG
+
+Key: projects.neurodivergentConsulting.achievements.1
+EN: Responsive design
+ES: Construcción de un sistema de programación y reserva a medida
+FR: Construction d'un système de planification et de réservation sur mesure
+
+Key: projects.hivefrequency.title
+EN: HiveFrequency
+ES: HiveFrequency
+FR: HiveFrequency
+
+Key: projects.hivefrequency.description
+EN: GAN+RNN architecture for real-time live music generation.
+ES: Arquitectura GAN+RNN para la generación de música en vivo en tiempo real.
+FR: Architecture GAN+RNN pour la génération de musique en direct en temps réel.
+
+Key: projects.hivefrequency.longDescription
+EN: An experimental music project that combines Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to generate dynamic, evolving musical patterns in real-time.
+ES: Un proyecto de música experimental que combina Redes Generativas Antagónicas (GAN) y Redes Neuronales Recurrentes (RNN) para generar patrones musicales dinámicos y evolutivos en tiempo real.
+FR: Un projet de musique expérimentale combinant des réseaux antagonistes génératifs (GAN) et des réseaux neuronaux récurrents (RNN) pour générer des schémas musicaux dynamiques et évolutifs en temps réel.
+
+Key: projects.hivefrequency.challenge
+EN: Recent advances in real-time AI music generation have pushed the boundaries of creative expression. However, many of these models are optimised for offline generation with limited interactive potential. HiveFrequency addresses this by delivering low-latency dynamic live performance integration — a unique contribution to the field: generating authentic music in real time while allowing seamless human–AI co-creation.
+ES: Generar patrones musicalmente coherentes que evolucionen con el tiempo sin volverse repetitivos o armónicamente disonantes.
+FR: Générer des schémas musicaux cohérents qui évoluent dans le temps sans devenir répétitifs ou harmoniquement dissonants.
+
+Key: projects.hivefrequency.solution
+EN: Developed a novel hybrid AI model integrating GANs for high-fidelity audio segment creation and RNNs to maintain temporal coherence. The system utilises advanced compression techniques and GPU parallel processing to achieve real-time streaming with under 20ms latency. Built up from basic signal generation in Python using torchFX, the architecture evolved to feature complex multi-track generation, custom MIDI generators for basslines, and a reinforcement learning component that dynamically adjusts parameters in response to real-time user input during live performances.
+ES: Combinación de una GAN para la generación de patrones a corto plazo con una RNN para la evolución temática a largo plazo y la estructura musical.
+FR: Combinaison d'un GAN pour la génération de motifs à court terme avec un RNN pour l'évolution thématique et la structure musicale à long terme.
+
+Key: projects.hivefrequency.achievements.0
+EN: Achieved an ultra-low average latency of 18 milliseconds
+ES: Generación de MIDI en tiempo real con 0ms de retraso perceptible
+FR: Génération MIDI en temps réel avec un délai imperceptible
+
+Key: projects.hivefrequency.achievements.1
+EN: Ran continuously for 12 hours without crashes during live performance testing
+ES: Captura estructuras armónicas y ritmos complejos
+FR: Capture de structures harmoniques et de rythmes complexes
+
+Key: projects.hivefrequency.achievements.2
+EN: Scored an average of 8.8/10 in user evaluations for authenticity and creative impact
+ES: Transferencia de estilo dinámica para actuaciones en vivo
+FR: Transfert de style dynamique pour les performances en direct
+
+Key: projects.hivefrequency.achievements.3
+EN: Built an interactive sequencer operating in a continuous 16-bar looping system with extensive MIDI integration
+ES: Composición musical de larga duración totalmente automatizada
+FR: Composition musicale longue durée entièrement automatisée
+
+Key: projects.hivefrequency.metrics.avgLatency
+EN: Average Latency
+ES: undefined
+FR: undefined
+
+Key: projects.hivefrequency.metrics.stability
+EN: Continuous Stability
+ES: undefined
+FR: undefined
+
+Key: projects.hivefrequency.metrics.audioQuality
+EN: PEAQ Audio Quality Score
+ES: undefined
+FR: undefined
+
+Key: projects.cruzcampo.title
+EN: Cruzcampo Tapeando 2025
+ES: Cruzcampo Tapeando 2025
+FR: Cruzcampo Tapeando 2025
+
+Key: projects.cruzcampo.description
+EN: Emergency full-stack web application for a major Spanish beer brand.
+ES: Aplicación web de emergencia de pila completa para una importante marca de cerveza española.
+FR: Application web d'urgence full-stack pour une grande marque de bière espagnole.
+
+Key: projects.cruzcampo.longDescription
+EN: Developed in just 48 hours to save a large-scale marketing campaign. This high-pressure project involved building a robust, high-traffic web application for Cruzcampo.
+ES: Desarrollado en solo 48 horas para salvar una campaña de marketing a gran escala. Este proyecto de alta presión implicó la construcción de una aplicación web robusta y de alto tráfico para Cruzcampo.
+FR: Développé en seulement 48 heures pour sauver une campagne marketing à grande échelle. Ce projet à haute pression a impliqué la construction d'une application web robuste à fort trafic pour Cruzcampo.
+
+Key: projects.cruzcampo.challenge
+EN: Building, testing, and deploying a production-ready application for a national campaign in under 48 hours with expected traffic in the millions.
+ES: Construir, probar y desplegar una aplicación lista para producción para una campaña nacional en menos de 48 horas con un tráfico esperado de millones.
+FR: Construire, tester et déployer une application prête pour la production pour une campagne nationale en moins de 48 heures avec un trafic attendu de plusieurs millions d'utilisateurs.
+
+Key: projects.cruzcampo.solution
+EN: Leveraged a pre-configured boilerplate and prioritized core functionality, using a scalable cloud infrastructure to handle traffic spikes.
+ES: Aprovechamiento de un boilerplate preconfigurado y priorización de la funcionalidad principal, utilizando una infraestructura de nube escalable para manejar picos de tráfico.
+FR: Utilisation d'un boilerplate préconfiguré et priorisation des fonctionnalités de base, tout en s'appuyant sur une infrastructure cloud évolutive pour gérer les pics de trafic.
+
+Key: projects.cruzcampo.achievements.0
+EN: Delivered fully functional platform in 48 hours
+ES: Plataforma totalmente funcional entregada en 48 horas
+FR: Plateforme entièrement fonctionnelle livrée en 48 heures
+
+Key: projects.cruzcampo.achievements.1
+EN: Successfully handled 100k+ concurrent users
+ES: Manejo exitoso de más de 100k usuarios concurrentes
+FR: Gestion réussie de plus de 100k utilisateurs simultanés
+
+Key: projects.cruzcampo.achievements.2
+EN: Zero downtime during the initial campaign launch
+ES: Cero tiempo de inactividad durante el lanzamiento inicial de la campaña
+FR: Zéro temps d'arrêt lors du lancement initial de la campagne
+
+Key: projects.cruzcampo.achievements.3
+EN: Saved a high-value marketing campaign from failure
+ES: Campaña de marketing de alto valor salvada del fracaso
+FR: Campagne marketing à haute valeur sauvée de l'échec
+
+Key: projects.illuvium.title
+EN: Illuvium Fusion Simulator
+ES: Simulador de Fusión de Illuvium
+FR: Simulateur de Fusion Illuvium
+
+Key: projects.illuvium.description
+EN: Market-scanning simulator for the Illuvium Web3 NFT game.
+ES: Simulador de escaneo de mercado para el juego NFT Web3 Illuvium.
+FR: Simulateur de screening du marché pour le jeu NFT Web3 Illuvium.
+
+Key: projects.illuvium.longDescription
+EN: A strategic tool for Illuvium players that simulates NFT fusions and scans market data to identify the most profitable fusion opportunities for collectors.
+ES: Una herramienta estratégica para los jugadores de Illuvium que simula las fusiones de NFT y escanea los datos del mercado para identificar las oportunidades de fusión más rentables para los coleccionistas.
+FR: Un outil stratégique pour les joueurs d'Illuvium simulé les fusions de NFT et scannant les données du marché pour identifier les opportunités de fusion les plus rentables pour les collectionneurs.
+
+Key: projects.illuvium.challenge
+EN: Aggregating and normalizing fragmented market data from multiple Web3 marketplaces to provide real-time fusion profitability metrics.
+ES: Agregar y normalizar datos de mercado fragmentados de múltiples mercados Web3 para proporcionar métricas de rentabilidad de fusión en tiempo real.
+FR: Agrégation et normalisation des données de marché fragmentées provenant de plusieurs places de marché Web3 pour fournir des métriques de rentabilité de fusion en temps réel.
+
+Key: projects.illuvium.solution
+EN: Built a high-performance market scanner using Web3.js and a React frontend for intuitive data visualization and strategy simulation.
+ES: Construcción de un escáner de mercado de alto rendimiento utilizando Web3.js y un frontend de React para una visualización intuitiva de datos y simulación de estrategias.
+FR: Construction d'un scanner de marché haute performance utilisant Web3.js et un frontend React pour une visualisation intuitive des données et une simulation de stratégie.
+
+Key: projects.illuvium.achievements.0
+EN: Real-time tracking of asset prices across 3+ DEXs
+ES: Seguimiento en tiempo real de los precios de los activos en más de 3 DEX
+FR: Suivi en temps réel des prix des actifs sur plus de 3 DEX
+
+Key: projects.illuvium.achievements.1
+EN: Simulated 1000+ fusion combinations in seconds
+ES: Simulación de más de 1000 combinaciones de fusión en segundos
+FR: Simulation de plus de 1000 combinaisons de fusion en quelques secondes
+
+Key: projects.illuvium.achievements.2
+EN: Provided actionable arbitrage insights for players
+ES: Información de arbitraje procesable proporcionada para los jugadores
+FR: Informations d'arbitrage exploitables fournies aux joueurs
+
+Key: projects.illuvium.achievements.3
+EN: Mobile-responsive dashboard for on-the-go trading
+ES: Panel de control adaptado a móviles para trading sobre la marcha
+FR: Tableau de bord adapté au mobile pour le trading en déplacement
+
+Key: projects.dartboard.title
+EN: Dartboard Object Detection
+ES: Detección de Objetos en Diana
+FR: Détection d'Objets sur Cible
+
+Key: projects.dartboard.description
+EN: Real-time computer vision system for dartboard detection.
+ES: Sistema de visión por computadora en tiempo real para la detección de dianas.
+FR: Système de vision par ordinateur en temps réel pour la détection de cibles de fléchettes.
+
+Key: projects.dartboard.longDescription
+EN: A high-performance computer vision project using OpenCV and C++ to detect and track dartboards in real-time video streams with high accuracy.
+ES: Un proyecto de visión por computadora de alto rendimiento que utiliza OpenCV y C++ para detectar y rastrear dianas en flujos de vídeo en tiempo real con alta precisión.
+FR: Un projet de vision par ordinateur haute performance utilisant OpenCV et C++ pour détecter et suivre les cibles de fléchettes dans des flux vidéo en temps réel avec une grande précision.
+
+Key: projects.dartboard.challenge
+EN: Accurately detecting dartboards under varying lighting conditions and camera angles.
+ES: Detectar con precisión las dianas bajo diversas condiciones de iluminación y ángulos de cámara, manteniendo un alto rendimiento en tiempo real.
+FR: Détecter avec précision les cibles sous diverses conditions d'éclairage et angles de caméra tout en maintenant des performances élevées en temps réel.
+
+Key: projects.dartboard.solution
+EN: Implemented a series of custom computer vision filters and geometric constraints using OpenCV in C++ for maximum throughput.
+ES: Implementación de una serie de filtros de visión por computadora personalizados y restricciones geométricas utilizando OpenCV en C++ para un rendimiento máximo.
+FR: Mise en œuvre d'une série de filtres de vision par ordinateur personnalisés et de contraintes géométriques utilisant OpenCV en C++ pour des performances maximales.
+
+Key: projects.dartboard.achievements.0
+EN: 100% accuracy on provided dataset
+ES: 99,5% de precisión en la detección de dianas
+FR: Précision de 99,5 % dans la détection des cibles
+
+Key: projects.dartboard.achievements.1
+EN: Robust tracking through occlusion and motion blur
+ES: Procesamiento en tiempo real a 120 FPS en CPUs estándar
+FR: Traitement en temps réel à 120 FPS sur des processeurs standard
+
+Key: projects.dartboard.achievements.2
+EN: Automated scoring system integration
+ES: Rastreo robusto a través de oclusión y desenfoque de movimiento
+FR: Suivi robuste malgré l'occultation et le flou de mouvement
+
+Key: footer.description
+EN: Software Engineer building high-performance systems, transforming complex ideas into elegant user-centric solutions. Driven by a deep belief and commitment to using technology as a force for good. Motivated by creating technology that solves meaningful problems and improves lives.
+ES: Ingeniero de Software que construye sistemas de alto rendimiento, transformando ideas complejas en soluciones elegantes centradas en el usuario. Impulsado por una profunda creencia y compromiso de usar la tecnología como una fuerza para el bien. Motivado por crear tecnología que resuelva problemas significativos y mejore vidas.
+FR: Ingénieur logiciel construisant des systèmes haute performance, transformant des idées complexes en solutions élégantes axées sur l'utilisateur. Animé par une conviction profonde et un engagement à utiliser la technologie comme une force pour le bien. Motivé par la création de technologies qui résolvent des problèmes significatifs et améliorent la vie.
+
+Key: footer.builtWith
+EN: Built with Next.js, Framer Motion and Passion.
+ES: Construido con Next.js, Framer Motion y Pasión.
+FR: Construit avec Next.js, Framer Motion et Passion.
+
+Key: opensource.title
+EN: Open Source Contributions
+ES: Contribuciones de Código Abierto
+FR: Contributions Open Source
+
+Key: opensource.subtitle
+EN: A collection of public projects, experiments, and contributions to the developer community.
+ES: Una colección de proyectos públicos, experimentos y contribuciones a la comunidad de desarrolladores.
+FR: Une collection de projets publics, d'expériences et de contributions à la communauté des développeurs.
+
+Key: opensource.communityFirst
+EN: Community First
+ES: Comunidad Primero
+FR: La Communauté d'Abord
+
+Key: opensource.pageSubtitle
+EN: I believe in giving back to the community. Here are some of my most impactful open-source projects and contributions.
+ES: Creo en retribuir a la comunidad. Aquí hay algunos de mis proyectos y contribuciones de código abierto más impactantes.
+FR: Je crois à la contribution à la communauté. Voici quelques-uns de mes projets et contributions open source les plus impactants.
+
+Key: opensource.ctaTitle
+EN: Want to collaborate?
+ES: ¿Quieres colaborar?
+FR: Vous voulez collaborer ?
+
+Key: opensource.ctaSubtitle
+EN: I'm always looking for interesting projects to contribute to. If you're working on something groundbreaking, let's talk.
+ES: Siempre estoy buscando proyectos interesantes a los que contribuir. Si estás trabajando en algo innovador, hablemos.
+FR: Je recherche toujours des projets intéressants auxquels contribuer. Si vous travaillez sur quelque chose de révolutionnaire, parlons-en.
+
+Key: opensource.viewGithub
+EN: View GitHub Profile
+ES: Ver Perfil de GitHub
+FR: Voir le Profil GitHub
+
+Key: opensource.projects.binance-data-processing
+EN: Binance data analysis for trading bot ideas and market research.
+ES: Análisis de datos de Binance para ideas de bots de trading e investigación de mercado.
+FR: Analyse de données Binance pour des idées de bots de trading et des recherches de marché.
+
+Key: opensource.projects.ML-Algorithms-Analysis
+EN: Study of many ML algorithms using python to visually understand aspects of each algorithm.
+ES: Estudio de muchos algoritmos de ML con Python para entender visualmente los aspectos de cada algoritmo.
+FR: Étude de nombreux algorithmes ML avec Python pour comprendre visuellement les aspects de chaque algorithme.
+
+Key: opensource.projects.NinjaFocus
+EN: Solana trading bot connected to Telegram for real-time trade signals.
+ES: Bot de trading de Solana conectado a Telegram para señales de trading en tiempo real.
+FR: Bot de trading Solana connecté à Telegram pour des signaux de trading en temps réel.
+
+Key: opensource.projects.Cervantes-AI-Story-Writer
+EN: Multi-agent story writer using LLMs to generate infinite narratives.
+ES: Escritor de historias multi-agente que usa LLMs para generar narrativas infinitas.
+FR: Écrivain d'histoires multi-agents utilisant des LLMs pour générer des récits infinis.
+
+Key: opensource.projects.linktrees
+EN: Mobile-first linktree-style websites with diverse branding.
+ES: Sitios web estilo linktree con enfoque móvil y branding diverso.
+FR: Sites web de style linktree orientés mobile avec un branding varié.
+
+Key: opensource.projects.HiveFrequency
+EN: GAN+RNN architecture for real-time live music generation.
+ES: Arquitectura GAN+RNN para generación de música en vivo en tiempo real.
+FR: Architecture GAN+RNN pour la génération de musique en direct en temps réel.
+
+Key: opensource.projects.Dartboard-Detection
+EN: Dartboard detection algorithm implemented in C++ With OpenCV Computer Vision algorithms
+ES: Algoritmo de detección de diana implementado en C++ con algoritmos de visión por computadora OpenCV.
+FR: Algorithme de détection de cible de fléchettes implémenté en C++ avec les algorithmes de vision par ordinateur OpenCV.
+
+Key: creative.title
+EN: Self-Expression
+ES: Autoexpresión
+FR: Auto-expression
+
+Key: creative.artTitle
+EN: Art Gallery
+ES: Galería de Arte
+FR: Galerie d'Art
+
+Key: creative.musicTitle
+EN: Soundscapes
+ES: Paisajes Sonoros
+FR: Paysages Sonores
+
+Key: creative.philosophyTitle
+EN: Philosophy
+ES: Filosofía
+FR: Philosophie
+
+Key: creative.listenNow
+EN: Listen Now
+ES: Escuchar Ahora
+FR: Écouter Maintenant
+
+Key: creative.heroTagline
+EN: Creativity is the Soul's Voice
+ES: La Creatividad es la Voz del Alma
+FR: La Créativité est la Voix de l'Âme
+
+Key: creative.artSubtitle
+EN: A collection of visual experiments, digital paintings, and sketches that explore form, color, and emotion.
+ES: Una colección de experimentos visuales, pinturas digitales y bocetos que exploran la forma, el color y la emoción.
+FR: Une collection d'expériences visuelles, de peintures numériques et de croquis qui explorent la forme, la couleur et l'émotion.
+
+Key: creative.artNote
+EN: All visual art featured here is meticulously hand-drawn using traditional pencils and black pens, then digitized for display.
+ES: Toda la obra visual presentada aquí es dibujada a mano meticulosamente con lápices y bolígrafos tradicionales, y luego digitalizada para su presentación.
+FR: Toutes les œuvres d'art présentées ici sont méticuleusement dessinées à la main avec des crayons et des stylos traditionnels, puis numérisées pour l'affichage.
+
+Key: creative.musicSubtitle
+EN: Sonic journeys composed to facilitate focus, meditation, and emotional resonance.
+ES: Viajes sonoros compuestos para facilitar la concentración, la meditación y la resonancia emocional.
+FR: Des voyages sonores composés pour faciliter la concentration, la méditation et la résonance émotionnelle.
+
+Key: creative.worksLabel
+EN: Works
+ES: Obras
+FR: Œuvres
+
+Key: creative.tracksLabel
+EN: Tracks
+ES: Pistas
+FR: Titres
+
+Key: creative.philosophy
+EN: My art is a journey into abstract intensity, crafted with pencils, colored pencils, and black markers. I focus on vibrant, saturated colors and intricate geometric forms that challenge perception and invite deep introspection. Similarly, my music (as Shaboom) is an exploration of high-energy soundscapes and rhythmic complexity.
+ES: Mi arte es un viaje hacia la intensidad abstracta, creado con lápices, lápices de colores y rotuladores negros. Me centro en colores vibrantes y saturados y en formas geométricas intrincadas que desafían la percepción e invitan a una profunda introspección. Del mismo modo, mi música (como Shaboom) es una exploración de paisajes sonoros de alta energía y complejidad rítmica.
+FR: Mon art est un voyage dans l'intensité abstraite, réalisé avec des crayons, des crayons de couleur et des marqueurs noirs. Je me concentre sur des couleurs vibrantes et saturées et des formes géométriques complexes qui défient la perception et invitent à une introspection profonde. De même, ma musique (sous le nom de Shaboom) est une exploration de paysages sonores à haute énergie et de complexité rythmique.
+
+Key: creative.items.art1.title
+EN: Chromatic Portal
+ES: Portal Cromático
+FR: Portail Chromatique
+
+Key: creative.items.art1.description
+EN: An intense geometric exploration of symmetry and vibrant colors, radiating from a central silhouette.
+ES: Una intensa exploración geométrica de la simetría y los colores vibrantes, irradiando desde una silueta central.
+FR: Une exploration géométrique intense de la symétrie et des couleurs vives, rayonnant depuis une silhouette centrale.
+
+Key: creative.items.art2.title
+EN: Fungal Geometry
+ES: Geometría Fúngica
+FR: Géométrie Fongique
+
+Key: creative.items.art2.description
+EN: Organic mushroom forms set against a sharp, vibrant triangular grid.
+ES: Formas orgánicas de hongos sobre una cuadrícula triangular nítida y vibrante.
+FR: Des formes organiques de champignons sur une grille triangulaire nette et vibrante.
+
+Key: creative.items.art3.title
+EN: Monochromatic Sphere
+ES: Esfera Monocromática
+FR: Sphère Monochromatique
+
+Key: creative.items.art3.description
+EN: A complex black and white spherical pattern evoking depth and rotational motion.
+ES: Un complejo patrón esférico en blanco y negro que evoca profundidad y movimiento rotacional.
+FR: Un schéma sphérique complexe en noir et blanc évoquant la profondeur et le mouvement rotatif.
+
+Key: creative.items.art4.title
+EN: Neural Tangles
+ES: Enredos Neurales
+FR: Enchevêtrements Neuronaux
+
+Key: creative.items.art4.description
+EN: A colorful, chaotic web of interconnected lines representing complex networks.
+ES: Una telaraña colorida y caótica de líneas interconectadas que representan redes complejas.
+FR: Une toile colorée et chaotique de lignes interconnectées représentant des réseaux complexes.
+
+Key: creative.items.art5.title
+EN: MARC Monogram
+ES: Monograma MARC
+FR: Monogramme MARC
+
+Key: creative.items.art5.description
+EN: A stylized, calligraphic monogram rendered in bold black ink with elegant flourishes.
+ES: Un monograma caligráfico estilizado trazado en tinta negra con elegantes florituras.
+FR: Un monogramme calligraphique stylisé rendu à l'encre noire épaisse avec d'élégants fioritures.
+
+Key: creative.items.art6.title
+EN: Triple Flow
+ES: Flujo Triple
+FR: Triple Flux
+
+Key: creative.items.art6.description
+EN: A triskelion-inspired circular design featuring three interlocking organic shapes.
+ES: Un diseño circular inspirado en el triskelion con tres formas orgánicas entrelazadas.
+FR: Un design circulaire inspiré du triskelion avec trois formes organiques entrelacées.
+
+Key: creative.items.art7.title
+EN: Prismatic Radiance
+ES: Radiancia Prismática
+FR: Rayonnement Prismatique
+
+Key: creative.items.art7.description
+EN: A high-intensity color study using colored pencils to create a sense of glowing energy.
+ES: Un estudio de color de alta intensidad con lápices de colores para crear una sensación de energía luminosa.
+FR: Une étude de couleur à haute intensité aux crayons de couleur pour créer une sensation d'énergie lumineuse.
+
+Key: creative.items.art8.title
+EN: Abstract Rhythm
+ES: Ritmo Abstracto
+FR: Rythme Abstrait
+
+Key: creative.items.art8.description
+EN: A rhythmic composition of lines and shapes that reflects the energy of my music.
+ES: Una composición rítmica de líneas y formas que refleja la energía de mi música.
+FR: Une composition rythmique de lignes et de formes qui reflète l'énergie de ma musique.
+
+Key: creative.items.art9.title
+EN: Vivid Contours
+ES: Contornos Vívidos
+FR: Contours Vifs
+
+Key: creative.items.art9.description
+EN: An exploration of form and contour using bold markers and saturated hues.
+ES: Una exploración de forma y contorno con rotuladores gruesos y tonos saturados.
+FR: Une exploration de la forme et du contour avec des marqueurs épais et des teintes saturées.
+
+Key: creative.items.art10.title
+EN: Dimensional Pyramids
+ES: Pirámides Dimensionales
+FR: Pyramides Dimensionnelles
+
+Key: creative.items.art10.description
+EN: A minimalist pencil sketch of two interlocking pyramids, exploring depth and negative space.
+ES: Un boceto minimalista a lápiz de dos pirámides entrelazadas que exploran la profundidad y el espacio negativo.
+FR: Un croquis minimaliste au crayon de deux pyramides entrelacées explorant la profondeur et l'espace négatif.
+
+Key: resume.ui.hubTitle
+EN: Resume Hub
+ES: Centro de Currículum
+FR: Espace CV
+
+Key: resume.ui.hubSubtitle
+EN: Select a specialized track to view a tailored resume and portfolio of relevant experience.
+ES: Seleccione una trayectoria especializada para ver un currículum personalizado y un catálogo de experiencia relevante.
+FR: Sélectionnez une spécialisation pour voir un CV personnalisé et un aperçu de mon expérience pertinente.
+
+Key: resume.ui.exploreTrack
+EN: Explore Track
+ES: Explorar Trayectoria
+FR: Explorer la Spécialisation
+
+Key: resume.ui.tailoredOverview
+EN: Tailored overview for roles in {{role}}, including relevant tech stack and key achievements.
+ES: Información personalizada para roles en {{role}}, incluyendo la pila tecnológica relevante y logros clave.
+FR: Aperçu personnalisé pour les rôles en {{role}}, incluant les technologies utilisées et les accomplissements clés.
+
+Key: resume.ui.professionalExperience
+EN: Professional Experience
+ES: Experiencia Profesional
+FR: Expérience Professionnelle
+
+Key: resume.ui.education
+EN: Education
+ES: Educación
+FR: Éducation
+
+Key: resume.ui.skillMatrix
+EN: Skill Matrix
+ES: Matriz de Habilidades
+FR: Matrice de Compétences
+
+Key: resume.ui.certifications
+EN: Certifications
+ES: Certificaciones
+FR: Certifications
+
+Key: resume.ui.languages
+EN: Languages
+ES: Idiomas
+FR: Langues
+
+Key: resume.shared.skills.languages
+EN: Languages
+ES: Idiomas
+FR: Langues
+
+Key: resume.shared.skills.backend
+EN: Backend
+ES: Backend
+FR: Backend
+
+Key: resume.shared.skills.infrastructure
+EN: Infrastructure
+ES: Infraestructura
+FR: Infrastructure
+
+Key: resume.shared.skills.dataScience
+EN: Data Science
+ES: Ciencia de Datos
+FR: Science des Données
+
+Key: resume.shared.skills.tradingSystems
+EN: Trading Systems
+ES: Sistemas de Trading
+FR: Systèmes de Trading
+
+Key: resume.shared.skills.blockchain
+EN: Blockchain
+ES: Blockchain
+FR: Blockchain
+
+Key: resume.shared.skills.tools
+EN: Tools
+ES: Herramientas
+FR: Outils
+
+Key: resume.shared.skills.aiMl
+EN: AI/ML
+ES: IA/ML
+FR: IA/ML
+
+Key: resume.shared.skills.frontend
+EN: Frontend
+ES: Frontend
+FR: Frontend
+
+Key: resume.shared.languages.english
+EN: English
+ES: Inglés
+FR: Anglais
+
+Key: resume.shared.languages.spanish
+EN: Spanish
+ES: Español
+FR: Espagnol
+
+Key: resume.shared.languages.french
+EN: French
+ES: Francés
+FR: Français
+
+Key: resume.shared.languages.native
+EN: Native
+ES: Nativo
+FR: Langue maternelle
+
+Key: resume.shared.languages.workingProficiency
+EN: Working Proficiency
+ES: Competencia Profesional
+FR: Capacité professionnelle
+
+Key: resume.shared.education.bristolDegree
+EN: BEng Computer Science & Electronics
+ES: BEng en Ciencias de la Computación y Electrónica
+FR: BEng en Informatique et Électronique
+
+Key: resume.shared.education.bristolInstitution
+EN: University of Bristol
+ES: Universidad de Bristol
+FR: Université de Bristol
+
+Key: resume.shared.education.bristolDescription
+EN: Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol.
+ES: Mantuve un promedio de Primera Clase durante todo el currículo de ingeniería en Ciencias de la Computación y Electrónica. Hice la transición de los estudios formales durante el último año para escalar un proyecto de trading; posteriormente fui galardonado con el título de BEng por la Universidad de Bristol.
+FR: Maintien d'une moyenne de première classe tout au long du cursus d'ingénieur en Informatique et Électronique. Transition des études formelles au cours de la dernière année pour développer une entreprise de trading ; diplôme BEng décerné ultérieurement par l'Université de Bristol.
+
+Key: resume.tracks.Backend.title
+EN: Senior Backend Engineer
+ES: Ingeniero Backend Senior
+FR: Ingénieur Backend Senior
+
+Key: resume.tracks.Backend.summary
+EN: Senior backend engineer with 5+ years of experience designing and scaling high-performance backend systems in FinTech and data-intensive environments. Specialized in Python, FastAPI, SQL, and cloud-native architectures.
+ES: Ingeniero backend senior con más de 5 años de experiencia diseñando y escalando sistemas backend de alto rendimiento en entornos FinTech y de datos intensivos. Especializado en Python, FastAPI, SQL y arquitecturas nativas de la nube.
+FR: Ingénieur backend senior avec plus de 5 ans d'expérience dans la conception et la mise à l'échelle de systèmes backend haute performance dans les secteurs de la FinTech et des environnements gourmands en données. Spécialisé en Python, FastAPI, SQL et architectures cloud-natives.
+
+Key: resume.tracks.Backend.experience.brite.role
+EN: Senior Backend Python Developer
+ES: Desarrollador Python Backend Senior
+FR: Développeur Python Backend Senior
+
+Key: resume.tracks.Backend.experience.brite.period
+EN: May 2025 – July 2025
+ES: Mayo 2025 – Julio 2025
+FR: Mai 2025 – Juillet 2025
+
+Key: resume.tracks.Backend.experience.brite.description.0
+EN: Designed and implemented PSD2-compliant APIs using Python and FastAPI
+ES: Diseñé e implementé APIs compatibles con PSD2 usando Python y FastAPI
+FR: Conception et mise en œuvre d'API conformes à la directive PSD2 avec Python et FastAPI
+
+Key: resume.tracks.Backend.experience.brite.description.1
+EN: Delivered OpenAPI-standard interfaces for Open Banking integrations
+ES: Entregué interfaces estándar OpenAPI para integraciones de Open Banking
+FR: Livraison d'interfaces standard OpenAPI pour les intégrations d'Open Banking
+
+Key: resume.tracks.Backend.experience.brite.description.2
+EN: Collaborated in Agile Kanban environment with product and compliance teams
+ES: Colaboré en un entorno Agile Kanban con equipos de producto y cumplimiento
+FR: Collaboration dans un environnement Agile Kanban avec les équipes produit et conformité
+
+Key: resume.tracks.Backend.experience.brite.description.3
+EN: Improved API reliability and maintainability through structured schema validation
+ES: Mejoré la fiabilidad y el mantenimiento de las APIs mediante validación de esquemas estructurados
+FR: Amélioration de la fiabilité et de la maintenabilité des API grâce à la validation de schémas structurés
+
+Key: resume.tracks.Backend.experience.technex.role
+EN: Director & CTO
+ES: Director y CTO
+FR: Directeur et CTO
+
+Key: resume.tracks.Backend.experience.technex.period
+EN: Jan 2021 – Sept 2024
+ES: Ene 2021 – Sept 2024
+FR: Janv 2021 – Sept 2024
+
+Key: resume.tracks.Backend.experience.technex.description.0
+EN: Led backend development for multiple FinTech automation clients
+ES: Lideré el desarrollo backend para múltiples clientes de automatización FinTech
+FR: Direction du développement backend pour plusieurs clients d'automatisation FinTech
+
+Key: resume.tracks.Backend.experience.technex.description.1
+EN: Designed scalable Python-based services for trading, analytics, and data ingestion
+ES: Diseñé servicios escalables basados en Python para trading, análisis e ingesta de datos
+FR: Conception de services évolutifs basés sur Python pour le trading, l'analyse et l'ingestion de données
+
+Key: resume.tracks.Backend.experience.technex.description.2
+EN: Built real-time market data pipelines and automated portfolio systems
+ES: Construí pipelines de datos de mercado en tiempo real y sistemas de cartera automatizados
+FR: Construction de pipelines de données de marché en temps réel et de systèmes de portefeuille automatisés
+
+Key: resume.tracks.Backend.experience.technex.description.3
+EN: Reduced client portfolio risk by 40% using predictive volatility models
+ES: Reduje el riesgo de la cartera de clientes en un 40% usando modelos de volatilidad predictiva
+FR: Réduction du risque de portefeuille client de 40 % grâce à des modèles de volatilité prédictive
+
+Key: resume.tracks.Backend.experience.technex.description.4
+EN: Managed distributed engineering teams using Agile sprint methodologies
+ES: Gestioné equipos de ingeniería distribuidos usando metodologías Agile sprint
+FR: Gestion d'équipes d'ingénierie distribuées en utilisant les méthodologies de sprint Agile
+
+Key: resume.tracks.Backend.experience.gotovan.role
+EN: Full Stack Developer
+ES: Desarrollador Full Stack
+FR: Développeur Full Stack
+
+Key: resume.tracks.Backend.experience.gotovan.period
+EN: Mar 2022 – Nov 2023
+ES: Mar 2022 – Nov 2023
+FR: Mars 2022 – Nov 2023
+
+Key: resume.tracks.Backend.experience.gotovan.description.0
+EN: Developed backend services using Python FastAPI and SQL on GCP
+ES: Desarrollé servicios backend usando Python FastAPI y SQL en GCP
+FR: Développement de services backend avec Python FastAPI et SQL sur GCP
+
+Key: resume.tracks.Backend.experience.gotovan.description.1
+EN: Implemented route-based pricing algorithms improving logistics cost efficiency
+ES: Implementé algoritmos de precios basados en rutas mejorando la eficiencia de costos logísticos
+FR: Mise en œuvre d'algorithmes de tarification basés sur les itinéraires, améliorant l'efficacité des coûts logistiques
+
+Key: resume.tracks.Backend.experience.gotovan.description.2
+EN: Built internal BI tools to analyze operational data and optimize resource usage
+ES: Construí herramientas internas de BI para analizar datos operativos y optimizar el uso de recursos
+FR: Construction d'outils de BI internes pour analyser les données opérationnelles et optimiser l'utilisation des ressources
+
+Key: resume.tracks.Backend.experience.gotovan.description.3
+EN: Integrated OAuth authentication and Stripe payment systems
+ES: Integré autenticación OAuth y sistemas de pago Stripe
+FR: Intégration de l'authentification OAuth et des systèmes de paiement Stripe
+
+Key: resume.tracks.Quant.title
+EN: Quantitative Developer
+ES: Desarrollador Cuantitativo
+FR: Développeur Quantitatif
+
+Key: resume.tracks.Quant.summary
+EN: Quantitative developer with strong background in algorithmic trading, statistical modeling, and high-performance data systems. Experienced in designing automated trading strategies, risk models, and market analytics platforms.
+ES: Desarrollador cuantitativo con sólida formación en trading algorítmico, modelado estadístico y sistemas de datos de alto rendimiento. Experimentado en el diseño de estrategias de trading automatizadas, modelos de riesgo y plataformas de análisis de mercado.
+FR: Développeur quantitatif avec une solide formation en trading algorithmique, modélisation statistique et systèmes de données haute performance. Expérimenté dans la conception de stratégies de trading automatisées, de modèles de risque et de plateformes d'analyse de marché.
+
+Key: resume.tracks.Quant.experience.technex.role
+EN: Quantitative Developer
+ES: Desarrollador Cuantitativo
+FR: Développeur Quantitatif
+
+Key: resume.tracks.Quant.experience.technex.period
+EN: Jan 2021 – Sept 2024
+ES: Ene 2021 – Sept 2024
+FR: Janv 2021 – Sept 2024
+
+Key: resume.tracks.Quant.experience.technex.description.0
+EN: Designed algorithmic trading systems across equities, futures, and crypto
+ES: Diseñé sistemas de trading algorítmico en acciones, futuros y cripto
+FR: Conception de systèmes de trading algorithmique pour les actions, les contrats à terme (futures) et les cryptos
+
+Key: resume.tracks.Quant.experience.technex.description.1
+EN: Built real-time execution engines processing market data feeds
+ES: Construí motores de ejecución en tiempo real procesando feeds de datos de mercado
+FR: Construction de moteurs d'exécution en temps réel traitant les flux de données de marché
+
+Key: resume.tracks.Quant.experience.technex.description.2
+EN: Reduced portfolio risk by 40% using predictive volatility models
+ES: Reduje el riesgo de la cartera en un 40% usando modelos de volatilidad predictiva
+FR: Réduction du risque de portefeuille de 40 % grâce à des modèles de volatilité prédictive
+
+Key: resume.tracks.Quant.experience.technex.description.3
+EN: Developed automated portfolio management and performance analytics tools
+ES: Desarrollé herramientas automatizadas de gestión de carteras y análisis de rendimiento
+FR: Développement d'outils automatisés de gestion de portefeuille et d'analyse de performance
+
+Key: resume.tracks.Quant.experience.nasdaq.role
+EN: Quantitative Developer (Client Project)
+ES: Desarrollador Cuantitativo (Proyecto de Cliente)
+FR: Développeur Quantitatif (Projet Client)
+
+Key: resume.tracks.Quant.experience.nasdaq.period
+EN: Jan 2023 – May 2024
+ES: Ene 2023 – Mayo 2024
+FR: Janv 2023 – Mai 2024
+
+Key: resume.tracks.Quant.experience.nasdaq.description.0
+EN: Developed C++ trading system integrated with Interactive Brokers
+ES: Desarrollé un sistema de trading en C++ integrado con Interactive Brokers
+FR: Développement d'un système de trading en C++ intégré avec Interactive Brokers
+
+Key: resume.tracks.Quant.experience.nasdaq.description.1
+EN: Implemented real-time market data processing and automated execution
+ES: Implementé el procesamiento de datos de mercado en tiempo real y la ejecución automatizada
+FR: Mise en œuvre du traitement des données de marché en temps réel et de l'exécution automatisée
+
+Key: resume.tracks.Quant.experience.nasdaq.description.2
+EN: Optimized strategy performance using statistical risk controls
+ES: Optimicé el rendimiento de la estrategia usando controles de riesgo estadísticos
+FR: Optimisation des performances des stratégies grâce à des contrôles de risques statistiques
+
+Key: resume.tracks.Quant.experience.cripto.role
+EN: Co-Founder & CEO
+ES: Co-fundador y CEO
+FR: Co-fondateur et CEO
+
+Key: resume.tracks.Quant.experience.cripto.period
+EN: Sept 2019 – Dec 2020
+ES: Sept 2019 – Dic 2020
+FR: Sept 2019 – Déc 2020
+
+Key: resume.tracks.Quant.experience.cripto.description.0
+EN: Built quantitative trading infrastructure executing hundreds of strategies
+ES: Construí infraestructura de trading cuantitativo ejecutando cientos de estrategias
+FR: Construction d'une infrastructure de trading quantitatif exécutant des centaines de stratégies
+
+Key: resume.tracks.Quant.experience.cripto.description.1
+EN: Applied Bayesian inference and Gaussian Processes to market prediction
+ES: Apliqué inferencia bayesiana y Procesos Gaussianos a la predicción de mercados
+FR: Application de l'inférence bayésienne et des processus gaussiens à la prédiction des marchés
+
+Key: resume.tracks.Quant.experience.cripto.description.2
+EN: Achieved 44% annual return across automated investment systems
+ES: Logré un retorno anual del 44% en sistemas de inversión automatizados
+FR: Obtention d'un rendement annuel de 44 % sur les systèmes d'investissement automatisés
+
+Key: resume.tracks.Quant.experience.cripto.description.3
+EN: Led research, strategy design, and system architecture
+ES: Lideré la investigación, el diseño de estrategias y la arquitectura del sistema
+FR: Direction de la recherche, de la conception des stratégies et de l'architecture système
+
+Key: resume.tracks.Web3.title
+EN: Web3 Engineer
+ES: Ingeniero Web3
+FR: Ingénieur Web3
+
+Key: resume.tracks.Web3.summary
+EN: Web3 engineer with deep experience building blockchain-based trading systems, NFT platforms, and smart contract infrastructure. Specialized in Solidity, Solana, and TypeScript-based blockchain integrations.
+ES: Ingeniero Web3 con profunda experiencia en la construcción de sistemas de trading basados en blockchain, plataformas NFT e infraestructura de contratos inteligentes. Especializado en Solidity, Solana e integraciones de blockchain basadas en TypeScript.
+FR: Ingénieur Web3 avec une vaste expérience dans la construction de systèmes de trading basés sur la blockchain, de plateformes NFT et d'infrastructures de contrats intelligents. Spécialisé en Solidity, Solana et intégrations blockchain basées sur TypeScript.
+
+Key: resume.tracks.Web3.experience.chainchampions.role
+EN: Full Stack Web3 Developer
+ES: Desarrollador Web3 Full Stack
+FR: Développeur Web3 Full Stack
+
+Key: resume.tracks.Web3.experience.chainchampions.period
+EN: May 2024 – Present
+ES: Mayo 2024 – Presente
+FR: Mai 2024 – Présent
+
+Key: resume.tracks.Web3.experience.chainchampions.description.0
+EN: Developed NFT tournament platform using React, Node.js, TypeScript
+ES: Desarrollé plataforma de torneos NFT usando React, Node.js, TypeScript
+FR: Développement d'une plateforme de tournois NFT avec React, Node.js, TypeScript
+
+Key: resume.tracks.Web3.experience.chainchampions.description.1
+EN: Implemented Solidity smart contracts for escrow, buy-ins, and payouts
+ES: Implementé contratos inteligentes en Solidity para depósito, compras y pagos
+FR: Mise en œuvre de contrats intelligents Solidity pour l'entiercement (escrow), les mises et les paiements
+
+Key: resume.tracks.Web3.experience.chainchampions.description.2
+EN: Deployed cloud infrastructure on GCP with secure contract interactions
+ES: Desplegué infraestructura en la nube en GCP con interacciones seguras de contratos
+FR: Déploiement d'une infrastructure cloud sur GCP avec des interactions de contrats sécurisées
+
+Key: resume.tracks.Web3.experience.chainchampions.description.3
+EN: Ensured parameterized rule systems for automated tournament execution
+ES: Aseguré sistemas de reglas parametrizadas para la ejecución automatizada de torneos
+FR: Mise en place de systèmes de règles paramétrés pour l'exécution automatisée des tournois
+
+Key: resume.tracks.Web3.experience.technex.role
+EN: Web3 Engineer / Director & CTO
+ES: Ingeniero Web3 / Director y CTO
+FR: Ingénieur Web3 / Directeur et CTO
+
+Key: resume.tracks.Web3.experience.technex.period
+EN: Jan 2021 – Sept 2024
+ES: Ene 2021 – Sept 2024
+FR: Janv 2021 – Sept 2024
+
+Key: resume.tracks.Web3.experience.technex.description.0
+EN: Designed and deployed smart contracts for DeFi and NFT platforms
+ES: Diseñé y desplegué contratos inteligentes para plataformas DeFi y NFT
+FR: Conception et déploiement de contrats intelligents pour les plateformes DeFi et NFT
+
+Key: resume.tracks.Web3.experience.technex.description.1
+EN: Built automated crypto trading and market-making systems
+ES: Construí sistemas automatizados de trading de criptomonedas y market-making
+FR: Construction de systèmes automatisés de trading de cryptos et de tenue de marché (market-making)
+
+Key: resume.tracks.Web3.experience.technex.description.2
+EN: Integrated blockchain services with off-chain APIs and SQL databases
+ES: Integré servicios de blockchain con APIs off-chain y bases de datos SQL
+FR: Intégration de services blockchain avec des API hors chaîne et des bases de données SQL
+
+Key: resume.tracks.Web3.experience.technex.description.3
+EN: Led security-focused development using audited open-source standards
+ES: Lideré el desarrollo centrado en la seguridad usando estándares de código abierto auditados
+FR: Direction d'un développement axé sur la sécurité utilisant des normes open-source auditées
+
+Key: resume.tracks.Web3.experience.share.role
+EN: Solana Token Market Maker
+ES: Creador de Mercado de Tokens Solana
+FR: Teneur de Marché de Jetons Solana
+
+Key: resume.tracks.Web3.experience.share.period
+EN: Sept 2020 – Dec 2021
+ES: Sept 2020 – Dic 2021
+FR: Sept 2020 – Déc 2021
+
+Key: resume.tracks.Web3.experience.share.description.0
+EN: Built market-making bot providing liquidity to Solana-based token
+ES: Construí un bot de market-making proporcionando liquidez a un token basado en Solana
+FR: Construction d'un bot de tenue de marché fournication de liquidité à un jeton basé sur Solana
+
+Key: resume.tracks.Web3.experience.share.description.1
+EN: Integrated with Solana blockchain using Node.js and Raydium SDK
+ES: Integré con la blockchain de Solana usando Node.js y el SDK de Raydium
+FR: Intégration avec la blockchain Solana en utilisant Node.js et le SDK Raydium
+
+Key: resume.tracks.Web3.experience.share.description.2
+EN: Designed automated pricing and liquidity strategies backed by SQL data
+ES: Diseñé estrategias automatizadas de precios y liquidez respaldadas por datos SQL
+FR: Conception de stratégies automatisées de tarification et de liquidité basées sur les données SQL
+
+Key: resume.tracks.AI.title
+EN: AI & ML Engineer
+ES: Ingeniero de IA y ML
+FR: Ingénieur IA et ML
+
+Key: resume.tracks.AI.summary
+EN: Specialist in building AI agents and machine learning models for predictive analytics and automation. Experienced in applying Bayesian inference and neural networks to complex data-driven problems.
+ES: Especialista en la construcción de agentes de IA y modelos de aprendizaje automático para análisis predictivo y automatización. Experimentado en la aplicación de inferencia bayesiana y redes neuronales a problemas complejos impulsados por datos.
+FR: Spécialiste dans la construction d'agents d'IA et de modèles de machine learning pour l'analyse prédictive et l'automatisation. Expérimenté dans l'application de l'inférence bayésienne et des réseaux neuronaux à des problèmes complexes axés sur les données.
+
+Key: resume.tracks.AI.experience.technex.role
+EN: Director & CTO (AI Focus)
+ES: Director y CTO (Enfoque en IA)
+FR: Directeur et CTO (Focus IA)
+
+Key: resume.tracks.AI.experience.technex.period
+EN: Jan 2021 – Sept 2024
+ES: Ene 2021 – Sept 2024
+FR: Janv 2021 – Sept 2024
+
+Key: resume.tracks.AI.experience.technex.description.0
+EN: Developed predictive volatility models using Gaussian Processes
+ES: Desarrollé modelos de volatilidad predictiva usando Procesos Gaussianos
+FR: Développement de modèles de volatilité prédictive à l'aide de processus gaussiens
+
+Key: resume.tracks.AI.experience.technex.description.1
+EN: Built automated risk management systems driven by ML analytics
+ES: Construí sistemas automatizados de gestión de riesgos impulsados por analítica de ML
+FR: Construction de systèmes automatisés de gestion des risques pilotés par l'analyse ML
+
+Key: resume.tracks.AI.experience.technex.description.2
+EN: Integrated AI-driven insights into FinTech automation tools
+ES: Integré perspectivas impulsadas por IA en herramientas de automatización FinTech
+FR: Intégration d'aperçus pilotés par l'IA dans les outils d'automatisation FinTech
+
+Key: resume.tracks.AI.experience.cripto.role
+EN: Co-Founder (ML Researcher)
+ES: Co-fundador (Investigador de ML)
+FR: Co-fondateur (Chercheur ML)
+
+Key: resume.tracks.AI.experience.cripto.period
+EN: Sept 2019 – Dec 2020
+ES: Sept 2019 – Dic 2020
+FR: Sept 2019 – Déc 2020
+
+Key: resume.tracks.AI.experience.cripto.description.0
+EN: Applied Bayesian inference to market prediction and strategy optimization
+ES: Apliqué inferencia bayesiana a la predicción de mercados y optimización de estrategias
+FR: Application de l'inférence bayésienne à la prédiction des marchés et à l'optimisation des stratégies
+
+Key: resume.tracks.AI.experience.cripto.description.1
+EN: Researched and implemented high-performance Gaussian Process models
+ES: Investigué e implementé modelos de Procesos Gaussianos de alto rendimiento
+FR: Recherche et mise en œuvre de modèles de processus gaussiens haute performance
+
+Key: resume.tracks.Web.title
+EN: Fullstack Developer
+ES: Desarrollador Fullstack
+FR: Développeur Fullstack
+
+Key: resume.tracks.Web.summary
+EN: Fullstack developer focused on building high-performance web applications with modern tech stacks. Specialized in React, Node.js, and FastAPI integrations.
+ES: Desarrollador fullstack centrado en la construcción de aplicaciones web de alto rendimiento con pilas tecnológicas modernas. Especializado en integraciones de React, Node.js y FastAPI.
+FR: Développeur fullstack axé sur la construction d'applications web haute performance avec des technologies modernes. Spécialisé dans les intégrations React, Node.js et FastAPI.
+
+Key: resume.tracks.Web.experience.chainchampions.role
+EN: Full Stack Web3 Developer
+ES: Desarrollador Web3 Full Stack
+FR: Développeur Web3 Full Stack
+
+Key: resume.tracks.Web.experience.chainchampions.period
+EN: May 2024 – Present
+ES: Mayo 2024 – Presente
+FR: Mai 2024 – Présent
+
+Key: resume.tracks.Web.experience.chainchampions.description.0
+EN: Developed NFT tournament platform using React, Node.js, TypeScript
+ES: Desarrollé plataforma de torneos NFT usando React, Node.js, TypeScript
+FR: Développement d'une plateforme de tournois NFT avec React, Node.js, TypeScript
+
+Key: resume.tracks.Web.experience.chainchampions.description.1
+EN: Built interactive frontends with complex state management for gaming
+ES: Construí frontends interactivos con gestión de estado compleja para juegos
+FR: Construction de frontends interactifs avec une gestion d'état complexe pour les jeux
+
+Key: resume.tracks.Web.experience.gotovan.role
+EN: Full Stack Developer
+ES: Desarrollador Full Stack
+FR: Développeur Full Stack
+
+Key: resume.tracks.Web.experience.gotovan.period
+EN: Mar 2022 – Nov 2023
+ES: Mar 2022 – Nov 2023
+FR: Mars 2022 – Nov 2023
+
+Key: resume.tracks.Web.experience.gotovan.description.0
+EN: Developed backend services using Python FastAPI and SQL on GCP
+ES: Desarrollé servicios backend usando Python FastAPI y SQL en GCP
+FR: Développement de services backend avec Python FastAPI et SQL sur GCP
+
+Key: resume.tracks.Web.experience.gotovan.description.1
+EN: Built internal BI tools with data visualization for operational optimization
+ES: Construí herramientas internas de BI con visualización de datos para la optimización operativa
+FR: Construction d'outils de BI internes avec visualisation de données pour l'optimisation opérationnelle
+
+Key: resume.tracks.Web.experience.gotovan.description.2
+EN: Integrated OAuth authentication and Stripe payment systems
+ES: Integré autenticación OAuth y sistemas de pago Stripe
+FR: Intégration de l'authentification OAuth et des systèmes de paiement Stripe
+
+Key: seo.title
+EN: MarcYourMind | Multi-Domain Software Engineer
+ES: MarcYourMind | Ingeniero de Software Multi-Dominio
+FR: MarcYourMind | Ingénieur Logiciel Multi-Domaine
+
+Key: seo.description
+EN: Personal portfolio of MarcYourMind, a Senior Software Engineer building high-performance systems across Quant, AI, Web3, and Backend architecture.
+ES: Portafolio personal de MarcYourMind, un Ingeniero de Software Senior especializado en construir sistemas de alto rendimiento en Cuantitativas, IA, Web3 y arquitectura Backend.
+FR: Portefeuille personnel de MarcYourMind, un Ingénieur Logiciel Senior construisant des systèmes haute performance dans les domaines Quant, IA, Web3 et architecture Backend.
+

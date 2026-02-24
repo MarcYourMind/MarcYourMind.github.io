@@ -95,28 +95,10 @@ export default function AboutPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 {
-                                    title: "Artistic Precision",
-                                    desc: "I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.",
-                                    icon: Code,
-                                    color: "text-accent-blue"
-                                },
-                                {
                                     title: "Engineering Excellence",
                                     desc: "Following best practices and highest performance standards is my personal obsession. I apply rigorous engineering principles to ensure every system is optimized, secure, and built to last.",
                                     icon: Shield,
                                     color: "text-accent-purple"
-                                },
-                                {
-                                    title: "Clean Architecture",
-                                    desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.",
-                                    icon: Code,
-                                    color: "text-accent-purple"
-                                },
-                                {
-                                    title: "User Centric",
-                                    desc: "Great minds are capable of turning complex ideas into simple and elegant solutions. I bridge the gap between complex systems and intuitive user experiences.",
-                                    icon: Heart,
-                                    color: "text-accent-pink"
                                 },
                                 {
                                     title: "Anti-Fragile Design",
@@ -131,16 +113,34 @@ export default function AboutPage() {
                                     color: "text-fuchsia-400"
                                 },
                                 {
-                                    title: "Data as Narrative",
-                                    desc: "Every dataset tells a story. I build pipelines that transform raw noise into clear, actionable signals for human and machine understanding.",
-                                    icon: Database,
-                                    color: "text-accent-teal"
+                                    title: "Clean Architecture",
+                                    desc: "Code is for humans to read and machines to execute. I build modular systems that are as maintainable as they are powerful.",
+                                    icon: Layers,
+                                    color: "text-accent-purple"
                                 },
                                 {
                                     title: "Strategic Depth",
                                     desc: "Beyond the code lies the mission. I approach every project with a long-term vision, ensuring today's solutions scale and serve a purpose.",
                                     icon: Microscope,
                                     color: "text-lime-400"
+                                },
+                                {
+                                    title: "User Centric",
+                                    desc: "Great minds are capable of turning complex ideas into simple and elegant solutions. I bridge the gap between complex systems and intuitive user experiences.",
+                                    icon: Heart,
+                                    color: "text-accent-pink"
+                                },
+                                {
+                                    title: "Artistic Precision",
+                                    desc: "I build systems with intricate detail and structural elegance, where every line of code serves a clear purpose.",
+                                    icon: Code,
+                                    color: "text-accent-blue"
+                                },
+                                {
+                                    title: "Data as Narrative",
+                                    desc: "Every dataset tells a story. I build pipelines that transform raw noise into clear, actionable signals for human and machine understanding.",
+                                    icon: Database,
+                                    color: "text-accent-teal"
                                 },
                                 {
                                     title: "Spark of Curiosity",

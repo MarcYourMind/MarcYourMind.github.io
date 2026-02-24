@@ -7,6 +7,8 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
+    - [ ] Expand Article 5: "Building a Transformer-Based Trading System". Add in all the info in article-ideas/ . Keep the article technical and professional.
+
 
 --- IGNORE TASKS BELOW HERE
 
@@ -36,7 +38,9 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
+## About Page
 
+Decide on my philosophy
 
 
 
@@ -56,9 +60,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 - [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
     - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
-    - [ ] Expand Article 2: "Smart Contract Security in Web3 Gaming"
     - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
-    - [ ] Expand Article 5: "Building a Transformer-Based Trading System"
     - [ ] Expand Article 6: "Automated Market Making on Solana"
     - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
     - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"

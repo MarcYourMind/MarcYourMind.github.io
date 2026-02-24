@@ -25,7 +25,7 @@ Rather than attempting to forecast future prices, the task is framed as a condit
 
 This formulation removes time as an explicit variable and allows outcomes to be evaluated objectively. Each prediction can be validated by forward price traversal, with additional scoring based on drawdown behavior prior to resolution.
 
-The system is designed specifically for long positions within range-bound markets, where risk asymmetry can be exploited near the boundaries of the range.
+The system is designed specifically for both long and short positions within range-bound markets, where risk asymmetry can be exploited near the boundaries of the range.
 
 ---
 

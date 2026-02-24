@@ -1,8 +1,8 @@
-# The 78 Design Patterns I Use to Process Data at TopTrader 🚀
+# The 75 Design Patterns I Use to Process Data at TopTrader 🚀
 
 Building a world-class trading platform like **TopTrader** isn't just about the "Alpha" or the ML models. It's about the **engineering rigour** behind the data. When you're processing millions of events across global markets, "best effort" doesn't cut it. 
 
-I’ve compiled the **complete blueprint** of the 78 design patterns that keep our data engine running with surgical precision. This is how we handle everything from ingestion to observability.
+I’ve compiled the **complete blueprint** of the 75 design patterns that keep our data engine running with surgical precision. This is how we handle everything from ingestion to observability.
 
 ---
 
@@ -124,7 +124,7 @@ I’ve compiled the **complete blueprint** of the 78 design patterns that keep o
 ---
 
 ### Conclusion
-This isn't just a list; it's a **Standard Operating Procedure**. By applying these 78 patterns, we’ve turned the "chaos" of market data into a predictable, scalable, and secure competitive advantage for **TopTrader**.
+This isn't just a list; it's a **Standard Operating Procedure**. By applying these 75 patterns, we’ve turned the "chaos" of market data into a predictable, scalable, and secure competitive advantage for **TopTrader**.
 
 **Which of these is the hardest to implement in your stack? Let's talk architecture below!** 👇
 

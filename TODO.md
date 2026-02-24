@@ -8,7 +8,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 --- COMPLETE ONLY THESE TASKS
 
 
-
 --- IGNORE TASKS BELOW HERE
 
 ## 🌍 Global & Locales
@@ -37,9 +36,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
-## About Page
 
-- [ ] Update the text to something written by me.
 
 
 
@@ -68,28 +65,36 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 
 
+## Websites
+
+### Technex
+
+I get this error when pressing "Learn more" button:
+
+ReferenceError: Arrow is not defined
+    at Uhe (index-5cd05828.js:10627:3816)
+    at OZ (index-5cd05828.js:38:17049)
+    at Sle (index-5cd05828.js:40:44188)
+    at wle (index-5cd05828.js:40:39891)
+    at _ve (index-5cd05828.js:40:39814)
+    at hw (index-5cd05828.js:40:39664)
+    at rk (index-5cd05828.js:40:36021)
+    at fW (index-5cd05828.js:40:36826)
+    at U4 (index-5cd05828.js:38:3292)
+    at index-5cd05828.js:40:34339
+$R @ index-5cd05828.js:40
+index-5cd05828.js:38 Uncaught ReferenceError: Arrow is not defined
+    at Uhe (index-5cd05828.js:10627:3816)
+    at OZ (index-5cd05828.js:38:17049)
+    at Sle (index-5cd05828.js:40:44188)
+    at wle (index-5cd05828.js:40:39891)
+    at _ve (index-5cd05828.js:40:39814)
+    at hw (index-5cd05828.js:40:39664)
+    at rk (index-5cd05828.js:40:36021)
+    at fW (index-5cd05828.js:40:36826)
+    at U4 (index-5cd05828.js:38:3292)
+    at index-5cd05828.js:40:34339
 
 
 
-Regarding tech stacks for each project, here is a list:
 
-CryptoGPT is done with Python, PyTorch, Transformers, Pandas, Scikit-learn, Matplotlib.
-TopTrader is done with React, TypeScript, Next, FastAPI, Python, Pandas, TradingView, Scikit-learn.
-Technex is done with React, TypeScript, Node.js, Google Cloud Platform, serverless functions, microservices.
-Technex Consultancy is done with HTML, CSS, N8N, Make, LLMs.
-AITrader is done with Python, LangChain, FastAPI, LLMs, ollama, pydantic.
-Chain Champions is done with Node.js, React, Solidity, TypeScript, Google Cloud Platform, SQL.
-Nasdaq is done with C++. and Interactive Brokers.
-Solana market maker is done with Radium SDK, Web3.js, Node.js, Solana blockchain, Google Cloud Platform.
-Chain Champions is done with Ethereum blockchain.
-GoToVan is done with React, Node.js, Google Maps API, Graph, optimization algorithms, Google Cloud Platform, serverless functions.
-Crypto trading infrastructure is done with Python, Pandas, CCXT, Binance Exchange, scikit-learn, SQL, TA-Lib, multiprocessing, and threading.
-BrightPayments is done with Python, FastAPI, and PSD2 Open Banking API.
-Snake3D is done with Three.js, JavaScript, HTML5, and C++.
-Cervantes is done with Gradio, Python, LangChain, Ollama, multi-agent systems.
-Linktrees is done with vanilla HTML, CSS, and javascript.
-Neurodivergent Consulting is done with TypeScript, Google Cloud Platform, Tailwind CSS, Next.JS,
-High frequency is done with Python, PyTorch, RNN, GAN, FFmpeg, tqdm, Torch Audio, Torch FX.
-Cruzcampo Tapeando is done with HTML, React, Node.js, SQL, Google Cloud Platform.
-Illuvium Fusion is done with Google Cloud Platform, React, Web3.js, TypeScript, Ethereum Blockchain, wagmi, node.js.
-Dartboard detection is done with OpenCV, C++, computer vision, and object detection algorithms.

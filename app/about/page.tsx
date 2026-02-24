@@ -57,16 +57,13 @@ export default function AboutPage() {
 
                         <div className="col-span-1 md:col-span-2 space-y-6 text-white/60 text-lg leading-relaxed">
                             <p>
-                                I'm a senior software engineer with over 6 years of experience designing and scaling
-                                high-performance backend systems, specifically in FinTech and data-intensive environments.
-                                My expertise spans low-latency trading systems, AI architectures, and cloud-native microservices, with a strong focus
-                                on mathematical modeling and risk reduction in complex ecosystems.
+                                I&apos;m a software engineer and electronics engineer with a passion for building ideas into products.
+                                I have a strong background in software development, AI development, and applying math to trading systems.
+                                I am a quick learner and can pick up new technologies quickly.
+                                I am also a team player and enjoy working in a collaborative environment.
                             </p>
                             <p>
-                                I believe that code is an art form—one that requires precision and elegance.
-                                Whether I'm optimizing a trading engine for low-latency execution, deploying secure
-                                smart contracts for Web3 platforms, or designing predictive models for market analytics,
-                                I approach every challenge with technical rigor and a focus on production-grade reliability.
+                                I believe my purpose in life is to make the world a better place by building technology.
                             </p>
                             <div className="py-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {specializations.map(spec => (
@@ -77,9 +74,13 @@ export default function AboutPage() {
                                 ))}
                             </div>
                             <p>
-                                Outside of my professional work, I am deeply committed to the practice of creative expression.
-                                I believe that each person has a unique voice that deserves to be shared with the world.
-                                For me, creating art is a practice that feeds the soul and connects us to the source—allowing us to reach our higher selves.
+                                I am at my best when I am solving hard problems. Contributing to something bigger than myself.
+                            </p>
+                            <p>
+                                Currently I spend my time building platforms, developing AI projects, trading crypto and developing my discipline.
+                            </p>
+                            <p>
+                                I am looking to join a team of like-minded people who want to change the world one step at a time.
                             </p>
                         </div>
                     </div>

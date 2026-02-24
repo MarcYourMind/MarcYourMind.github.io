@@ -1,49 +1,149 @@
 ---
 title: "Automated Market Making on Solana: High-Velocity Liquidity"
 date: "2024-03-15"
-tags: ["Web3", "Solana", "Quant", "Raydium"]
-readTime: "12 min read"
-excerpt: "Building high-performance market-making bots on Solana using the Raydium SDK and Node.js."
+tags: ["Web3", "Solana", "Quant", "Raydium", "TypeScript"]
+readTime: "22 min read"
+excerpt: "Building high-performance market-making bots on Solana using the Raydium SDK, Jito Bundles, and the Avellaneda-Stoikov inventory model."
 ---
 
-In the Solana ecosystem, throughput is king. Developed for **Share Inc.**, my automated market-making (AMM) platform provides liquidity and price discovery for SPL tokens with sub-second execution speeds.
+In the world of decentralized finance (DeFi), the transition from "Block-based" trading to "High-Frequency" trading is happening on Solana. While Ethereum's 12-second block times force a slow, reactive trading style, Solana's 400ms slots enable a proactive, high-velocity approach that mirrors traditional electronic markets.
 
-## Leveraging the Solana Advantage
+Developed for **Share Inc.**, this automated market-making (AMM) platform provides liquidity and price discovery for SPL tokens with sub-second execution speeds. This wasn't just about writing a bot; it was about re-engineering traditional quantitative finance for a parallel, high-throughput blockchain.
 
-Solana's low transaction costs and high throughput allow for sophisticated market-making strategies that would be prohibitively expensive on other Layer 1 networks. We chose **Node.js** for its excellent asynchronous performance and broad ecosystem support.
+---
 
-### Integration with Raydium SDK
+## 1. The Solana Paradigm: Why 400ms Matters
 
-Direct integration with the **Raydium SDK** allowed us to interact with concentrated liquidity pools and OpenBook order books simultaneously.
+Solana is often called the "NASDAQ of Blockchains," and for good reason. Its architecture is built for parallel execution and deterministic timing.
+
+### Proof of History (PoH)
+TradFi HFT systems rely on atomic clocks (GPS/PTP) to synchronize events. Solana uses **Proof of History**—a cryptographic clock that allows nodes to agree on the passage of time without constant communication. For a market maker, this means "Time-to-Inclusion" is much more predictable than on any other L1.
+
+### Sealevel: Parallel Instruction Processing
+On most blockchains, transactions are processed serially. On Solana, the **Sealevel** runtime can process thousands of transactions in parallel if they don't touch the same state (accounts). As a market maker, this means our order updates aren't blocked by a unrelated NFT mint happening on the other side of the network—provided we manage our account locks correctly.
+
+---
+
+## 2. The Core Challenge: Liquidity in a Fragmented Market
+
+Liquidity on Solana is split between **Automated Market Makers (AMMs)** like Raydium and Orca, and **Fully On-chain Limit Order Books (LOBs)** like OpenBook (formerly Serum).
+
+### The Raydium Integration
+We integrated deeply with the **Raydium SDK** to interact with both:
+1.  **Standard AMM (V4)**: Constant product pools (`x * y = k`).
+2.  **Concentrated Liquidity (CLMM)**: Similar to Uniswap V3, allowing us to provide "Deep" liquidity around the current price rather than spreading it across 0 to infinity.
+3.  **OpenBook Hybrid**: Raydium pools often act as "LOB-feeders," where the AMM liquidity is mapped onto the OpenBook order book.
 
 ```typescript
-// Simplified AMM Logic
-import { Market, Liquidity } from '@raydium-io/raydium-sdk';
+import { 
+  Connection, 
+  PublicKey, 
+  Keypair 
+} from '@solana/web3.js';
+import { 
+  Liquidity, 
+  Market, 
+  TokenAmount 
+} from '@raydium-io/raydium-sdk';
 
-async function updateLiquidity(marketId: string, spread: number) {
-    const market = await Market.load(connection, marketId, programId);
-    const pools = await Liquidity.fetchAllPoolKeysV4(connection);
+// Internal Logic: Atomic Quote Update
+async function refreshQuotes(ammId: string) {
+    const poolInfo = await Liquidity.fetchInfo({ connection, poolId: ammId });
     
-    // Calculate optimal bid/ask based on market depth
-    const { bid, ask } = calculatePricing(market, spread);
+    // Mid-price discovery across multiple sources
+    const midPrice = await getAggregatedPrice('SOL/USDC');
     
-    // Submit high-velocity orders
-    await submitOrders(bid, ask);
+    // Spread calculation based on current "Inventory Risk"
+    const { bid, ask } = calculateAsymmetricSpread(midPrice, inventory.skew);
+    
+    // Construct the Raydium instruction
+    const swapInstruction = await Liquidity.makeSwapInstructionSimple({
+        connection,
+        poolKeys: poolInfo.poolKeys,
+        userKeys: { owner: wallet.publicKey },
+        amountIn: new TokenAmount(INPUT_TOKEN, bid),
+        amountOutMin: new TokenAmount(OUTPUT_TOKEN, 1), // Slippage managed via Jito
+    });
+    
+    return submitViaJito(swapInstruction);
 }
 ```
 
-## Automated Pricing Strategies
+---
 
-The bot employs a dynamic pricing model that adapts to real-time market depth and volatility. By monitoring the "heat" of the order book, the system adjusts spreads to provide liquidity while minimizing impermanent loss.
+## 3. Strategic Foundations: The Avellaneda-Stoikov Model
 
-### Key Features:
-- **Smart Order Routing**: Splitting trades across multiple execution venues to minimize price impact.
-- **Real-Time Depth Analysis**: Continuous monitoring of the Solana LOB (Limit Order Book).
-- **Automated Rebalancing**: Maintaining target token ratios in the face of market shifts.
+Simply putting orders on a book is not "Market Making"—it's "Providing Free Options" to other traders. If the market moves and you don't update your quotes, you will be "picked off" (Arbed).
 
-> [!TIP]
-> On Solana, RPC performance is the bottleneck. Always use dedicated, low-latency RPC nodes for production-grade market-making bots.
+We implemented a modified **Avellaneda-Stoikov** model for inventory management:
+-   **Mid-Price Discovery**: We don't just trust the local pool. We aggregate prices from Pyth Network, Binance (via WebSocket), and other Solana AMMs to find the "Fair Value."
+-   **Inventory Skew**: If our bot is "Long" on a token, it will lower the Ask price (to encourage selling) and lower the Bid price (to discourage further buying).
+-   **Volatility Scaling**: During high volatility (measured by ATR), the spread automatically widens to protect against rapid price shifts.
 
-## Impact and Scale
+---
 
-The Share Inc. market maker successfully managed liquidity for multiple SPL tokens, providing stable price discovery and deep order books even during periods of high network congestion. This experience underscored the power of combining traditional quantitative strategies with high-performance blockchain infrastructure.
+## 4. Engineering for Velocity: Bypassing the Bottlenecks
+
+On Solana, the bottleneck isn't the CPU—it's the **Global Consensus and Network Jitter**.
+
+### The Jito Advantage: MEV-Aware Execution
+Standard RPC submission often results in "Sandwiching," where MEV bots front-run and back-run your market-making orders. We utilize **Jito (MEV-Solana)** to submit our orders in "Bundles." 
+-   A Jito Bundle ensures our "Cancel" and "Re-quote" instructions happen atomically.
+-   If the bundle isn't included at the very top of the block, it is dropped entirely. This prevents us from state execution in a "stale" market environment.
+
+### RPC Optimization: The Search for Low Latency
+Using the public `api.mainnet-beta.solana.com` is suicide for a market maker. We deployed dedicated nodes with **Helius** and **Triton**, utilizing:
+-   **`onAccountChange` WebSockets**: To receive sub-100ms updates when someone trades against our pool.
+-   **Geographic Proximity**: Placing our bot in the same AWS region as the majority of Solana's voting validators.
+
+---
+
+## 5. The "Post-Mortem": Lessons from the Trenches
+
+Building a production-grade bot taught us several harsh lessons about the reality of decentralized HFT.
+
+### Lesson 1: Compute Unit (CU) Budgeting
+Every instruction on Solana costs "Compute Units." If your transaction is too complex (e.g., checking 10 different jump-pools), it might exceed the limit or be deprioritized by validators. We optimized our instruction packing, pre-fetching all relevant account keys in a single batch to minimize on-chain lookups.
+
+### Lesson 2: Prioritization Fees are a Strategy
+Solana's fee market is dynamic. During a "Hot" NFT mint or a major token launch, "base" transactions won't get through. Our system implements a **Dynamic Priority Fee Gas-Strapper**: 
+1.  Query the current median priority fee via `getRecentPrioritizationFees`.
+2.  Add a "Safety Multiplier" based on our current urgency to re-fence the spread.
+3.  Submit with a pre-calculated `ComputeBudgetInstruction`.
+
+### Lesson 3: The Danger of "Stale State"
+Because Solana is asynchronous, you may receive a "Filled" confirmation for an order that no longer exists in your local memory (Due to a previous "Cancel" request that was still in flight). We implemented a robust **Nonce-based Order Tracker** to ensure every fill is correctly attributed to the intended strategy epoch.
+
+---
+
+## 6. Architecture of the Observation Layer
+
+To manage millions in volume, "logging to a text file" is insufficient. We built a high-performance observability stack:
+-   **TimescaleDB**: Storing every quote change, every fill, and every RPC latency measurement.
+-   **Grafana Dashboards**: Real-time tracking of:
+    -   **Inventory Skew**: Ensuring we aren't accumulating too much of one asset.
+    -   **Real-time PnL**: Mark-to-market calculations excluding unrealized IL.
+    -   **Fill Rate**: Percentage of our quotes that actually result in trades.
+
+---
+
+## 7. Conclusion: The Future of High-Frequency DeFi
+
+Market making on Solana is a preview of the future of finance. It combines the transparency of the blockchain with the raw performance of traditional electronic trading. 
+
+Through the Share Inc. project, we proved that by respecting the unique constraints of the Solana architecture—managing account locks, utilizing Jito bundles, and embracing the PoH clock—you can provide enterprise-grade liquidity to the most volatile assets on earth.
+
+As the network continues to scale with **Firedancer** (the new high-performance validator client), the gap between the "NASDAQ" and the "Solana" will disappear entirely.
+
+---
+
+### Technical Stack
+| Component | Technology |
+|---|---|
+| **Runtime** | Node.js / TypeScript |
+| **Connection** | `solana/web3.js` + Dedicated RPC Nodes |
+| **SDKs** | Raydium SDK, OpenBook SDK |
+| **Execution** | Jito Bundles (MEV-aware) |
+| **Database** | PostgreSQL + TimescaleDB |
+| **Analytics** | Grafana / Python (PnL Attribution) |
+| **Risk Model** | Avellaneda-Stoikov (Inventory-based) |

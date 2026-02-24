@@ -8,6 +8,9 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 --- COMPLETE ONLY THESE TASKS
 
 
+- [ ] Remove this article entirely: Building Low-Latency Trading Systems in Modern C++
+- [ ] The technical stack at the end of some/all of the articles are displayed in a very weird way. Fix it. Make it look nicer and more alighned with the website's aesthetic.
+- [ ] The author for every article is "Marc Mind". Change it to "Marc Goulding Tójar" for all of them.
 
 --- IGNORE TASKS BELOW HERE
 
@@ -59,10 +62,7 @@ Decide on my philosophy
 ## Articles Section
 
 
-- [ ] Properly write out each technical article as a deep-dive long-form piece (Medium-style).
-    - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
-    - [ ] Expand Article 6: "Automated Market Making on Solana"
-    - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
+
 
 
 

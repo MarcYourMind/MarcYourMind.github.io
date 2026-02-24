@@ -7,8 +7,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-- [x] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System". Use the article-ides/ to get any additional info to add to the article. Make it technical and professional.
-- [x] Article 4 contains a code block for a mermaid diagram that doesn't display the way its intended. Instead, can you throw an image in there? It is the thumbnail for aitrader project in the projects section. That is the mermaid chart that is intended.
+
 
 --- IGNORE TASKS BELOW HERE
 
@@ -38,9 +37,7 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Add `resume-ai.pdf`
     - [ ] Add `resume-web.pdf`
 
-- [ ] Education specifies first class honours when that is not what Igot exactly. My grades average a first class but because I left without finishing my final year I don't have a first class honours, only a normal bachelors degree.
 
-- [ ] Add Flask as a backend framework in the relevant resume sections.
 
 ## About Page
 

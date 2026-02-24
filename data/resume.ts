@@ -73,7 +73,7 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         skills: [
             { title: "Languages", skills: ["Python", "TypeScript", "SQL", "C++"] },
-            { title: "Backend", skills: ["FastAPI", "REST APIs", "OpenAPI", "OAuth2"] },
+            { title: "Backend", skills: ["FastAPI", "Flask", "REST APIs", "OpenAPI", "OAuth2"] },
             { title: "Infrastructure", skills: ["Google Cloud Platform", "PostgreSQL", "MongoDB", "Serverless"] }
         ],
         languages: [
@@ -87,7 +87,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
                 period: "2017 – 2020",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
+                description: "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
             }
         ]
     },
@@ -145,7 +145,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
                 period: "2017 – 2020",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
+                description: "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
             }
         ]
     },
@@ -203,7 +203,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
                 period: "2017 – 2020",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
+                description: "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
             }
         ]
     },
@@ -247,7 +247,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
                 period: "2017 – 2020",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
+                description: "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
             }
         ]
     },
@@ -278,7 +278,7 @@ export const resumeData: Record<string, ResumeTrack> = {
         ],
         skills: [
             { title: "Frontend", skills: ["React", "TypeScript", "Next.js", "TailwindCSS"] },
-            { title: "Backend", skills: ["Node.js", "FastAPI", "PostgreSQL", "GCP"] }
+            { title: "Backend", skills: ["Node.js", "FastAPI", "Flask", "PostgreSQL", "GCP"] }
         ],
         languages: [
             { name: "English", level: "Native" },
@@ -291,7 +291,7 @@ export const resumeData: Record<string, ResumeTrack> = {
                 degree: "BEng Computer Science & Electronics",
                 institution: "University of Bristol",
                 period: "2017 – 2020",
-                description: "Successfully completed the Computer Science & Electronics engineering curriculum with First-Class Honours. Transitioned from formal studies during the final year to scale a trading venture during the global pandemic; subsequently awarded the BEng degree by the University of Bristol in recognition of academic excellence and achievement."
+                description: "Maintained a First-Class average throughout the Computer Science & Electronics engineering curriculum. Transitioned from formal studies during the final year to scale a trading venture; subsequently awarded the BEng degree by the University of Bristol."
             }
         ]
     }

@@ -1,68 +1,448 @@
 ---
 title: "Building a Transformer-Based Trading System: From Data Leakage to a Robust 60% Win Rate"
 date: "2024-03-10"
-tags: ["PyTorch", "Transformers", "Quant", "Machine Learning"]
-readTime: "15 min read"
-excerpt: "A technical post-mortem on building a Transformer-based trading pipeline for sideways markets, uncovering critical data leakage, and achieving robust results."
+tags: ["PyTorch", "Transformers", "Quant", "Machine Learning", "Backtesting", "Crypto"]
+readTime: "25 min read"
+excerpt: "A deep technical post-mortem on building a Transformer-based trading pipeline for sideways crypto markets — covering the full journey from problem formulation and feature engineering to the critical data leakage audit that changed everything, and the engineering fixes that produced a repeatable 60% win rate."
 ---
 
 # Building a Transformer-Based Trading System: From Data Leakage to a Robust 60% Win Rate
 
-In the world of quantitative finance, the bridge between a "mathematical model" and a "deployable trading system" is paved with data leakage, overfitting, and the harsh reality of market execution. This is the story of designing and auditing a complete machine learning pipeline aimed at a narrow but persistent problem: **identifying high-probability trade entries during range-bound conditions.**
+In the world of quantitative finance, the bridge between a "mathematical model" and a "deployable trading system" is paved with data leakage, overfitting, and the harsh reality of market execution. This is the full technical story of designing and auditing a complete machine learning pipeline aimed at a narrow but persistent problem: **identifying high-probability trade entries during range-bound conditions in cryptocurrency markets.**
 
-## 1. The Strategy: Why "Sideways" Markets?
+This is not a tutorial on how to build a trading bot. It is a post-mortem on the engineering discipline — and lack thereof — that separates a system that looks good on paper from one that can survive contact with reality.
 
-Most retail traders lose money in "chop"—the range-bound periods where price doesn't have a clear direction. However, from a modelling perspective, these periods exhibit a high degree of structure. Price oscillates within defined boundaries, volatility compresses, and volume distribution stabilizes around areas of fair value.
+---
 
-By using **Rolling Linear Regression Slope** analysis, I built a filter that only activates when a market is consolidating. When the market is "boring" and the slope nears zero, it respects liquidity zones. That’s where the Transformer comes in.
+## 1. The Strategic Problem: Why "Sideways" Markets?
 
-## 2. Problem Formulation: Outcomes over Forecasts
+Most retail traders lose money in "chop" — the range-bound periods where price doesn't have a clear direction. The instinct is to look for breakouts, but when the breakout never comes, accounts steadily bleed via stop-outs and emotional overtrading.
 
-Rather than attempting to forecast future prices (a high-dimensional, non-stationary problem), the task is framed as a **conditional outcome prediction**:
+From a **modelling perspective**, however, sideways markets are structurally ideal targets. They exhibit several properties that make them tractable for machine learning:
 
-> Given a potential entry price, what is the probability that price reaches a predefined take-profit level (1.0x ATR) before a stop-loss (1.0x ATR)?
+- **Bounded price action**: Price oscillates within defined support and resistance, creating repeatable geometries.
+- **Stable volume distributions**: Volume concentrates around areas of fair value, which closely approximates a Gaussian distribution — a critical mathematical property we will exploit.
+- **Exploitable risk asymmetry**: Near the edges of a range, risk-to-reward ratios are structurally favorable. A long position at the bottom of a range with a stop just below support and a target at the range midpoint or top has a natural edge if the range holds.
+- **Regime persistence**: A market in consolidation tends to stay in consolidation far longer than retail sentiment would suggest, meaning there are many repeated trade opportunities within a single regime.
 
-This formulation removes time as an explicit variable and allows outcomes to be evaluated objectively. It specifically targets long positions near the boundaries of a range, where risk asymmetry can be exploited.
+The critical first step was building a robust **regime detection filter** to ensure the model only activates under the correct market conditions.
 
-## 3. The Architecture: Transformers Beyond NLP
+### 1.1 Regime Detection: Rolling Linear Regression Slope
 
-While Transformers are famous for powering LLMs, they are effectively specialized **Pattern Recognition Engines**. Instead of feeding the model raw prices, I transformed price action into a **64-bin Volume Profile**.
+To classify a market as "sideways," I applied a **rolling linear regression** over a configurable time window to the close price series. When the absolute value of the slope coefficient falls below a defined threshold (approaching zero), the market is classified as non-directional.
 
--   **Feature Engineering**: I divided the price range into 64 bins and calculated the normalized volume at each level. This collapses the time dimension and creates a "visual signature" of where participant positioning and liquidity are concentrated.
--   **The Model**: A PyTorch-based **Transformer Encoder**. We treat the 64 volume bins as a sequence. The model uses self-attention to identify "High Volume Nodes" and "Liquidity Gaps," identifying structural features that a simple MLP might miss.
--   **Contextual Features**: To provide a complete picture, I injected additional tokens representing Average True Range (ATR), Volatility, and Trend Slope.
+This filter serves as a gate for the entire pipeline. Market windows that fail this test — i.e., those showing meaningful upward or downward momentum — are excluded from both training and inference. This ensures that **all learning and all evaluation occur within a consistent, homogeneous market regime**.
 
-## 4. The 85% Win Rate "Trap"
+The choice of window length for the regression is a core hyperparameter. Too short a window creates excessive noise, flagging random perturbations as directional moves. Too long a window misses the entry and exit points of consolidation phases. In practice, a window calibrated to the local ATR (Average True Range) proved more robust than a fixed lookback period.
 
-Early in the project, my backtests were showing an unbelievable **85% win rate**. In quant trading, 85% usually means you’ve accidentally built a time machine. A deep audit revealed three critical flaws:
+---
 
-1.  **Zero-Day Leakage**: I was splitting the dataset *after* concatenating symbols, meaning the model was training on the "future" of assets it had already seen.
-2.  **Selection Bias**: The backtester was picking the "best" entry price only if it knew that price would be hit later in the day—a classic case of "peeking at the future."
-3.  **Global Scaling**: I was scaling volatility based on the mean of the *entire* dataset, including the test set, before the split.
+## 2. Problem Formulation: Outcomes Over Forecasts
 
-## 5. The Engineering Fix: Building for Reality
+The most consequential architectural decision in this project was not the model architecture — it was the **problem formulation**.
 
-I spent a week stripping out the "cheats" and rebuilding the pipeline for honesty:
+Attempting to predict future price directly is one of the hardest problems in applied mathematics. You are not simply predicting *price*; you are predicting a *specific price at a specific future time*, on a time series that is non-stationary, non-Gaussian, and adversarially generated by the aggregate actions of every other market participant. This is where most ML-in-finance projects die.
 
--   **Per-Symbol Time Splitting**: Data is now split by time *before* it ever touches the model.
--   **Fair Execution**: The model picks one entry price. If the market doesn't hit it, the trade is marked as "Missed"—no second chances.
--   **Chronological Backtester**: I built a custom engine that sorts all 50+ Binance symbols into a single global timeline, simulating a realistic portfolio equity curve rather than independent trade stats.
+Instead, I reformulated the problem as a **conditional outcome classification**:
 
-## 6. The Results: Robustness Over Hype
+> Given a candidate entry price within a confirmed sideways regime, what is the probability that price reaches a predefined take-profit level before a predefined stop-loss?
 
-After correcting for data leakage and execution bias, the win rate dropped from a fake 85% to a robust and repeatable **60.1%**.
+This reformulation has several profound advantages:
 
--   **Universe**: 50+ Top Binance USDT pairs.
--   **Calibration**: The model’s confidence scores now map almost perfectly to observed win rates, meaning a 0.7 probability prediction actually wins ~70% of the time.
--   **Stability**: The system converged to stable performance characteristics that survived out-of-sample validation on "unseen" altcoins.
+1. **Time is removed as an explicit variable.** We do not care *when* the outcome resolves — only *which* boundary is hit first. A trade that takes 4 hours to reach its target is identical in value to one that resolves in 4 minutes. This eliminates the hardest dimension of the forecasting problem.
+
+2. **Outcomes are binary and objectively verifiable.** Given any (entry, TP, SL) tuple, we can scan forward price data and definitively label the outcome. There is no ambiguity in the target variable.
+
+3. **The distribution is closer to Gaussian.** Within a confirmed sideways regime, volume distributions exhibit near-Gaussian properties. This makes the mathematical assumptions of many models far more defensible.
+
+4. **Drawdown provides a secondary quality score.** Two trades with identical entries and outcomes are not equal if one required a larger adverse excursion before resolution. This nuance can be encoded as a confidence-weighted label, providing richer signal to the model than a simple binary flag.
+
+The model specifically targets **long positions** within the sideways regime, where the strategic thesis is: price near the lower boundary of a range is likely to revert toward the center (or upper boundary) before decisively breaking down through the stop.
+
+---
+
+## 3. Dataset Construction: Choosing the Right Data
+
+### 3.1 Why Cryptocurrency Data?
+
+The choice of asset class was deliberate. Cryptocurrency market data offers several structural advantages for this type of research:
+
+- **Scale and availability**: Historical OHLCV data for hundreds of tokens across multiple timeframes is freely available via exchange APIs (Binance, Bybit, CCXT-compatible sources). There is no "Bloomberg Terminal" paywall.
+- **Data cleanliness**: Unlike equities, crypto prices are not adjusted for dividends, splits, or corporate actions. The raw data is clean and consistent across sources.
+- **24/7 markets**: The absence of market hours eliminates overnight gap risk and allows for continuous regime analysis without the complications of session-open effects.
+
+### 3.2 Timeframe Selection
+
+The choice of timeframe involves a fundamental tradeoff: too large a timeframe produces insufficient training samples; too small a timeframe drowns the signal in noise.
+
+From practical trading experience, the **15-minute timeframe** sits in a particularly useful sweet spot for cryptocurrency markets:
+
+- Sufficient sample density (96 candles per day per symbol)
+- Meaningful price structure with reduced microstructure noise
+- ATR values large enough to support realistic stop-loss and take-profit levels without being consumed by spread and slippage
+
+### 3.3 Asset Universe
+
+The final dataset was constructed from the full historical OHLCV data for the **top 50+ Binance USDT-marginated pairs**, selected by traded volume. The deliberate inclusion of less liquid altcoins (beyond the top 25) served a dual purpose: it expanded the training dataset substantially, and it provided a natural out-of-sample validation set by including assets the model was unlikely to have learned specific idiosyncrasies for.
+
+The data download process — covering 900 days of history at the 15-minute resolution across 100+ symbols — required approximately 1 hour 42 minutes to complete via the Binance API.
+
+### 3.4 Train/Validation/Test Split
+
+The dataset was split **chronologically and per-symbol** prior to any model exposure:
+
+- **70%** Training
+- **15%** Validation
+- **15%** Test
+
+The critical word is *chronologically*. The split timestamp was determined individually for each symbol, and no data from the validation or test windows was ever used for feature normalization, model training, or hyperparameter selection. This distinction — obvious in principle, catastrophically violated in practice by many researchers — was the single most important implementation decision in the entire pipeline.
+
+---
+
+## 4. Feature Engineering: From OHLCV to Volume Space
+
+Raw OHLC candle data is a poor direct input to any neural network. It contains redundant information (open, high, low, close are all correlated), arbitrary scaling that changes over time, and no structural representation of where market participants are actually positioned.
+
+The core insight of this project was to **collapse the time dimension** and represent market structure in **price-volume space** rather than price-time space.
+
+### 4.1 The Volume Profile: A Near-Gaussian Representation
+
+For each qualifying sideways window, the price range is divided into **64 discrete bins** of equal width, spanning from the window low to the window high. The total traded volume is then allocated to each bin proportionally to the price level at which it was transacted. The resulting histogram is normalized to sum to 1.
+
+This **64-bin Volume Profile** captures the probability distribution of where market participants have been active within the window. It has several critical properties:
+
+- **Regime-conditioned Gaussianity**: When applied exclusively to sideways market windows (as selected by our linear regression filter), volume profiles consistently exhibit a near-Gaussian shape centered at the Point of Control (POC) — the price level with the highest traded volume. This mathematical property is the foundation of the "Value Area" concept used by professional Market Profile traders.
+- **Time-invariant representation**: Two windows of different durations but similar market structure will produce similar volume profiles. This makes the representation robust to varying consolidation lengths.
+- **Structurally interpretable**: High-volume nodes represent price levels where the market has accepted value and found equilibrium. Low-volume nodes (gaps) act as areas of little price acceptance, which tend to be traversed quickly when price enters them.
+
+### 4.2 Entry Candidate Generation
+
+The 64-bin structure naturally defines **64 candidate entry prices** per window — one corresponding to the midpoint of each bin. For each candidate entry, the model must predict whether a long position entered at that price will resolve profitably.
+
+This design decision dramatically expands the effective dataset size. Each sideways window, which occupies a single row in the raw data, generates 64 independent labeled training samples. A candidate entry is only included if price subsequently *reaches* that level at some point after the window closes — entries that are never filled are simply absent from the dataset, since no prediction can be validated against them.
+
+### 4.3 Stop-Loss and Take-Profit Definition
+
+To maintain consistency and remove another dimension of complexity, stop-loss and take-profit distances are defined as a symmetric **1.0× ATR** on either side of the entry. This produces a 1:1 risk-reward ratio, which means a win rate above 50% is required to be profitable (excluding transaction costs).
+
+The use of ATR-normalized targets ensures that risk parameters scale automatically with market volatility conditions and remain meaningful across assets with vastly different price levels.
+
+### 4.4 Outcome Labeling
+
+Each labeled sample was generated by scanning forward price data from the moment the candidate entry price was first touched. The traversal continued until one of two conditions was met:
+
+1. Price reached the take-profit level → **Label: 1 (Profitable)**
+2. Price reached the stop-loss level → **Label: 0 (Loss)**
+
+To capture the quality of a "positive" outcome, a secondary scoring mechanism penalized trades that experienced significant drawdown (approaching the stop-loss) before eventually reaching the take-profit. This enabled the model to learn a preference for clean, low-drawdown resolutions over technically profitable but stressful entries.
+
+### 4.5 Additional Contextual Features
+
+To provide the model with sufficient global context about the current regime, four additional scalar features were appended to each training sample:
+
+- **Average True Range (ATR)**: Encodes current volatility state, allowing the model to contextually differentiate low-volatility compression from high-volatility chop.
+- **Realized Volatility**: A rolling standard deviation of returns, providing a finer-grained volatility measure than ATR.
+- **Average Traded Volume**: The mean volume per candle over the window, signalling overall market participation.
+- **Trend Slope**: The linear regression slope value itself (the value that was threshold-filtered for regime detection), providing precise directional bias information.
+
+---
+
+## 5. Model Architecture: A Transformer Encoder for Market Structure
+
+While Transformers are most associated with natural language processing, they are, at their core, **permutation-aware sequence processors with learned relational attention**. The key architectural insight is that the self-attention mechanism excels at identifying relationships between elements in a sequence — which is precisely what we need when analyzing a volume profile.
+
+### 5.1 Why a Transformer?
+
+An alternative architecture — a simple Multi-Layer Perceptron — would process the 64 volume bins as a flat vector, treating each bin as an independent feature with no spatial awareness of its neighbors. A 1D Convolutional Network would capture local neighborhoods but would struggle with long-range dependencies (e.g., the relationship between the Point of Control at bin 32 and a liquidity gap at bin 5).
+
+The **Transformer Encoder's self-attention** mechanism allows every bin to attend to every other bin, learning to identify structurally significant patterns such as:
+
+- **High-Volume Nodes (HVN)**: Dense regions where significant volume has transacted, acting as magnets for price.
+- **Low-Volume Nodes (LVN)**: Sparse regions indicating price rejection, often producing rapid traversal when re-entered.
+- **Volume distribution asymmetry**: Whether volume is concentrated at the top or bottom of the range, indicating directional pressure.
+
+Crucially, the expected behavior that emerged from training aligned closely with established market mechanics: entries near the edges of the range (where the volume distribution is thin) exhibit higher predicted probabilities of resolving toward the high-volume center. **The model did not discover this pattern — it automated and quantified what skilled traders already knew.**
+
+### 5.2 Architecture Specification
+
+```
+Input:  [64 volume bins + 4 contextual scalars] per sample
+
+Encoder:
+  - Positional Encoding (sinusoidal, applied to the 64 bins to preserve spatial order)
+  - N Transformer Encoder Layers:
+    - Multi-Head Self-Attention (d_model=128, 8 heads)
+    - Feed-Forward Network (d_ff=512)
+    - Layer Normalization + Residual Connections
+    - Dropout (p=0.1)
+
+Pooling:
+  - Mean pooling over encoder output sequence (aggregate token representations)
+  - Concatenate with 4 contextual features
+
+Classification Head:
+  - Linear(128 + 4, 64) → ReLU → Dropout(0.1)
+  - Linear(64, 1) → Sigmoid
+
+Output: Scalar probability in [0, 1] — probability that the entry resolves profitably
+```
+
+The model was implemented in **PyTorch** and trained using **Binary Cross-Entropy Loss** with the **Adam optimizer** and a cosine annealing learning rate schedule.
+
+### 5.3 A Note on Interpretability
+
+One valuable check on model sanity is examining *where* along the volume profile it assigns high probability predictions. After training, sampling predictions across a range of synthetic volume profiles confirmed that the model consistently assigned higher confidence to entries near the value area edges — precisely where a human trader with Volume Profile knowledge would also look for range boundary plays. This alignment between model behavior and established trading theory serves as a meaningful form of interpretability and domain validation.
+
+---
+
+## 6. The 85% Win Rate "Trap": A Forensic Audit
+
+Early in the project, initial backtests produced an **85% win rate**. In quantitative trading, this is a universally recognized red flag. After exhaustive benchmarking and deliberate searching, edge cases that produce an 85% win rate in honest out-of-sample testing are extremely rare. More commonly, it means you have built — to use practitioner parlance — a **time machine**: a system that has learned to "predict" the future because it has already seen it.
+
+A systematic forensic audit of the full pipeline was conducted, ultimately identifying three distinct sources of catastrophic contamination.
+
+### 6.1 Bug #1: Zero-Day Cross-Contamination (Dataset Splitting)
+
+**The flaw**: The dataset was constructed by first concatenating all symbols into a single large DataFrame, sorted by timestamp, and *then* performing a global 70/15/15 split.
+
+**Why this causes leakage**: In a global split, a single timestamp threshold is applied to a combined dataset containing, for example, 100 symbols. Any given timestamp exists 100 times in the dataset — once per symbol. After the split, the training set contains 70% of these timestamps, but those timestamps are *not* uniformly distributed within each symbol's history. The model could train on data from Symbol A at time T, then encounter a test sample from Symbol B at a slightly earlier time T-1 — and since these symbols are correlated (all are crypto assets), the model learns to exploit cross-contamination rather than genuine structural features.
+
+**The fix**: Each symbol's data was split **independently** by time, using a per-symbol timestamp that represents the 70th percentile of that symbol's history. The training, validation, and test sets were then reconstructed by unioning the per-symbol splits. Zero cross-symbol contamination.
+
+### 6.2 Bug #2: The Selection Bias in Execution
+
+**The flaw**: The backtesting engine, when evaluating candidate entry prices, selected the entry that produced the most profitable outcome *across all 64 candidates for a given window*.
+
+**Why this causes leakage**: This is "peeking at the future" in its most transparent form. In a live system, you cannot know which of the 64 candidate entries will perform best before the market resolves it. The original backtester was choosing the winning entry *retroactively*, creating an illusion of skill that was actually hindsight selection.
+
+**The fix**: The validation engine was redesigned to use **single-attempt execution semantics**. The model makes one prediction for one candidate entry per decision point. The entry is then either filled or marked as "Missed" depending on whether market price subsequently reaches that level. No second attempts are permitted. The "Missed Trade" outcome — absent from the original implementation — is a critical component of realistic execution modeling.
+
+### 6.3 Bug #3: Global Feature Normalization (Lookahead Leakage)
+
+**The flaw**: Normalization of the contextual scalar features (ATR, Volatility, Volume, Slope) was applied globally, using the mean and standard deviation computed over the *entire dataset* prior to the train/test split.
+
+**Why this causes leakage**: When you compute the global mean of a feature using data that includes the test set, you are embedding information about the future distribution of that feature into every training sample via the normalization parameters. The model learns a representation calibrated to global statistics, which it would have no access to in a live deployment.
+
+**The fix**: Normalization parameters (mean, standard deviation) are computed **exclusively on the training set** and applied as-is to the validation and test sets. In production, an exponentially weighted moving average of these statistics (computed over a rolling live history) replaces the fixed training-set parameters.
+
+---
+
+## 7. Rebuilding for Reality: The Engineering Fix
+
+After identifying and eliminating the three contamination sources, the entire pipeline was rebuilt from scratch with correctness as the primary design constraint.
+
+### 7.1 Per-Symbol Chronological Splitting
+
+```python
+def split_symbol_data(df: pd.DataFrame, train_ratio: float = 0.70, 
+                       val_ratio: float = 0.15) -> tuple:
+    """
+    Chronological split for a single symbol's DataFrame.
+    All temporal integrity is maintained — no shuffling.
+    """
+    n = len(df)
+    train_end = int(n * train_ratio)
+    val_end = int(n * (train_ratio + val_ratio))
+    
+    return (
+        df.iloc[:train_end],
+        df.iloc[train_end:val_end],
+        df.iloc[val_end:]
+    )
+```
+
+The key point is that this function is called *before* any feature computation, normalization, or label generation. The timestamp fence is absolute.
+
+### 7.2 Honest Execution Semantics
+
+The revised backtesting engine implements a strict single-execution model:
+
+1. The model outputs a probability score for each of the 64 candidate entries within the current window.
+2. The **highest-confidence entry above a configurable threshold** is selected as the single trade candidate.
+3. Forward price data is scanned to check if price *reaches* the candidate entry level. If not, the trade is logged as "Missed" and no performance impact is recorded.
+4. If the entry is filled, subsequent price scanning determines whether TP or SL is hit first.
+
+The introduction of "Missed Trade" as a first-class outcome was a significant conceptual shift. A model that generates unreachably extreme entry predictions for every window appears to have high precision — but a real portfolio executing such a model would have zero trades and zero returns.
+
+### 7.3 Portfolio-Level Backtesting on a Unified Global Timeline
+
+Perhaps the most sophisticated engineering component of the corrected pipeline is the **portfolio-level backtesting engine**. The original approach evaluated each symbol independently, producing per-symbol equity curves and aggregating statistics by averaging them — a fundamentally misleading approach for several reasons:
+
+- It ignores **capital allocation constraints** — in a real portfolio, you cannot be simultaneously 100% invested in 50 different assets.
+- It ignores **correlation effects** — if 30 symbols simultaneously signal an entry and all lose, the portfolio drawdown is not the average of 30 independent losses; it is a correlated, amplified loss.
+- It produces an **ensemble average rather than a lived experience** — no human or fund manager experiences the average of their trades; they experience the sequential, path-dependent reality.
+
+The rebuilt engine:
+
+1. **Merges all symbols' trade events into a single global timeline**, sorted by timestamp.
+2. Processes events sequentially, maintaining a simulated portfolio account balance.
+3. Applies position sizing rules (fixed fractional, in this case) relative to the running account balance.
+4. Produces a **single, unified equity curve** that represents a realistic portfolio experience.
+
+This approach dramatically reduces apparent performance metrics — but those metrics are now defensible.
+
+---
+
+## 8. Results: Robustness Over Hype
+
+After correcting for data leakage and execution bias, the system converged to stable, repeatable performance characteristics on the held-out test set.
+
+| Metric | Value |
+|---|---|
+| **Win Rate (Test Set)** | 60.1% |
+| **Risk Model** | 1.0× ATR Stop-Loss / 1.0× ATR Take-Profit |
+| **Universe** | 50+ Top Binance USDT Pairs |
+| **Max Predicted Probability** | 0.683 |
+| **Calibration Error (ECE)** | < 0.04 |
+
+### 8.1 Interpreting the 60% Win Rate
+
+A 60.1% win rate on a 1:1 risk-reward model produces a theoretical expectancy of approximately **+0.20 per unit risked** (assuming no slippage or fees). Before enthusiasm is warranted, several caveats must be acknowledged:
+
+1. **Transaction costs are not modeled.** On Binance, taker fees are approximately 0.04-0.10%. For a high-frequency strategy, these can erode the edge substantially. This figure requires empirical measurement using live paper trading data.
+
+2. **Slippage is not modeled.** Limit order execution at the exact candidate price is assumed. In live markets, partial fills, price improvement, and order cancellations all contribute to execution friction.
+
+3. **Capital efficiency is not optimized.** The current implementation uses equal fixed-fraction sizing. Dynamic sizing (e.g., Kelly Criterion scaled by model confidence) could materially improve risk-adjusted returns.
+
+### 8.2 Model Calibration
+
+One of the most significant indicators of model quality — and the clearest signal that the contamination issues were genuinely resolved — is the **calibration curve**. A well-calibrated model should assign a predicted probability of X% to outcomes that materially resolve positively X% of the time.
+
+After the fixes, the model's calibration curves on the validation and test sets were in close alignment, with a mean calibration error below 4%. A model predicting 0.65 confidence wins approximately 65% of the time. This is not a trivial result — it indicates that the model's probability outputs are *meaningful* and can be used for position sizing via confidence-proportional allocation.
+
+### 8.3 Maximum Predicted Probability
+
+The highest probability generated by the model for any single trade was **0.683**. This seems conservative — but for this problem, it is arguably correct. The model has access only to a 15-minute looking window, 64 volume bins, and four scalar features. It has no access to order flow, macro context, news, or on-chain data. An 80%+ confidence prediction from a model with this input space would itself be a red flag for contamination.
+
+In practice, edge cases that produce genuine out-of-sample probabilities above 80% require substantially richer feature sets, multi-timeframe confluence, and live market microstructure data.
+
+---
+
+## 9. Evaluation Framework and Diagnostic Artifacts
+
+Performance evaluation went well beyond simple accuracy metrics. The full evaluation suite included:
+
+### 9.1 Prediction Probability Distribution
+
+A kernel density estimate of the model's output probabilities across all test samples was generated to verify that the model was not collapsing to a degenerate distribution (all predictions near 0.5, or all predictions near 0 or 1). A well-distributed prediction space indicates that the model is discriminating meaningfully across samples.
+
+### 9.2 Calibration Curve (Reliability Diagram)
+
+The calibration curve plots predicted probability on the x-axis against observed win rate for samples in that probability bin on the y-axis. A perfectly calibrated model traces the diagonal. Deviations indicate systematic over- or under-confidence.
+
+### 9.3 Portfolio-Level Equity Curve
+
+The equity curve from the portfolio backtester provides the clearest picture of practical system performance. Key features to analyze:
+
+- **Drawdown depth and duration**: Is the Maximum Drawdown catastrophic, or manageable within normal risk parameters?
+- **Recovery time**: Following a drawdown, how long does the system take to return to equity highs?
+- **Consistency across regimes**: Does the curve perform uniformly, or are there specific periods of concentrated gains and losses that may indicate regime sensitivity?
+
+### 9.4 QuantStats Report
+
+A comprehensive QuantStats performance report was generated, providing standardized metrics including:
+
+- Sharpe Ratio, Sortino Ratio, and Calmar Ratio
+- Maximum Drawdown and time-underwater statistics
+- Monthly returns heatmap
+- Rolling volatility and rolling Sharpe
+- Tail risk metrics (VaR, CVaR)
+
+These metrics contextualize the system's performance against standard benchmarks (S&P500, BTC buy-and-hold) and allow informed comparison with other systematic strategies.
+
+---
+
+## 10. Lessons in Validation Discipline
+
+The primary lesson from this project is not about Transformer architectures, Volume Profiles, or cryptocurrency market structure. It is about **the discipline of validation**.
+
+Quantitative research on financial data is uniquely dangerous because the data is temporally structured in ways that make contamination easy to miss and seductive to ignore. An 85% win rate *feels* like a breakthrough. It triggers cognitive biases — confirmation bias, optimism bias, the desire for a result. The honest researcher must actively seek to *disprove* their results.
+
+The three contamination bugs described above are not exotic or obscure. They are among the most documented failure modes in applied ML for finance. They have cost hedge funds enormous capital, ended careers, and produced academic papers that were later retracted. They appeared in this project because the initial focus was on getting something working, and validation discipline was treated as a secondary concern.
+
+**The correct order of operations is the opposite**: start with the validation framework, prove its integrity, and then build the model within it.
+
+A checklist for any financial ML pipeline:
+
+1. ✅ **Is the train/test split chronological and per-entity?**
+2. ✅ **Are normalization parameters fit exclusively on training data?**
+3. ✅ **Does the backtester simulate realistic execution (single entry, missed trades)?**
+4. ✅ **Are performance metrics evaluated on a unified timeline (not per-asset averages)?**
+5. ✅ **Is the model calibrated — do predicted probabilities match observed outcomes?**
+6. ✅ **Do results survive out-of-sample validation on instruments not in the training set?**
+
+If any of these fail, headline performance metrics are likely inflated. Often dramatically so.
+
+---
+
+## 11. The Broader Architecture: Fitting the Transformer into a Production System
+
+The model described above is a component — a single, specialized function within a larger production trading architecture. To illustrate where it fits, it is useful to sketch the broader system it would operate within.
+
+### 11.1 Regime Gate
+
+Before the Transformer model is invoked for any symbol, a **Regime Detection Agent** must first classify the market as sideways. This agent uses the rolling linear regression slope and additional volatility filters to determine regime state. Only symbols in a confirmed sideways regime enter the Transformer inference pipeline. Trending and volatile regimes are handled by separate, specialized strategy components.
+
+### 11.2 Feature Extraction Layer
+
+A dedicated **Feature Engineering Agent** constructs the 64-bin Volume Profile and computes the contextual scalar features for each qualifying window. This agent operates downstream of the raw market data ingestion layer and publishes feature tensors to the event bus for consumption by the model inference layer.
+
+### 11.3 Model Inference
+
+The trained Transformer Encoder is loaded in inference mode and wrapped in a lightweight serving API. Given input feature tensors, it returns a vector of 64 probability scores — one per candidate entry price — along with a confidence estimate at the portfolio level.
+
+### 11.4 Signal Publication and Risk Gate
+
+The highest-confidence entry (above a configurable probability threshold) is published as a **candidate signal** on the event bus. This signal then passes through a dedicated **Risk Management Agent** that enforces position sizing rules, checks portfolio exposure, and verifies that aggregate "heat" (total risk deployed) remains within limits. A signal that passes these checks becomes an **approved order request**.
+
+### 11.5 Execution and Audit
+
+The **Execution Agent** routes approved orders to the exchange, places nested limit-entry + stop-loss + take-profit orders, and monitors fill status. Every step — from regime classification through feature extraction, model inference, risk approval, and execution — is logged immutably by an **Audit Agent**, providing complete traceability of every capital deployment decision.
+
+This architecture embodies the principles that separate a research prototype from a production system: **separation of concerns, defense in depth, and full auditability**.
+
+---
+
+## 12. Future Directions
+
+Several validated extensions could materially improve this system:
+
+### 12.1 Multi-Timeframe Confluence
+Currently, the feature representation is constructed from a single timeframe (15m). Incorporating volume profiles from higher timeframes (1h, 4h) as additional input channels would allow the model to assess whether the current range-boundary entry aligns with broader structural support levels — a powerful confluence filter used by professional traders.
+
+### 12.2 Live Microstructure Data
+The current model has no access to real-time order book data, trade flow imbalance, or funding rates. Incorporating these features — particularly order book depth imbalance as an additional input token — could push predicted probabilities into the 0.7+ range for high-conviction setups.
+
+### 12.3 Dynamic Risk Sizing via Model Confidence
+Position sizes are currently fixed-fractional. Given a calibrated model, a natural extension is **confidence-proportional position sizing**: allocate larger fractions to entries with higher predicted probabilities, and smaller fractions to lower-confidence predictions. This is a form of the Kelly Criterion adapted for a classification model with calibrated outputs.
+
+### 12.4 Regime-Adaptive Strategy Composition
+In a full multi-strategy framework, the sideways-market Transformer would be one of several strategy agents contributing to a consensus signal. An **Aggregator Agent** would weight signals from this model, trending-market strategies, and mean-reversion oscillators based on the current market regime — applying the principle of regime-adaptive ensemble weighting to maximize edge across all market conditions.
+
+---
 
 ## Conclusion: Validation is the Architecture
 
-The primary lesson from this project concerns **validation discipline** rather than model depth. Market-facing machine learning systems are constrained by the strict separation between historical data and future outcomes.
+The primary lesson from this project concerns **validation discipline** rather than model depth. Market-facing machine learning systems are constrained by one immutable law: the strict separation between historical information and future outcomes. Any architecture that accidentally bridges this separation will produce results that are pure fiction.
 
-By combining transformer-based attention mechanisms with structurally meaningful feature representations like Volume Profiles, we’ve built a system that doesn't just chase trends—it understands the physics of market equilibrium and executes within realistic operational constraints.
+By combining Transformer-based attention with structurally meaningful feature representations — specifically, the Volume Profile as a near-Gaussian probability distribution of market activity — this system models the equilibrium behavior of non-trending markets and executes within realistic operational constraints.
+
+The reduction in headline metrics from a fictitious 85% to a robust 60.1% is not a failure. It is the system working correctly. It represents the transition from a research artifact to a deployable engineering product.
+
+That transition is where quantitative trading — and most applied machine learning — actually lives.
 
 ---
 
 ### Technical Stack
-**Python** · **PyTorch** · **Pandas** · **Binance API** · **Scikit-Learn** · **QuantStats**
+
+| Component | Technology |
+|---|---|
+| **Language** | Python 3.11 |
+| **Deep Learning** | PyTorch 2.x |
+| **Data Processing** | Pandas, NumPy |
+| **Market Data** | Binance API (via CCXT) |
+| **Feature Extraction** | Scikit-Learn |
+| **Performance Analytics** | QuantStats |
+| **Model Validation** | Scikit-Learn (calibration_curve, classification_report) |
+| **Backtesting Engine** | Custom chronological portfolio engine |

@@ -7,9 +7,8 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
 
 --- COMPLETE ONLY THESE TASKS
 
-    - [ ] Expand Article 5: "Building a Transformer-Based Trading System". Add in all the info in article-ideas/ . Keep the article technical and professional.
-
-
+- [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
+    - [ ] Change future modifications to include developing sagas and creating images for the stories. The goal is to eventually generate audio and video too.
 --- IGNORE TASKS BELOW HERE
 
 ## 🌍 Global & Locales
@@ -62,7 +61,6 @@ Decide on my philosophy
     - [x] Expand Article 1: "Building Low-Latency Trading Systems: The Plutus Architecture"
     - [ ] Expand Article 4: "Architecture of a Production-Grade Multi-Agent Trading System"
     - [ ] Expand Article 6: "Automated Market Making on Solana"
-    - [ ] Expand Article 7: "Cervantes: The Autonomous AI Multi-Agent Storyteller"
     - [ ] Expand Article 8: "The Nervous System of Scalable Trading: Event-Driven Design"
 
 

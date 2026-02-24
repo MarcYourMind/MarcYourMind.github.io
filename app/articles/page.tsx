@@ -27,8 +27,8 @@ const articles = [
     },
     {
         slug: "data-design-patterns",
-        title: "The 78 Data Design Patterns for High-Scale Trading Platforms",
-        excerpt: "A complete blueprint of the 78 engineering patterns used to process millions of market events with surgical precision at TopTrader.",
+        title: "The 75 Data Design Patterns for High-Scale Trading Platforms",
+        excerpt: "A complete blueprint of the 75 engineering patterns used to process millions of market events with surgical precision at TopTrader.",
         date: "Apr 05, 2024",
         readTime: "20 min read",
         tags: ["Data Engineering", "Architecture", "FinTech"]

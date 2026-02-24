@@ -21,12 +21,6 @@ Complete the first set of tasks in TODO.md. Ignore the rest of tasks
     - [ ] Update `description` metadata to the new accurate information
     - [ ] Replace OpenGraph (`og:image`) placeholder images
 
-## 🏠 Home Page (`app/(home)/page.tsx`)
-
-- [ ] **Testimonials Section**
-    - [ ] Replace "Sarah Chen" entry (Name, Role, Quote, Avatar initials)
-    - [ ] Replace "James Wilson" entry (Name, Role, Quote, Avatar initials)
-    - [ ] Replace "Elena Rodriguez" entry (Name, Role, Quote, Avatar initials)
 
 
 ## 💼 Resume Hub (`data/resume.ts`)

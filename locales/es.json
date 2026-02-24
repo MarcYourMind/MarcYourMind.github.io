@@ -11,8 +11,8 @@
         "commandPaletteHint": "Pulsa Cmd / Ctrl + K para investigar"
     },
     "hero": {
-        "title": "Ingeniero Elite Multi-Dominio",
-        "subtitle": "Arquitectando sistemas de alto rendimiento. Especializado en Trading Cuantitativo (Python y C++), Inteligencia Artificial (Python) y Arquitectura Web3 (Solidity).",
+        "title": "Ingeniero de Software Multi-Dominio",
+        "subtitle": "Construyendo sistemas de alto rendimiento. Especializado en Trading Cuantitativo (Python y C++), Inteligencia impulsada por IA (Python) y Arquitectura Web3 (Solidity).",
         "viewProjects": "Ver Proyectos",
         "downloadResume": "Descargar CV",
         "status": "Abierto a oportunidades de categoría mundial"
@@ -44,7 +44,7 @@
         "stats": {
             "years": "Años Exp.",
             "projects": "Proyectos",
-            "certs": "Certificaciones Prof.",
+            "certs": "Certificados Prof.",
             "languages": "Idiomas"
         },
         "featuredProjects": {
@@ -55,24 +55,24 @@
         "insights": {
             "title": "Perspectivas de Ingeniería",
             "subtitle": "Inmersiones profundas en sistemas de baja latencia, IA multi-agente y arquitectura de grado de producción.",
-            "viewAll": "Ver todos los Artículos",
-            "readMore": "Leer más"
+            "viewAll": "Ver Todos los Artículos",
+            "readMore": "Leer Más"
         }
     },
     "about": {
-        "title": "La Mente Detrás del Código",
+        "title": "La Mente Detrás Del Código",
         "subtitle": {
-            "layers": "6+ Años Construyendo Productos",
-            "activity": "De Idea → Producción",
+            "layers": "+6 Años Construyendo Productos",
+            "activity": "De la Idea → A Producción",
             "search": "Impulsado por la Curiosidad",
-            "target": "Ingeniero Enfocado en el Producto"
+            "target": "Ingeniero Enfocado en Producto"
         },
         "description": [
-            "Soy un ingeniero de software e ingeniero electrónico con una pasión por convertir ideas en productos. Tengo una sólida formación en desarrollo de software, desarrollo de IA y aplicación de matemáticas a sistemas de trading. Aprendo rápido y puedo dominar nuevas tecnologías con agilidad. También sé trabajar en equipo y disfruto de los entornos colaborativos.",
+            "Soy ingeniero de software e ingeniero electrónico con pasión por transformar ideas en productos. Tengo una sólida formación en desarrollo de software, desarrollo de IA y aplicación de matemáticas a sistemas de trading. Aprendo rápido y puedo asimilar nuevas tecnologías rápidamente. También trabajo bien en equipo y disfruto de entornos colaborativos.",
             "Creo que mi propósito en la vida es hacer del mundo un lugar mejor construyendo tecnología.",
-            "Doy lo mejor de mí cuando resuelvo problemas difíciles. Contribuir a algo más grande que yo mismo.",
+            "Doy lo mejor de mí cuando estoy resolviendo problemas difíciles. Contribuyendo a algo más grande que yo mismo.",
             "Actualmente dedico mi tiempo a construir plataformas, desarrollar proyectos de IA, operar con criptomonedas y desarrollar mi disciplina.",
-            "Busco unirme a un equipo de personas con ideas afines que quieran cambiar el mundo paso a paso."
+            "Busco unirme a un equipo de personas con ideas afines que quieran cambiar el mundo un paso a la vez."
         ],
         "philosophy": {
             "title": "Mi Filosofía",
@@ -117,19 +117,19 @@
     "opensource": {
         "title": "Contribuciones de Código Abierto",
         "subtitle": "Una colección de proyectos públicos, experimentos y contribuciones a la comunidad de desarrolladores.",
-        "communityFirst": "Comunidad Primero",
-        "pageSubtitle": "Creo en retribuir a la comunidad. Aquí hay algunos de mis proyectos y contribuciones de código abierto más impactantes.",
+        "communityFirst": "La Comunidad Primero",
+        "pageSubtitle": "Creo en retribuir a la comunidad. Aquí tienes algunos de mis proyectos y contribuciones de código abierto más impactantes.",
         "ctaTitle": "¿Quieres colaborar?",
         "ctaSubtitle": "Siempre estoy buscando proyectos interesantes a los que contribuir. Si estás trabajando en algo innovador, hablemos.",
         "viewGithub": "Ver Perfil de GitHub",
         "projects": {
             "binance-data-processing": "Análisis de datos de Binance para ideas de bots de trading e investigación de mercado.",
-            "ML-Algorithms-Analysis": "Estudio de muchos algoritmos de ML con Python para entender visualmente los aspectos de cada algoritmo.",
-            "NinjaFocus": "Bot de trading de Solana conectado a Telegram para señales de trading en tiempo real.",
-            "Cervantes-AI-Story-Writer": "Escritor de historias multi-agente que usa LLMs para generar narrativas infinitas.",
-            "linktrees": "Sitios web estilo linktree con enfoque móvil y branding diverso.",
+            "ML-Algorithms-Analysis": "Estudio de varios algoritmos de ML usando python para entender visualmente los aspectos de cada algoritmo.",
+            "NinjaFocus": "Bot de trading para Solana conectado a Telegram para señales de trading en tiempo real.",
+            "Cervantes-AI-Story-Writer": "Escritor de historias multi-agente usando LLMs para generar narrativas infinitas.",
+            "linktrees": "Sitios web tipo linktree orientados a móviles con diversos estilos de marca.",
             "HiveFrequency": "Arquitectura GAN+RNN para generación de música en vivo en tiempo real.",
-            "Dartboard-Detection": "Algoritmo de detección de diana implementado en C++ con algoritmos de visión por computadora OpenCV."
+            "Dartboard-Detection": "Algoritmo de detección de dianas implementado en C++ con algoritmos de Visión por Computadora OpenCV."
         }
     },
     "creative": {
@@ -139,52 +139,52 @@
         "philosophyTitle": "Filosofía",
         "listenNow": "Escuchar Ahora",
         "heroTagline": "La Creatividad es la Voz del Alma",
-        "artSubtitle": "Una colección de experimentos visuales, pinturas digitales y bocetos que exploran la forma, el color y la emoción.",
-        "artNote": "Toda la obra visual presentada aquí es dibujada a mano meticulosamente con lápices y bolígrafos tradicionales, y luego digitalizada para su presentación.",
-        "musicSubtitle": "Viajes sonoros compuestos para facilitar la concentración, la meditación y la resonancia emocional.",
+        "artSubtitle": "Una colección de experimentos visuales, pinturas digitales y bocetos que exploran forma, color y emoción.",
+        "artNote": "Todo el arte visual presentado aquí está dibujado a mano meticulosamente usando lápices y bolígrafos negros tradicionales, luego digitalizado para su exposición.",
+        "musicSubtitle": "Viajes sonoros compuestos para facilitar el enfoque, la meditación y la resonancia emocional.",
         "worksLabel": "Obras",
         "tracksLabel": "Pistas",
-        "philosophy": "Mi arte es un viaje hacia la intensidad abstracta, creado con lápices, lápices de colores y rotuladores negros. Me centro en colores vibrantes y saturados y en formas geométricas intrincadas que desafían la percepción e invitan a una profunda introspección. Del mismo modo, mi música (como Shaboom) es una exploración de paisajes sonoros de alta energía y complejidad rítmica.",
+        "philosophy": "Mi arte es un viaje hacia la intensidad abstracta, creado con lápices, lápices de colores y rotuladores negros. Me centro en colores vibrantes y saturados y formas geométricas intrincadas que desafían la percepción e invitan a una profunda introspección. Del mismo modo, mi música (como Shaboom) es una exploración de paisajes sonoros de alta energía y complejidad rítmica.",
         "items": {
             "art1": {
                 "title": "Portal Cromático",
-                "description": "Una intensa exploración geométrica de la simetría y los colores vibrantes, irradiando desde una silueta central."
+                "description": "Una intensa exploración geométrica de simetría y colores vibrantes, que irradia desde una silueta central."
             },
             "art2": {
                 "title": "Geometría Fúngica",
-                "description": "Formas orgánicas de hongos sobre una cuadrícula triangular nítida y vibrante."
+                "description": "Formas de hongos orgánicos contrastadas contra una cuadrícula triangular ágil y vibrante."
             },
             "art3": {
                 "title": "Esfera Monocromática",
-                "description": "Un complejo patrón esférico en blanco y negro que evoca profundidad y movimiento rotacional."
+                "description": "Un complejo patrón esférico en blanco y negro que evoca profundidad y movimiento de rotación."
             },
             "art4": {
                 "title": "Enredos Neurales",
-                "description": "Una telaraña colorida y caótica de líneas interconectadas que representan redes complejas."
+                "description": "Una colorida y caótica red de líneas interconectadas que representan redes complejas."
             },
             "art5": {
                 "title": "Monograma MARC",
-                "description": "Un monograma caligráfico estilizado trazado en tinta negra con elegantes florituras."
+                "description": "Un monograma estilizado y caligráfico renderizado en atrevida tinta negra con elegantes florituras."
             },
             "art6": {
                 "title": "Flujo Triple",
-                "description": "Un diseño circular inspirado en el triskelion con tres formas orgánicas entrelazadas."
+                "description": "Un diseño circular inspirado en el trisquel con tres formas orgánicas entrelazadas."
             },
             "art7": {
                 "title": "Radiancia Prismática",
-                "description": "Un estudio de color de alta intensidad con lápices de colores para crear una sensación de energía luminosa."
+                "description": "Un estudio color de alta intensidad que emplea lápices de color creando una vívida sensación de energía radiante."
             },
             "art8": {
                 "title": "Ritmo Abstracto",
-                "description": "Una composición rítmica de líneas y formas que refleja la energía de mi música."
+                "description": "Una rica composición rítmica trazando líneas y figuras canalizando la energía visual de mis audios."
             },
             "art9": {
                 "title": "Contornos Vívidos",
-                "description": "Una exploración de forma y contorno con rotuladores gruesos y tonos saturados."
+                "description": "Una fluida exploración a la forma realzando en color y trazo mediante marcadores y tonos marcados y saturados."
             },
             "art10": {
                 "title": "Pirámides Dimensionales",
-                "description": "Un boceto minimalista a lápiz de dos pirámides entrelazadas que exploran la profundidad y el espacio negativo."
+                "description": "Un boceto minimalista de dos entrelazadas pirámides explorando espacios negativos."
             }
         }
     },
@@ -194,17 +194,17 @@
         "back": "Volver a Artículos",
         "readFull": "Leer Artículo Completo",
         "share": "Compartir Artículo",
-        "discuss": "Comentar conmigo",
+        "discuss": "Discutir conmigo",
         "toc": "Tabla de Contenidos"
     },
     "contact": {
-        "title": "Construyamos El Futuro",
-        "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé en 24 horas.",
+        "title": "Construyamos el Futuro",
+        "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé en menos de 24 horas.",
         "emailTitle": "Envíame un Correo",
         "callTitle": "Llámame",
         "socialsTitle": "Redes Sociales",
-        "whatsappTitle": "Sáltate el correo.",
-        "whatsappDesc": "Respondo más rápido por WhatsApp. Haz clic abajo para iniciar una conversación directamente conmigo.",
+        "whatsappTitle": "Omite el correo.",
+        "whatsappDesc": "Soy más receptivo en WhatsApp. Haz clic abajo para iniciar una conversación directamente conmigo.",
         "whatsappButton": "Mensaje en WhatsApp"
     },
     "projects": {
@@ -482,15 +482,15 @@
         }
     },
     "footer": {
-        "description": "Ingeniero de Software que construye sistemas de alto rendimiento, transformando ideas complejas en soluciones elegantes centradas en el usuario. Impulsado por una profunda creencia y compromiso de usar la tecnología como una fuerza para el bien. Motivado por crear tecnología que resuelva problemas significativos y mejore vidas.",
+        "description": "Ingeniero de Software construyendo sistemas de alto rendimiento, transformando ideas complejas en soluciones elegantes centradas en el usuario. Impulsado por una profunda creencia y compromiso de usar la tecnología como una fuerza para el bien. Motivado por crear tecnología que resuelva problemas significativos y mejore vidas.",
         "builtWith": "Construido con Next.js, Framer Motion y Pasión."
     },
     "resume": {
         "ui": {
-            "hubTitle": "Centro de Currículum",
-            "hubSubtitle": "Seleccione una trayectoria especializada para ver un currículum personalizado y un catálogo de experiencia relevante.",
-            "exploreTrack": "Explorar Trayectoria",
-            "tailoredOverview": "Información personalizada para roles en {{role}}, incluyendo la pila tecnológica relevante y logros clave.",
+            "hubTitle": "Centro de Currículos",
+            "hubSubtitle": "Selecciona una especialidad para ver un currículum adaptado y un portafolio de experiencia relevante.",
+            "exploreTrack": "Explorar Especialidad",
+            "tailoredOverview": "Vista general adaptada para roles en {{role}}, incluyendo la tecnología relevante y logros clave.",
             "professionalExperience": "Experiencia Profesional",
             "education": "Educación",
             "skillMatrix": "Matriz de Habilidades",
@@ -519,7 +519,7 @@
             "education": {
                 "bristolDegree": "BEng en Ciencias de la Computación y Electrónica",
                 "bristolInstitution": "Universidad de Bristol",
-                "bristolDescription": "Mantuve un promedio de Primera Clase durante todo el currículo de ingeniería en Ciencias de la Computación y Electrónica. Hice la transición de los estudios formales durante el último año para escalar un proyecto de trading; posteriormente fui galardonado con el título de BEng por la Universidad de Bristol."
+                "bristolDescription": "Mantuve un promedio de Matrícula de Honor durante el currículo de ingeniería en Ciencias de la Computación y Electrónica. Hice la transición de los estudios formales durante el último año para escalar un negocio de trading; posteriormente fui galardonado con el nivel BEng por la Universidad de Bristol."
             }
         },
         "tracks": {
@@ -680,6 +680,6 @@
     },
     "seo": {
         "title": "MarcYourMind | Ingeniero de Software Multi-Dominio",
-        "description": "Portafolio personal de MarcYourMind, un Ingeniero de Software Senior especializado en construir sistemas de alto rendimiento en Cuantitativas, IA, Web3 y arquitectura Backend."
+        "description": "Portafolio personal de MarcYourMind, un Ingeniero de Software Senior construyendo sistemas de alto rendimiento en arquitecturas Cuantitativas, de IA, Web3 y Backend."
     }
 }

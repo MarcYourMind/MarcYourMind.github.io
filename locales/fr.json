@@ -11,8 +11,8 @@
         "commandPaletteHint": "Appuyez sur Cmd / Ctrl + K pour naviguer"
     },
     "hero": {
-        "title": "Ingénieur Élite Multi-Domaines",
-        "subtitle": "Architecte de systèmes haute performance. Spécialisé en Trading Quantitatif (Python et C++), Intelligence Artificielle (Python) et Architecture Web3 (Solidity).",
+        "title": "Ingénieur Logiciel Multi-Domaines",
+        "subtitle": "Développement de systèmes haute performance. Spécialisé en Trading Quantitatif (Python et C++), Intelligence propulsée par l'IA (Python) et Architecture Web3 (Solidity).",
         "viewProjects": "Voir les Projets",
         "downloadResume": "Télécharger le CV",
         "status": "Ouvert aux opportunités de classe mondiale"
@@ -44,35 +44,35 @@
         "stats": {
             "years": "Années Exp.",
             "projects": "Projets",
-            "certs": "Certifs Prof.",
+            "certs": "Certificats Prof.",
             "languages": "Langues"
         },
         "featuredProjects": {
-            "title": "Projets Vedettes",
-            "subtitle": "Une sélection de défis d'ingénierie à fort impact et de percées technologiques.",
+            "title": "Projets en Vedette",
+            "subtitle": "Une sélection de défis d'ingénierie à fort impact et d'avancées technologiques.",
             "viewAll": "Tous les Projets"
         },
         "insights": {
             "title": "Perspectives d'Ingénierie",
-            "subtitle": "Plongeons profonds dans les systèmes à faible latence, l'IA multi-agents et l'architecture de classe production.",
-            "viewAll": "Voir tous les Articles",
-            "readMore": "Lire plus"
+            "subtitle": "Plongées approfondies dans les systèmes à faible latence, l'IA multi-agents et l'architecture de production.",
+            "viewAll": "Voir Tous les Articles",
+            "readMore": "Lire Plus"
         }
     },
     "about": {
-        "title": "L'Esprit Derrière le Code",
+        "title": "L'Esprit Derrière Le Code",
         "subtitle": {
-            "layers": "6+ Ans de Construction de Produits",
-            "activity": "De l'Idée → Production",
-            "search": "Alimenté por la Curiosité",
+            "layers": "+6 Ans de Création de Produits",
+            "activity": "De l'Idée → À la Production",
+            "search": "Alimenté par la Curiosité",
             "target": "Ingénieur Axé sur le Produit"
         },
         "description": [
-            "Je suis un ingénieur logiciel et un ingénieur en électronique passionné par la transformation d'idées en produits. J'ai une solide formation en développement de logiciels, en développement d'IA et en application des mathématiques aux systèmes de trading. J'apprends vite et je peux maîtriser de nouvelles technologies rapidement. Je suis également un joueur d'équipe et j'aime travailler dans un environnement collaboratif.",
-            "Je crois que mon but dans la vie est de rendre le monde meilleur en construisant de la technologie.",
-            "Je suis au sommet de mon art quand je résous des problèmes difficiles. Contribuer à quelque chose de plus grand que moi-même.",
-            "Actuellement, je passe mon temps à construire des plateformes, à développer des projets d'IA, à trader des cryptos et à développer ma discipline.",
-            "Je cherche à rejoindre une équipe de personnes partageant les mêmes idées qui veulent changer le monde étape par étape."
+            "Je suis ingénieur logiciel et ingénieur en électronique, passionné par la transformation d'idées en produits. J'ai une solide expérience en développement de logiciels, développement d'IA et application des mathématiques aux systèmes de trading. J'apprends vite et peux assimiler de nouvelles technologies rapidement. Je suis également un joueur d'équipe et j'apprécie de travailler dans un environnement collaboratif.",
+            "Je crois que mon but dans la vie est de rendre le monde meilleur en créant des technologies.",
+            "Je suis à mon meilleur lorsque je résous des problèmes difficiles. Contribuer à quelque chose de plus grand que moi-même.",
+            "Actuellement, je passe mon temps à concevoir des plateformes, à développer des projets d'IA, à opérer sur le marché des cryptomonnaies et à développer ma discipline.",
+            "Je cherche à rejoindre une équipe de personnes partageant les mêmes idées, désirant changer le monde étape par étape."
         ],
         "philosophy": {
             "title": "Ma Philosophie",
@@ -118,79 +118,79 @@
         "title": "Contributions Open Source",
         "subtitle": "Une collection de projets publics, d'expériences et de contributions à la communauté des développeurs.",
         "communityFirst": "La Communauté d'Abord",
-        "pageSubtitle": "Je crois à la contribution à la communauté. Voici quelques-uns de mes projets et contributions open source les plus impactants.",
-        "ctaTitle": "Vous voulez collaborer ?",
-        "ctaSubtitle": "Je recherche toujours des projets intéressants auxquels contribuer. Si vous travaillez sur quelque chose de révolutionnaire, parlons-en.",
-        "viewGithub": "Voir le Profil GitHub",
+        "pageSubtitle": "Je crois en l'importance de redonner à la communauté. Voici quelques-uns de mes projets et contributions open source les plus percutants.",
+        "ctaTitle": "Envie de collaborer ?",
+        "ctaSubtitle": "Je suis toujours à la recherche de projets intéressants auxquels contribuer. Si vous travaillez sur quelque chose de novateur, parlons-en.",
+        "viewGithub": "Voir Profil GitHub",
         "projects": {
-            "binance-data-processing": "Analyse de données Binance pour des idées de bots de trading et des recherches de marché.",
-            "ML-Algorithms-Analysis": "Étude de nombreux algorithmes ML avec Python pour comprendre visuellement les aspects de chaque algorithme.",
-            "NinjaFocus": "Bot de trading Solana connecté à Telegram pour des signaux de trading en temps réel.",
-            "Cervantes-AI-Story-Writer": "Écrivain d'histoires multi-agents utilisant des LLMs pour générer des récits infinis.",
-            "linktrees": "Sites web de style linktree orientés mobile avec un branding varié.",
-            "HiveFrequency": "Architecture GAN+RNN pour la génération de musique en direct en temps réel.",
-            "Dartboard-Detection": "Algorithme de détection de cible de fléchettes implémenté en C++ avec les algorithmes de vision par ordinateur OpenCV."
+            "binance-data-processing": "Analyse de données Binance pour la conception de bots de trading et l'étude de marché.",
+            "ML-Algorithms-Analysis": "Étude visuelle de nombreux algorithmes ML via Python pour mieux comprendre chaque modèle.",
+            "NinjaFocus": "Bot de trading Solana relié à Telegram pour des signaux en direct en temps réel.",
+            "Cervantes-AI-Story-Writer": "Système multi-agents d'écriture exploitant les LLM pour générer des récits infinis.",
+            "linktrees": "Écosystème de pages web type Linktree ultra optimisées pour le format mobile.",
+            "HiveFrequency": "Architecture hybride GAN+RNN ciblant la création musicale temps réel en concert.",
+            "Dartboard-Detection": "Algorithme de détection de cibles de fléchettes en C++ via OpenCV."
         }
     },
     "creative": {
-        "title": "Auto-expression",
+        "title": "Expression Personnelle",
         "artTitle": "Galerie d'Art",
         "musicTitle": "Paysages Sonores",
         "philosophyTitle": "Philosophie",
         "listenNow": "Écouter Maintenant",
         "heroTagline": "La Créativité est la Voix de l'Âme",
-        "artSubtitle": "Une collection d'expériences visuelles, de peintures numériques et de croquis qui explorent la forme, la couleur et l'émotion.",
-        "artNote": "Toutes les œuvres d'art présentées ici sont méticuleusement dessinées à la main avec des crayons et des stylos traditionnels, puis numérisées pour l'affichage.",
+        "artSubtitle": "Une collection d'expériences visuelles, de peintures et de croquis explorant la forme, la couleur et l'émotion.",
+        "artNote": "Toutes les œuvres d'art visuel présentées ici sont méticuleusement dessinées à la main avec des crayons de bois et des stylos noirs traditionnels, puis numérisées.",
         "musicSubtitle": "Des voyages sonores composés pour faciliter la concentration, la méditation et la résonance émotionnelle.",
         "worksLabel": "Œuvres",
-        "tracksLabel": "Titres",
-        "philosophy": "Mon art est un voyage dans l'intensité abstraite, réalisé avec des crayons, des crayons de couleur et des marqueurs noirs. Je me concentre sur des couleurs vibrantes et saturées et des formes géométriques complexes qui défient la perception et invitent à une introspection profonde. De même, ma musique (sous le nom de Shaboom) est une exploration de paysages sonores à haute énergie et de complexité rythmique.",
+        "tracksLabel": "Pistes",
+        "philosophy": "Mon art est un voyage dans l'intensité abstraite, élaboré avec des crayons, des crayons de couleur et des marqueurs noirs. Je me concentre sur des couleurs vibrantes et saturées, et des formes géométriques complexes qui défient la perception et invitent à une profonde introspection. De même, ma musique (en tant que Shaboom) est une exploration de paysages sonores à haute énergie et de complexité rythmique.",
         "items": {
             "art1": {
                 "title": "Portail Chromatique",
-                "description": "Une exploration géométrique intense de la symétrie et des couleurs vives, rayonnant depuis une silhouette centrale."
+                "description": "Une intense exploration géométrique de symétrie et couleurs vibrantes, rayonnant depuis une silhouette centrale."
             },
             "art2": {
                 "title": "Géométrie Fongique",
-                "description": "Des formes organiques de champignons sur une grille triangulaire nette et vibrante."
+                "description": "Formes de champignons organiques disposées sur une grille triangulaire nette et vibrante."
             },
             "art3": {
                 "title": "Sphère Monochromatique",
-                "description": "Un schéma sphérique complexe en noir et blanc évoquant la profondeur et le mouvement rotatif."
+                "description": "Un modèle sphérique complexe en noir et blanc inspirant la profondeur et le mouvement de rotation."
             },
             "art4": {
                 "title": "Enchevêtrements Neuronaux",
-                "description": "Une toile colorée et chaotique de lignes interconnectées représentant des réseaux complexes."
+                "description": "Une toile chaotique et colorée de lignes interconnectées représentant des réseaux complexes."
             },
             "art5": {
                 "title": "Monogramme MARC",
-                "description": "Un monogramme calligraphique stylisé rendu à l'encre noire épaisse avec d'élégants fioritures."
+                "description": "Un monogramme calligraphique stylisé rendu à l'encre noire avec des courbes élégantes."
             },
             "art6": {
-                "title": "Triple Flux",
-                "description": "Un design circulaire inspiré du triskelion avec trois formes organiques entrelacées."
+                "title": "Flux Triple",
+                "description": "Une conception circulaire inspirée du triskèle avec trois structures organiques entrelacées."
             },
             "art7": {
-                "title": "Rayonnement Prismatique",
-                "description": "Une étude de couleur à haute intensité aux crayons de couleur pour créer une sensation d'énergie lumineuse."
+                "title": "Éclat Prismatique",
+                "description": "Une étude colorée intense utilisant des crayons de couleur pour créer un effet d'énergie incandescente."
             },
             "art8": {
                 "title": "Rythme Abstrait",
-                "description": "Une composition rythmique de lignes et de formes qui reflète l'énergie de ma musique."
+                "description": "Composition rythmique de lignes et de formes imitant l'intensité canalisée de ma musique."
             },
             "art9": {
-                "title": "Contours Vifs",
-                "description": "Une exploration de la forme et du contour avec des marqueurs épais et des teintes saturées."
+                "title": "Contours Frappants",
+                "description": "Exploration expérimentale de forme soulignée aux marqueurs de peinture audacieux et tons saturés."
             },
             "art10": {
-                "title": "Pyramides Dimensionnelles",
-                "description": "Un croquis minimaliste au crayon de deux pyramides entrelacées explorant la profondeur et l'espace négatif."
+                "title": "Pyramides Frontales",
+                "description": "Dessin épuré en noir de pyramides se superposant, axé sur la profondeur avec des espaces négatifs."
             }
         }
     },
     "articles": {
-        "title": "Perspectives et Articles",
-        "subtitle": "Plongeons profonds dans les défis d'ingénierie, les modèles architecturaux et l'avenir de la technologie.",
+        "title": "Perspectives & Articles",
+        "subtitle": "Plongées approfondies dans les défis d'ingénierie, les modèles architecturaux et l'avenir de la technologie.",
         "back": "Retour aux Articles",
         "readFull": "Lire l'Article Complet",
         "share": "Partager l'Article",
@@ -198,12 +198,12 @@
         "toc": "Table des Matières"
     },
     "contact": {
-        "title": "Construisons L'Avenir",
-        "subtitle": "Vous avez un projet en tête ? Laissez-moi un message et je vous répondrai dans les 24 heures.",
-        "emailTitle": "Envoyez-moi un E-mail",
+        "title": "Construisons l'Avenir",
+        "subtitle": "Vous avez un projet en tête ? Envoyez-moi un message et je vous répondrai dans les 24 heures.",
+        "emailTitle": "Envoyez-moi un Email",
         "callTitle": "Appelez-moi",
         "socialsTitle": "Réseaux Sociaux",
-        "whatsappTitle": "Passez l'e-mail.",
+        "whatsappTitle": "Évitez l'email.",
         "whatsappDesc": "Je suis plus réactif sur WhatsApp. Cliquez ci-dessous pour démarrer une conversation directement avec moi.",
         "whatsappButton": "Message sur WhatsApp"
     },
@@ -482,17 +482,15 @@
         }
     },
     "footer": {
-        "description": "Ingénieur logiciel construisant des systèmes haute performance, transformant des idées complexes en solutions élégantes axées sur l'utilisateur. Animé par une conviction profonde et un engagement à utiliser la technologie comme une force pour le bien. Motivé par la création de technologies qui résolvent des problèmes significatifs et améliorent la vie.",
-        "explore": "Explorer",
-        "engineering": "Ingénierie",
+        "description": "Ingénieur Logiciel concevant des systèmes haute performance, transformant des idées complexes en solutions élégantes centrées sur l'utilisateur. Poussé par une conviction et un engagement profonds d'utiliser la technologie comme une force pour le bien. Motivé par la création de technologies qui résolvent des problèmes significatifs et améliorent des vies.",
         "builtWith": "Construit avec Next.js, Framer Motion et Passion."
     },
     "resume": {
         "ui": {
-            "hubTitle": "Espace CV",
-            "hubSubtitle": "Sélectionnez une spécialisation pour voir un CV personnalisé et un aperçu de mon expérience pertinente.",
+            "hubTitle": "Centre de CV",
+            "hubSubtitle": "Sélectionnez une spécialisation pour voir un CV sur mesure et un portfolio d'expériences pertinentes.",
             "exploreTrack": "Explorer la Spécialisation",
-            "tailoredOverview": "Aperçu personnalisé pour les rôles en {{role}}, incluant les technologies utilisées et les accomplissements clés.",
+            "tailoredOverview": "Aperçu adapté pour les rôles en {{role}}, incluant la stack technologique et les réalisations clés.",
             "professionalExperience": "Expérience Professionnelle",
             "education": "Éducation",
             "skillMatrix": "Matrice de Compétences",
@@ -501,7 +499,7 @@
         },
         "shared": {
             "skills": {
-                "languages": "Langues",
+                "languages": "Langages de Programmation",
                 "backend": "Backend",
                 "infrastructure": "Infrastructure",
                 "dataScience": "Science des Données",
@@ -515,13 +513,13 @@
                 "english": "Anglais",
                 "spanish": "Espagnol",
                 "french": "Français",
-                "native": "Langue maternelle",
-                "workingProficiency": "Capacité professionnelle"
+                "native": "Natif",
+                "workingProficiency": "Maîtrise Professionnelle"
             },
             "education": {
                 "bristolDegree": "BEng en Informatique et Électronique",
                 "bristolInstitution": "Université de Bristol",
-                "bristolDescription": "Maintien d'une moyenne de première classe tout au long du cursus d'ingénieur en Informatique et Électronique. Transition des études formelles au cours de la dernière année pour développer une entreprise de trading ; diplôme BEng décerné ultérieurement par l'Université de Bristol."
+                "bristolDescription": "J'ai maintenu une moyenne de Première Classe tout au long du programme d'ingénierie en Informatique et Électronique. J'ai interrompu mes études formelles lors de la dernière année afin de développer une entreprise de trading; l'Université de Bristol m'a par la suite décerné le diplôme BEng."
             }
         },
         "tracks": {
@@ -681,7 +679,7 @@
         }
     },
     "seo": {
-        "title": "MarcYourMind | Ingénieur Logiciel Multi-Domaine",
-        "description": "Portefeuille personnel de MarcYourMind, un Ingénieur Logiciel Senior construisant des systèmes haute performance dans les domaines Quant, IA, Web3 et architecture Backend."
+        "title": "MarcYourMind | Ingénieur Logiciel Multi-Domaines",
+        "description": "Portfolio personnel de MarcYourMind, un Ingénieur Logiciel Senior concevant des systèmes haute performance dans les architectures Quantitatives, IA, Web3 et Backend."
     }
 }

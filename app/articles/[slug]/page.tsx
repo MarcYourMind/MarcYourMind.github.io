@@ -1,7 +1,9 @@
 import { getArticleBySlug, getAllArticleSlugs } from "@/lib/articles"
 import { notFound } from "next/navigation"
-import { MDXRemote } from "next-mdx-remote/rsc"
+import { compileMDX } from "next-mdx-remote/rsc"
 import rehypeSlug from "rehype-slug"
+import remarkGfm from "remark-gfm"
+import { MDXComponents } from "@/components/MDXComponents"
 import ArticleShell from "./ArticleShell"
 
 export async function generateStaticParams() {
@@ -24,21 +26,23 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
     const article = getArticleBySlug(slug)
     if (!article) notFound()
 
-    const renderedContent = (
-        <MDXRemote
-            source={article.content}
-            options={{
-                mdxOptions: {
-                    remarkPlugins: [],
-                    rehypePlugins: [rehypeSlug],
-                },
-            }}
-        />
-    )
+    const { content } = await compileMDX({
+        source: article.content,
+        components: MDXComponents,
+        options: {
+            mdxOptions: {
+                remarkPlugins: [remarkGfm],
+                rehypePlugins: [rehypeSlug],
+            },
+            parseFrontmatter: false, // We already parsed it with gray-matter
+        },
+    })
 
     return (
         <ArticleShell article={article}>
-            {renderedContent}
+            <div className="article-content">
+                {content}
+            </div>
         </ArticleShell>
     )
 }

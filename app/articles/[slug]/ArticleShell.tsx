@@ -99,8 +99,8 @@ export default function ArticleShell({ article, children }: ArticleShellProps) {
                                     {article.readTime}
                                 </div>
                                 <div className="flex items-center gap-2 text-white/60">
-                                    <span className="w-8 h-8 rounded-full bg-accent-blue/20 flex items-center justify-center font-bold text-xs text-accent-blue font-heading">MM</span>
-                                    Marc Mind
+                                    <span className="w-8 h-8 rounded-full bg-accent-blue/20 flex items-center justify-center font-bold text-xs text-accent-blue font-heading">MG</span>
+                                    Marc Goulding Tójar
                                 </div>
                             </div>
                         </motion.header>

@@ -8,7 +8,7 @@
         "about": "About",
         "creative": "Creative",
         "contact": "Contact",
-        "commandPaletteHint": "Press Cmd / Ctrl + K to explore"
+        "commandPaletteHint": "Press Cmd / Ctrl + J to explore"
     },
     "hero": {
         "title": "Multi-Domain Software Engineer",
@@ -136,6 +136,11 @@
     "projects": {
         "ui": {
             "backToGallery": "Back to Gallery",
+            "searchPlaceholder": "Search projects by name or technology...",
+            "all": "All",
+            "noProjectsFound": "No projects found",
+            "tryAdjusting": "Try adjusting your filters or search query.",
+            "clearFilters": "Clear all filters",
             "theChallenge": "The Challenge",
             "theSolution": "The Solution",
             "techStack": "Tech Stack",

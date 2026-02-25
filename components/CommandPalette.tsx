@@ -24,7 +24,7 @@ export function CommandPalette() {
 
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
-            if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+            if ((e.metaKey || e.ctrlKey) && e.key === "j") {
                 e.preventDefault()
                 setIsOpen(prev => !prev)
             }
@@ -157,7 +157,7 @@ export function CommandPalette() {
 
                         <div className="p-4 bg-white/[0.02] border-t border-white/10 flex items-center justify-between text-[10px] font-bold uppercase tracking-widest text-white/20">
                             <span>Marc Goulding Tójar — Command Center</span>
-                            <span>CMD / CTRL + K to close</span>
+                            <span>CMD / CTRL + J to close</span>
                         </div>
                     </motion.div>
                 </div>

@@ -60,7 +60,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">{t("contact.callTitle")}</h4>
-                                        <p className="text-lg font-medium text-white/80">0789 272 2727</p>
+                                        <p className="text-lg font-medium text-white/80">0789 285 3463</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-6 group">
@@ -84,7 +84,7 @@ export default function ContactPage() {
                                     {t("contact.whatsappDesc")}
                                 </p>
                                 <a
-                                    href="https://api.whatsapp.com/send/?phone=636388672&text&type=phone_number&app_absent=0"
+                                    href="https://api.whatsapp.com/send/?phone=447892853463&text&type=phone_number&app_absent=0"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-full"

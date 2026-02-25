@@ -8,7 +8,7 @@
         "about": "Sobre mí",
         "creative": "Creatividad",
         "contact": "Contacto",
-        "commandPaletteHint": "Pulsa Cmd / Ctrl + K para investigar"
+        "commandPaletteHint": "Pulsa Cmd / Ctrl + J para investigar"
     },
     "hero": {
         "title": "Ingeniero de Software Multi-Dominio",
@@ -210,6 +210,11 @@
     "projects": {
         "ui": {
             "backToGallery": "Volver a la Galería",
+            "searchPlaceholder": "Buscar proyectos o tecnología...",
+            "all": "Todos",
+            "noProjectsFound": "No se encontraron proyectos",
+            "tryAdjusting": "Intenta ajustar los filtros de búsqueda.",
+            "clearFilters": "Borrar filtros",
             "theChallenge": "El Desafío",
             "theSolution": "La Solución",
             "techStack": "Stack Tecnológico",

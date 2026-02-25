@@ -20,7 +20,7 @@ A premium, high-performance, and visually stunning portfolio and multi-track res
     -   Stripe/Vercel-level polish and interactive micro-interactions.
 -   **📚 Case-Study Projects**: Detailed project pages with problem/solution breakdowns and technical deep dives.
 -   **✍️ MDX-Powered Articles**: A professional blog/article section with syntax highlighting and reading time estimations.
--   **⌨️ Developer Console**: A hidden "Easter Egg" command palette (Ctrl + K) for quick navigation and power users.
+-   **⌨️ Developer Console**: A hidden "Easter Egg" command palette (Ctrl + J) for quick navigation and power users.
 
 ## 🛠️ Tech Stack
 

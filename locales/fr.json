@@ -8,7 +8,7 @@
         "about": "À propos",
         "creative": "Créativité",
         "contact": "Contact",
-        "commandPaletteHint": "Appuyez sur Cmd / Ctrl + K pour naviguer"
+        "commandPaletteHint": "Appuyez sur Cmd / Ctrl + J pour naviguer"
     },
     "hero": {
         "title": "Ingénieur Logiciel Multi-Domaines",
@@ -210,6 +210,11 @@
     "projects": {
         "ui": {
             "backToGallery": "Retour à la Galerie",
+            "searchPlaceholder": "Rechercher des projets ou des technologies...",
+            "all": "Tous",
+            "noProjectsFound": "Aucun projet trouvé",
+            "tryAdjusting": "Essayez d'ajuster vos filtres de recherche.",
+            "clearFilters": "Effacer les filtres",
             "theChallenge": "Le Défi",
             "theSolution": "La Solution",
             "techStack": "Stack Technologique",

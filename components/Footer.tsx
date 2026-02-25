@@ -2,7 +2,7 @@
 
 import React from "react"
 import Link from "next/link"
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { socialLinks } from "@/data/socials"
 import { useI18n } from "./I18nProvider"
 
@@ -24,9 +24,7 @@ export function Footer() {
                             <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all">
                                 <Github size={20} />
                             </a>
-                            <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all">
-                                <Twitter size={20} />
-                            </a>
+
                             <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all">
                                 <Linkedin size={20} />
                             </a>

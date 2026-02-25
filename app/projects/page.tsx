@@ -64,7 +64,7 @@ export default function ProjectsPage() {
                                     !activeTag ? "bg-accent-blue text-white" : "bg-white/5 text-white/40 hover:bg-white/10"
                                 )}
                             >
-                                All
+                                {t("projects.ui.all") || "All"}
                             </button>
                             {specializations.map(spec => (
                                 <button
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
                                         activeTag === spec.id ? "bg-accent-blue text-white" : "bg-white/5 text-white/40 hover:bg-white/10"
                                     )}
                                 >
-                                    {spec.title.split(' ')[0]}
+                                    {(t(spec.title as any) || spec.title).split(' ')[0]}
                                 </button>
                             ))}
                         </div>

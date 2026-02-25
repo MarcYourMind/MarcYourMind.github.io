@@ -425,27 +425,27 @@ export const projects: Project[] = [
     //         { label: "audioQuality", value: "4.2/5 PEAQ" }
     //     ]
     // },
-    {
-        slug: "cruzcampo",
-        title: "Cruzcampo Tapeando 2025",
-        description: "Emergency full-stack web application for a major Spanish beer brand.",
-        longDescription: "Developed in just 48 hours to save a large-scale marketing campaign. This high-pressure project involved building a robust, high-traffic web application for Cruzcampo.",
-        thumbnail: "/projects/technex.jpg",
-        techStack: ["HTML", "React", "Node.js", "Express.js", "SQL", "Google Cloud Platform"],
-        tags: ["Web", "Backend"],
-        githubUrl: "#",
-        liveUrl: "#",
-        screenshots: ["/projects/technex.jpg"],
-        featured: false,
-        challenge: "Building, testing, and deploying a production-ready application for a national campaign in under 48 hours with expected traffic in the millions.",
-        solution: "Leveraged a pre-configured boilerplate and prioritised core functionality, using a scalable cloud infrastructure to handle traffic spikes.",
-        achievements: [
-            "Delivered fully functional platform in 48 hours",
-            "Successfully handled 100k+ concurrent users",
-            "Zero downtime during the initial campaign launch",
-            "Saved a high-value marketing campaign from failure"
-        ]
-    },
+    // {
+    //     slug: "cruzcampo",
+    //     title: "Cruzcampo Tapeando 2025",
+    //     description: "Emergency full-stack web application for a major Spanish beer brand.",
+    //     longDescription: "Developed in just 48 hours to save a large-scale marketing campaign. This high-pressure project involved building a robust, high-traffic web application for Cruzcampo.",
+    //     thumbnail: "/projects/technex.jpg",
+    //     techStack: ["HTML", "React", "Node.js", "Express.js", "SQL", "Google Cloud Platform"],
+    //     tags: ["Web", "Backend"],
+    //     githubUrl: "#",
+    //     liveUrl: "#",
+    //     screenshots: ["/projects/technex.jpg"],
+    //     featured: false,
+    //     challenge: "Building, testing, and deploying a production-ready application for a national campaign in under 48 hours with expected traffic in the millions.",
+    //     solution: "Leveraged a pre-configured boilerplate and prioritised core functionality, using a scalable cloud infrastructure to handle traffic spikes.",
+    //     achievements: [
+    //         "Delivered fully functional platform in 48 hours",
+    //         "Successfully handled 100k+ concurrent users",
+    //         "Zero downtime during the initial campaign launch",
+    //         "Saved a high-value marketing campaign from failure"
+    //     ]
+    // },
     {
         slug: "illuvium",
         title: "Illuvium Fusion Simulator",
